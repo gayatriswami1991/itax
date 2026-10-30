@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>iTax Advisors Home</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -562,6 +563,101 @@ footer a.ln{color:#fff}
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
   .glass li{opacity:1}
+}
+
+/* ===== mobile pass ===== */
+@media (max-width:860px){
+  html{scroll-padding-top:70px}
+  body{font-size:16px}
+  .sec{padding-block:48px}
+  .sec h2{font-size:clamp(26px,7.4vw,32px);max-width:none}
+  .lede{font-size:16.5px}
+  .hero{padding-top:104px;padding-bottom:44px}
+  .hero h1{font-size:clamp(33px,9.4vw,42px)}
+  .cta-row .btn{width:100%;justify-content:center}
+  .chips{gap:8px}.chip{font-size:12.5px;padding:7px 12px}
+  .qa{padding-block:36px}
+  .qa2-main{padding:22px}
+  .qa2-main p{font-size:16.5px}
+  .qa2-pts{padding:22px}
+  .trust-in{padding-block:16px}.trust-l{gap:10px 20px}.trust-l span{font-size:13px}
+  /* services: compact cards, image beside text */
+  .card .img{aspect-ratio:2.4/1}
+  .card .cb{padding:36px 20px 20px}
+  .card p{font-size:15px}
+  /* scorecard: drop the decorative collage, keep the tool */
+  .sc-photos{display:none}
+  .facts{margin-top:16px}
+  .sc-body{padding:18px}
+  .sc-img{aspect-ratio:2.2/1}
+  .sc-q{font-size:20px;margin-top:16px}
+  .opt{padding:13px 14px;min-height:56px}
+  .sc-back{padding:10px 8px;min-height:44px}
+  .ring{width:120px;height:120px}.ring svg{width:120px;height:120px}.ring b{font-size:32px}
+  .res-top{grid-template-columns:120px minmax(0,1fr);gap:16px}
+  .res h3{font-size:20px}
+  .bar2{grid-template-columns:92px minmax(0,1fr) 36px;gap:10px;font-size:13px}
+  /* advisers: one image */
+  .stack{aspect-ratio:auto}
+  .stack .img{position:relative;inset:auto;width:100%;box-shadow:0 30px 50px -30px rgba(12,33,54,.6)}
+  .stack .s1{aspect-ratio:2.19/1}
+  .stack .s2,.stack .s3{display:none}
+  .usp{gap:10px}.usp div{padding:12px 14px;font-size:14.5px}
+  /* approach */
+  .audit-imgs .a1{aspect-ratio:1.6/1}
+  .steps{margin-top:40px;gap:0;grid-template-columns:minmax(0,1fr)}
+  .steps::before{display:block;left:19px;right:auto;top:20px;bottom:20px;width:2px;height:auto}
+  .step{padding:0 0 28px 62px;min-height:60px}
+  .step:last-child{padding-bottom:0}
+  .step .n{left:0;top:0}
+  .step p{max-width:none}
+  /* golden triangle */
+  .gt-main{aspect-ratio:2/1}
+  .gt-tri{margin:-26px 4% 0;padding:14px 16px 12px}
+  .gt-tri text{font-size:17px}
+  .gt-vis{padding-bottom:0}
+  .gt-cta .btn{width:100%;justify-content:center}
+  /* sectors: 2 per row, smaller */
+  .sgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:28px}
+  .art-card{aspect-ratio:1/1;padding:12px}
+  .art-card h3{font-size:15.5px}.art-card p,.art-card .more{display:none}
+  .badge{top:10px;left:10px;font-size:10px;padding:4px 8px}
+  .sgrid .art-card:first-child{grid-column:1/-1;aspect-ratio:2/1}
+  .sgrid .art-card:first-child p{display:block;font-size:13.5px}
+  .sgrid .art-card:last-child{grid-column:1/-1;aspect-ratio:2/1}
+  /* founder */
+  .f-card{max-width:440px}
+  .quote{padding:22px 20px}.quote p{padding-left:26px}.quote cite{padding-left:26px}
+  .arts a{font-size:16px;padding:14px 2px}
+  /* checklist hub */
+  .tabs{gap:6px}.tab{padding:10px 14px;font-size:13.5px;min-height:44px}
+  .mpanel .cover{aspect-ratio:2/1}
+  .formcard.big{padding:22px 18px}
+  .field input,.field select,.field textarea{font-size:16px;min-height:48px}
+  .consent{font-size:13px}
+  .consent input{width:22px;height:22px}
+  .formcard .btn{min-height:52px}
+  .ready-in ul{grid-template-columns:1fr}
+  /* insights */
+  .post .img{aspect-ratio:2.4/1}
+  /* faq */
+  .faq-side{display:none}
+  summary{font-size:17px;padding:18px 2px;min-height:56px}
+  details p{padding-right:4px}
+  /* contact */
+  .details dd{word-break:break-word}
+  .copy{padding:8px 16px;min-height:40px}
+  footer{padding-top:40px}
+  .f-top{gap:26px}
+  .sticky .btn{min-height:50px}
+  .gt-cta a.tl{display:inline-block;padding:10px 0}
+}
+@media (max-width:380px){
+  .wrap{padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+  .res-top{grid-template-columns:minmax(0,1fr)}
+}
+@media (hover:none){
+  .mag,.tilt{transform:none!important}
 }
 </style>
 
