@@ -1,0 +1,545 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>HMRC Enquiry Support Page</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!-- SEO (set in Yoast): title: HMRC R&D Enquiry Support | Got a Letter? Act Now | description: Received an HMRC R&D enquiry letter? We handle the written responses and evidence, from the first letter to resolution. Speak to a specialist today. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--navy-950:#0c2136;--navy-900:#143451;--navy-800:#183c5e;--navy-700:#1b456d;--green:#8ab141;--green-deep:#4f7a0f;--ink:#21507b;--muted:#4a6580;--paper:#eef2f1;--white:#fff;--line:#d3dde7;--line-dark:rgba(255,255,255,.14);--on-dark:#e8f0f7;--on-dark-muted:#aebfd0;--star:#e0a53a;--font:"Raleway",Arial,Helvetica,sans-serif;--radius:16px;--shadow:0 22px 44px -20px rgba(12,33,54,.4);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;letter-spacing:.2px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}p{margin:0}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:700;display:flex;align-items:center;gap:10px}
+.label::before{content:"";width:26px;height:2px;background:currentColor;opacity:.7}
+.dark .label,.hero .label{color:var(--green)}
+.sec{padding-block:clamp(52px,7vw,96px)}
+.sec h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;color:var(--navy-700);margin-top:14px;max-width:24ch}
+.dark h2{color:#fff}
+.lede{font-size:18px;color:var(--muted);max-width:62ch;margin-top:16px}.dark .lede{color:var(--on-dark-muted)}
+.dark{background:var(--navy-900);color:var(--on-dark);position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 55px,rgba(255,255,255,.035) 55px 56px);pointer-events:none}
+.dark>*{position:relative}
+.img{position:relative;overflow:hidden;background:var(--navy-800)}
+.img img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.img:hover img{transform:scale(1.06)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font);font-weight:700;font-size:15px;letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:15px 26px;transition:transform .2s,box-shadow .25s,background .25s;position:relative;overflow:hidden}
+.btn svg{width:20px;height:20px}
+.btn-green{background:var(--green);color:var(--navy-950);box-shadow:0 10px 26px -10px rgba(138,177,65,.85)}
+.btn-green:hover{background:#9cc552}
+.btn-green::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%)}
+.btn-green:hover::after{transform:translateX(120%);transition:transform .8s}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--green);color:var(--green)}
+.btn-line{background:#fff;color:var(--navy-700);box-shadow:inset 0 0 0 2px var(--line)}.btn-line:hover{box-shadow:inset 0 0 0 2px var(--green)}
+.more{font-weight:700;font-size:14px;color:var(--navy-700);display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.more svg{width:18px;height:18px;transition:transform .25s}a:hover>.more svg,.more:hover svg{transform:translateX(5px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);border:1px solid rgba(138,177,65,.45);padding:7px 14px;border-radius:999px;background:rgba(138,177,65,.08)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(138,177,65,.7)}100%{box-shadow:0 0 0 12px rgba(138,177,65,0)}}
+.hero{position:relative;background:var(--navy-950);color:var(--on-dark);padding-block:clamp(72px,9vw,120px) clamp(56px,7vw,92px);overflow:hidden;isolation:isolate}
+.hero h1{font-size:clamp(34px,5vw,60px);font-weight:800;color:#fff;letter-spacing:-.02em;margin-top:22px}
+.w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.w i{display:inline-block;font-style:normal;animation:up .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--n)*80ms + .1s)}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.hl{color:var(--green);position:relative;white-space:nowrap}
+.hl::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:.1em;background:var(--green);border-radius:4px;transform-origin:left;animation:sweep 1.1s .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sweep{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .answer{font-size:clamp(17px,1.5vw,20px);color:var(--on-dark);max-width:58ch;margin-top:24px}
+.hero .answer b{color:#fff}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--on-dark);border:1px solid var(--line-dark);background:rgba(255,255,255,.06);padding:8px 14px;border-radius:999px}
+.chip svg{width:16px;height:16px;color:var(--green)}
+.formcard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3.2vw,42px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);position:relative;min-width:0}
+.formcard h3{font-size:25px;color:var(--navy-700);font-weight:800}
+.formcard .sub{font-size:15px;color:var(--muted);margin-top:6px}
+.field{display:grid;gap:6px;margin-top:16px}
+.field label{font-size:13.5px;font-weight:700;color:var(--navy-700)}
+.field label em{font-style:normal;color:var(--muted);font-weight:500}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:14px 15px;width:100%;transition:border-color .2s,box-shadow .2s,background .2s}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy-700);box-shadow:0 0 0 4px rgba(27,69,109,.15);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:var(--muted)}
+.consent input{width:20px;height:20px;margin-top:2px;accent-color:var(--navy-700);flex:none}
+.formcard .btn{width:100%;justify-content:center;margin-top:20px;min-height:52px}
+.fine{font-size:12.5px;color:#a33a2b;margin-top:12px;min-height:1em}
+.done{display:none}.done.show{display:block}
+.done .tick{width:56px;height:56px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;margin-bottom:16px}
+.done .tick svg{width:30px;height:30px}.done h3{font-size:24px;color:var(--navy-700)}.done p{margin-top:8px;color:var(--muted)}
+details{border-bottom:1px solid var(--line)}details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;font-weight:700;font-size:19px;color:var(--navy-700);line-height:1.3}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b456d' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .3s,background-color .3s}
+details[open] summary::after{transform:rotate(45deg);background-color:var(--green)}
+details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open] p{animation:fadeUp .4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px)}
+.anim .rv.pending:not(.in){opacity:0;transform:translateY(24px)}
+.anim .wipe.pending:not(.in){clip-path:inset(0 0 100% 0)}
+.rv{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.wipe{transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+.tilt{transform-style:preserve-3d;transition:transform .35s,box-shadow .35s}
+@media (max-width:860px){body{font-size:16px}.sec{padding-block:44px}.sec h2{max-width:none;font-size:clamp(26px,7.4vw,32px)}.lede{font-size:16.5px}.faq-grid{grid-template-columns:minmax(0,1fr)}.cta-row .btn{width:100%;justify-content:center}.hl{white-space:normal}.hero{padding-block:56px 44px}}
+@media (max-width:600px){.row2{grid-template-columns:minmax(0,1fr)}.field input,.field select,.field textarea{min-height:48px}summary{font-size:17px;padding:18px 2px;min-height:56px}}
+@media (hover:none){.mag,.tilt{transform:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.hero-bg{position:absolute;inset:0;z-index:-3;overflow:hidden;background:var(--navy-950)}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 35%;animation:kb 28s ease-in-out infinite alternate;transform-origin:80% 40%}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.05)}}
+.hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(12,33,54,.96) 0%,rgba(12,33,54,.84) 34%,rgba(12,33,54,.38) 58%,rgba(12,33,54,0) 80%),linear-gradient(180deg,rgba(12,33,54,.5) 0%,transparent 22%,transparent 78%,rgba(12,33,54,.55) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
+.glow{position:absolute;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(138,177,65,.22),transparent 65%);left:0;top:0;transform:translate(-50%,-50%);transition:opacity .4s;opacity:0}
+.hero-in{max-width:760px}
+.strip{background:#fff;border-bottom:1px solid var(--line)}
+.strip-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 28px;padding-block:20px}
+.strip-in span{display:flex;gap:10px;align-items:center;font-weight:700;font-size:14.5px;color:var(--navy-700)}
+.strip-in svg{width:22px;height:22px;color:var(--green-deep);flex:none}
+.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,72px);align-items:center}
+.split.rev{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
+.pic{border-radius:22px;box-shadow:0 40px 70px -30px rgba(12,33,54,.6)}
+.dark .pic{box-shadow:0 40px 70px -30px rgba(0,0,0,.7)}
+.pic .cap{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--green);color:var(--navy-950);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:7px 12px;border-radius:7px;max-width:70%}
+.pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(12,33,54,.4));pointer-events:none}
+.why{margin-top:22px;display:grid;gap:14px}
+.why div{display:grid;grid-template-columns:44px 1fr;gap:14px}
+.why svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
+.why b{display:block;color:var(--navy-700);font-size:18px}.why span{color:var(--muted);font-size:16px}
+/* letter selector */
+.letters{background:var(--white)}
+.lsel{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(18px,3vw,36px);margin-top:36px;align-items:stretch}
+.llist{display:grid;gap:10px;align-content:start}
+.lbtn{display:flex;gap:14px;align-items:center;text-align:left;font:inherit;font-weight:700;font-size:16px;color:var(--navy-700);background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;transition:transform .25s,border-color .25s,background .25s,box-shadow .25s;min-height:60px}
+.lbtn span{flex:none;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:14px;transition:background .25s,color .25s}
+.lbtn:hover{border-color:var(--green);transform:translateX(4px)}
+.lbtn[aria-selected="true"]{background:var(--navy-700);color:#fff;border-color:var(--navy-700);box-shadow:0 18px 30px -16px rgba(27,69,109,.7)}
+.lbtn[aria-selected="true"] span{background:var(--green);color:var(--navy-950)}
+.lpanel{background:var(--navy-900);color:#fff;border-radius:22px;padding:clamp(24px,3vw,40px);box-shadow:0 40px 60px -34px rgba(12,33,54,.8);position:relative;overflow:hidden;animation:fadeUp .45s}
+.lpanel::before{content:"";position:absolute;width:320px;height:320px;right:-100px;top:-110px;border-radius:50%;background:radial-gradient(circle,rgba(138,177,65,.3),transparent 70%)}
+.lpanel>*{position:relative}
+.lpanel h3{font-size:clamp(22px,2.4vw,28px);font-weight:800}
+.lrow{margin-top:20px;padding-top:16px;border-top:1px solid var(--line-dark)}
+.lrow small{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:6px}
+.lrow p{color:var(--on-dark);font-size:16.5px}
+.reply{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:7px}
+.reply.y{background:#f8d6d0;color:#8a2a1c}.reply.n{background:#dff0b8;color:#3d6409}.reply.m{background:#fbe9c0;color:#7a5200}
+.notefinal{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:#eaf4d4;border-radius:14px;padding:16px 20px;color:var(--navy-700);font-weight:600}
+.notefinal svg{width:26px;height:26px;color:var(--green-deep)}
+.look{margin-top:22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);padding:20px 22px}
+.look h3{font-size:19px;color:var(--navy-700)}
+.look p{margin-top:8px;color:var(--muted);font-size:15.5px}
+/* 48 hours */
+.h48{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.hc{background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:var(--radius);padding:22px 20px 22px;transition:transform .3s,border-color .3s,background .3s}
+.hc:hover{transform:translateY(-6px);border-color:var(--green);background:rgba(138,177,65,.1)}
+.hc .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:2px solid var(--green);color:var(--green);font-weight:800;margin-bottom:14px}
+.hc h3{font-size:18px;color:#fff}.hc p{font-size:15px;color:var(--on-dark-muted);margin-top:6px}
+.h48-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:center}
+/* risk areas */
+.risks{background:var(--paper)}
+.rgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:36px}
+.rc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px;font-weight:700;color:var(--navy-700);font-size:16px;line-height:1.35;transition:transform .3s,box-shadow .3s,border-color .3s;display:grid;gap:12px;align-content:start}
+.rc svg{width:38px;height:38px;padding:8px;border-radius:11px;background:var(--navy-700);color:var(--green)}
+.rc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
+.ask{margin-top:26px;background:var(--navy-900);color:#fff;border-radius:var(--radius);padding:24px 26px;display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:20px;align-items:start}
+.ask h3{font-size:20px}.ask ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+.ask li{display:flex;gap:10px;color:var(--on-dark);font-size:15.5px}.ask li svg{width:18px;height:18px;color:var(--green);flex:none;margin-top:4px}
+/* approach */
+.tl{margin-top:28px;display:grid;gap:0;position:relative}
+.tl::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:rgba(255,255,255,.18)}
+.ts{display:grid;grid-template-columns:40px 1fr;gap:18px;padding-bottom:20px;position:relative}
+.ts:last-child{padding-bottom:0}
+.ts .n{width:40px;height:40px;border-radius:50%;background:var(--navy-900);border:2px solid var(--green);color:var(--green);display:grid;place-items:center;font-weight:800;z-index:2;transition:background .3s,color .3s}
+.ts:hover .n{background:var(--green);color:var(--navy-950)}
+.ts p{color:var(--on-dark);font-size:16.5px;padding-top:7px}
+.obj{margin-top:26px;padding:20px 22px;border-left:4px solid var(--green);background:rgba(255,255,255,.06);border-radius:0 14px 14px 0;font-weight:600;color:#fff;font-size:17.5px}
+/* in-house vs specialist */
+.tablewrap{margin-top:30px;overflow-x:auto;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
+table{width:100%;border-collapse:collapse;min-width:520px}
+th,td{text-align:left;padding:15px 18px;border-bottom:1px solid var(--line);font-size:15.5px}
+th{background:var(--navy-700);color:#fff;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+tbody tr{transition:background .2s}tbody tr:hover{background:#f3f8e8}
+td:first-child{font-weight:700;color:var(--navy-700)}
+.pill{display:inline-block;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:6px}
+.pill.a{background:#e6ecf2;color:#3e5a75}.pill.b{background:#fbe9c0;color:#7a5200}.pill.c{background:#dff0b8;color:#3d6409}
+/* life sciences example */
+.ls{background:linear-gradient(180deg,var(--navy-950),var(--navy-900))}
+.ls .quote{margin-top:22px;border-left:4px solid var(--green);padding:6px 0 6px 20px;color:var(--on-dark);font-size:17px}
+.illu{display:inline-block;margin-top:20px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--navy-950);background:var(--green);padding:6px 12px;border-radius:7px}
+.cities{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.cities span{font-weight:700;font-size:13px;border:1px solid rgba(255,255,255,.35);padding:5px 12px;border-radius:999px;color:#fff}
+/* magnet */
+.mag-wrap{background:var(--paper)}
+.mgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.cover{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:1.9/1;box-shadow:0 36px 60px -30px rgba(12,33,54,.7);margin-top:22px}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.1),rgba(12,33,54,.88))}
+.cover .ct{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;color:#fff}
+.cover small{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:800}
+.cover b{display:block;font-size:22px;line-height:1.15;margin-top:6px}
+.inside{list-style:none;padding:16px 18px;margin:16px 0 0;display:grid;gap:8px;background:var(--paper);border-radius:12px}
+.inside li{display:flex;gap:10px;font-size:15px;color:var(--ink)}.inside li svg{width:18px;height:18px;color:var(--green-deep);flex:none;margin-top:3px}
+.guide{margin-top:18px;display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px;text-decoration:none;transition:transform .3s,box-shadow .3s}
+.guide:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.guide .img{aspect-ratio:1.6/1;border-radius:12px}
+.guide b{display:block;color:var(--navy-700);font-size:16.5px;line-height:1.3}.guide span.s{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+/* founder */
+.fdr{display:grid;grid-template-columns:200px minmax(0,1fr);gap:26px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+.fdr .img{border-radius:16px;aspect-ratio:1/1}
+.fdr .img img{object-position:50% 20%}
+.fdr h3{font-size:24px;color:var(--navy-700);font-weight:800}
+.fdr .role{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);font-weight:700;margin-top:4px}
+.fdr p{margin-top:10px;color:var(--muted);font-size:16px}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.creds span{font-size:13px;font-weight:700;color:var(--navy-700);background:var(--paper);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+.lnk{display:inline-flex;align-items:center;gap:8px;margin-top:14px;text-decoration:none;font-weight:700;font-size:14px;color:#fff;background:var(--navy-700);padding:10px 16px;border-radius:999px}
+.lnk svg{width:18px;height:18px}
+/* contact */
+.contact{background:var(--navy-950);color:var(--on-dark)}
+.contact::before{background:radial-gradient(50% 60% at 15% 20%,rgba(27,69,109,.7),transparent 70%)}
+.cgrid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:start}
+.det{margin-top:26px;display:grid;gap:16px;padding-top:22px;border-top:1px solid var(--line-dark)}
+.det div{display:grid;grid-template-columns:28px 1fr;gap:12px;color:#fff;font-size:16px}
+.det svg{width:24px;height:24px;color:var(--green)}.det a{color:#fff}
+.rel{margin-top:26px;display:grid;gap:10px}
+.rel a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:#fff;font-weight:700;border:1px solid var(--line-dark);border-radius:12px;padding:14px 16px;transition:border-color .25s,background .25s,transform .25s}
+.rel a:hover{border-color:var(--green);background:rgba(138,177,65,.1);transform:translateX(4px)}
+.rel svg{width:20px;height:20px;color:var(--green)}
+@media (max-width:1020px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.h48{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){
+  .hero-shade{background:linear-gradient(180deg,rgba(12,33,54,.78) 0%,rgba(12,33,54,.86) 45%,rgba(12,33,54,.95) 80%)}
+  .hero-bg img{object-position:72% center}
+  .strip-in{grid-template-columns:minmax(0,1fr)}
+  .split,.split.rev,.lsel,.h48-top,.mgrid,.cgrid{grid-template-columns:minmax(0,1fr)}
+  .ask{grid-template-columns:minmax(0,1fr)}.ask ul{grid-template-columns:minmax(0,1fr)}
+  .fdr{grid-template-columns:minmax(0,1fr)}.fdr .img{max-width:220px}
+  .guide{grid-template-columns:110px minmax(0,1fr)}
+  .lbtn{min-height:56px}
+  .cover b{font-size:19px}
+}
+@media (max-width:600px){.rgrid,.h48{grid-template-columns:minmax(0,1fr)}.formcard{padding:22px 18px}}
+
+.faq-side{margin-top:28px;position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1.5/1}.faq-side .img{position:absolute;inset:0}.faq-side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.05),rgba(12,33,54,.88))}.faq-side .t{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}.faq-side .t b{display:block;font-size:19px;line-height:1.2;margin-bottom:12px}.btn-sm{padding:10px 20px;font-size:13.5px}
+@media (max-width:860px){.faq-side{display:none}}
+
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6l7-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 006 0L5 7zM19 7l-3 7a3.5 3.5 0 006 0l-3-7z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 15.5h6"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0010 18.7l1-1"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75z"/></symbol>
+</svg>
+
+<main>
+<section class="hero" id="hero">
+  <div class="hero-bg"><img src="assets/hero_banner.jpg" alt="HMRC R&amp;D enquiry support: R&amp;D tax relief and HMRC compliance files on a London desk beside the Houses of Parliament" width="1800" height="686"></div>
+  <div class="hero-shade"></div><div class="glow" id="glow"></div>
+  <div class="wrap"><div class="hero-in">
+    <span class="eyebrow"><i></i> HMRC R&amp;D tax enquiry</span>
+    <h1><span class="w" style="--n:0"><i>HMRC</i></span> <span class="w" style="--n:1"><i>R&amp;D</i></span> <span class="w" style="--n:2"><i>Enquiry</i></span> <span class="w" style="--n:3"><i>Support:</i></span> <span class="hl"><span class="w" style="--n:4"><i>Respond</i></span> <span class="w" style="--n:5"><i>with</i></span> <span class="w" style="--n:6"><i>Confidence</i></span></span></h1>
+    <p class="answer"><b>If HMRC has opened an enquiry into your R&amp;D tax claim, early and well-structured support can make a significant difference.</b> We help companies respond clearly, protect claim credibility and manage the enquiry process with confidence.</p>
+    <div class="cta-row">
+      <a class="btn btn-green mag" href="#contact">Speak to a specialist <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost" href="#letters">Which letter have you received?</a>
+    </div>
+    <div class="chips">
+      <span class="chip"><svg><use href="#i-shield"/></svg> Structured, evidence-led support</span>
+      <span class="chip"><svg><use href="#i-search"/></svg> We review claims prepared by another adviser</span>
+      <span class="chip"><svg><use href="#i-flag"/></svg> Support through to conclusion of the enquiry</span>
+    </div>
+  </div></div>
+</section>
+
+<div class="strip"><div class="wrap strip-in">
+  <span><svg><use href="#i-doc"/></svg> Technical eligibility and project substantiation</span>
+  <span><svg><use href="#i-scale"/></svg> Qualifying expenditure and cost methodology</span>
+  <span><svg><use href="#i-user"/></svg> Competent professional input on the technical case</span>
+</div></div>
+
+<section class="sec" id="why" style="background:var(--paper)">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="label">Why early support matters</div>
+      <h2>Why early HMRC R&amp;D enquiry support matters</h2>
+      <p class="lede">An HMRC enquiry can place significant pressure on management teams, disrupt normal operations and create uncertainty around previously submitted claims and benefits received.</p>
+      <div class="why">
+        <div><svg><use href="#i-doc"/></svg><p><b>A clearer response</b><span>A structured, evidence-led response helps address HMRC concerns clearly and reduce unnecessary delays.</span></p></div>
+        <div><svg><use href="#i-scale"/></svg><p><b>A stronger claim position</b><span>It strengthens the technical and financial position of the claim.</span></p></div>
+        <div><svg><use href="#i-shield"/></svg><p><b>Less risk, better communication</b><span>Early specialist support can help minimise risk, improve communication with HMRC and increase confidence throughout the enquiry process.</span></p></div>
+      </div>
+    </div>
+    <div class="img pic wipe rv d1" style="aspect-ratio:1.55/1"><img src="assets/b_hex_doc.jpg" alt="HMRC R&amp;D tax enquiry support: document review, legal, compliance shield and search icons" width="656" height="287" loading="lazy"><span class="cap">Evidence-led, structured</span></div>
+  </div>
+</section>
+
+<section class="sec letters" id="letters">
+  <div class="wrap">
+    <div class="rv"><div class="label">Your HMRC R&amp;D enquiry letter</div>
+    <h2>Which HMRC R&amp;D enquiry letter have you received?</h2>
+    <p class="lede">Not every letter from HMRC about an R&amp;D claim is a formal enquiry, and the right response depends on which one you have. Check the heading and the legislation the letter refers to before you do anything else. If you cannot tell, ask the officer named on the letter to confirm.</p></div>
+    <div class="lsel rv">
+      <div class="llist" role="tablist" aria-label="Types of HMRC letter" id="llist"></div>
+      <div class="lpanel" id="lpanel" role="tabpanel" aria-live="polite"></div>
+    </div>
+    <div class="notefinal rv"><svg><use href="#i-flag"/></svg><p>An enquiry is not a final decision that the claim is wrong. HMRC will consider the explanation and evidence before reaching an outcome.</p></div>
+    <div class="look rv"><h3>How far back can HMRC look?</h3><p>HMRC can usually open an enquiry within 12 months of the date the corporation tax return was filed, as long as it was filed on time. If the R&amp;D claim was made or changed by amending the return, the window generally runs from the amendment instead. Once that window has closed, HMRC needs to raise a discovery assessment, which is normally limited to 4 years from the end of the accounting period, extended to 6 years where an inaccuracy was careless and 20 years where it was deliberate.</p></div>
+  </div>
+</section>
+
+<section class="sec dark" id="first-48">
+  <div class="wrap">
+    <div class="h48-top">
+      <div class="rv"><div class="label">The first few days</div>
+      <h2>HMRC R&amp;D compliance check: what to do in the first 48 hours</h2>
+      <p class="lede">An HMRC R&amp;D enquiry can feel urgent, but a calm, organised approach will help you protect deadlines, preserve evidence and prepare a more credible response.</p></div>
+      <div class="img pic wipe rv d1" style="aspect-ratio:1.33/1"><img src="assets/a_notebook.jpg" alt="Notebook and pen: a one-page control sheet for an HMRC R&amp;D compliance check" width="351" height="264" loading="lazy"><span class="cap">Start with a one-page control sheet</span></div>
+    </div>
+    <div class="h48">
+      <div class="hc rv"><span class="n">1</span><h3>Create a control sheet</h3><p>Record the deadline, accounting period, projects in scope, HMRC contact, internal owner and location of the supporting records.</p></div>
+      <div class="hc rv d1"><span class="n">2</span><h3>Preserve the evidence</h3><p>Secure relevant emails, project files, timesheets, payroll data, invoices and claim workings. Do not overwrite originals.</p></div>
+      <div class="hc rv d2"><span class="n">3</span><h3>Nominate one coordinator</h3><p>One person coordinates contact with HMRC so technical, finance and adviser responses do not diverge.</p></div>
+      <div class="hc rv"><span class="n">4</span><h3>Reconcile the claim as filed</h3><p>Obtain the final corporation tax return, computations, additional information form, technical narrative and cost schedule actually filed, not an earlier draft.</p></div>
+      <div class="hc rv d1"><span class="n">5</span><h3>Check the scope of the request</h3><p>Identify the questions, documents, accounting periods and projects covered. Seek advice if HMRC later issues a formal information notice.</p></div>
+      <div class="hc rv d2"><span class="n">6</span><h3>Keep your other deadlines</h3><p>Keep filing returns and paying other taxes by their normal deadlines. If an adviser deals with HMRC, check that authority is in place.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec risks" id="risks">
+  <div class="wrap">
+    <div class="rv"><div class="label">Common risk areas</div>
+    <h2>Common HMRC R&amp;D enquiry risk areas</h2>
+    <p class="lede">HMRC enquiries often arise where the claim leaves questions open. These are the points we see raised most often.</p></div>
+    <div class="rgrid">
+      <div class="rc tilt rv"><svg><use href="#i-doc"/></svg>Projects described too broadly or without a clear technical baseline</div>
+      <div class="rc tilt rv d1"><svg><use href="#i-scale"/></svg>Claimed uncertainties that appear commercial rather than technological</div>
+      <div class="rc tilt rv d2"><svg><use href="#i-search"/></svg>Technical narratives that lack sufficient depth or specificity</div>
+      <div class="rc tilt rv d3"><svg><use href="#i-link"/></svg>Qualifying costs weakly linked to underlying activities</div>
+      <div class="rc tilt rv"><svg><use href="#i-folder"/></svg>Supporting records that are limited or inconsistent</div>
+      <div class="rc tilt rv d1"><svg><use href="#i-scale"/></svg>A query on the treatment of R&amp;D costs in the claim</div>
+      <div class="rc tilt rv d2"><svg><use href="#i-flag"/></svg>Projects that fail to demonstrate genuine technical advancement</div>
+      <div class="rc tilt rv d3"><svg><use href="#i-user"/></svg>The role of competent professionals</div>
+    </div>
+    <div class="ask rv"><h3>What does HMRC usually ask about?</h3><ul>
+      <li><svg><use href="#i-check"/></svg>Whether the work meets the definition of R&amp;D for tax purposes</li>
+      <li><svg><use href="#i-check"/></svg>Whether genuine technological uncertainties existed</li>
+      <li><svg><use href="#i-check"/></svg>Whether the projects sought an advance in science or technology</li>
+      <li><svg><use href="#i-check"/></svg>Whether the qualifying expenditure can be properly supported</li></ul></div>
+  </div>
+</section>
+
+<section class="sec dark" id="approach">
+  <div class="wrap split">
+    <div class="img pic wipe rv" style="aspect-ratio:1.5/1"><img src="assets/b_magnifier.jpg" alt="Magnifying glass over claim files: our review of the submitted claim and HMRC correspondence" width="516" height="227" loading="lazy"><span class="cap">We begin with your claim and the HMRC letter</span></div>
+    <div class="rv d1">
+      <div class="label">Our approach</div>
+      <h2>R&amp;D tax enquiry defence: how we support you</h2>
+      <p class="lede">We begin by reviewing the submitted claim, supporting reports and HMRC correspondence to identify the key areas of challenge. From there, we:</p>
+      <div class="tl">
+        <div class="ts"><span class="n">1</span><p>Assess the technical basis of the projects being questioned.</p></div>
+        <div class="ts"><span class="n">2</span><p>Review expenditure treatment and qualifying cost methodology.</p></div>
+        <div class="ts"><span class="n">3</span><p>Identify evidential gaps or inconsistencies.</p></div>
+        <div class="ts"><span class="n">4</span><p>Prepare clear, professionally structured responses for HMRC review.</p></div>
+        <div class="ts"><span class="n">5</span><p>Support ongoing communication through to conclusion of the enquiry.</p></div>
+      </div>
+      <p class="obj">Our objective is to help businesses respond accurately, calmly and with the strongest available technical support.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="in-house" style="background:#fff">
+  <div class="wrap">
+    <div class="rv"><div class="label">Do you need help?</div>
+    <h2>Handle it in-house, or bring in a specialist?</h2>
+    <p class="lede">Where another firm prepared the claim, we regularly assist. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response.</p></div>
+    <div class="tablewrap rv"><table><thead><tr><th>Your situation</th><th>In-house</th><th>Specialist</th></tr></thead><tbody>
+      <tr><td>Questions are narrow and factual</td><td><span class="pill a">Usually fine</span></td><td>Optional</td></tr>
+      <tr><td>Records are complete and dated</td><td><span class="pill a">Usually fine</span></td><td>Optional</td></tr>
+      <tr><td>Technical questions are complex</td><td><span class="pill b">Risky</span></td><td><span class="pill c">Recommended</span></td></tr>
+      <tr><td>Evidence is thin or missing</td><td><span class="pill b">Risky</span></td><td><span class="pill c">Recommended</span></td></tr>
+      <tr><td>A cost is being disputed</td><td><span class="pill b">Risky</span></td><td><span class="pill c">Recommended</span></td></tr>
+      <tr><td>Nobody has time before the deadline</td><td><span class="pill b">Not realistic</span></td><td><span class="pill c">Recommended</span></td></tr>
+      <tr><td>Another firm prepared the claim</td><td>Possible</td><td><span class="pill c">Worth an independent look</span></td></tr>
+    </tbody></table></div>
+  </div>
+</section>
+
+<section class="sec ls dark" id="life-sciences">
+  <div class="wrap split rev">
+    <div class="rv">
+      <div class="label">Life sciences</div>
+      <h2>HMRC R&amp;D enquiries for life sciences companies in London, Oxford and Cambridge</h2>
+      <p class="lede">Life sciences companies in London, Oxford and Cambridge often work with contract research organisations, university labs and clinical trial sites. That makes their enquiries a little different from a typical software case, because HMRC tends to ask about the science and about who was really doing the R&amp;D.</p>
+      <p class="quote">The answer has to come from the lead scientist, not the finance team. Work done by the CRO is pulled out and looked at separately, because it has to be tested against the contracted-out R&amp;D rules for the relevant period. Payments to clinical trial volunteers are matched to the trial agreements.</p>
+      <span class="illu">Illustrative example, not a real client</span>
+      <div class="cities"><span>London</span><span>Oxford</span><span>Cambridge</span></div>
+    </div>
+    <div class="img pic wipe rv d1" style="aspect-ratio:1.5/1"><img src="assets/b_lab.jpg" alt="Life sciences researcher at a microscope: HMRC R&amp;D enquiry support for biotech and pharma" width="498" height="227" loading="lazy"><span class="cap">The science comes from the lead scientist</span></div>
+  </div>
+</section>
+
+<section class="sec mag-wrap" id="checklist">
+  <div class="wrap mgrid">
+    <div class="rv">
+      <div class="label">Free checklist</div>
+      <h2>HMRC R&amp;D enquiry response checklist</h2>
+      <p class="lede">The seven steps from our enquiry guide, set out as a checklist you can work through with the letter in front of you.</p>
+      <div class="cover"><img src="assets/b_hex_doc.jpg" alt="" width="656" height="287"><div class="ct"><small>Free PDF · iTax Advisors</small><b>Received an HMRC R&amp;D enquiry letter? 7 steps to take first</b></div></div>
+      <ul class="inside">
+        <li><svg><use href="#i-check"/></svg>Read the letter closely and note the deadline</li>
+        <li><svg><use href="#i-check"/></svg>Collect the technical, financial and claim evidence</li>
+        <li><svg><use href="#i-check"/></svg>Test the technical basis of the claim</li>
+        <li><svg><use href="#i-check"/></svg>Check costs and calculations for the accounting period</li>
+        <li><svg><use href="#i-check"/></svg>Write the reply and decide whether you need specialist help</li>
+      </ul>
+      <a class="guide tilt" href="https://www.itaxadvisors.co.uk/hmrc-rd-enquiry-letter-steps/"><div class="img"><img src="assets/a_bigben_flag.jpg" alt="UK flag and Houses of Parliament: guide to an HMRC R&amp;D enquiry letter" width="573" height="263" loading="lazy"></div><div><span class="s">Read the full guide</span><b>Received an HMRC R&amp;D Enquiry Letter? 7 Steps UK Businesses Should Take First</b></div></a>
+    </div>
+    <div class="formcard rv d1">
+      <form id="lm-form" novalidate>
+        <h3>Send me the checklist</h3>
+        <p class="sub">Free PDF by email.</p>
+        <div class="field"><label for="lm-name">Your name</label><input id="lm-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="lm-email">Work email</label><input id="lm-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="lm-co">Company</label><input id="lm-co" name="company" autocomplete="organization" required></div>
+        <input type="hidden" name="lead_source" value="hmrc-enquiry-page-checklist">
+        <label class="consent"><input type="checkbox" id="lm-consent" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and confirm that I accept the terms set out within the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+        <button class="btn btn-green mag" type="submit">Get the checklist <svg><use href="#i-arrow"/></svg></button>
+        <p class="fine" id="lm-err" role="alert"></p>
+      </form>
+      <div class="done" id="lm-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Check your inbox</h3><p>The checklist is on its way. If you have received a letter and want a specialist to look at it, use the enquiry form below.</p><a class="btn btn-green" style="margin-top:20px" href="#contact">Speak to a specialist</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="founder" style="background:#fff;padding-block:clamp(40px,5vw,64px)">
+  <div class="wrap"><div class="fdr rv">
+    <div class="img"><img src="assets/aarti-varia.jpg" alt="Aarti Varia FCCA, founder of iTax Advisors and R&amp;D tax specialist" width="900" height="828" loading="lazy"></div>
+    <div>
+      <h3>Aarti Varia FCCA</h3><div class="role">Founder and R&amp;D tax specialist</div>
+      <p>Over 18 years' experience helping businesses navigate the R&amp;D tax relief regime, including 13 years at Deloitte. Known for attention to detail, a pragmatic approach and hands-on support throughout the claim process, challenging assumptions where necessary.</p>
+      <div class="creds"><span>FCCA</span><span>ACCA practising member</span><span>18+ years in R&amp;D tax</span><span>13 years at Deloitte</span></div>
+      <a class="lnk" href="https://www.linkedin.com/in/aarti-variardtaxspecialist/" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg> Aarti on LinkedIn</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="sec" id="faq" style="background:var(--paper)">
+  <div class="wrap faq-grid">
+    <div class="rv"><div class="label">FAQs</div><h2>HMRC R&amp;D enquiry questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
+      <div class="faq-side"><div class="img"><img src="assets/a_meeting.jpg" alt="Specialist adviser meeting to review an HMRC R&amp;D enquiry letter" width="428" height="264" loading="lazy"></div><div class="t"><b>Not sure which letter you have?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div>
+    <div class="rv d1">
+      <details open><summary>What does HMRC usually ask about in an R&amp;D enquiry?</summary><p>HMRC commonly questions whether the work meets the definition of R&amp;D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported. Enquiry letters can be detailed and request substantial technical and financial information relating to the submitted claim.</p></details>
+      <details><summary>Can you help if another adviser prepared the claim?</summary><p>Yes. We regularly assist companies where the original R&amp;D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response.</p></details>
+      <details><summary>Can HMRC reject an entire claim?</summary><p>Yes. If HMRC believes the projects or expenditure do not meet the legislative requirements, part or all of a claim may be denied. A clear and technically supported response can materially improve the quality of the defence.</p></details>
+      <details><summary>How far back can HMRC open an R&amp;D enquiry?</summary><p>HMRC can usually open an enquiry within 12 months of the date the corporation tax return was filed, as long as it was filed on time. Once that window has closed, HMRC needs to raise a discovery assessment, normally limited to 4 years from the end of the accounting period, extended to 6 years where an inaccuracy was careless and 20 years where it was deliberate.</p></details>
+      <details><summary>Is an HMRC R&amp;D enquiry a final decision that my claim is wrong?</summary><p>No. An enquiry is not a final decision that the claim is wrong. HMRC will consider the explanation and evidence before reaching an outcome.</p></details>
+      <details><summary>Do I have to reply to a &ldquo;nudge&rdquo; letter?</summary><p>A nudge or one-to-many letter asks you to check your claim yourself. It is not an enquiry, so a reply is usually not required, but HMRC may open an enquiry later if it still has concerns. Review the claim honestly and correct any errors you find.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact dark" id="contact">
+  <div class="wrap cgrid">
+    <div class="rv">
+      <div class="label">Speak to us</div>
+      <h2>Speak to a specialist about your HMRC R&amp;D enquiry</h2>
+      <p class="lede">If your business is dealing with an HMRC R&amp;D enquiry, we can provide structured, evidence-led support to help manage the process professionally and efficiently. Complete the form and a member of our team will be in touch to arrange a call.</p>
+      <div class="det">
+        <div><svg><use href="#i-mail"/></svg><span>info@itaxadvisors.co.uk</span></div>
+        <div><svg><use href="#i-pin"/></svg><span>iTax Advisors Limited, Devonshire House, 582 Honeypot Lane, HA7 1JS, United Kingdom</span></div>
+        <div><svg><use href="#i-in"/></svg><a href="https://www.linkedin.com/company/itax-advisors-limited" target="_blank" rel="noopener">linkedin.com/company/itax-advisors-limited</a></div>
+      </div>
+      <div class="rel"><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">R&amp;D tax claim second opinion <svg><use href="#i-arrow"/></svg></a><a href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/">R&amp;D claim preparation <svg><use href="#i-arrow"/></svg></a><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/">Contemporaneous reporting <svg><use href="#i-arrow"/></svg></a></div>
+    </div>
+    <div class="formcard rv d1">
+      <form id="ct-form" novalidate>
+        <h3>Tell us about your HMRC letter</h3>
+        <p class="sub">Four details are enough to start.</p>
+        <div class="row2"><div class="field"><label for="ct-first">First name</label><input id="ct-first" name="first" autocomplete="given-name" required></div><div class="field"><label for="ct-last">Last name</label><input id="ct-last" name="last" autocomplete="family-name" required></div></div>
+        <div class="row2"><div class="field"><label for="ct-email">Work email</label><input id="ct-email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="ct-tel">Phone <em>(optional)</em></label><input id="ct-tel" name="phone" type="tel" autocomplete="tel"></div></div>
+        <div class="field"><label for="ct-co">Company</label><input id="ct-co" name="company" autocomplete="organization" required></div>
+        <div class="field"><label for="ct-letter">Which letter have you received?</label><select id="ct-letter" name="letter_type" required><option value="">Choose one</option><option>Formal enquiry (compliance check) into the return</option><option>Payable credit held while HMRC checks the claim</option><option>Informal request for information or documents</option><option>Formal information notice (Schedule 36)</option><option>&ldquo;Nudge&rdquo; letter</option><option>Not sure</option></select></div>
+        <div class="field"><label for="ct-date">Response date on the letter <em>(optional)</em></label><input id="ct-date" name="response_date" type="date"></div>
+        <div class="field"><label for="ct-msg">Anything else we should know <em>(optional)</em></label><textarea id="ct-msg" name="message"></textarea></div>
+        <input type="hidden" name="enquiry_type" value="An HMRC enquiry or compliance check"><input type="hidden" name="lead_source" value="hmrc-enquiry-page-form">
+        <label class="consent"><input type="checkbox" id="ct-consent" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and confirm that I accept the terms set out within the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+        <button class="btn btn-green mag" type="submit">Send my enquiry <svg><use href="#i-arrow"/></svg></button>
+        <p class="fine" id="ct-err" role="alert"></p>
+      </form>
+      <div class="done" id="ct-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Thank you, we have your enquiry</h3><p>A member of our team will be in touch to arrange a call.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Service", "name": "HMRC R&D Enquiry Support", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB", "description": "Structured, evidence-led support for businesses facing HMRC questions on R&D tax relief claims."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does HMRC usually ask about in an R&D enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "HMRC commonly questions whether the work meets the definition of R&D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported."}}, {"@type": "Question", "name": "Can you help if another adviser prepared the claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly assist companies where the original R&D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response."}}, {"@type": "Question", "name": "Can HMRC reject an entire claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If HMRC believes the projects or expenditure do not meet the legislative requirements, part or all of a claim may be denied. A clear and technically supported response can materially improve the quality of the defence."}}, {"@type": "Question", "name": "How far back can HMRC open an R&D enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "HMRC can usually open an enquiry within 12 months of the date the corporation tax return was filed, as long as it was filed on time. Once that window has closed, HMRC needs to raise a discovery assessment, normally limited to 4 years from the end of the accounting period, extended to 6 years where an inaccuracy was careless and 20 years where it was deliberate."}}, {"@type": "Question", "name": "Is an HMRC R&D enquiry a final decision that my claim is wrong?", "acceptedAnswer": {"@type": "Answer", "text": "No. An enquiry is not a final decision that the claim is wrong. HMRC will consider the explanation and evidence before reaching an outcome."}}, {"@type": "Question", "name": "Do I have to reply to a nudge letter?", "acceptedAnswer": {"@type": "Answer", "text": "A nudge or one-to-many letter asks you to check your claim yourself. It is not an enquiry, so a reply is usually not required, but HMRC may open an enquiry later if it still has concerns. Review the claim honestly and correct any errors you find."}}]}]}</script>
+<script>
+(function(){
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+window.$=$;window.$$=$$;
+if('IntersectionObserver' in window&&!reduce){
+  var vh0=window.innerHeight,items=$$('.rv,.wipe');
+  items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
+  document.documentElement.classList.add('anim');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
+  setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
+}
+if(!reduce&&fine){
+  $$('.mag').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})});
+  $$('.tilt').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg) translateY(-5px)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+  var hero=$('#hero'),glow=$('#glow');
+  if(hero&&glow){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.opacity=1;glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});hero.addEventListener('pointerleave',function(){glow.style.opacity=0})}
+}
+window.wireForm=function(formId,doneId,errId,fields){
+  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);
+  f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';
+    for(var i=0;i<fields.length;i++){var el=$('#'+fields[i]);var bad=el.type==='checkbox'?!el.checked:!el.value.trim();
+      if(el.type==='email'&&el.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value))bad=true;
+      if(bad){err.textContent=el.type==='checkbox'?'Please tick the box so we can contact you.':'Please complete: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/\(optional\)/,'').trim():'this field')+'.';el.focus();return}}
+    f.hidden=true;d.classList.add('show');
+  });
+};
+})();
+
+(function(){
+var L=[
+ {t:"Formal enquiry into the return",tag:"Compliance check",means:"HMRC has opened a check into the return that contains the R&D claim. It ends with a closure notice.",reply:"The enquiry stays open until it is closed, so ignoring it does not make it go away.",first:"Work through the seven steps and diary the deadline."},
+ {t:"Payable credit held while HMRC checks the claim",tag:"Often the start of an enquiry",means:"HMRC wants to review the claim before it pays out an R&D tax credit. This is often the start of an enquiry.",reply:"No payment is made until HMRC is satisfied, so a slow reply delays your cash.",first:"Ask the officer exactly what they need and send it promptly."},
+ {t:"Informal request for information or documents",tag:"Informal",means:"The officer is asking for explanations or records by letter, usually alongside an enquiry.",reply:"Not on its own, but HMRC can follow up with a formal notice if it does not get what it needs.",first:"Reply by the date given or agree an extension in writing."},
+ {t:"Formal information notice (Schedule 36, Finance Act 2008)",tag:"Legal requirement",means:"HMRC is legally requiring specific information or documents.",reply:"Yes. Penalties can apply for not complying, and some notices can be appealed.",first:"Take advice quickly and check the deadline and any appeal rights."},
+ {t:"“Nudge” or one-to-many letter",tag:"Not an enquiry",means:"HMRC is asking you to check your claim yourself. It is not an enquiry.",reply:"Usually no, but HMRC may open an enquiry later if it still has concerns.",first:"Review the claim honestly and correct any errors you find."}
+];
+var list=$('#llist'),panel=$('#lpanel');
+function esc(x){return x.replace(/&/g,'&amp;')}
+L.forEach(function(l,i){var b=document.createElement('button');b.type='button';b.className='lbtn';b.setAttribute('role','tab');b.setAttribute('aria-selected',i===0?'true':'false');b.innerHTML='<span>'+(i+1)+'</span>'+esc(l.t);b.addEventListener('click',function(){pick(i)});list.appendChild(b)});
+function pick(i){var l=L[i];$$('.lbtn',list).forEach(function(b,k){b.setAttribute('aria-selected',k===i?'true':'false')});
+ panel.style.animation='none';void panel.offsetWidth;panel.style.animation='';
+ panel.innerHTML='<div class="reply m" style="margin-bottom:12px;display:inline-block;background:rgba(138,177,65,.2);color:#cfe79a">'+esc(l.tag)+'</div><h3>'+esc(l.t)+'</h3>'+
+ '<div class="lrow"><small>What it usually means</small><p>'+esc(l.means)+'</p></div><div class="lrow"><small>Is a reply required?</small><p>'+esc(l.reply)+'</p></div><div class="lrow"><small>What to do first</small><p>'+esc(l.first)+'</p></div>'}
+pick(0);
+wireForm('lm-form','lm-done','lm-err',['lm-name','lm-email','lm-co','lm-consent']);
+wireForm('ct-form','ct-done','ct-err',['ct-first','ct-last','ct-email','ct-co','ct-letter','ct-consent']);
+})();
+
+</script>
