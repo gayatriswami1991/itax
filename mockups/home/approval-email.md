@@ -20,12 +20,12 @@ It works on desktop and phone. The same page is attached as a single file (itax-
 **Please confirm each point (reply with the numbers and "OK" or your change)**
 1. Credentials shown: PCRT compliant, AML supervised, professional indemnity insured, FCCA, former Deloitte
 2. Our promises: "we reply within one working day" and "a 20-minute call, no obligation"
-3. Aarti's photo, her quote taken word for word from her LinkedIn post, the four article links, and her LinkedIn profile link
+3. Aarti's photo and bio facts taken from your current Senior Management page (FCCA, ACCA practising member, 18+ years in R&D tax, 13 years at Deloitte), her quote taken word for word from her LinkedIn post, the four article links, and her LinkedIn profile link
 4. Naming One Nucleus, London Tax Network and Finance for Founders as places we have spoken or appeared
-5. Quoting Keya P.'s Google review ("It was a pleasure working with Aarti. Very knowledgeable.")
+5. Reusing two client comments that are already public: Rupinder Ashan, Schneider Electric (from your current Senior Management page) and Keya P.'s Google review
 6. Company number, for the footer
 7. Whether to show a phone number (the page shows email and LinkedIn only)
-8. The three checklist titles. We will write the PDFs after approval. The scorecard questions and the rules quoted will be checked against gov.uk before launch
+8. The three checklist titles. We will write the PDFs after approval. The scorecard questions are built from the guidance on your own knowledge hub pages. Please have Aarti read them once, and we will also check each rule against gov.uk before launch
 9. The London, Oxford and Cambridge descriptions. Any real client examples we can use would make these stronger
 10. The images are AI-generated illustrations. They do not show real clients or staff. Are you comfortable using them?
 
