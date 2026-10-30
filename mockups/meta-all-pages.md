@@ -1,0 +1,45 @@
+| # | Pri | URL | Target keyword | Meta title (chars) | Meta description (chars) | H1 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | P1 | `/` | PCRT compliant R&D tax advisers | PCRT Compliant R&D Tax Advisers UK \| iTax Advisors (50) | Specialist R&D tax advisers in the UK, led by an FCCA with 13 years at Deloitte. HMRC-ready claims, senior-led. Free claim review. Book a call. (143) | PCRT Compliant R&D Tax Advisers for HMRC-Ready Claims |
+| 2 | P1 | `/r-and-d-tax-claims-preparation/` | R&D tax claim preparation | R&D Tax Claim Preparation UK \| HMRC-Ready \| iTax (48) | Get an R&D tax claim built to withstand HMRC scrutiny: technical narrative, costs and evidence in one file, led by a senior specialist. Book a free call. (153) | R&D Tax Claim Preparation Built to Withstand HMRC Scrutiny |
+| 3 | P1 | `/itax-advisors-services/claim-review-and-risk-assessment/` | R&D tax claim second opinion | R&D Tax Claim Second Opinion \| Independent Review (49) | Not sure your R&D claim will hold up? Get an independent second opinion on eligibility, costs and evidence, with the risks and fixes in plain English. (150) | R&D Tax Claim Second Opinion: Independent Review and Risk Assessment |
+| 4 | P1 | `/itax-advisors-services/hmrc-enquiry-defence-and-support/` | HMRC R&D enquiry support | HMRC R&D Enquiry Support \| Got a Letter? Act Now (48) | Received an HMRC R&D enquiry letter? We handle the written responses and evidence, from the first letter to resolution. Speak to a specialist today. (148) | HMRC R&D Enquiry Support: Respond with Confidence |
+| 5 | P1 | `/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/` | contracted out R&D rules | Contracted Out R&D Rules: Who Can Claim? \| iTax (47) | Who claims contracted out R&D from April 2024? HMRC looks at who contemplated the R&D, not who did the work. Read the guide, then check your contracts. (151) | Contracted Out R&D Rules: Why “Who Did the Work?” Is No Longer the Test |
+| 6 | P1 | `/sectors/life-sciences-rd-tax-relief/` (new) | R&D tax relief life sciences | R&D Tax Relief for Life Sciences UK \| iTax Advisors (51) | R&D tax relief for biotech, pharma and medtech: clinical trial costs, CRO contracts and contracted-out rules, handled by senior specialists. Book a call. (153) | R&D Tax Relief for UK Life Sciences, Biotech and Medtech |
+| 7 | P1 | `/sectors/life-sciences-rd-tax-relief/golden-triangle/` (new) | Golden Triangle life sciences R&D tax relief | Golden Triangle Life Sciences R&D Tax Relief \| iTax (51) | R&D tax advice for life sciences companies in London, Oxford and Cambridge: spin-outs, biotech and medtech. PCRT-compliant specialists. Book a call. (148) | R&D Tax Relief for Golden Triangle Life Sciences Companies |
+| 8 | P2 | `/sectors/life-sciences-rd-tax-relief/cambridge/` (new) | R&D tax relief Cambridge life sciences | R&D Tax Relief for Cambridge Life Sciences \| iTax (49) | R&D tax relief for Cambridge biotech and life sciences companies: clinical costs, spin-outs and HMRC-ready claims. Speak to a specialist. (137) | R&D Tax Relief for Cambridge Life Sciences and Biotech Companies |
+| 9 | P2 | `/sectors/life-sciences-rd-tax-relief/oxford/` (new) | R&D tax relief Oxford life sciences | R&D Tax Relief for Oxford Life Sciences \| iTax (46) | R&D tax relief for Oxford and Oxfordshire life sciences companies: spin-outs, biotech and medtech. PCRT-compliant advice. Speak to a specialist. (144) | R&D Tax Relief for Oxford Life Sciences and Spin-out Companies |
+| 10 | P2 | `/sectors/life-sciences-rd-tax-relief/london/` (new) | R&D tax relief London life sciences | R&D Tax Relief for London Life Sciences \| iTax (46) | R&D tax relief for London life sciences, biotech and medtech companies: clinical costs, contracted-out R&D and HMRC-ready claims. Book a call. (142) | R&D Tax Relief for London Life Sciences, Biotech and Medtech |
+| 11 | P1 | `/sectors/software-saas-rd-tax-relief/` (new) | software R&D tax relief | R&D Tax Relief for Software & SaaS Companies \| iTax (51) | What software development qualifies for UK R&D tax relief? Staff and cloud costs, evidence and HMRC-ready claims for SaaS teams. Book a free review. (148) | R&D Tax Relief for Software and SaaS Companies |
+| 12 | P1 | `/how-to-choose-an-rd-tax-adviser/` (new) | how to choose an R&D tax adviser | How to Choose an R&D Tax Adviser: 8 Questions to Ask (52) | Not all R&D advisers are regulated. Use our PCRT, AML and insurance checklist and 8 questions to ask before you appoint one. (124) | How to Choose an R&D Tax Adviser: A PCRT and Compliance Checklist |
+| 13 | P1 | `/rd-tax-adviser-fees/` (new) | R&D tax adviser fees | R&D Tax Adviser Fees UK: Fixed Fee vs Success Fee (49) | How much do R&D tax advisers charge? Fixed, hourly and success fees compared, plus hidden costs to ask about before you sign. (125) | R&D Tax Adviser Fees in the UK: Fixed Fee vs Success Fee |
+| 14 | P1 | `/rd-additional-information-form-aif/` (new) | R&D additional information form | R&D Additional Information Form (AIF) Guide \| iTax (50) | Who must file the R&D Additional Information Form, when, and what to include. Plain-English guide from specialist R&D tax advisers. (131) | R&D Additional Information Form (AIF): Who Files It and When |
+| 15 | P2 | `/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/understanding-rd-eligibility/` | R&D tax relief eligibility | Does Your Project Qualify for R&D Tax Relief? \| iTax (52) | Test whether your project qualifies as R&D for UK tax relief: the advance, the uncertainty and the competent professional. Free eligibility check. (146) | Does Your Project Qualify for R&D Tax Relief? The Eligibility Test |
+| 16 | P2 | `/itax-advisors-services/contemporaneous-reporting/` | contemporaneous R&D reporting | Contemporaneous R&D Reporting UK \| Stronger Claims (50) | Capture R&D activity and costs as projects run, so next year's claim is faster and easier to defend. Set up reporting with senior specialists. (142) | Contemporaneous R&D Reporting: Build Stronger Claims Year-Round |
+| 17 | P2 | `/itax-advisors-services/` | R&D tax services UK | R&D Tax Services UK: Claims, Reviews, Enquiries \| iTax (54) | R&D tax claim preparation, second opinions, HMRC enquiry support and contemporaneous reporting from specialist UK advisers. Book a free call. (141) | R&D Tax Services for UK Companies: Claims, Reviews and HMRC Support |
+| 18 | P2 | `/hmrc-rd-enquiry-letter-steps/` | HMRC R&D enquiry letter | HMRC R&D Enquiry Letter? 7 Steps to Take First \| iTax (53) | Got an HMRC R&D enquiry letter? Follow these 7 steps before you reply: dates, evidence, competent professional. Speak to a specialist today. (140) | Received an HMRC R&D Enquiry Letter? 7 Steps UK Businesses Should Take First |
+| 19 | P2 | `/contact-us/` | contact iTax Advisors | Contact an R&D Tax Specialist \| iTax Advisors (45) | Speak to a specialist R&D tax adviser about your claim or HMRC letter. Free 20-minute call, no obligation. Send your enquiry today. (131) | Speak to a Specialist R&D Tax Adviser Today |
+| 20 | P2 | `/about-itax-advisors/` | iTax Advisors | About iTax Advisors \| Senior-Led R&D Tax Specialists (52) | Meet iTax Advisors: a senior-led UK R&D tax firm founded by Aarti Varia FCCA, 13 years at Deloitte. See how we build HMRC-ready claims. (135) | About iTax Advisors: Senior-Led UK R&D Tax Specialists |
+
+| # | Secondary keywords |
+| --- | --- |
+| 1 | R&D tax advisors UK; R&D tax advisers UK; specialist R&D tax advisers; R&D tax consultants UK |
+| 2 | R&D tax claim advisors; R&D tax relief claim UK; R&D tax credit advisors |
+| 3 | R&D tax claim review; R&D claim health check; R&D tax due diligence |
+| 4 | HMRC R&D tax enquiry; R&D enquiry defence; HMRC R&D compliance check |
+| 5 | who can claim contracted out R&D; contracted out R&D customer vs contractor |
+| 6 | life sciences R&D tax credits UK; biotech R&D tax relief; clinical trial R&D tax relief |
+| 7 | life sciences R&D tax advisers London Oxford Cambridge; R&D tax relief spin-outs |
+| 8 | R&D tax advisers Cambridge; biotech R&D tax credits Cambridge |
+| 9 | R&D tax advisers Oxford; Oxford spin-out R&D tax credits |
+| 10 | life sciences R&D tax advisers London; medtech R&D tax relief London |
+| 11 | R&D tax credits for software companies; SaaS R&D tax relief |
+| 12 | R&D tax adviser checklist; PCRT R&D tax advisers; R&D tax adviser regulation UK |
+| 13 | R&D tax credit adviser cost; R&D tax success fee; fixed fee R&D tax claim |
+| 14 | R&D AIF deadline; R&D claim notification form |
+| 15 | does my project qualify for R&D tax relief; R&D eligibility test |
+| 16 | R&D record keeping; R&D evidence requirements |
+| 17 | R&D tax relief services; R&D tax consultancy UK |
+| 18 | what to do if HMRC opens an R&D enquiry; R&D enquiry response |
+| 19 | speak to an R&D tax specialist |
+| 20 | ex-Deloitte R&D tax specialists |
