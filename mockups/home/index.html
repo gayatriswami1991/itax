@@ -238,6 +238,8 @@ nav.main a:hover::after{width:100%}
 /* sectors */
 .sectors{background:var(--paper)}
 .sgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.sgrid .art-card:first-child{grid-column:span 2}
+.sgrid .art-card:first-child{aspect-ratio:auto}
 .art-card{aspect-ratio:1.8/1;position:relative;border-radius:var(--radius);overflow:hidden;text-decoration:none;color:#fff;background:var(--navy-800);isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 20px;transition:transform .35s,box-shadow .35s;transform-style:preserve-3d}
 .art-card:hover{box-shadow:var(--shadow)}
 .art-card .bg{position:absolute;inset:0;z-index:-2}
@@ -438,6 +440,7 @@ nav.main a:hover::after{width:100%}
 .formcard.big{padding:clamp(26px,3.4vw,44px)}
 .formcard.big .field input,.formcard.big .field select,.formcard.big .field textarea{padding:15px 16px}
 .mp-t{margin-top:10px;font-weight:700;color:var(--navy-700);font-size:17px}
+.mp-note{margin-top:10px;font-size:13px;color:var(--muted);font-style:italic}
 .inside{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px;background:var(--paper);border-radius:12px;padding:16px 18px}
 .inside li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--ink)}
 .inside li svg{width:18px;height:18px;color:var(--green-deep);flex:none;margin-top:3px}
@@ -621,10 +624,10 @@ footer a.ln{color:#fff}
   .sgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:28px}
   .art-card{aspect-ratio:1/1;padding:12px}
   .art-card h3{font-size:15.5px}.art-card p,.art-card .more{display:none}
+  .sgrid .art-card:first-child{aspect-ratio:2/1}
   .badge{top:10px;left:10px;font-size:10px;padding:4px 8px}
   .sgrid .art-card:first-child{grid-column:1/-1;aspect-ratio:2/1}
   .sgrid .art-card:first-child p{display:block;font-size:13.5px}
-  .sgrid .art-card:last-child{grid-column:1/-1;aspect-ratio:2/1}
   /* founder */
   .f-card{max-width:440px}
   .quote{padding:22px 20px}.quote p{padding-left:26px}.quote cite{padding-left:26px}
@@ -879,7 +882,7 @@ footer a.ln{color:#fff}
     <div class="rv d1">
       <div class="label">Life sciences</div>
       <h2>R&amp;D tax relief for life sciences in the Golden Triangle</h2>
-      <p class="lede">Two near-identical clinical trials can produce very different R&amp;D tax outcomes. The difference is usually in how the trial and its contracts are set up. We advise biotech, pharma and medtech companies in London, Oxford and Cambridge, and across the UK.</p>
+      <p class="lede">A life sciences R&amp;D tax claim has to be technically credible, financially accurate and supported by clear evidence. Clinical trial expenditure, payments to contract research organisations, overseas research, grant funding and complex contracts all need careful assessment. We help biotechnology, pharmaceutical, therapeutics, diagnostics and medical technology companies in London, Oxford and Cambridge, and across the UK.</p>
       <ul class="gt-points">
         <li><svg><use href="#i-check"/></svg><div><b>Clinical trial costs</b>What qualifies depends on who controls the R&amp;D and where the work takes place.</div></li>
         <li><svg><use href="#i-check"/></svg><div><b>CRO and sponsor contracts</b>Entitlement to claim generally follows the party responsible for resolving the scientific uncertainty.</div></li>
@@ -887,7 +890,7 @@ footer a.ln{color:#fff}
       </ul>
       <div class="gt-cta">
         <a class="btn btn-green mag" href="#contact">Talk to a life sciences specialist <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
-        <a class="tl" href="#checklist" data-pick="2">Get the clinical trial costs checklist</a>
+        <a class="tl" href="#checklist" data-pick="2">Get the clinical trials checklist</a>
       </div>
       <p class="gt-proof"><b>Webinar</b> with One Nucleus on the new R&amp;D tax schemes</p>
     </div>
@@ -902,28 +905,24 @@ footer a.ln{color:#fff}
     <p class="lede">R&amp;D looks different in a laboratory, a codebase and a construction project. So does the evidence HMRC expects.</p></div>
     <div class="sgrid">
       <a class="art-card tilt rv" href="#contact" data-planned="/sectors/life-sciences-rd-tax-relief/">
-        <div class="img bg"><img src="assets/b_lab.jpg" alt="Life sciences researcher at a microscope, R&amp;D tax relief for life sciences" width="900" height="410" loading="lazy"></div>
-        <span class="badge">Specialism</span><h3>R&amp;D Tax Relief for Life Sciences</h3><p>Clinical trial costs, CRO contracts and contracted out R&amp;D rules.</p><span class="more">Life sciences R&amp;D tax <svg width="18" height="18"><use href="#i-arrow"/></svg></span>
+        <div class="img bg"><img src="assets/b_lab.jpg" alt="Life sciences researcher at a microscope, R&amp;D tax relief for life sciences, biotechnology and MedTech" width="900" height="410" loading="lazy"></div>
+        <span class="badge">Specialism</span><h3>Life Sciences, Biotechnology &amp; MedTech</h3><p>Specialist R&amp;D tax advice for complex scientific research, clinical development and innovative healthcare technologies.</p><span class="more">View sector page <svg width="18" height="18"><use href="#i-arrow"/></svg></span>
       </a>
       <a class="art-card tilt rv d1" href="#contact" data-planned="/sectors/software-saas-rd-tax-relief/">
-        <div class="img bg"><img src="assets/b_cloud.jpg" alt="Cloud and software icons, R&amp;D tax relief for software and SaaS" width="900" height="410" loading="lazy"></div>
-        <h3>Software &amp; SaaS</h3><p>What counts as an advance in software, and what is routine.</p>
+        <div class="img bg"><img src="assets/b_cloud.jpg" alt="Cloud, code and AI icons: R&amp;D tax relief for software, SaaS, AI and fintech" width="900" height="410" loading="lazy"></div>
+        <h3>Software, SaaS, AI &amp; Fintech</h3><p>Not all software development qualifies for R&amp;D tax relief. We help software businesses identify eligible R&amp;D and prepare robust, evidence-led claims.</p>
       </a>
-      <a class="art-card tilt rv d2" href="#contact" data-planned="/sectors/ai-data-rd-tax-relief/">
-        <div class="img bg"><img src="assets/a_ai.jpg" alt="AI and data R&amp;D tax credits" width="900" height="650" loading="lazy"></div>
-        <h3>AI &amp; Data</h3><p>Machine learning, compute and data costs.</p>
+      <a class="art-card tilt rv" href="#contact" data-planned="/sectors/engineering-rd-tax-relief/">
+        <div class="img bg"><img src="assets/b_cad.jpg" alt="Engineer reviewing a CAD model: R&amp;D tax relief for engineering companies" width="900" height="410" loading="lazy"></div>
+        <h3>Engineering</h3><p>Which engineering projects qualify for R&amp;D tax relief, what costs can be claimed, and how can you build a robust, evidence-led claim?</p>
       </a>
-      <a class="art-card tilt rv" href="#contact" data-planned="/sectors/engineering-manufacturing-rd-tax-relief/">
-        <div class="img bg"><img src="assets/b_cad.jpg" alt="Engineer reviewing a CAD model, R&amp;D tax relief for engineering and manufacturing" width="900" height="410" loading="lazy"></div>
-        <h3>Engineering &amp; Manufacturing</h3><p>Prototypes, testing and process innovation.</p>
+      <a class="art-card tilt rv d1" href="#contact" data-planned="/sectors/manufacturing-rd-tax-relief/">
+        <div class="img bg"><img src="assets/a_factory.jpg" alt="Engineers on a production line: R&amp;D tax relief for manufacturing companies" width="900" height="430" loading="lazy"></div>
+        <h3>Manufacturing</h3><p>Identifying and supporting qualifying R&amp;D in product development, materials, machinery and manufacturing processes.</p>
       </a>
-      <a class="art-card tilt rv d1" href="#contact" data-planned="/sectors/construction-architecture-rd-tax-relief/">
-        <div class="img bg"><img src="assets/a_construct.jpg" alt="Building under construction, R&amp;D tax relief for construction and architecture" width="900" height="418" loading="lazy"></div>
-        <h3>Construction &amp; Architecture</h3><p>Design and build projects that qualify.</p>
-      </a>
-      <a class="art-card tilt rv d2" href="#contact" data-planned="/sectors/rd-tax-relief-startups/">
-        <div class="img bg"><img src="assets/b_seedling.jpg" alt="Hands holding a seedling, R&amp;D tax relief for startups and growing companies" width="900" height="455" loading="lazy"></div>
-        <h3>Start-ups &amp; Scale-ups</h3><p>Loss-making or growing: what you can claim and when.</p><span class="more">Start-up R&amp;D tax relief <svg width="18" height="18"><use href="#i-arrow"/></svg></span>
+      <a class="art-card tilt rv d2" href="#contact" data-planned="/sectors/construction-rd-tax-relief/">
+        <div class="img bg"><img src="assets/a_construct.jpg" alt="Building under construction: R&amp;D tax relief for construction and the built environment" width="900" height="418" loading="lazy"></div>
+        <h3>Construction &amp; the Built Environment</h3><p>Specialist advice for construction businesses undertaking genuine engineering or technological innovation.</p>
       </a>
     </div>
   </div>
@@ -972,7 +971,7 @@ footer a.ln{color:#fff}
       <div class="tabs" role="tablist" aria-label="Free checklists">
         <button class="tab" role="tab" id="t0" aria-selected="true" aria-controls="mp" data-i="0">Claim readiness</button>
         <button class="tab" role="tab" id="t1" aria-selected="false" aria-controls="mp" data-i="1">HMRC enquiry</button>
-        <button class="tab" role="tab" id="t2" aria-selected="false" aria-controls="mp" data-i="2">Life sciences</button>
+        <button class="tab" role="tab" id="t2" aria-selected="false" aria-controls="mp" data-i="2">Clinical trials</button>
       </div>
       <div class="mpanel" id="mp" role="tabpanel" aria-labelledby="t0">
         <div class="cover"><img id="mp-img" src="assets/a_bulb.jpg" alt="" width="900" height="570"><div class="ct"><small id="mp-kicker">Free PDF · iTax Advisors</small><b id="mp-cover">Is your R&amp;D claim audit-ready?</b></div></div>
@@ -983,6 +982,7 @@ footer a.ln{color:#fff}
         <h3 id="lm-h">Send me the checklist</h3>
         <p class="mp-t" id="mp-title"></p>
         <ul class="inside" id="mp-list"></ul>
+        <p class="mp-note" id="mp-note"></p>
         <p class="sub" style="margin-top:14px">Free PDF by email. We will also send two short emails on getting a claim ready. Unsubscribe any time.</p>
         <div class="row2">
           <div class="field"><label for="lm-name">Your name</label><input id="lm-name" name="name" autocomplete="name" required></div>
@@ -1192,12 +1192,15 @@ footer a.ln{color:#fff}
 
   /* lead magnet tabs */
   var MG=[
-    {src:'home-lead-magnet-claim-readiness',img:'assets/a_bulb.jpg',cover:'Is your R&D claim audit-ready?',title:'The 15-point claim readiness checklist',h:'Send me the readiness checklist',
-     li:['Is the advance sought stated in one sentence?','Is a competent professional named for each project?','Do costs map to qualifying activities?','Are subsidised and contracted-out costs separated?','Can you produce dated records of the work?']},
-    {src:'home-lead-magnet-hmrc-enquiry',img:'assets/b_hex_doc.jpg',cover:'Received an HMRC R&D enquiry letter?',title:'The HMRC R&D enquiry response checklist',h:'Send me the enquiry checklist',
+    {src:'home-lead-magnet-claim-readiness',img:'assets/a_bulb.jpg',cover:'The 15-point claim readiness checklist',title:'The 15-point claim readiness checklist',h:'Send me the readiness checklist',
+     note:'This is a readiness check, not an eligibility score. A completed checklist does not establish entitlement to relief.',
+     li:['Eligibility and applicable scheme','Project scope and technical review','Qualifying costs and activities','Contracts, contracted-out expenditure and overseas costs','Evidence, deadlines and submission']},
+    {src:'home-lead-magnet-hmrc-enquiry',img:'assets/b_hex_doc.jpg',cover:'The HMRC R&D enquiry response checklist',title:'The HMRC R&D enquiry response checklist',h:'Send me the enquiry checklist',
+     note:'The first 48 hours are a suggested organising window, not an HMRC deadline. Follow the dates in your correspondence.',
      li:['What to do in the first 48 hours','The documents HMRC usually asks for','How to organise project and cost evidence','Questions to ask before you reply','When to bring in a specialist']},
-    {src:'home-lead-magnet-life-sciences',img:'assets/b_lab.jpg',cover:'Clinical trial costs and R&D tax relief',title:'The life sciences clinical trial costs checklist',h:'Send me the life sciences checklist',
-     li:['Which clinical trial costs may qualify','How CRO and sponsor contracts change who claims','Evidence to keep from protocol to results','Overseas work and subcontractor points','Questions to settle before a trial starts']}
+    {src:'home-lead-magnet-life-sciences',img:'assets/b_lab.jpg',cover:'Clinical Trials & R&D Tax Relief',title:'Clinical Trials & R&D Tax Relief: pre-trial checklist',h:'Send me the clinical trials checklist',
+     note:'This is a readiness check, not an R&D eligibility score. One significant issue may warrant further review.',
+     li:['Which clinical trial costs may qualify?','CRO and sponsor arrangements: who may claim?','Is your technical evidence ready?','Overseas activities and subcontractors','Before the trial starts']}
   ];
   var ico='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
   function esc(t){return t.replace(/&/g,'&amp;')}
@@ -1207,7 +1210,7 @@ footer a.ln{color:#fff}
     $('#mp').setAttribute('aria-labelledby','t'+i);
     $('#mp-img').src=m.img;$('#mp-cover').innerHTML=esc(m.cover);$('#mp-title').textContent=m.title;
     $('#lm-h').textContent=m.h;$('#lm-src').value=m.src;
-    $('#mp-list').innerHTML=m.li.map(function(t){return '<li>'+ico+'<span>'+esc(t)+'</span></li>'}).join('');
+    $('#mp-note').textContent=m.note||'';$('#mp-list').innerHTML=m.li.map(function(t){return '<li>'+ico+'<span>'+esc(t)+'</span></li>'}).join('');
     var p=$('#mp');p.style.animation='none';void p.offsetWidth;p.style.animation='';
     $('#lm-form').hidden=false;$('#lm-done').classList.remove('show');
   }
@@ -1224,7 +1227,7 @@ footer a.ln{color:#fff}
     {area:"Costs",img:"assets/a_calc.jpg",q:"Is every cost in the claim tied to a specific qualifying activity and cost category?",why:"Qualifying categories are staff costs, externally provided workers, contracted-out R&D, consumables, software, data licences and cloud computing, and payments to clinical trial volunteers. Software used partly for R&D must be apportioned.",gap:"Costs are not mapped to activities",fix:"Map each cost line to an activity and a category, and remove anything you cannot tie back."},
     {area:"Costs",img:"assets/a_coins.jpg",q:"Have you checked how grants or other funding affect each project's costs?",why:"For accounting periods beginning on or after 1 April 2024, grant-funded expenditure can generally be claimed under the merged scheme. How it is treated still depends on the funding and the contract, so it needs testing.",gap:"Funding not tested against the claim",fix:"List every grant and funded contract behind the projects and test its effect on each cost line before you claim."},
     {area:"Costs",img:"assets/b_handshake.jpg",q:"If you use subcontractors or work outside the UK, have you worked out who is entitled to claim and whether overseas costs qualify?",why:"For periods beginning on or after 1 April 2024, HMRC looks at who decided to initiate the R&D, not just who did the work. Overseas subcontracted R&D and externally provided workers are generally excluded unless narrow exemptions apply.",gap:"Contracted-out and overseas rules unchecked",fix:"Document who contemplated the R&D, review the contracts and where the work was done, then confirm who is entitled to claim."},
-    {area:"Compliance",img:"assets/b_hex_doc.jpg",q:"Have you met the claim notification and Additional Information Form requirements that apply to you?",why:"For periods beginning on or after 1 April 2023, companies that are first-time or non-recent claimants must notify HMRC within six months of the period end, or the claim can be rejected. The Additional Information Form is mandatory and goes in before the claim. Claims are generally due within two years of the period end. Check current rules, as simplification has been announced.",gap:"Notification or form requirements unconfirmed",fix:"Confirm in writing whether notification applies to each period, keep proof of filing, and submit the Additional Information Form before the claim in the CT600."},
+    {area:"Compliance",img:"assets/b_hex_doc.jpg",q:"Have you met the claim notification and Additional Information Form requirements that apply to you?",why:"For periods beginning on or after 1 April 2023, companies that are first-time or non-recent claimants must notify HMRC within six months of the period end, or the claim can be rejected. The Additional Information Form is mandatory and goes in before the claim. Claims are generally due within two years of the period end. Claim notification is relevant only until 31 March 2027, so check the current position.",gap:"Notification or form requirements unconfirmed",fix:"Confirm in writing whether notification applies to each period, keep proof of filing, and submit the Additional Information Form before the claim in the CT600."},
     {area:"Evidence",img:"assets/a_notebook.jpg",q:"Do you hold dated records of what was tried, what was uncertain and how it was resolved?",why:"HMRC expects the claimant to hold records of the activities, the advance sought, the uncertainties and why they were not readily deducible, and the work done to resolve them. Records created later should be labelled as such.",gap:"No dated project records",fix:"Start a simple project log now, with dates and owners, and keep it for every claim period."}
   ];
   var OPT=[{v:2,t:"Yes",s:"Documented and ready to show"},{v:1,t:"Partly",s:"Some of it, not all"},{v:0,t:"No, or not sure",s:"Not yet, or I do not know"}];
