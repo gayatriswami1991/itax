@@ -392,14 +392,6 @@ footer a.ln{color:#fff}
 .f-co{margin-top:18px;font-size:14px;line-height:1.7;max-width:34ch}
 .f-bot{margin-top:40px;padding-top:22px;border-top:1px solid var(--line-dark);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13.5px}
 .sticky{display:none}
-.toast{position:fixed;left:max(18px,env(safe-area-inset-left,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:45;width:min(340px,calc(100vw - 36px));background:#fff;border-radius:16px;box-shadow:0 30px 60px -20px rgba(12,33,54,.6);display:none;overflow:hidden;border:1px solid var(--line)}
-.toast.show{display:block;animation:fadeUp .6s}
-.toast .img{aspect-ratio:2.2/1}
-.toast .tb{padding:14px 18px 18px}
-.toast b{color:var(--navy-700);font-size:17px;line-height:1.25;display:block}
-.toast p{font-size:14px;color:var(--muted);margin-top:4px}
-.toast .btn{margin-top:12px;padding:10px 18px;font-size:14px}
-.toast button.x{position:absolute;right:8px;top:8px;width:30px;height:30px;border-radius:50%;border:0;background:rgba(12,33,54,.65);color:#fff;font-size:18px;cursor:pointer;z-index:3}
 
 /* reveal: visible by default; JS hides only below-fold items, then reveals them */
 .anim .rv.pending:not(.in){opacity:0;transform:translateY(24px)}
@@ -433,7 +425,6 @@ footer a.ln{color:#fff}
   .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(12,33,54,.96);border-top:1px solid var(--line-dark);backdrop-filter:blur(10px)}
   .sticky .btn{width:100%;justify-content:center}
   footer{padding-bottom:96px}
-  .toast{display:none!important}
 }
 @media (max-width:600px){
   .grid4,.sgrid{grid-template-columns:minmax(0,1fr)}
@@ -532,6 +523,47 @@ footer a.ln{color:#fff}
 @media (hover:none){
   .mag,.tilt{transform:none!important}
 }
+
+/* restored layout rules */
+.gt-main{aspect-ratio:2.2/1;border-radius:22px;box-shadow:0 40px 70px -30px rgba(0,0,0,.8)}
+.gt-main:hover img{transform:scale(1.04)}
+.gt-tri{position:relative;z-index:2;margin:-34px 5% 0;background:rgba(12,33,54,.9);backdrop-filter:blur(12px);border:1px solid var(--line-dark);border-radius:18px;padding:18px 22px 16px;box-shadow:0 30px 50px -24px rgba(0,0,0,.8)}
+.gt-tri svg{width:100%;height:auto;display:block;overflow:visible}
+.gt-tri .tl{stroke:var(--green);stroke-width:2;fill:rgba(138,177,65,.1);stroke-dasharray:7 7;animation:dash 24s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-280}}
+.gt-tri text{fill:#fff;font-family:var(--font-display);font-weight:700;font-size:15px;letter-spacing:.02em}
+.gt-tri .cap{margin-top:8px;font-size:13.5px;color:var(--on-dark-muted);text-align:center}
+.gt-points{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:18px}
+.gt-points li{display:grid;grid-template-columns:30px 1fr;gap:14px;font-size:16px;color:var(--on-dark-muted)}
+.gt-points li svg{width:30px;height:30px;padding:6px;border-radius:9px;background:rgba(138,177,65,.16);color:var(--green)}
+.gt-points b{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+.gt-proof{margin-top:22px;font-size:13.5px;letter-spacing:.04em;color:var(--on-dark-muted);padding-top:16px;border-top:1px solid var(--line-dark)}
+.gt-proof b{color:#fff}
+.audit-imgs{display:grid;gap:16px}
+.audit-imgs .img{border-radius:20px;box-shadow:0 40px 70px -30px rgba(0,0,0,.7)}
+.audit-imgs .a1{aspect-ratio:1.33/1;max-height:520px}
+.audit-imgs .img:hover img{transform:scale(1.05)}
+.formcard.big{padding:clamp(26px,3.4vw,44px)}
+.formcard.big .field input,.formcard.big .field select,.formcard.big .field textarea{padding:15px 16px}
+.mp-note{margin-top:10px;font-size:13px;color:var(--muted);font-style:italic}
+/* clean-up */
+.qa3{background:#fff;border:1px solid var(--line);border-left:5px solid var(--green);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(24px,3.4vw,44px);max-width:960px;margin-inline:auto}
+.qa3 h2{margin-top:12px;max-width:none;font-size:clamp(24px,2.8vw,34px)}
+.qa3 p{margin-top:14px;font-size:18px;max-width:70ch}
+.doc{position:relative;margin:30px auto 0;max-width:430px;aspect-ratio:.78/1;animation:fadeUp .5s}
+.doc .sheet{position:absolute;inset:0;background:#fff;border-radius:10px;box-shadow:0 30px 55px -24px rgba(0,0,0,.75)}
+.doc .s3{transform:rotate(5deg) translate(18px,6px);opacity:.55}
+.doc .s2{transform:rotate(-3.5deg) translate(-12px,4px);opacity:.8}
+.doc .s1{overflow:hidden;display:flex;flex-direction:column;transition:transform .5s}
+.doc:hover .s1{transform:translateY(-6px) rotate(.6deg)}
+.dhead{background:var(--navy-700);padding:16px 20px}.dhead img{height:30px;width:auto}
+.doc small{display:block;padding:20px 24px 0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green-deep)}
+.doc h3{padding:8px 24px 0;font-size:clamp(20px,2.2vw,25px);color:var(--navy-700);font-weight:800;line-height:1.15}
+.doc ol{list-style:none;margin:16px 24px 0;padding:0;counter-reset:d;border-top:2px solid var(--green)}
+.doc li{counter-increment:d;display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.35;color:var(--ink);font-weight:600}
+.doc li::before{content:counter(d);flex:none;width:22px;height:22px;border-radius:5px;background:var(--navy-700);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center;margin-top:1px}
+.dfoot{margin-top:auto;padding:12px 24px;display:flex;justify-content:space-between;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted);background:var(--paper)}
+@media (max-width:860px){.doc{max-width:360px}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -575,7 +607,7 @@ footer a.ln{color:#fff}
     <div>
       <span class="eyebrow"><i></i> R&amp;D tax advisors UK</span>
       <h1><span class="w" style="--n:0"><i>PCRT</i></span> <span class="w" style="--n:1"><i>Compliant</i></span> <span class="w" style="--n:2"><i>R&amp;D</i></span> <span class="w" style="--n:3"><i>Tax</i></span> <span class="w" style="--n:4"><i>Advisers</i></span> <span class="w" style="--n:5"><i>for</i></span> <span class="hl"><span class="w" style="--n:6"><i>HMRC-Ready</i></span></span> <span class="w" style="--n:7"><i>Claims</i></span></h1>
-      <p class="answer"><b>iTax Advisors is a firm of specialist R&amp;D tax advisers in the UK.</b> We prepare, review and defend R&amp;D tax relief claims to the standard an HMRC enquiry would test: a named competent professional, costs tied to activities and a dated evidence trail.</p>
+      <p class="answer"><b>iTax Advisors is a firm of specialist R&amp;D tax advisers in the UK.</b> We prepare, review and defend R&amp;D tax relief claims to the standard an HMRC enquiry would test.</p>
       <div class="cta-row">
         <a class="btn btn-green mag" href="#contact">Book a free claim review <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
         <a class="btn btn-ghost" href="#checklist">Get a free R&amp;D checklist</a>
@@ -584,41 +616,19 @@ footer a.ln{color:#fff}
         <span class="chip"><svg><use href="#i-shield"/></svg> PCRT compliant</span>
         <span class="chip"><svg><use href="#i-shield"/></svg> AML supervised</span>
         <span class="chip"><svg><use href="#i-shield"/></svg> Professional indemnity insured</span>
-        <span class="chip"><svg><use href="#i-check"/></svg> Led by Aarti Varia FCCA</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
-<div class="trust">
-  <div class="wrap trust-in">
-    <div class="trust-l">
-      <span><svg><use href="#i-shield"/></svg> PCRT standards</span>
-      <span><svg><use href="#i-shield"/></svg> AML supervision</span>
-      <span><svg><use href="#i-shield"/></svg> PI insurance</span>
-      <span><svg><use href="#i-check"/></svg> FCCA, ACCA practising member</span>
-      <span><svg><use href="#i-check"/></svg> 13 years at Deloitte</span>
-    </div>
-    <div class="trust-r">Webinars and talks with <b>One Nucleus</b> · <b>London Tax Network</b> · <b>Finance for Founders</b></div>
-  </div>
-</div>
-
 <!-- QUICK ANSWER -->
 <section class="qa" id="about">
   <div class="wrap">
-    <div class="qa2 rv">
-      <div class="qa2-main">
-        <div class="label">In short</div>
-        <h2>What does a PCRT compliant R&amp;D tax adviser do?</h2>
-        <p>A PCRT compliant adviser follows the profession's conduct standards for tax work. On an R&amp;D claim that means checking your projects against HMRC's definition of R&amp;D, tying costs to qualifying activities, keeping the evidence for both, and telling you plainly where a position is weak. Our R&amp;D tax advisers in the UK work to these standards on every claim.</p>
-        <div class="qa-meta">Reviewed by <a href="#founder">Aarti Varia FCCA</a> · 30 October 2026 · PCRT stands for Professional Conduct in Relation to Taxation</div>
-      </div>
-      <ol class="qa2-pts">
-        <li><svg><use href="#i-search"/></svg><div><b>Tests eligibility</b><span>Each project is checked against HMRC's definition of R&amp;D.</span></div></li>
-        <li><svg><use href="#i-scale"/></svg><div><b>Ties costs to activities</b><span>Every cost line maps to a qualifying activity.</span></div></li>
-        <li><svg><use href="#i-doc"/></svg><div><b>Keeps the evidence</b><span>Records back both, and weak points are flagged early.</span></div></li>
-      </ol>
+    <div class="qa3 rv">
+      <div class="label">In short</div>
+      <h2>What does a specialist R&amp;D tax adviser in the UK do?</h2>
+      <p>A PCRT compliant adviser follows the profession's conduct standards for tax work. On an R&amp;D claim that means checking your projects against HMRC's definition of R&amp;D, tying costs to qualifying activities, keeping the evidence for both, and telling you plainly where a position is weak.</p>
+      <div class="qa-meta">Reviewed by <a href="#founder">Aarti Varia FCCA</a> · PCRT stands for Professional Conduct in Relation to Taxation</div>
     </div>
   </div>
 </section>
@@ -627,8 +637,8 @@ footer a.ln{color:#fff}
 <section class="services sec" id="services">
   <div class="wrap">
     <div class="rv"><div class="label">R&amp;D tax services</div>
-    <h2>R&amp;D tax services for UK companies</h2>
-    <p class="lede">We are specialist R&amp;D tax advisers and R&amp;D tax consultants for UK companies. Whether you need R&amp;D tax advisors UK-wide to prepare a claim, or a second opinion on one already filed, one senior specialist stays with you from first call to submission.</p></div>
+    <h2>R&amp;D tax services from specialist R&amp;D tax advisers</h2>
+    <p class="lede">One senior specialist stays with you from first call to submission, whether you need a claim prepared, a second opinion on one already filed, or help with an HMRC enquiry.</p></div>
     <div class="grid4">
       <a class="card tilt rv" href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/">
         <div class="img"><img src="assets/a_consult.jpg" alt="R&amp;D tax adviser UK preparing an R&amp;D tax claim at a desk" width="900" height="530" loading="lazy"></div>
@@ -647,29 +657,6 @@ footer a.ln{color:#fff}
         <div class="cb"><span class="ico"><svg><use href="#i-clock"/></svg></span><h3>Contemporaneous R&amp;D Reporting</h3><p>Capture R&amp;D activity and costs as projects run, so next year's claim is easier and stronger.</p><span class="more">Set up reporting <svg><use href="#i-arrow"/></svg></span></div>
       </a>
     </div>
-    <div class="minimagnet rv"><div><b>Not sure where your claim stands?</b><span>Download a free checklist: claim readiness, HMRC enquiry response or clinical trials.</span></div><a class="btn btn-green mag" href="#checklist" data-pick="0">Get a free checklist <svg width="20" height="20"><use href="#i-arrow"/></svg></a></div>
-  </div>
-</section>
-
-<!-- ADVISERS -->
-<section class="advisers sec">
-  <div class="wrap adv-grid">
-    <div class="stack rv">
-      <div class="img s1"><img src="assets/b_hands_charts.jpg" alt="Specialist R&amp;D tax advisers reviewing claim figures with a client" width="900" height="410" loading="lazy"></div>
-      <div class="img s2"><img src="assets/a_meeting.jpg" alt="R&amp;D tax consultants UK team meeting to review an R&amp;D tax claim" width="900" height="555" loading="lazy"></div>
-      <div class="img s3"><img src="assets/a_bulb.jpg" alt="Lightbulb representing the innovation projects our R&amp;D tax advisors UK clients claim for" width="900" height="570" loading="lazy"></div>
-    </div>
-    <div class="rv d1">
-      <div class="label">R&amp;D tax advisors UK</div>
-      <h2>Specialist R&amp;D tax advisers, senior-led from start to finish</h2>
-      <p class="lede">If you are comparing R&amp;D tax consultants in the UK, ask who signs off the claim. At iTax Advisors the specialist who talks to you also signs off the claim, so the technical story and the numbers agree. That is what separates a claim that reads well from one that holds up.</p>
-      <div class="usp">
-        <div><svg><use href="#i-check"/></svg> Senior-led, start to finish</div>
-        <div><svg><use href="#i-check"/></svg> HMRC-ready R&amp;D tax claims</div>
-        <div><svg><use href="#i-check"/></svg> Competent professional on every project</div>
-        <div><svg><use href="#i-check"/></svg> Built to withstand HMRC scrutiny</div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -682,8 +669,8 @@ footer a.ln{color:#fff}
       </div>
       <div class="rv d1">
         <div class="label">Our approach</div>
-        <h2>Claims built the way an auditor would test them</h2>
-        <p class="lede">Aarti's background includes external audit and 13 years at Deloitte. That shapes how every claim is built: conclusions that can be shown, not just stated.</p>
+        <h2>Specialist R&amp;D tax advisers who build claims the way an auditor would test them</h2>
+        <p class="lede">The specialist who speaks to you also signs off the claim, so the technical story and the numbers agree. Aarti's background includes external audit and 13 years at Deloitte, which shapes how every claim is built.</p>
         <div class="points">
           <div class="pt"><svg><use href="#i-check"/></svg><div><h3>Technical position validated</h3><p>A named competent professional confirms the science or technology, not only the accountant who files the return.</p></div></div>
           <div class="pt"><svg><use href="#i-scale"/></svg><div><h3>Costs tied to activities</h3><p>Every cost line maps to a qualifying activity, so the claim reads the same in a workbook and in a letter to HMRC.</p></div></div>
@@ -722,7 +709,7 @@ footer a.ln{color:#fff}
     </div>
     <div class="rv d1">
       <div class="label">Life sciences</div>
-      <h2>R&amp;D tax relief for life sciences in the Golden Triangle</h2>
+      <h2>R&amp;D tax advisers for life sciences in the Golden Triangle</h2>
       <p class="lede">A life sciences R&amp;D tax claim has to be technically credible, financially accurate and supported by clear evidence. Clinical trial expenditure, payments to contract research organisations, overseas research, grant funding and complex contracts all need careful assessment. We help biotechnology, pharmaceutical, therapeutics, diagnostics and medical technology companies in London, Oxford and Cambridge, and across the UK.</p>
       <ul class="gt-points">
         <li><svg><use href="#i-check"/></svg><div><b>Clinical trial costs</b>What qualifies depends on who controls the R&amp;D and where the work takes place.</div></li>
@@ -733,7 +720,6 @@ footer a.ln{color:#fff}
         <a class="btn btn-green mag" href="#contact">Talk to a life sciences specialist <svg width="20" height="20"><use href="#i-arrow"/></svg></a>
         <a class="tl" href="#checklist" data-pick="2">Get the clinical trials checklist</a>
       </div>
-      <p class="gt-proof"><b>Webinar</b> with One Nucleus on the new R&amp;D tax schemes</p>
     </div>
   </div>
 </section>
@@ -742,11 +728,11 @@ footer a.ln{color:#fff}
 <section class="sectors sec" id="sectors">
   <div class="wrap">
     <div class="rv"><div class="label">Sectors</div>
-    <h2>Specialist R&amp;D tax advice by sector</h2>
+    <h2>R&amp;D tax advisors in the UK, by sector</h2>
     <p class="lede">R&amp;D looks different in a laboratory, a codebase and a construction project. So does the evidence HMRC expects.</p></div>
     <div class="sgrid">
       <a class="art-card tilt rv" href="#contact" data-planned="/sectors/life-sciences-rd-tax-relief/">
-        <div class="img bg"><img src="assets/b_lab.jpg" alt="Life sciences researcher at a microscope, R&amp;D tax relief for life sciences, biotechnology and MedTech" width="900" height="410" loading="lazy"></div>
+        <div class="img bg"><img src="assets/a_lab.jpg" alt="Laboratory work for R&amp;D tax relief in life sciences, biotechnology and MedTech" width="446" height="263" loading="lazy"></div>
         <span class="badge">Specialism</span><h3>Life Sciences, Biotechnology &amp; MedTech</h3><p>Specialist R&amp;D tax advice for complex scientific research, clinical development and innovative healthcare technologies.</p><span class="more">View sector page <svg width="18" height="18"><use href="#i-arrow"/></svg></span>
       </a>
       <a class="art-card tilt rv d1" href="#contact" data-planned="/sectors/software-saas-rd-tax-relief/">
@@ -777,7 +763,7 @@ footer a.ln{color:#fff}
       <div class="f-body">
         <h3>Aarti Varia FCCA</h3>
         <div class="role">Founder · R&amp;D tax specialist</div>
-        <div class="creds"><span>FCCA</span><span>ACCA practising member</span><span>18+ years in R&amp;D tax</span><span>13 years at Deloitte</span></div>
+        <div class="creds"><span>FCCA</span><span>ACCA practising member</span><span>18+ years in R&amp;D tax</span></div>
         <div class="links">
           <a class="ln" href="https://www.linkedin.com/in/aarti-variardtaxspecialist/" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg> Aarti on LinkedIn</a>
           <a class="ln" href="https://www.linkedin.com/company/itax-advisors-limited" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg> iTax Advisors</a>
@@ -786,17 +772,15 @@ footer a.ln{color:#fff}
     </aside>
     <div>
       <div class="rv"><div class="label">Who you will work with</div>
-      <h2>Senior-led, from first call to submission</h2>
+      <h2>Senior-led R&amp;D tax consultants in the UK</h2>
       <p class="lede">You deal with the specialist who signs off the work. Aarti writes regularly on R&amp;D tax policy, HMRC practice and enquiries.</p></div>
       <blockquote class="quote rv"><p>The strongest R&amp;D tax claims are often those that can clearly demonstrate how conclusions were reached and supported.</p><cite>Aarti Varia · LinkedIn</cite></blockquote>
       <div class="arts rv">
         <a href="https://www.linkedin.com/pulse/contracted-out-rd-why-longer-simple-who-did-work-aarti-varia-ujwwe/" target="_blank" rel="noopener"><span><small>Article · Contracted out R&amp;D rules</small>Contracted-out R&amp;D: why it is no longer as simple as "Who did the work?"</span><svg><use href="#i-arrow"/></svg></a>
         <a href="https://www.linkedin.com/pulse/rd-claim-notification-stopping-non-compliant-claims-genuine-varia-pqwxf/" target="_blank" rel="noopener"><span><small>Article · Claim notification</small>R&amp;D Claim Notification: is it stopping non-compliant claims or genuine ones too?</span><svg><use href="#i-arrow"/></svg></a>
         <a href="https://www.linkedin.com/pulse/from-claim-preparation-enquiry-readiness-rd-tax-world-aarti-varia-knqte/" target="_blank" rel="noopener"><span><small>Article · HMRC enquiry readiness</small>From claim preparation to enquiry readiness: R&amp;D tax in an audit-level world</span><svg><use href="#i-arrow"/></svg></a>
-        <a href="https://www.linkedin.com/pulse/rd-tax-claims-uk-ma-where-value-leaks-how-protect-aarti-varia-j6fue/" target="_blank" rel="noopener"><span><small>Article · M&amp;A</small>R&amp;D tax claims in UK M&amp;A: where value leaks and how to protect it</span><svg><use href="#i-arrow"/></svg></a>
       </div>
       <div class="review rv"><div class="stars" aria-label="Client feedback">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>She helped the project run more efficiently, was extremely professional and knowledgeable, helping us to identify more than 8% of additional qualifying expenditure than the previous year's claim.</p><span>Rupinder Ashan, Corporate Tax Assistant Manager, Schneider Electric · from our current website</span></div>
-      <div class="review rv"><div class="stars" aria-label="Client feedback">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>It was a pleasure working with Aarti. Very knowledgeable.</p><span>Keya P. · Google review</span></div>
       <div class="speaks rv"><span><b>Webinar</b> with One Nucleus on the new R&amp;D schemes</span><span><b>Seminar</b> with London Tax Network, Harrow</span><span><b>Podcast</b> guest on Finance for Founders</span></div>
     </div>
   </div>
@@ -807,24 +791,29 @@ footer a.ln{color:#fff}
   <div class="wrap m-grid">
     <div class="rv">
       <div class="label">Free R&amp;D tax resources</div>
-      <h2>Pick a free checklist for your situation</h2>
-      <p class="lede">Three short, practical checklists written by our specialists. Choose the one that fits.</p>
+      <h2>Free R&amp;D tax checklists for UK companies</h2>
+      <p class="lede">Choose the checklist that fits your situation.</p>
       <div class="tabs" role="tablist" aria-label="Free checklists">
         <button class="tab" role="tab" id="t0" aria-selected="true" aria-controls="mp" data-i="0">Claim readiness</button>
         <button class="tab" role="tab" id="t1" aria-selected="false" aria-controls="mp" data-i="1">HMRC enquiry</button>
         <button class="tab" role="tab" id="t2" aria-selected="false" aria-controls="mp" data-i="2">Clinical trials</button>
       </div>
-      <div class="mpanel" id="mp" role="tabpanel" aria-labelledby="t0">
-        <div class="cover pdfprev"><img id="mp-img" src="assets/cover-claim-readiness.jpg" alt="First page of the 15-point claim readiness checklist PDF" width="900" height="474"><span class="pdfbadge" id="mp-badge">Free PDF · 2 pages</span></div>
+      <div class="doc" id="doc" role="img" aria-label="Preview of the checklist PDF">
+        <div class="sheet s3"></div><div class="sheet s2"></div>
+        <div class="sheet s1">
+          <div class="dhead"><img src="assets/itax-advisors-logo-reversed.svg" alt="" width="321" height="63"></div>
+          <small id="doc-kick"></small>
+          <h3 id="doc-title"></h3>
+          <ol id="doc-list"></ol>
+          <div class="dfoot"><span id="doc-pages"></span><span>PDF checklist</span></div>
+        </div>
       </div>
     </div>
     <div class="formcard big spin rv d1" id="lm-card">
       <form id="lm-form" novalidate>
         <h3 id="lm-h">Send me the checklist</h3>
-        <p class="mp-t" id="mp-title"></p>
-        <ul class="inside" id="mp-list"></ul>
+        <p class="sub">Free PDF. Download it straight after you submit, and we will email you a copy.</p>
         <p class="mp-note" id="mp-note"></p>
-        <p class="sub" style="margin-top:14px">Free PDF. Download it straight after you submit, and we will email you a copy. Unsubscribe any time.</p>
         <div class="row2">
           <div class="field"><label for="lm-name">Your name</label><input id="lm-name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="lm-email">Work email</label><input id="lm-email" name="email" type="email" autocomplete="email" required></div>
@@ -838,7 +827,7 @@ footer a.ln{color:#fff}
       <div class="done" id="lm-done" aria-live="polite">
         <div class="tick"><svg><use href="#i-check"/></svg></div>
         <h3>Your checklist is ready</h3>
-        <p>Your checklist is ready to download. We will also email you a copy. If you would like a specialist to go through it with you, book a free claim review.</p>
+        <p>Download it now. We will also email you a copy.</p>
         <div class="dlrow"><a class="btn btn-green" id="lm-dl" href="assets/itax-claim-readiness-checklist.pdf" download>Download the PDF <svg width="20" height="20"><use href="#i-arrow"/></svg></a><a class="btn btn-line" href="#contact">Book a free claim review</a></div>
       </div>
     </div>
@@ -849,7 +838,7 @@ footer a.ln{color:#fff}
 <section class="insights sec" id="insights">
   <div class="wrap">
     <div class="rv"><div class="label">Insights</div>
-    <h2>R&amp;D tax insights, in plain English</h2>
+    <h2>Insights from our R&amp;D tax advisers</h2>
     <p class="lede">Practical guidance on HMRC R&amp;D enquiry support, contracted out R&amp;D rules and claim quality.</p></div>
     <div class="igrid">
       <a class="post rv" href="https://www.itaxadvisors.co.uk/hmrc-rd-enquiry-letter-steps/"><div class="img"><img src="assets/a_bigben_flag.jpg" alt="UK flag and Houses of Parliament, HMRC R&amp;D enquiry letter guidance" width="900" height="413" loading="lazy"><span>HMRC enquiries</span></div><div class="post-b"><h3>Received an HMRC R&amp;D enquiry letter? 7 steps UK businesses should take first</h3><span class="more">Read the guide <svg><use href="#i-arrow"/></svg></span></div></a>
@@ -862,17 +851,15 @@ footer a.ln{color:#fff}
 <!-- FAQ -->
 <section class="faq sec" id="faq">
   <div class="wrap faq-grid">
-    <div class="rv"><div class="label">FAQs</div><h2>Questions we are asked most</h2><p class="lede">Short answers first. Speak to us for advice on your own position.</p>
+    <div class="rv"><div class="label">FAQs</div><h2>Questions about R&amp;D tax advisers in the UK</h2><p class="lede">Short answers first. Speak to us for advice on your own position.</p>
       <div class="faq-side"><div class="img"><img src="assets/a_coins.jpg" alt="Seedling growing from coins, growth funded by R&amp;D tax relief" width="900" height="665" loading="lazy"></div><div class="t"><b>Not sure whether your work qualifies?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div>
     </div>
     <div class="rv d1">
-      <details open><summary>What does PCRT compliant mean for an R&amp;D tax adviser?</summary><p>PCRT is Professional Conduct in Relation to Taxation, the standard set by the UK's main accountancy and tax bodies for members who give tax advice. A PCRT compliant adviser works to those rules on honesty, competence and confidentiality, and does not promise outcomes they cannot control.</p></details>
-      <details><summary>How do I know if my project qualifies as R&amp;D for tax?</summary><p>HMRC looks for a project that seeks an advance in science or technology by resolving scientific or technological uncertainty that a competent professional in the field could not readily work out. Being new or complex for your business is not enough on its own.</p></details>
+      <details open><summary>How do I know if my project qualifies as R&amp;D for tax?</summary><p>HMRC looks for a project that seeks an advance in science or technology by resolving scientific or technological uncertainty that a competent professional in the field could not readily work out. Being new or complex for your business is not enough on its own.</p></details>
       <details><summary>Can you give an R&amp;D tax claim second opinion on a claim another adviser prepared?</summary><p>Yes. We review filed and draft claims independently, covering eligibility, cost treatment and evidence, and we tell you where the position is strong and where it needs work. <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">See the second opinion service</a>.</p></details>
       <details><summary>What should I do if HMRC opens an enquiry into my R&amp;D claim?</summary><p>Do not ignore the letter, and note the response date it gives. Gather the project records and cost workings, and speak to an adviser before you reply. Our <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">HMRC R&amp;D enquiry support</a> handles the written responses and the evidence.</p></details>
       <details><summary>What are the contracted out R&amp;D rules?</summary><p>For accounting periods beginning on or after 1 April 2024, HMRC's guidance says the general principle is to identify the party that decided to initiate the R&amp;D, the one that intended or contemplated that R&amp;D when entering the contract. That is not always the party that did the work. Financial risk, IP ownership and who will exploit the results are also considered. <a href="https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/">Read our guide to the contracted out R&amp;D rules</a>.</p></details>
       <details><summary>Is there a difference between R&amp;D tax advisers, advisors and consultants?</summary><p>No. R&amp;D tax advisers, R&amp;D tax advisors and R&amp;D tax consultants are used interchangeably in the UK, and the spelling varies. What matters is who is behind the label: a qualified specialist who signs off the claim, works to PCRT standards, holds professional indemnity insurance and is supervised for anti-money laundering. Ask any R&amp;D tax adviser UK firm you speak to for those four things.</p></details>
-      <details><summary>How quickly will you reply to my enquiry?</summary><p>We reply to every enquiry within one working day. If you have received an HMRC letter, say so in the form and we will prioritise it.</p></details>
     </div>
   </div>
 </section>
@@ -883,7 +870,7 @@ footer a.ln{color:#fff}
     <div class="rv">
       <div class="label">Contact</div>
       <h2>Speak to a specialist R&amp;D tax adviser in the UK</h2>
-      <p class="lede">Tell us about your projects or your HMRC letter. A specialist replies within one working day.</p>
+      <p class="lede">Tell us about your projects or your HMRC letter.</p>
       <ol class="next">
         <li><div><b>We reply within one working day</b><span>From a named adviser, not a call centre.</span></div></li>
         <li><div><b>A 20-minute call, no obligation</b><span>We listen to your projects and ask the questions HMRC would.</span></div></li>
@@ -951,26 +938,93 @@ footer a.ln{color:#fff}
   </div>
 </footer>
 
-<div class="toast" id="toast" role="dialog" aria-label="Free checklist">
-  <button class="x" id="toast-x" aria-label="Close">&times;</button>
-  <div class="img"><img src="assets/a_bulb.jpg" alt="" width="900" height="570" loading="lazy"></div>
-  <div class="tb"><b>Is your R&amp;D claim ready to file?</b><p>Free 15-point checklist (PDF).</p><a class="btn btn-green" href="#checklist" data-pick="0" id="toast-go">Get the checklist</a></div>
-</div>
 <div class="sticky"><a class="btn btn-green" href="#contact">Free claim review <svg width="20" height="20"><use href="#i-arrow"/></svg></a></div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"ProfessionalService","@id":"https://www.itaxadvisors.co.uk/#organization","name":"iTax Advisors Limited","url":"https://www.itaxadvisors.co.uk/","email":"info@itaxadvisors.co.uk","description":"Senior-led UK R&D tax advisers: claim preparation, HMRC enquiry support, independent claim reviews and contemporaneous reporting.","areaServed":"GB","address":{"@type":"PostalAddress","streetAddress":"Devonshire House, 582 Honeypot Lane","postalCode":"HA7 1JS","addressCountry":"GB"},"founder":{"@id":"https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti"},"sameAs":["https://www.linkedin.com/company/itax-advisors-limited"]},
-{"@type":"Person","@id":"https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti","name":"Aarti Varia","jobTitle":"Founder and R&D tax specialist","honorificSuffix":"FCCA","worksFor":{"@id":"https://www.itaxadvisors.co.uk/#organization"},"sameAs":["https://www.linkedin.com/in/aarti-variardtaxspecialist/"]},
-{"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What does PCRT compliant mean for an R&D tax adviser?","acceptedAnswer":{"@type":"Answer","text":"PCRT is Professional Conduct in Relation to Taxation, the standard set by the UK's main accountancy and tax bodies for members who give tax advice. A PCRT compliant adviser works to those rules on honesty, competence and confidentiality, and does not promise outcomes they cannot control."}},
-{"@type":"Question","name":"How do I know if my project qualifies as R&D for tax?","acceptedAnswer":{"@type":"Answer","text":"HMRC looks for a project that seeks an advance in science or technology by resolving scientific or technological uncertainty that a competent professional in the field could not readily work out. Being new or complex for your business is not enough on its own."}},
-{"@type":"Question","name":"Can you give an R&D tax claim second opinion on a claim another adviser prepared?","acceptedAnswer":{"@type":"Answer","text":"Yes. We review filed and draft claims independently, covering eligibility, cost treatment and evidence, and we tell you where the position is strong and where it needs work."}},
-{"@type":"Question","name":"What should I do if HMRC opens an enquiry into my R&D claim?","acceptedAnswer":{"@type":"Answer","text":"Do not ignore the letter, and note the response date it gives. Gather the project records and cost workings, and speak to an adviser before you reply."}},
-{"@type":"Question","name":"What are the contracted out R&D rules?","acceptedAnswer":{"@type":"Answer","text":"For accounting periods beginning on or after 1 April 2024, HMRC's guidance says the general principle is to identify the party that decided to initiate the R&D, the one that intended or contemplated that R&D when entering the contract. That is not always the party that did the work. Financial risk, IP ownership and who will exploit the results are also considered."}},
-{"@type":"Question","name":"Is there a difference between R&D tax advisers, advisors and consultants?","acceptedAnswer":{"@type":"Answer","text":"No. R&D tax advisers, R&D tax advisors and R&D tax consultants are used interchangeably in the UK, and the spelling varies. What matters is who is behind the label: a qualified specialist who signs off the claim, works to PCRT standards, holds professional indemnity insurance and is supervised for anti-money laundering."}},
-{"@type":"Question","name":"How quickly will you reply to my enquiry?","acceptedAnswer":{"@type":"Answer","text":"We reply to every enquiry within one working day. If you have received an HMRC letter, say so in the form and we will prioritise it."}}]}
-]}
+{
+"@context": "https://schema.org",
+"@graph": [
+{
+"@type": "ProfessionalService",
+"@id": "https://www.itaxadvisors.co.uk/#organization",
+"name": "iTax Advisors Limited",
+"url": "https://www.itaxadvisors.co.uk/",
+"email": "info@itaxadvisors.co.uk",
+"description": "Senior-led UK R&D tax advisers: claim preparation, HMRC enquiry support, independent claim reviews and contemporaneous reporting.",
+"areaServed": "GB",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Devonshire House, 582 Honeypot Lane",
+"postalCode": "HA7 1JS",
+"addressCountry": "GB"
+},
+"founder": {
+"@id": "https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti"
+},
+"sameAs": [
+"https://www.linkedin.com/company/itax-advisors-limited"
+]
+},
+{
+"@type": "Person",
+"@id": "https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti",
+"name": "Aarti Varia",
+"jobTitle": "Founder and R&D tax specialist",
+"honorificSuffix": "FCCA",
+"worksFor": {
+"@id": "https://www.itaxadvisors.co.uk/#organization"
+},
+"sameAs": [
+"https://www.linkedin.com/in/aarti-variardtaxspecialist/"
+]
+},
+{
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "How do I know if my project qualifies as R&D for tax?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "HMRC looks for a project that seeks an advance in science or technology by resolving scientific or technological uncertainty that a competent professional in the field could not readily work out. Being new or complex for your business is not enough on its own."
+}
+},
+{
+"@type": "Question",
+"name": "Can you give an R&D tax claim second opinion on a claim another adviser prepared?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes. We review filed and draft claims independently, covering eligibility, cost treatment and evidence, and we tell you where the position is strong and where it needs work. See the second opinion service."
+}
+},
+{
+"@type": "Question",
+"name": "What should I do if HMRC opens an enquiry into my R&D claim?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Do not ignore the letter, and note the response date it gives. Gather the project records and cost workings, and speak to an adviser before you reply. Our HMRC R&D enquiry support handles the written responses and the evidence."
+}
+},
+{
+"@type": "Question",
+"name": "What are the contracted out R&D rules?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "For accounting periods beginning on or after 1 April 2024, HMRC's guidance says the general principle is to identify the party that decided to initiate the R&D, the one that intended or contemplated that R&D when entering the contract. That is not always the party that did the work. Financial risk, IP ownership and who will exploit the results are also considered. Read our guide to the contracted out R&D rules."
+}
+},
+{
+"@type": "Question",
+"name": "Is there a difference between R&D tax advisers, advisors and consultants?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "No. R&D tax advisers, R&D tax advisors and R&D tax consultants are used interchangeably in the UK, and the spelling varies. What matters is who is behind the label: a qualified specialist who signs off the claim, works to PCRT standards, holds professional indemnity insurance and is supervised for anti-money laundering. Ask any R&D tax adviser UK firm you speak to for those four things."
+}
+}
+]
+}
+]
+}
 </script>
 
 <script>
@@ -981,19 +1035,15 @@ footer a.ln{color:#fff}
   var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
 
   /* header, progress, parallax, toast */
-  var top=$('#top'),bar=$('#progress'),toast=$('#toast'),toastDone=false;
-  try{if(sessionStorage.getItem('toastClosed'))toastDone=true}catch(e){}
+  var top=$('#top'),bar=$('#progress');
   function onScroll(){
     var y=window.pageYOffset||0,h=document.documentElement.scrollHeight-window.innerHeight,vh=window.innerHeight;
     top.classList.toggle('scrolled',y>20);
     bar.style.width=(h>0?y/h*100:0)+'%';
     if(!reduce){
     }
-    if(!toastDone&&h>0&&y/h>.38&&y/h<.62&&fine&&window.innerWidth>860){toast.classList.add('show')}
-    if(toast.classList.contains('show')&&(y/h>.7||y/h<.3)){toast.classList.remove('show')}
   }
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
-  $('#toast-x').addEventListener('click',function(){toast.classList.remove('show');toastDone=true;try{sessionStorage.setItem('toastClosed','1')}catch(e){}});
 
   /* mobile menu */
   var burger=$('#burger'),nav=$('#nav');
@@ -1033,13 +1083,13 @@ footer a.ln{color:#fff}
 
   /* lead magnet tabs */
   var MG=[
-    {src:'home-lead-magnet-claim-readiness',img:'assets/cover-claim-readiness.jpg',pdf:'assets/itax-claim-readiness-checklist.pdf',file:'itax-claim-readiness-checklist.pdf',pages:2,cover:'The 15-point claim readiness checklist',title:'The 15-point claim readiness checklist',h:'Send me the readiness checklist',
+    {src:'home-lead-magnet-claim-readiness',kick:'R&D TAX RELIEF | BEFORE YOU SUBMIT',pdf:'assets/itax-claim-readiness-checklist.pdf',file:'itax-claim-readiness-checklist.pdf',pages:2,cover:'The 15-point claim readiness checklist',title:'The 15-point claim readiness checklist',h:'Send me the readiness checklist',
      note:'This is a readiness check, not an eligibility score. A completed checklist does not establish entitlement to relief.',
      li:['Eligibility and applicable scheme','Project scope and technical review','Qualifying costs and activities','Contracts, contracted-out expenditure and overseas costs','Evidence, deadlines and submission']},
-    {src:'home-lead-magnet-hmrc-enquiry',img:'assets/cover-hmrc-enquiry.jpg',pdf:'assets/itax-hmrc-enquiry-response-checklist.pdf',file:'itax-hmrc-enquiry-response-checklist.pdf',pages:3,cover:'The HMRC R&D enquiry response checklist',title:'The HMRC R&D enquiry response checklist',h:'Send me the enquiry checklist',
+    {src:'home-lead-magnet-hmrc-enquiry',kick:'PREPARE \u2022 EVIDENCE \u2022 RESPOND',pdf:'assets/itax-hmrc-enquiry-response-checklist.pdf',file:'itax-hmrc-enquiry-response-checklist.pdf',pages:3,cover:'The HMRC R&D enquiry response checklist',title:'The HMRC R&D enquiry response checklist',h:'Send me the enquiry checklist',
      note:'The first 48 hours are a suggested organising window, not an HMRC deadline. Follow the dates in your correspondence.',
      li:['What to do in the first 48 hours','The documents HMRC usually asks for','How to organise project and cost evidence','Questions to ask before you reply','When to bring in a specialist']},
-    {src:'home-lead-magnet-life-sciences',img:'assets/cover-clinical-trials.jpg',pdf:'assets/itax-clinical-trials-checklist.pdf',file:'itax-clinical-trials-checklist.pdf',pages:3,cover:'Clinical Trials & R&D Tax Relief',title:'Clinical Trials & R&D Tax Relief: pre-trial checklist',h:'Send me the clinical trials checklist',
+    {src:'home-lead-magnet-life-sciences',kick:'PRE-TRIAL CHECKLIST',pdf:'assets/itax-clinical-trials-checklist.pdf',file:'itax-clinical-trials-checklist.pdf',pages:3,cover:'Clinical Trials & R&D Tax Relief',title:'Clinical Trials & R&D Tax Relief: pre-trial checklist',h:'Send me the clinical trials checklist',
      note:'This is a readiness check, not an R&D eligibility score. One significant issue may warrant further review.',
      li:['Which clinical trial costs may qualify?','CRO and sponsor arrangements: who may claim?','Is your technical evidence ready?','Overseas activities and subcontractors','Before the trial starts']}
   ];
@@ -1048,15 +1098,15 @@ footer a.ln{color:#fff}
   function pick(i){
     var m=MG[i];
     $$('.tab').forEach(function(t,k){t.setAttribute('aria-selected',k===i?'true':'false')});
-    $('#mp').setAttribute('aria-labelledby','t'+i);
-    $('#mp-img').src=m.img;$('#mp-img').alt='First page of '+m.title+' PDF';$('#mp-badge').textContent='Free PDF \u00b7 '+m.pages+' pages';var dl=$('#lm-dl');dl.href=m.pdf;dl.setAttribute('download',m.file);$('#mp-title').textContent=m.title;
+    var dl=$('#lm-dl');dl.href=m.pdf;dl.setAttribute('download',m.file);
+    $('#doc-kick').textContent=m.kick;$('#doc-title').textContent=m.title;$('#doc-pages').textContent='PDF \u00b7 '+m.pages+' pages';
     $('#lm-h').textContent=m.h;$('#lm-src').value=m.src;
-    $('#mp-note').textContent=m.note||'';$('#mp-list').innerHTML=m.li.map(function(t){return '<li>'+ico+'<span>'+esc(t)+'</span></li>'}).join('');
-    var p=$('#mp');p.style.animation='none';void p.offsetWidth;p.style.animation='';
+    $('#mp-note').textContent=m.note||'';$('#doc-list').innerHTML=m.li.map(function(t){return '<li>'+esc(t)+'</li>'}).join('');
+    var p=$('#doc');p.style.animation='none';void p.offsetWidth;p.style.animation='';
     $('#lm-form').hidden=false;$('#lm-done').classList.remove('show');
   }
   $$('.tab').forEach(function(t){t.addEventListener('click',function(){pick(parseInt(t.getAttribute('data-i'),10))})});
-  $$('[data-pick]').forEach(function(a){a.addEventListener('click',function(){pick(parseInt(a.getAttribute('data-pick'),10));toast.classList.remove('show')})});
+  $$('[data-pick]').forEach(function(a){a.addEventListener('click',function(){pick(parseInt(a.getAttribute('data-pick'),10))})});
   pick(0);
 
 
