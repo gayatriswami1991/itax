@@ -569,6 +569,23 @@ footer a.ln{color:#fff}
 .doc li::before{content:counter(d);flex:none;width:22px;height:22px;border-radius:5px;background:var(--navy-700);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center;margin-top:1px}
 .dfoot{margin-top:auto;padding:12px 24px;display:flex;justify-content:space-between;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted);background:var(--paper)}
 @media (max-width:860px){.doc{max-width:360px}}
+
+/* balance pass */
+.gt-grid{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)}
+.gt-vis{padding-bottom:0}
+.gt-main{aspect-ratio:1.8/1}
+.gt-tri{margin:16px 0 0;padding:18px 24px 14px}
+.gt-tri svg{max-height:240px}
+.gt-points{margin-top:22px;gap:14px}
+.gt-cta{margin-top:24px}
+.m-head{max-width:760px}
+.m-row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:center;margin-top:34px}
+.m-row .doc{margin:0 auto;width:100%;max-width:400px}
+.m-row .formcard.big{padding:clamp(28px,3.6vw,46px)}
+.m-row .formcard.big .field input{padding:16px 16px}
+@media (max-width:1020px){.gt-grid{grid-template-columns:minmax(0,1fr)}.gt-vis{max-width:640px}}
+@media (max-width:520px){.m-row .doc{width:calc(100% - 28px);margin-inline:auto}}
+@media (max-width:860px){.gt-grid{grid-template-columns:minmax(0,1fr)}.m-row{grid-template-columns:minmax(0,1fr);margin-top:26px}.gt-main{aspect-ratio:2/1}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -715,7 +732,7 @@ footer a.ln{color:#fff}
     <div class="rv d1">
       <div class="label">Life sciences</div>
       <h2>R&amp;D tax advisers for life sciences in the Golden Triangle</h2>
-      <p class="lede">A life sciences R&amp;D tax claim has to be technically credible, financially accurate and supported by clear evidence. Clinical trial expenditure, payments to contract research organisations, overseas research, grant funding and complex contracts all need careful assessment. We help biotechnology, pharmaceutical, therapeutics, diagnostics and medical technology companies in London, Oxford and Cambridge, and across the UK.</p>
+      <p class="lede">A life sciences R&amp;D tax claim has to be technically credible, financially accurate and supported by clear evidence. We help biotechnology, pharmaceutical, therapeutics, diagnostics and medical technology companies in London, Oxford and Cambridge, and across the UK.</p>
       <ul class="gt-points">
         <li><svg><use href="#i-check"/></svg><div><b>Clinical trial costs</b>What qualifies depends on who controls the R&amp;D and where the work takes place.</div></li>
         <li><svg><use href="#i-check"/></svg><div><b>CRO and sponsor contracts</b>Entitlement to claim generally follows the party responsible for resolving the scientific uncertainty.</div></li>
@@ -793,8 +810,8 @@ footer a.ln{color:#fff}
 
 <!-- LEAD MAGNET HUB -->
 <section class="magnet dark sec" id="checklist">
-  <div class="wrap m-grid">
-    <div class="rv">
+  <div class="wrap">
+    <div class="m-head rv">
       <div class="label">Free R&amp;D tax resources</div>
       <h2>Free R&amp;D tax checklists for UK companies</h2>
       <p class="lede">Choose the checklist that fits your situation.</p>
@@ -803,6 +820,8 @@ footer a.ln{color:#fff}
         <button type="button" class="tab" role="tab" id="t1" aria-selected="false" aria-controls="doc" data-i="1">HMRC enquiry</button>
         <button type="button" class="tab" role="tab" id="t2" aria-selected="false" aria-controls="doc" data-i="2">Clinical trials</button>
       </div>
+    </div>
+    <div class="m-row">
       <div class="doc" id="doc" role="tabpanel" aria-label="Preview of the checklist PDF">
         <div class="sheet s3"></div><div class="sheet s2"></div>
         <div class="sheet s1">
@@ -813,8 +832,7 @@ footer a.ln{color:#fff}
           <div class="dfoot"><span id="doc-pages"></span><span>PDF checklist</span></div>
         </div>
       </div>
-    </div>
-    <div class="formcard big spin rv d1" id="lm-card">
+      <div class="formcard big spin rv d1" id="lm-card">
       <form id="lm-form" novalidate>
         <h3 id="lm-h">Send me the checklist</h3>
         <p class="sub">Free PDF. You can download it straight after you submit.</p>
@@ -835,6 +853,7 @@ footer a.ln{color:#fff}
         <p>Download it now.</p>
         <div class="dlrow"><a class="btn btn-green" id="lm-dl" href="assets/itax-claim-readiness-checklist.pdf" download>Download the PDF <svg width="20" height="20"><use href="#i-arrow"/></svg></a><a class="btn btn-line" href="#contact">Speak to a specialist</a></div>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -864,6 +883,11 @@ footer a.ln{color:#fff}
       <details><summary>Can you give an R&amp;D tax claim second opinion on a claim another adviser prepared?</summary><p>Yes. We review filed and draft claims independently, covering eligibility, cost treatment and evidence, and we tell you where the position is strong and where it needs work. <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">See the second opinion service</a>.</p></details>
       <details><summary>What should I do if HMRC opens an enquiry into my R&amp;D claim?</summary><p>Do not ignore the letter, and note the response date it gives. Gather the project records and cost workings, and speak to an adviser before you reply. Our <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">HMRC R&amp;D enquiry support</a> handles the written responses and the evidence.</p></details>
       <details><summary>What are the contracted out R&amp;D rules?</summary><p>For accounting periods beginning on or after 1 April 2024, HMRC's guidance says the general principle is to identify the party that decided to initiate the R&amp;D, the one that intended or contemplated that R&amp;D when entering the contract. That is not always the party that did the work. Financial risk, IP ownership and who will exploit the results are also considered. <a href="https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/">Read our guide to the contracted out R&amp;D rules</a>.</p></details>
+      <details><summary>Can I claim for failed projects?</summary><p>Absolutely. A failed project can often be a strong indicator of qualifying R&amp;D activity. HMRC recognises that genuine R&amp;D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid R&amp;D claim.</p></details>
+      <details><summary>Can grant-funded expenditure be claimed?</summary><p>Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&amp;D tax relief on subsidised or grant-funded expenditure under the merged R&amp;D scheme.</p></details>
+      <details><summary>Can overseas R&amp;D activities be claimed?</summary><p>In limited circumstances. For accounting periods beginning on or after 1 April 2024, overseas subcontracted R&amp;D and externally provided workers are generally excluded unless the conditions necessary for the R&amp;D are not present in the UK, legal or regulatory requirements require the work overseas, or geographic, environmental or population-specific factors make overseas activity unavoidable. HMRC applies these exemptions narrowly.</p></details>
+      <details><summary>Can directors' salaries be included in an R&amp;D claim?</summary><p>Yes. Directors actively involved in qualifying R&amp;D activities may include the relevant proportion of staffing costs relating to R&amp;D. Dividends however are non-qualifying costs.</p></details>
+      <details><summary>How long do I have to make an R&amp;D claim?</summary><p>The claim submission deadline is generally two years from the end of the relevant accounting period. For accounting periods beginning on or after 1 April 2023, many companies must also submit a claim notification form before making a claim.</p></details>
       <details><summary>Is there a difference between R&amp;D tax advisers, advisors and consultants?</summary><p>No. "Advisers" and "advisors" are two spellings of the same word, and "R&amp;D tax consultants" is another name for the same kind of firm. When you compare them, ask about qualifications, whether they follow PCRT standards, and about professional indemnity insurance and anti-money laundering supervision.</p></details>
     </div>
   </div>
@@ -1016,6 +1040,46 @@ footer a.ln{color:#fff}
 "acceptedAnswer": {
 "@type": "Answer",
 "text": "For accounting periods beginning on or after 1 April 2024, HMRC's guidance says the general principle is to identify the party that decided to initiate the R&D, the one that intended or contemplated that R&D when entering the contract. That is not always the party that did the work. Financial risk, IP ownership and who will exploit the results are also considered. Read our guide to the contracted out R&D rules."
+}
+},
+{
+"@type": "Question",
+"name": "Can I claim for failed projects?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Absolutely. A failed project can often be a strong indicator of qualifying R&D activity. HMRC recognises that genuine R&D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid R&D claim."
+}
+},
+{
+"@type": "Question",
+"name": "Can grant-funded expenditure be claimed?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&D tax relief on subsidised or grant-funded expenditure under the merged R&D scheme."
+}
+},
+{
+"@type": "Question",
+"name": "Can overseas R&D activities be claimed?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "In limited circumstances. For accounting periods beginning on or after 1 April 2024, overseas subcontracted R&D and externally provided workers are generally excluded unless the conditions necessary for the R&D are not present in the UK, legal or regulatory requirements require the work overseas, or geographic, environmental or population-specific factors make overseas activity unavoidable. HMRC applies these exemptions narrowly."
+}
+},
+{
+"@type": "Question",
+"name": "Can directors' salaries be included in an R&D claim?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes. Directors actively involved in qualifying R&D activities may include the relevant proportion of staffing costs relating to R&D. Dividends however are non-qualifying costs."
+}
+},
+{
+"@type": "Question",
+"name": "How long do I have to make an R&D claim?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The claim submission deadline is generally two years from the end of the relevant accounting period. For accounting periods beginning on or after 1 April 2023, many companies must also submit a claim notification form before making a claim."
 }
 },
 {
