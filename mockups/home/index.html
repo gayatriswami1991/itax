@@ -586,6 +586,16 @@ footer a.ln{color:#fff}
 @media (max-width:1020px){.gt-grid{grid-template-columns:minmax(0,1fr)}.gt-vis{max-width:640px}}
 @media (max-width:520px){.m-row .doc{width:calc(100% - 28px);margin-inline:auto}}
 @media (max-width:860px){.gt-grid{grid-template-columns:minmax(0,1fr)}.m-row{grid-template-columns:minmax(0,1fr);margin-top:26px}.gt-main{aspect-ratio:2/1}}
+
+/* faq balance + reveal */
+.faq-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:stretch}
+.faq-left{position:sticky;top:96px}
+.faq-side{aspect-ratio:1.25/1;margin-top:26px}
+.faq-side .t b{font-size:21px}
+.sec{padding-block:clamp(48px,6vw,84px)}
+.anim .rv.pending:not(.in){transform:translateY(14px)}
+.rv{transition-duration:.55s}
+@media (max-width:860px){.faq-left{position:static}.faq-grid{grid-template-columns:minmax(0,1fr)}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -875,8 +885,8 @@ footer a.ln{color:#fff}
 <!-- FAQ -->
 <section class="faq sec" id="faq">
   <div class="wrap faq-grid">
-    <div class="rv"><div class="label">FAQs</div><h2>Questions about R&amp;D tax advisers in the UK</h2><p class="lede">Short answers first. Speak to us for advice on your own position.</p>
-      <div class="faq-side"><div class="img"><img src="assets/a_coins.jpg" alt="Seedling growing from coins, growth funded by R&amp;D tax relief" width="900" height="665" loading="lazy"></div><div class="t"><b>Not sure whether your work qualifies?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div>
+    <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>Questions about R&amp;D tax advisers in the UK</h2><p class="lede">Short answers first. Speak to us for advice on your own position.</p>
+      <div class="faq-side"><div class="img"><img src="assets/a_coins.jpg" alt="Seedling growing from coins, growth funded by R&amp;D tax relief" width="900" height="665" loading="lazy"></div><div class="t"><b>Not sure whether your work qualifies?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div>
     </div>
     <div class="rv d1">
       <details open><summary>How do I know if my project qualifies as R&amp;D for tax?</summary><p>HMRC looks for a project that seeks an advance in science or technology by resolving scientific or technological uncertainty that a competent professional in the field could not readily work out. Being new or complex for your business is not enough on its own.</p></details>
@@ -1125,7 +1135,7 @@ footer a.ln{color:#fff}
     var vh0=window.innerHeight,items=$$('.rv,.wipe');
     items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
     document.documentElement.classList.add('anim');
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.01,rootMargin:'0px 0px 18% 0px'});
     items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
     setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
   }

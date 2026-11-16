@@ -17,7 +17,7 @@ h1,h2,h3,h4{font-family:var(--font);line-height:1.12;margin:0;text-wrap:balance;
 .label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:700;display:flex;align-items:center;gap:10px}
 .label::before{content:"";width:26px;height:2px;background:currentColor;opacity:.7}
 .dark .label,.hero .label{color:var(--green)}
-.sec{padding-block:clamp(52px,7vw,96px)}
+.sec{padding-block:clamp(48px,6vw,84px)}
 .sec h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;color:var(--navy-700);margin-top:14px;max-width:24ch}
 .dark h2{color:#fff}
 .lede{font-size:18px;color:var(--muted);max-width:62ch;margin-top:16px}.dark .lede{color:var(--on-dark-muted)}
@@ -90,6 +90,9 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 @media (max-width:600px){.row2{grid-template-columns:minmax(0,1fr)}.field input,.field select,.field textarea{min-height:48px}summary{font-size:17px;padding:18px 2px;min-height:56px}}
 @media (hover:none){.mag,.tilt{transform:none!important}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.faq-grid{align-items:stretch}.faq-left{position:sticky;top:24px}@media (max-width:860px){.faq-left{position:static}}
+.anim .rv.pending:not(.in){transform:translateY(14px)}.rv{transition-duration:.55s}
 
 .hero-bg{position:absolute;inset:0;z-index:-3;overflow:hidden;background:var(--navy-950)}
 .hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 35%;animation:kb 28s ease-in-out infinite alternate;transform-origin:80% 40%}
@@ -227,7 +230,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 }
 @media (max-width:600px){.rgrid,.h48{grid-template-columns:minmax(0,1fr)}.formcard{padding:22px 18px}}
 
-.faq-side{margin-top:28px;position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1.5/1}.faq-side .img{position:absolute;inset:0}.faq-side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.05),rgba(12,33,54,.88))}.faq-side .t{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}.faq-side .t b{display:block;font-size:19px;line-height:1.2;margin-bottom:12px}.btn-sm{padding:10px 20px;font-size:13.5px}
+.faq-side{margin-top:26px;position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1.25/1}.faq-side .img{position:absolute;inset:0}.faq-side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.05),rgba(12,33,54,.88))}.faq-side .t{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}.faq-side .t b{display:block;font-size:19px;line-height:1.2;margin-bottom:12px}.btn-sm{padding:10px 20px;font-size:13.5px}
 @media (max-width:860px){.faq-side{display:none}}
 
 </style>
@@ -444,8 +447,8 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 
 <section class="sec" id="faq" style="background:var(--paper)">
   <div class="wrap faq-grid">
-    <div class="rv"><div class="label">FAQs</div><h2>HMRC R&amp;D enquiry questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
-      <div class="faq-side"><div class="img"><img src="assets/a_meeting.jpg" alt="Specialist adviser meeting to review an HMRC R&amp;D enquiry letter" width="428" height="264" loading="lazy"></div><div class="t"><b>Not sure which letter you have?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div>
+    <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>HMRC R&amp;D enquiry questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
+      <div class="faq-side"><div class="img"><img src="assets/a_meeting.jpg" alt="Specialist adviser meeting to review an HMRC R&amp;D enquiry letter" width="428" height="264" loading="lazy"></div><div class="t"><b>Not sure which letter you have?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
     <div class="rv d1">
       <details open><summary>What does HMRC usually ask about in an R&amp;D enquiry?</summary><p>HMRC commonly questions whether the work meets the definition of R&amp;D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported. Enquiry letters can be detailed and request substantial technical and financial information relating to the submitted claim.</p></details>
       <details><summary>Can you help if another adviser prepared the claim?</summary><p>Yes. We regularly assist companies where the original R&amp;D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response.</p></details>
@@ -502,7 +505,7 @@ if('IntersectionObserver' in window&&!reduce){
   var vh0=window.innerHeight,items=$$('.rv,.wipe');
   items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
   document.documentElement.classList.add('anim');
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.01,rootMargin:'0px 0px 18% 0px'});
   items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
   setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
 }

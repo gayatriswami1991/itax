@@ -17,7 +17,7 @@ h1,h2,h3,h4{font-family:var(--font);line-height:1.12;margin:0;text-wrap:balance;
 .label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:700;display:flex;align-items:center;gap:10px}
 .label::before{content:"";width:26px;height:2px;background:currentColor;opacity:.7}
 .dark .label,.hero .label{color:var(--green)}
-.sec{padding-block:clamp(52px,7vw,96px)}
+.sec{padding-block:clamp(48px,6vw,84px)}
 .sec h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;color:var(--navy-700);margin-top:14px;max-width:24ch}
 .dark h2{color:#fff}
 .lede{font-size:18px;color:var(--muted);max-width:62ch;margin-top:16px}.dark .lede{color:var(--on-dark-muted)}
@@ -90,6 +90,9 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 @media (max-width:600px){.row2{grid-template-columns:minmax(0,1fr)}.field input,.field select,.field textarea{min-height:48px}summary{font-size:17px;padding:18px 2px;min-height:56px}}
 @media (hover:none){.mag,.tilt{transform:none!important}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.faq-grid{align-items:stretch}.faq-left{position:sticky;top:24px}@media (max-width:860px){.faq-left{position:static}}
+.anim .rv.pending:not(.in){transform:translateY(14px)}.rv{transition-duration:.55s}
 
 .hero{padding-block:clamp(64px,8vw,104px) clamp(48px,6vw,80px);background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 55% at 85% 40%,rgba(138,177,65,.18),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
@@ -251,7 +254,7 @@ if('IntersectionObserver' in window&&!reduce){
   var vh0=window.innerHeight,items=$$('.rv,.wipe');
   items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
   document.documentElement.classList.add('anim');
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.01,rootMargin:'0px 0px 18% 0px'});
   items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
   setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
 }
