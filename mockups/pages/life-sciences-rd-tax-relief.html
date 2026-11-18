@@ -97,11 +97,11 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .hero{padding-block:clamp(64px,8vw,104px) clamp(48px,6vw,80px);background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 55% at 85% 40%,rgba(138,177,65,.18),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
 .glow{position:absolute;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(138,177,65,.22),transparent 65%);left:0;top:0;transform:translate(-50%,-50%);transition:opacity .4s;opacity:0}
-.hero h1{font-size:clamp(32px,4.2vw,52px)}
-.hgrid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(30px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(30px,3.6vw,46px)}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,72px);align-items:center}
 .hpic{border-radius:24px;box-shadow:0 50px 80px -34px rgba(0,0,0,.8)}
 .hpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,33,54,.55))}
-.hpic .cap{position:absolute;left:16px;bottom:16px;z-index:2;background:var(--green);color:var(--navy-950);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:8px 13px;border-radius:8px}
+.hpic .cap{display:none}.hpic .cap_{position:absolute;left:16px;bottom:16px;z-index:2;background:var(--green);color:var(--navy-950);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:8px 13px;border-radius:8px}
 .strip{background:#fff;border-bottom:1px solid var(--line)}
 .strip-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 28px;padding-block:20px}
 .strip-in span{display:flex;gap:10px;align-items:center;font-weight:700;font-size:14.5px;color:var(--navy-700)}
@@ -208,7 +208,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
         <span class="chip"><svg><use href="#i-shield"/></svg> Support through an HMRC enquiry</span>
       </div>
     </div>
-    <div class="img hpic wipe rv" style="aspect-ratio:446/263"><img src="assets/a_lab.jpg" alt="Laboratory research: R&amp;D tax relief for life sciences, biotechnology and MedTech companies" width="446" height="263"><span class="cap">Evidence-led claims</span></div>
+    <div class="img hpic wipe rv" style="aspect-ratio:1672/941"><img src="assets/n_banner.jpg" alt="R&amp;D tax relief for life sciences, biotechnology and MedTech companies: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
   </div>
 </section>
 
@@ -318,7 +318,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 <section class="sec" id="faq" style="background:var(--paper)">
   <div class="wrap faq-grid">
     <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>Life sciences R&amp;D tax relief questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
-      <div class="faq-side"><div class="img"><img src="assets/a_meeting.jpg" alt="Specialist adviser meeting to review a life sciences R&amp;D tax claim" width="428" height="264" loading="lazy"></div><div class="t"><b>Unsure how your programme is treated?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
+      <div class="faq-side"><div class="img"><img src="assets/n_meeting.jpg" alt="Specialist adviser meeting to review a life sciences R&amp;D tax claim" width="540" height="409" loading="lazy"></div><div class="t"><b>Unsure how your programme is treated?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
     <div class="rv d1">
       <details open><summary>Can clinical trial expenditure qualify for R&amp;D tax relief?</summary><p>Yes. Activities undertaken during clinical development may qualify where they directly contribute to resolving scientific or technological uncertainty. However, not every clinical trial activity or associated cost is automatically eligible. The scientific purpose, nature of the expenditure and applicable statutory rules must be assessed. For payments to clinical trial subjects to qualify, they must be made to the subjects themselves in return for participating in the trial, rather than being paid through a regulatory body or other intermediary.</p></details>
       <details><summary>Can we claim expenditure incurred through overseas CROs?</summary><p>Potentially. Overseas contractor expenditure is subject to restrictions for accounting periods beginning on or after 1 April 2024, although statutory exceptions may apply. The location and nature of the activities, the necessity for overseas research and whether the relevant conditions could reasonably be replicated in the UK are important considerations.</p></details>

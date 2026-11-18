@@ -182,7 +182,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 /* magnet */
 .mag-wrap{background:var(--paper)}
 .mgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
-.cover{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:1.9/1;box-shadow:0 36px 60px -30px rgba(12,33,54,.7);margin-top:22px}
+.cover{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:656/287;box-shadow:0 36px 60px -30px rgba(12,33,54,.7);margin-top:22px}
 .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.1),rgba(12,33,54,.88))}
 .cover .ct{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;color:#fff}
@@ -192,7 +192,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 .inside li{display:flex;gap:10px;font-size:15px;color:var(--ink)}.inside li svg{width:18px;height:18px;color:var(--green-deep);flex:none;margin-top:3px}
 .guide{margin-top:18px;display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px;text-decoration:none;transition:transform .3s,box-shadow .3s}
 .guide:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.guide .img{aspect-ratio:1.6/1;border-radius:12px}
+.guide .img{aspect-ratio:573/263;border-radius:12px}
 .guide b{display:block;color:var(--navy-700);font-size:16.5px;line-height:1.3}.guide span.s{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
 /* founder */
 .fdr{display:grid;grid-template-columns:200px minmax(0,1fr);gap:26px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
@@ -233,6 +233,13 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 .faq-side{margin-top:26px;position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1.25/1}.faq-side .img{position:absolute;inset:0}.faq-side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.05),rgba(12,33,54,.88))}.faq-side .t{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}.faq-side .t b{display:block;font-size:19px;line-height:1.2;margin-bottom:12px}.btn-sm{padding:10px 20px;font-size:13.5px}
 @media (max-width:860px){.faq-side{display:none}}
 
+/*UNIFORM*/.hero{background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 55% at 85% 40%,rgba(138,177,65,.18),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
+.hero::after{display:none}.hero h1{font-size:clamp(30px,3.6vw,46px)}.hero-in{max-width:none}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,72px);align-items:center}
+.hpic{border-radius:24px;box-shadow:0 50px 80px -34px rgba(0,0,0,.8)}.hpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,33,54,.4))}
+@media (max-width:860px){.hgrid{grid-template-columns:minmax(0,1fr)}.hero{background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}}
+
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
@@ -253,9 +260,9 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 
 <main>
 <section class="hero" id="hero">
-  <div class="hero-bg"><img src="assets/hero_banner.jpg" alt="HMRC R&amp;D enquiry support: R&amp;D tax relief and HMRC compliance files on a London desk beside the Houses of Parliament" width="1800" height="686"></div>
-  <div class="hero-shade"></div><div class="glow" id="glow"></div>
-  <div class="wrap"><div class="hero-in">
+  <div class="glow" id="glow"></div>
+  <div class="wrap hgrid">
+    <div>
     <span class="eyebrow"><i></i> HMRC R&amp;D tax enquiry</span>
     <h1><span class="w" style="--n:0"><i>HMRC</i></span> <span class="w" style="--n:1"><i>R&amp;D</i></span> <span class="w" style="--n:2"><i>Enquiry</i></span> <span class="w" style="--n:3"><i>Support:</i></span> <span class="hl"><span class="w" style="--n:4"><i>Respond</i></span> <span class="w" style="--n:5"><i>with</i></span> <span class="w" style="--n:6"><i>Confidence</i></span></span></h1>
     <p class="answer"><b>If HMRC has opened an enquiry into your R&amp;D tax claim, early and well-structured support can make a significant difference.</b> We help companies respond clearly, protect claim credibility and manage the enquiry process with confidence.</p>
@@ -268,7 +275,9 @@ td:first-child{font-weight:700;color:var(--navy-700)}
       <span class="chip"><svg><use href="#i-search"/></svg> We review claims prepared by another adviser</span>
       <span class="chip"><svg><use href="#i-flag"/></svg> Support through to conclusion of the enquiry</span>
     </div>
-  </div></div>
+    </div>
+    <div class="img hpic wipe rv" style="aspect-ratio:1672/941"><img src="assets/n_banner.jpg" alt="HMRC R&amp;D enquiry support: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
+  </div>
 </section>
 
 <div class="strip"><div class="wrap strip-in">
@@ -289,7 +298,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
         <div><svg><use href="#i-shield"/></svg><p><b>Less risk, better communication</b><span>Early specialist support can help minimise risk, improve communication with HMRC and increase confidence throughout the enquiry process.</span></p></div>
       </div>
     </div>
-    <div class="img pic wipe rv d1" style="aspect-ratio:1.55/1"><img src="assets/b_hex_doc.jpg" alt="HMRC R&amp;D tax enquiry support: document review, legal, compliance shield and search icons" width="656" height="287" loading="lazy"><span class="cap">Evidence-led, structured</span></div>
+    <div class="img pic wipe rv d1" style="aspect-ratio:540/409"><img src="assets/n_enquiry_doc.jpg" alt="HMRC R&amp;D tax enquiry support: document review, legal, compliance shield and search icons" width="540" height="409" loading="lazy"><span class="cap">Evidence-led, structured</span></div>
   </div>
 </section>
 
@@ -351,7 +360,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 
 <section class="sec dark" id="approach">
   <div class="wrap split">
-    <div class="img pic wipe rv" style="aspect-ratio:1.5/1"><img src="assets/b_magnifier.jpg" alt="Magnifying glass over claim files: our review of the submitted claim and HMRC correspondence" width="516" height="227" loading="lazy"><span class="cap">We begin with your claim and the HMRC letter</span></div>
+    <div class="img pic wipe rv" style="aspect-ratio:549/306"><img src="assets/n_risk.jpg" alt="Magnifying glass over claim files: our review of the submitted claim and HMRC correspondence" width="549" height="306" loading="lazy"><span class="cap">We begin with your claim and the HMRC letter</span></div>
     <div class="rv d1">
       <div class="label">Our approach</div>
       <h2>R&amp;D tax enquiry defence: how we support you</h2>
@@ -395,7 +404,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
       <span class="illu">Illustrative example, not a real client</span>
       <div class="cities"><span>London</span><span>Oxford</span><span>Cambridge</span></div>
     </div>
-    <div class="img pic wipe rv d1" style="aspect-ratio:1.5/1"><img src="assets/b_lab.jpg" alt="Life sciences researcher at a microscope: HMRC R&amp;D enquiry support for biotech and pharma" width="498" height="227" loading="lazy"><span class="cap">The science comes from the lead scientist</span></div>
+    <div class="img pic wipe rv d1" style="aspect-ratio:557/468"><img src="assets/n_lab.jpg" alt="Life sciences researcher at a microscope: HMRC R&amp;D enquiry support for biotech and pharma" width="557" height="468" loading="lazy"><span class="cap">The science comes from the lead scientist</span></div>
   </div>
 </section>
 
@@ -448,7 +457,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 <section class="sec" id="faq" style="background:var(--paper)">
   <div class="wrap faq-grid">
     <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>HMRC R&amp;D enquiry questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
-      <div class="faq-side"><div class="img"><img src="assets/a_meeting.jpg" alt="Specialist adviser meeting to review an HMRC R&amp;D enquiry letter" width="428" height="264" loading="lazy"></div><div class="t"><b>Not sure which letter you have?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
+      <div class="faq-side"><div class="img"><img src="assets/n_meeting.jpg" alt="Specialist adviser meeting to review an HMRC R&amp;D enquiry letter" width="540" height="409" loading="lazy"></div><div class="t"><b>Not sure which letter you have?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
     <div class="rv d1">
       <details open><summary>What does HMRC usually ask about in an R&amp;D enquiry?</summary><p>HMRC commonly questions whether the work meets the definition of R&amp;D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported. Enquiry letters can be detailed and request substantial technical and financial information relating to the submitted claim.</p></details>
       <details><summary>Can you help if another adviser prepared the claim?</summary><p>Yes. We regularly assist companies where the original R&amp;D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response.</p></details>

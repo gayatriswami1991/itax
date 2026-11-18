@@ -107,7 +107,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .route{position:relative;display:flex;flex-direction:column;text-align:left;font:inherit;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;padding:0;transition:transform .3s,box-shadow .3s,border-color .3s}
 .route:hover,.route[aria-pressed="true"]{border-color:var(--green);box-shadow:var(--shadow)}
 .route[aria-pressed="true"]{outline:3px solid rgba(138,177,65,.35)}
-.route .img{aspect-ratio:2/1}
+.route .img{aspect-ratio:1.8/1}
 .route:hover .img img{transform:scale(1.1)}
 .route .cb{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
 .route h3{font-size:18px;color:var(--navy-700);font-weight:800;line-height:1.25}
@@ -140,9 +140,11 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .teaser>*{position:relative}.teaser h2{color:#fff;font-size:clamp(22px,2.6vw,30px);margin:0;max-width:none}.teaser p{color:var(--on-dark-muted);margin-top:8px;max-width:60ch}
 @media (max-width:1020px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:860px){.hgrid,.fgrid{grid-template-columns:minmax(0,1fr)}.side{position:static}.teaser{grid-template-columns:minmax(0,1fr)}.teaser .btn{width:100%;justify-content:center}.hpic{aspect-ratio:1.8/1}}
-@media (max-width:600px){.rgrid{grid-template-columns:minmax(0,1fr)}.route .img{aspect-ratio:2.4/1}.formcard{padding:22px 18px}}
+@media (max-width:600px){.rgrid{grid-template-columns:minmax(0,1fr)}.route .img{aspect-ratio:1.8/1}.formcard{padding:22px 18px}}
 
 .sel-note:empty{display:none}
+
+/*UNIFORM*/.hgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.hpic{aspect-ratio:auto}.hpic .cap{display:none}.hero h1{font-size:clamp(30px,3.6vw,46px)}@media (max-width:860px){.hgrid{grid-template-columns:minmax(0,1fr)}}
 
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -173,7 +175,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
       <div class="cta-row"><a class="btn btn-green mag" href="#enquiry">Send an enquiry <svg><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="#routes">What do you need help with?</a></div>
       <div class="chips"><span class="chip"><svg><use href="#i-mail"/></svg> info@itaxadvisors.co.uk</span><span class="chip"><svg><use href="#i-clock"/></svg> A member of our team will be in touch to arrange a call</span></div>
     </div>
-    <div class="img hpic wipe"><img src="assets/b_hands_charts.jpg" alt="Specialist R&amp;D tax advisers reviewing claim figures with a client" width="498" height="227"><span class="cap">Senior specialists, direct access</span></div>
+    <div class="img hpic wipe rv" style="aspect-ratio:1672/941"><img src="assets/n_banner.jpg" alt="R&amp;D tax claim support: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
   </div>
 </section>
 
@@ -183,10 +185,10 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
     <h2>What do you need from our R&amp;D tax advisers?</h2>
     <p class="lede">Choose the one closest to your situation and we will set it up in the form below.</p></div>
     <div class="rgrid">
-      <button type="button" class="route tilt rv" data-type="Preparing a new R&D claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/a_consult.jpg" alt="R&amp;D tax adviser preparing an R&amp;D tax claim at a desk" width="497" height="263" loading="lazy"></div><div class="cb"><h3>Preparing your first R&amp;D tax claim</h3><p>Technically robust, evidence-led R&amp;D tax claims.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
-      <button type="button" class="route tilt rv d1" data-type="A second opinion on an existing claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/b_magnifier.jpg" alt="Magnifying glass over claim files for an R&amp;D tax claim second opinion" width="516" height="227" loading="lazy"></div><div class="cb"><h3>Reviewing an existing claim position</h3><p>Independent review of existing or proposed claims to assess eligibility, evidential strength and compliance risk.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
-      <button type="button" class="route tilt rv d2" data-type="An HMRC enquiry or compliance check" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/b_hex_doc.jpg" alt="HMRC R&amp;D enquiry support: document review and compliance icons" width="656" height="287" loading="lazy"></div><div class="cb"><h3>Responding to HMRC questions</h3><p>Structured support for HMRC R&amp;D tax enquiries and reviews.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
-      <button type="button" class="route tilt rv d3" data-type="Contemporaneous R&D reporting" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/a_calc.jpg" alt="Calculator and cost spreadsheets for contemporaneous R&amp;D reporting" width="385" height="230" loading="lazy"></div><div class="cb"><h3>Capturing R&amp;D as it happens</h3><p>Practical support to capture R&amp;D activity and costs in real time, strengthening future claims and governance.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv" data-type="Preparing a new R&D claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_team.jpg" alt="R&amp;D tax adviser preparing an R&amp;D tax claim at a desk" width="532" height="295" loading="lazy"></div><div class="cb"><h3>Preparing your first R&amp;D tax claim</h3><p>Technically robust, evidence-led R&amp;D tax claims.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv d1" data-type="A second opinion on an existing claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_risk.jpg" alt="Magnifying glass over claim files for an R&amp;D tax claim second opinion" width="549" height="306" loading="lazy"></div><div class="cb"><h3>Reviewing an existing claim position</h3><p>Independent review of existing or proposed claims to assess eligibility, evidential strength and compliance risk.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv d2" data-type="An HMRC enquiry or compliance check" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_hmrc_enquiry.jpg" alt="HMRC R&amp;D enquiry support: document review and compliance icons" width="557" height="306" loading="lazy"></div><div class="cb"><h3>Responding to HMRC questions</h3><p>Structured support for HMRC R&amp;D tax enquiries and reviews.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv d3" data-type="Contemporaneous R&D reporting" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_reporting.jpg" alt="Calculator and cost spreadsheets for contemporaneous R&amp;D reporting" width="503" height="296" loading="lazy"></div><div class="cb"><h3>Capturing R&amp;D as it happens</h3><p>Practical support to capture R&amp;D activity and costs in real time, strengthening future claims and governance.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
     </div>
   </div>
 </section>

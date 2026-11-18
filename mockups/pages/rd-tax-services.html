@@ -1,0 +1,417 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>R&D Tax Services Page</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!-- SEO (set in Yoast): title: R&D Tax Services UK: Claims, Reviews, Enquiries | iTax | description: R&D tax claim preparation, second opinions, HMRC enquiry support and contemporaneous reporting from specialist UK advisers. Speak to a specialist. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--navy-950:#0c2136;--navy-900:#143451;--navy-800:#183c5e;--navy-700:#1b456d;--green:#8ab141;--green-deep:#4f7a0f;--ink:#21507b;--muted:#4a6580;--paper:#eef2f1;--white:#fff;--line:#d3dde7;--line-dark:rgba(255,255,255,.14);--on-dark:#e8f0f7;--on-dark-muted:#aebfd0;--star:#e0a53a;--font:"Raleway",Arial,Helvetica,sans-serif;--radius:16px;--shadow:0 22px 44px -20px rgba(12,33,54,.4);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;letter-spacing:.2px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}p{margin:0}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:700;display:flex;align-items:center;gap:10px}
+.label::before{content:"";width:26px;height:2px;background:currentColor;opacity:.7}
+.dark .label,.hero .label{color:var(--green)}
+.sec{padding-block:clamp(48px,6vw,84px)}
+.sec h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;color:var(--navy-700);margin-top:14px;max-width:24ch}
+.dark h2{color:#fff}
+.lede{font-size:18px;color:var(--muted);max-width:62ch;margin-top:16px}.dark .lede{color:var(--on-dark-muted)}
+.dark{background:var(--navy-900);color:var(--on-dark);position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 55px,rgba(255,255,255,.035) 55px 56px);pointer-events:none}
+.dark>*{position:relative}
+.img{position:relative;overflow:hidden;background:var(--navy-800)}
+.img img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.img:hover img{transform:scale(1.06)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font);font-weight:700;font-size:15px;letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:15px 26px;transition:transform .2s,box-shadow .25s,background .25s;position:relative;overflow:hidden}
+.btn svg{width:20px;height:20px}
+.btn-green{background:var(--green);color:var(--navy-950);box-shadow:0 10px 26px -10px rgba(138,177,65,.85)}
+.btn-green:hover{background:#9cc552}
+.btn-green::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%)}
+.btn-green:hover::after{transform:translateX(120%);transition:transform .8s}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--green);color:var(--green)}
+.btn-line{background:#fff;color:var(--navy-700);box-shadow:inset 0 0 0 2px var(--line)}.btn-line:hover{box-shadow:inset 0 0 0 2px var(--green)}
+.more{font-weight:700;font-size:14px;color:var(--navy-700);display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.more svg{width:18px;height:18px;transition:transform .25s}a:hover>.more svg,.more:hover svg{transform:translateX(5px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);border:1px solid rgba(138,177,65,.45);padding:7px 14px;border-radius:999px;background:rgba(138,177,65,.08)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(138,177,65,.7)}100%{box-shadow:0 0 0 12px rgba(138,177,65,0)}}
+.hero{position:relative;background:var(--navy-950);color:var(--on-dark);padding-block:clamp(72px,9vw,120px) clamp(56px,7vw,92px);overflow:hidden;isolation:isolate}
+.hero h1{font-size:clamp(34px,5vw,60px);font-weight:800;color:#fff;letter-spacing:-.02em;margin-top:22px}
+.w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.w i{display:inline-block;font-style:normal;animation:up .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--n)*80ms + .1s)}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.hl{color:var(--green);position:relative;white-space:nowrap}
+.hl::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:.1em;background:var(--green);border-radius:4px;transform-origin:left;animation:sweep 1.1s .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sweep{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .answer{font-size:clamp(17px,1.5vw,20px);color:var(--on-dark);max-width:58ch;margin-top:24px}
+.hero .answer b{color:#fff}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--on-dark);border:1px solid var(--line-dark);background:rgba(255,255,255,.06);padding:8px 14px;border-radius:999px}
+.chip svg{width:16px;height:16px;color:var(--green)}
+.formcard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3.2vw,42px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);position:relative;min-width:0}
+.formcard h3{font-size:25px;color:var(--navy-700);font-weight:800}
+.formcard .sub{font-size:15px;color:var(--muted);margin-top:6px}
+.field{display:grid;gap:6px;margin-top:16px}
+.field label{font-size:13.5px;font-weight:700;color:var(--navy-700)}
+.field label em{font-style:normal;color:var(--muted);font-weight:500}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:14px 15px;width:100%;transition:border-color .2s,box-shadow .2s,background .2s}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy-700);box-shadow:0 0 0 4px rgba(27,69,109,.15);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:var(--muted)}
+.consent input{width:20px;height:20px;margin-top:2px;accent-color:var(--navy-700);flex:none}
+.formcard .btn{width:100%;justify-content:center;margin-top:20px;min-height:52px}
+.fine{font-size:12.5px;color:#a33a2b;margin-top:12px;min-height:1em}
+.done{display:none}.done.show{display:block}
+.done .tick{width:56px;height:56px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;margin-bottom:16px}
+.done .tick svg{width:30px;height:30px}.done h3{font-size:24px;color:var(--navy-700)}.done p{margin-top:8px;color:var(--muted)}
+details{border-bottom:1px solid var(--line)}details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;font-weight:700;font-size:19px;color:var(--navy-700);line-height:1.3}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b456d' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .3s,background-color .3s}
+details[open] summary::after{transform:rotate(45deg);background-color:var(--green)}
+details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open] p{animation:fadeUp .4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px)}
+.anim .rv.pending:not(.in){opacity:0;transform:translateY(24px)}
+.anim .wipe.pending:not(.in){clip-path:inset(0 0 100% 0)}
+.rv{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.wipe{transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+.tilt{transform-style:preserve-3d;transition:transform .35s,box-shadow .35s}
+@media (max-width:860px){body{font-size:16px}.sec{padding-block:44px}.sec h2{max-width:none;font-size:clamp(26px,7.4vw,32px)}.lede{font-size:16.5px}.faq-grid{grid-template-columns:minmax(0,1fr)}.cta-row .btn{width:100%;justify-content:center}.hl{white-space:normal}.hero{padding-block:56px 44px}}
+@media (max-width:600px){.row2{grid-template-columns:minmax(0,1fr)}.field input,.field select,.field textarea{min-height:48px}summary{font-size:17px;padding:18px 2px;min-height:56px}}
+@media (hover:none){.mag,.tilt{transform:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.faq-grid{align-items:stretch}.faq-left{position:sticky;top:24px}@media (max-width:860px){.faq-left{position:static}}
+.anim .rv.pending:not(.in){transform:translateY(14px)}.rv{transition-duration:.55s}
+
+.hero{padding-block:clamp(64px,8vw,104px) clamp(48px,6vw,80px);background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 55% at 85% 40%,rgba(138,177,65,.18),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
+.glow{position:absolute;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(138,177,65,.22),transparent 65%);left:0;top:0;transform:translate(-50%,-50%);transition:opacity .4s;opacity:0}
+.hero h1{font-size:clamp(30px,3.6vw,46px)}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,72px);align-items:center}
+.hpic{border-radius:24px;box-shadow:0 50px 80px -34px rgba(0,0,0,.8)}
+.hpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,33,54,.55))}
+.hpic .cap{display:none}.hpic .cap_{position:absolute;left:16px;bottom:16px;z-index:2;background:var(--green);color:var(--navy-950);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:8px 13px;border-radius:8px}
+.strip{background:#fff;border-bottom:1px solid var(--line)}
+.strip-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 28px;padding-block:20px}
+.strip-in span{display:flex;gap:10px;align-items:center;font-weight:700;font-size:14.5px;color:var(--navy-700)}
+.strip-in svg{width:22px;height:22px;color:var(--green-deep);flex:none}
+.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,72px);align-items:center}
+.pic{border-radius:22px;box-shadow:0 40px 70px -30px rgba(12,33,54,.6)}
+.pic .cap{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--green);color:var(--navy-950);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:7px 12px;border-radius:7px;max-width:70%}
+.pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(12,33,54,.4));pointer-events:none}
+.body{color:var(--muted);font-size:17px;margin-top:14px;max-width:62ch}
+.why{margin-top:22px;display:grid;gap:14px}
+.why div{display:grid;grid-template-columns:44px 1fr;gap:14px}
+.why svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
+.why b{display:block;color:var(--navy-700);font-size:18px}.why span{color:var(--muted);font-size:16px}
+.routes{background:#fff}
+.lgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.lc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:grid;gap:10px;align-content:start;transition:transform .3s,box-shadow .3s,border-color .3s}
+.lc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
+.lc svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
+.lc h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}.lc p{font-size:15.5px;color:var(--muted)}
+.notefinal{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:#eaf4d4;border-radius:14px;padding:16px 20px;color:var(--navy-700);font-weight:600}
+.notefinal svg{width:26px;height:26px;color:var(--green-deep)}
+.lsel{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(18px,3vw,36px);margin-top:36px;align-items:start}
+.llist{display:grid;gap:10px;align-content:start}
+.lbtn{display:flex;gap:14px;align-items:center;text-align:left;font:inherit;font-weight:700;font-size:16px;color:var(--navy-700);background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;transition:transform .25s,border-color .25s,background .25s,box-shadow .25s;min-height:60px}
+.lbtn span{flex:none;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:14px;transition:background .25s,color .25s}
+.lbtn:hover{border-color:var(--green);transform:translateX(4px)}
+.lbtn[aria-selected="true"]{background:var(--green);color:var(--navy-950);border-color:var(--green)}
+.lbtn[aria-selected="true"] span{background:var(--navy-950);color:var(--green)}
+.lpanel{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3vw,40px);box-shadow:0 40px 60px -34px rgba(0,0,0,.7);position:relative;overflow:hidden;animation:fadeUp .45s}
+.lpanel[hidden]{display:none}
+.lpanel h3{font-size:clamp(21px,2.3vw,27px);font-weight:800;color:var(--navy-700)}
+.lrow{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.lrow small{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:6px}
+.lrow p{color:var(--ink);font-size:16.5px}.lrow .pp,.csc .pp{margin-top:10px}
+.cs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.csc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column}
+.csc small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:10px}
+.csc p{font-size:16px;color:var(--muted)}
+.stat{margin-top:auto;padding:14px 16px;border-radius:12px;background:var(--navy-700);color:#fff;display:grid;gap:2px}
+.csc .stat{margin-top:18px}
+.stat b{font-size:28px;color:var(--green);line-height:1.1}.stat span{font-size:13.5px;color:var(--on-dark)}
+.stat.g{background:var(--green)}.stat.g b{color:var(--navy-950)}.stat.g span{color:var(--navy-900);font-weight:600}
+.sgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:36px}
+.sc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:grid;gap:12px;align-content:start}
+.sc .tag{justify-self:start;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:7px;background:#dff0b8;color:#3d6409}
+.sc h3{font-size:22px;color:var(--navy-700)}.sc p{font-size:16px;color:var(--muted)}
+.lm{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;background:var(--navy-900);color:#fff;border-radius:var(--radius);padding:22px 26px}
+.lm b{font-size:19px}.lm p{color:var(--on-dark-muted);font-size:15px;margin-top:4px}
+.contact{background:var(--navy-950);color:var(--on-dark)}
+.contact::before{background:radial-gradient(50% 60% at 15% 20%,rgba(27,69,109,.7),transparent 70%)}
+.cgrid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:start}
+.contact .lede+.lede{margin-top:12px}
+.det{margin-top:26px;display:grid;gap:16px;padding-top:22px;border-top:1px solid var(--line-dark)}
+.det div{display:grid;grid-template-columns:28px 1fr;gap:12px;color:#fff;font-size:16px}
+.det svg{width:24px;height:24px;color:var(--green)}.det a{color:#fff}
+.rel{margin-top:26px;display:grid;gap:10px}
+.rel a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:#fff;font-weight:700;border:1px solid var(--line-dark);border-radius:12px;padding:14px 16px;transition:border-color .25s,background .25s,transform .25s}
+.rel a:hover{border-color:var(--green);background:rgba(138,177,65,.1);transform:translateX(4px)}
+.rel svg{width:20px;height:20px;color:var(--green)}
+.faq-side{margin-top:26px;position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1.25/1}.faq-side .img{position:absolute;inset:0}.faq-side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.05),rgba(12,33,54,.88))}.faq-side .t{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}.faq-side .t b{display:block;font-size:19px;line-height:1.2;margin-bottom:12px}.btn-sm{padding:10px 20px;font-size:13.5px}
+@media (max-width:1020px){.lgrid,.cs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){
+  .strip-in{grid-template-columns:minmax(0,1fr)}
+  .hgrid,.split,.lsel,.cgrid,.sgrid{grid-template-columns:minmax(0,1fr)}
+  .lm{flex-direction:column;align-items:stretch}.lm .btn{justify-content:center}
+  .faq-side{display:none}.lbtn{min-height:56px}
+}
+@media (max-width:600px){.lgrid,.cs{grid-template-columns:minmax(0,1fr)}.formcard{padding:22px 18px}.stat b{font-size:25px}}
+.lm .btn{flex:none;white-space:nowrap}.llist{position:sticky;top:24px}@media (max-width:860px){.llist{position:static}}
+
+.h48-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:center}
+.tl{margin-top:28px;display:grid;position:relative}.tl::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:rgba(255,255,255,.18)}
+.ts{display:grid;grid-template-columns:40px 1fr;gap:18px;padding-bottom:20px;position:relative}.ts:last-child{padding-bottom:0}
+.ts .n{width:40px;height:40px;border-radius:50%;background:var(--navy-900);border:2px solid var(--green);color:var(--green);display:grid;place-items:center;font-weight:800;z-index:2;transition:background .3s,color .3s}
+.ts:hover .n{background:var(--green);color:var(--navy-950)}.ts p{color:var(--on-dark);font-size:16.5px;padding-top:7px}.ts b{color:#fff}
+.svcs{display:grid;gap:22px;margin-top:36px}
+.svc{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(22px,4vw,48px);align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(18px,2.4vw,28px);transition:box-shadow .3s,border-color .3s}
+.svc:hover{box-shadow:var(--shadow);border-color:var(--green)}
+.svc.flip{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.svc.flip .pic{order:2}
+.svc .pic{box-shadow:none;border-radius:16px}
+.st h3{font-size:clamp(22px,2.4vw,28px);color:var(--navy-700);font-weight:800}.st>p{color:var(--muted);margin-top:10px;font-size:17px}
+.tick{list-style:none;margin:16px 0 20px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tick li{font-weight:700;font-size:13.5px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:6px 13px}
+.rgrid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.rq{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:grid;gap:10px;align-content:start;transition:transform .3s,box-shadow .3s,border-color .3s}
+.rq:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
+.rq svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}.rq h3{font-size:19px;color:var(--navy-700)}.rq p{font-size:15.5px;color:var(--muted)}
+.btn-line{background:#fff;color:var(--navy-700);box-shadow:inset 0 0 0 2px var(--line)}
+@media (max-width:860px){.svc,.svc.flip,.h48-top{grid-template-columns:minmax(0,1fr)}.svc.flip .pic{order:0}.rgrid3{grid-template-columns:minmax(0,1fr)}.hero-shade{background:linear-gradient(180deg,rgba(12,33,54,.78) 0%,rgba(12,33,54,.86) 45%,rgba(12,33,54,.95) 80%)}.hero-bg img{object-position:72% center}.svc .btn{width:100%;justify-content:center}}
+.tick.sect{margin-top:22px}.tick.sect a{font-weight:700;font-size:14px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:8px 15px;text-decoration:none;transition:background .2s}.tick.sect a:hover{background:var(--green)}
+
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6l7-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 006 0L5 7zM19 7l-3 7a3.5 3.5 0 006 0l-3-7z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 15.5h6"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0010 18.7l1-1"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75z"/></symbol>
+</svg>
+
+<main>
+<section class="hero" id="hero">
+  <div class="glow" id="glow"></div>
+  <div class="wrap hgrid">
+    <div>
+    <span class="eyebrow"><i></i> Robust, evidence-led R&amp;D tax support</span>
+    <h1><span class="hl"><span class="w" style="--n:0"><i>R&amp;D</i></span> <span class="w" style="--n:1"><i>Tax</i></span> <span class="w" style="--n:2"><i>Services</i></span></span> <span class="w" style="--n:3"><i>for</i></span> <span class="w" style="--n:4"><i>UK</i></span> <span class="w" style="--n:5"><i>Companies:</i></span> <span class="w" style="--n:6"><i>Claims,</i></span> <span class="w" style="--n:7"><i>Reviews</i></span> <span class="w" style="--n:8"><i>and</i></span> <span class="w" style="--n:9"><i>HMRC</i></span> <span class="w" style="--n:10"><i>Support</i></span></h1>
+    <p class="answer"><b>We provide specialist R&amp;D tax incentive services designed to help companies prepare credible, compliant and HMRC-ready claims.</b> Our approach combines technical project review, cost analysis and clear supporting evidence, giving businesses confidence that their claim is well prepared and defensible.</p>
+    <div class="cta-row">
+      <a class="btn btn-green mag" href="#contact">Speak to our specialists <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost" href="#services">See our four services</a>
+    </div>
+    <div class="chips">
+      <span class="chip"><svg><use href="#i-doc"/></svg> Claim preparation</span>
+      <span class="chip"><svg><use href="#i-shield"/></svg> HMRC enquiry support</span>
+      <span class="chip"><svg><use href="#i-search"/></svg> Claim review and risk assessment</span>
+      <span class="chip"><svg><use href="#i-clock"/></svg> Contemporaneous reporting</span>
+    </div>
+    </div>
+    <div class="img hpic wipe rv" style="aspect-ratio:1672/941"><img src="assets/n_banner.jpg" alt="R&amp;D tax services: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
+  </div>
+</section>
+
+<div class="strip"><div class="wrap strip-in">
+  <span><svg><use href="#i-search"/></svg> Technical project review</span>
+  <span><svg><use href="#i-scale"/></svg> Cost analysis</span>
+  <span><svg><use href="#i-doc"/></svg> Clear supporting evidence</span>
+</div></div>
+
+<section class="sec" id="services" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="rv"><div class="label">Our services</div>
+    <h2>R&amp;D tax incentive services from specialist advisers</h2>
+    <p class="lede">We work with companies across a range of sectors to identify eligible R&amp;D activity, assess qualifying expenditure and prepare claims that align with current HMRC expectations.</p></div>
+    <div class="svcs">
+      <article class="svc rv" id="claim-preparation">
+        <div class="img pic wipe" style="aspect-ratio:752/335"><img src="assets/n_claim_prep.jpg" alt="R&amp;D tax claim checklist: eligibility review, technical narrative, cost analysis, evidence and documentation, HMRC compliance" width="752" height="335" loading="lazy"><span class="cap">Service 1</span></div>
+        <div class="st"><h3>R&amp;D Claim Preparation</h3>
+          <p>End-to-end support preparing technically robust R&amp;D tax relief claims, including project eligibility, qualifying costs, technical narratives and submission-ready documentation.</p>
+          <ul class="tick"><li>Project eligibility</li><li>Qualifying costs</li><li>Technical narratives</li><li>Submission-ready documentation</li></ul>
+          <a class="btn btn-line" href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/">Read about claim preparation <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc flip rv" id="hmrc-enquiry-support">
+        <div class="img pic wipe" style="aspect-ratio:557/306"><img src="assets/n_hmrc_enquiry.jpg" alt="HMRC enquiry notice beside a gavel: HMRC R&amp;D enquiry support" width="557" height="306" loading="lazy"><span class="cap">Service 2</span></div>
+        <div class="st"><h3>HMRC Enquiry Support</h3>
+          <p>Practical support if HMRC opens an enquiry into your R&amp;D claim, including evidence review, response preparation and technical defence.</p>
+          <ul class="tick"><li>Evidence review</li><li>Response preparation</li><li>Technical defence</li></ul>
+          <a class="btn btn-line" href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">Read about enquiry support <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc rv" id="claim-review">
+        <div class="img pic wipe" style="aspect-ratio:549/306"><img src="assets/n_risk.jpg" alt="Magnifying glass over claim figures beside a risk assessment block: claim review and risk assessment" width="549" height="306" loading="lazy"><span class="cap">Service 3</span></div>
+        <div class="st"><h3>Claim Review and Risk Assessment</h3>
+          <p>Independent review of existing or draft R&amp;D claims to assess eligibility, evidence strength, cost treatment and potential enquiry risk.</p>
+          <ul class="tick"><li>Eligibility</li><li>Evidence strength</li><li>Cost treatment</li><li>Potential enquiry risk</li></ul>
+          <a class="btn btn-line" href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">Risk assess your claim <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="svc flip rv" id="contemporaneous-reporting">
+        <div class="img pic wipe" style="aspect-ratio:503/296"><img src="assets/n_reporting.jpg" alt="Calendar and contemporaneous reporting checklist: R&amp;D activity captured throughout the year" width="503" height="296" loading="lazy"><span class="cap">Service 4</span></div>
+        <div class="st"><h3>Contemporaneous Reporting</h3>
+          <p>Ongoing support to help companies capture R&amp;D activity, decision-making, uncertainties and evidence throughout the year.</p>
+          <ul class="tick"><li>R&amp;D activity</li><li>Decision-making</li><li>Uncertainties</li><li>Evidence, throughout the year</li></ul>
+          <a class="btn btn-line" href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/">Strengthen your claim process <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="how-we-work">
+  <div class="wrap h48-top">
+    <div class="rv"><div class="label">How a claim is prepared</div>
+    <h2>Four steps from first discussion to submission pack</h2>
+    <p class="lede">We prepare claims that are clear, well-evidenced and commercially realistic. Our process is designed to reduce risk, improve documentation quality and support companies in meeting HMRC&rsquo;s expectations.</p>
+    <div class="tl">
+      <div class="ts"><span class="n">1</span><p><b>Technical scoping and risk assessment.</b> In-depth discussions to identify eligible R&amp;D activities, clarify the advance and uncertainties, and define a defensible claim strategy.</p></div>
+      <div class="ts"><span class="n">2</span><p><b>Structured project documentation.</b> We work with you to capture qualifying activities and align narratives with the R&amp;D guidelines and legislation.</p></div>
+      <div class="ts"><span class="n">3</span><p><b>Cost calculations.</b> Project-by-project cost allocation, with transparent calculations and clear linkage between activities and expenditure.</p></div>
+      <div class="ts"><span class="n">4</span><p><b>Submission pack.</b> The additional information form, claim approach report, structured cost breakdowns and downloadable evidence packs.</p></div>
+    </div></div>
+    <div class="rv d1"><div class="img pic wipe" style="aspect-ratio:557/465"><img src="assets/n_calc.jpg" alt="Adviser reviewing cost calculations and claim figures with a calculator" width="557" height="465" loading="lazy"><span class="cap">Senior-led scoping</span></div></div>
+  </div>
+</section>
+
+<section class="sec" id="requirements" style="background:#fff">
+  <div class="wrap">
+    <div class="rv"><div class="label">Before you claim</div>
+    <h2>What every R&amp;D tax claim needs</h2>
+    <p class="lede">Eligibility for the underlying R&amp;D does not remove procedural requirements, so the filing position should be checked early, particularly for first-time claimants or businesses returning to R&amp;D relief after a gap.</p></div>
+    <div class="rgrid3">
+      <div class="rq rv"><svg><use href="#i-flag"/></svg><h3>Claim notification</h3><p>Some companies must submit a claim notification within six months of the end of the relevant period of account. Whether it is needed depends on the company&rsquo;s recent claim history.</p></div>
+      <div class="rq rv d1"><svg><use href="#i-doc"/></svg><h3>Additional Information Form</h3><p>Every claim requires an Additional Information Form before, or on the same day as, the Company Tax Return containing the claim is submitted.</p></div>
+      <div class="rq rv d2"><svg><use href="#i-folder"/></svg><h3>Contemporaneous evidence</h3><p>Records should show the starting knowledge, the advance sought, the uncertainties encountered, the work undertaken and how costs were attributed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="why" style="background:var(--paper)">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="label">Why work with us</div>
+      <h2>Why work with iTax Advisors</h2>
+      <p class="lede">We focus on preparing R&amp;D claims that are clear, well-evidenced and commercially realistic. Our process is designed to reduce risk, improve documentation quality and support companies in meeting HMRC&rsquo;s expectations.</p>
+      <div class="why">
+        <div><svg><use href="#i-shield"/></svg><p><b>Compliance you can demonstrate</b><span>A clear demonstration of compliance with R&amp;D tax legislation and guidelines.</span></p></div>
+        <div><svg><use href="#i-scale"/></svg><p><b>Costs traced to activities</b><span>Clear traceability between R&amp;D activities and the costs claimed.</span></p></div>
+        <div><svg><use href="#i-doc"/></svg><p><b>A defensible audit trail</b><span>A documented trail of activities, judgements and cost allocations.</span></p></div>
+      </div>
+    </div>
+    <div class="rv d1"><div class="img pic wipe" style="aspect-ratio:532/295"><img src="assets/n_team.jpg" alt="Specialist R&amp;D tax advisers discussing a claim with a client" width="532" height="295" loading="lazy"><span class="cap">Senior-led, specialist advice</span></div></div>
+  </div>
+</section>
+
+<section class="sec" id="sectors" style="background:#fff">
+  <div class="wrap">
+    <div class="rv"><div class="label">Sectors</div>
+    <h2>R&amp;D tax advice across a range of sectors</h2>
+    <p class="lede">We work with companies across a range of sectors to identify eligible R&amp;D activity, assess qualifying expenditure and prepare claims that align with current HMRC expectations.</p></div>
+    <div class="img pic wipe rv" style="aspect-ratio:747/296;margin-top:30px"><img src="assets/n_sectors.jpg" alt="Software, life sciences, engineering, manufacturing, construction and AI: sectors we prepare R&amp;D tax claims for" width="747" height="296" loading="lazy"></div>
+    <div class="tick sect rv"><a href="https://www.itaxadvisors.co.uk/#sectors">Life sciences, biotech and MedTech</a><a href="https://www.itaxadvisors.co.uk/#sectors">Software, SaaS and AI</a><a href="https://www.itaxadvisors.co.uk/#sectors">Engineering</a><a href="https://www.itaxadvisors.co.uk/#sectors">Manufacturing</a><a href="https://www.itaxadvisors.co.uk/#sectors">Construction</a></div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="background:var(--paper)">
+  <div class="wrap faq-grid">
+    <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>R&amp;D tax services questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
+      <div class="faq-side"><div class="img"><img src="assets/n_meeting.jpg" alt="Specialist adviser meeting a client to discuss R&amp;D tax services" width="540" height="409" loading="lazy"></div><div class="t"><b>Not sure which service you need?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
+    <div class="rv d1">
+      <details open><summary>What must we submit to make an R&amp;D tax relief claim?</summary><p>Every claim requires an Additional Information Form before, or on the same day as, the Company Tax Return is submitted. Some companies must also submit a claim notification form within the applicable time limit. Eligibility for the underlying R&amp;D does not remove these procedural requirements, so the filing position should be checked early.</p></details>
+      <details><summary>When do we need to notify HMRC of an R&amp;D claim?</summary><p>Some companies must submit a claim notification within six months of the end of the relevant period of account. An Additional Information Form is also required before or on the same day as the Company Tax Return containing the claim. The filing position should be checked early, particularly for first-time claimants or businesses returning to R&amp;D relief after a gap.</p></details>
+      <details><summary>What records should we keep to support an R&amp;D claim?</summary><p>Useful contemporaneous evidence may include design briefs, technical specifications, calculations, meeting notes, emails, timesheets and cost records. The evidence should show the starting knowledge, the advance sought, the uncertainties encountered, the work undertaken and how costs were attributed.</p></details>
+      <details><summary>Can you help if another adviser prepared the claim?</summary><p>Yes. We regularly assist companies where the original R&amp;D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support.</p></details>
+      <details><summary>Can we claim for failed projects?</summary><p>Absolutely. A failed project can often be a strong indicator of qualifying R&amp;D activity. HMRC recognises that genuine R&amp;D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid R&amp;D claim.</p></details>
+      <details><summary>Can grant-funded expenditure be claimed?</summary><p>Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&amp;D tax relief on subsidised or grant-funded expenditure under the merged R&amp;D scheme.</p></details>
+      <details><summary>Can directors&rsquo; salaries be included in an R&amp;D claim?</summary><p>Yes. Directors actively involved in qualifying R&amp;D activities may include the relevant proportion of staffing costs relating to R&amp;D. Dividends however are non-qualifying costs.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact dark" id="contact">
+  <div class="wrap cgrid">
+    <div class="rv">
+      <div class="label">Speak to us</div>
+      <h2>Get in touch to assess your claims</h2>
+      <p class="lede">Specialist R&amp;D tax advisers helping businesses prepare technically credible, compliant claims and respond to HMRC enquiries. Tell us which service you are interested in and a member of our team will be in touch to arrange a call.</p>
+      <div class="det">
+        <div><svg><use href="#i-mail"/></svg><span>info@itaxadvisors.co.uk</span></div>
+        <div><svg><use href="#i-pin"/></svg><span>iTax Advisors Limited, Devonshire House, 582 Honeypot Lane, HA7 1JS, United Kingdom</span></div>
+        <div><svg><use href="#i-in"/></svg><a href="https://www.linkedin.com/company/itax-advisors-limited" target="_blank" rel="noopener">linkedin.com/company/itax-advisors-limited</a></div>
+      </div>
+    </div>
+    <div class="formcard rv d1">
+      <form id="ct-form" novalidate>
+        <h3>Speak to our specialists</h3>
+        <p class="sub">Four details are enough to start.</p>
+        <div class="row2"><div class="field"><label for="ct-first">First name</label><input id="ct-first" name="first" autocomplete="given-name" required></div><div class="field"><label for="ct-last">Last name</label><input id="ct-last" name="last" autocomplete="family-name" required></div></div>
+        <div class="row2"><div class="field"><label for="ct-email">Work email</label><input id="ct-email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="ct-tel">Phone <em>(optional)</em></label><input id="ct-tel" name="phone" type="tel" autocomplete="tel"></div></div>
+        <div class="field"><label for="ct-co">Company</label><input id="ct-co" name="company" autocomplete="organization" required></div>
+        <div class="field"><label for="ct-type">Which service are you interested in?</label><select id="ct-type" name="enquiry_type" required><option value="">Choose one</option><option>R&amp;D claim preparation</option><option>HMRC enquiry support</option><option>Claim review and risk assessment</option><option>Contemporaneous reporting</option><option>Not sure</option></select></div>
+        <div class="field"><label for="ct-msg">Anything else we should know <em>(optional)</em></label><textarea id="ct-msg" name="message"></textarea></div>
+        <input type="hidden" name="lead_source" value="services-page-form">
+        <label class="consent"><input type="checkbox" id="ct-consent" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and confirm that I accept the terms set out within the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+        <button class="btn btn-green mag" type="submit">Send my enquiry <svg><use href="#i-arrow"/></svg></button>
+        <p class="fine" id="ct-err" role="alert"></p>
+      </form>
+      <div class="done" id="ct-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Thank you, we have your enquiry</h3><p>A member of our team will be in touch to arrange a call.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "R&D Tax Services for UK Companies: Claims, Reviews and HMRC Support", "url": "https://www.itaxadvisors.co.uk/itax-advisors-services/"}, {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Service", "name": "R&D Claim Preparation", "description": "End-to-end support preparing technically robust R&D tax relief claims, including project eligibility, qualifying costs, technical narratives and submission-ready documentation.", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Service", "name": "HMRC Enquiry Support", "description": "Practical support if HMRC opens an enquiry into your R&D claim, including evidence review, response preparation and technical defence.", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Service", "name": "Claim Review and Risk Assessment", "description": "Independent review of existing or draft R&D claims to assess eligibility, evidence strength, cost treatment and potential enquiry risk.", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB"}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Service", "name": "Contemporaneous Reporting", "description": "Ongoing support to help companies capture R&D activity, decision-making, uncertainties and evidence throughout the year.", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB"}}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What must we submit to make an R&D tax relief claim?", "acceptedAnswer": {"@type": "Answer", "text": "Every claim requires an Additional Information Form before, or on the same day as, the Company Tax Return is submitted. Some companies must also submit a claim notification form within the applicable time limit. Eligibility for the underlying R&D does not remove these procedural requirements, so the filing position should be checked early."}}, {"@type": "Question", "name": "When do we need to notify HMRC of an R&D claim?", "acceptedAnswer": {"@type": "Answer", "text": "Some companies must submit a claim notification within six months of the end of the relevant period of account. An Additional Information Form is also required before or on the same day as the Company Tax Return containing the claim. The filing position should be checked early, particularly for first-time claimants or businesses returning to R&D relief after a gap."}}, {"@type": "Question", "name": "What records should we keep to support an R&D claim?", "acceptedAnswer": {"@type": "Answer", "text": "Useful contemporaneous evidence may include design briefs, technical specifications, calculations, meeting notes, emails, timesheets and cost records. The evidence should show the starting knowledge, the advance sought, the uncertainties encountered, the work undertaken and how costs were attributed."}}, {"@type": "Question", "name": "Can you help if another adviser prepared the claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly assist companies where the original R&D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support."}}, {"@type": "Question", "name": "Can we claim for failed projects?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. A failed project can often be a strong indicator of qualifying R&D activity. HMRC recognises that genuine R&D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid R&D claim."}}, {"@type": "Question", "name": "Can grant-funded expenditure be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&D tax relief on subsidised or grant-funded expenditure under the merged R&D scheme."}}, {"@type": "Question", "name": "Can directors’ salaries be included in an R&D claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Directors actively involved in qualifying R&D activities may include the relevant proportion of staffing costs relating to R&D. Dividends however are non-qualifying costs."}}]}]}</script>
+<script>
+(function(){
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+window.$=$;window.$$=$$;
+if('IntersectionObserver' in window&&!reduce){
+  var vh0=window.innerHeight,items=$$('.rv,.wipe');
+  items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
+  document.documentElement.classList.add('anim');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.01,rootMargin:'0px 0px 18% 0px'});
+  items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
+  setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
+}
+if(!reduce&&fine){
+  $$('.mag').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})});
+  $$('.tilt').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg) translateY(-5px)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+  var hero=$('#hero'),glow=$('#glow');
+  if(hero&&glow){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.opacity=1;glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});hero.addEventListener('pointerleave',function(){glow.style.opacity=0})}
+}
+window.wireForm=function(formId,doneId,errId,fields){
+  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);
+  f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';
+    for(var i=0;i<fields.length;i++){var el=$('#'+fields[i]);var bad=el.type==='checkbox'?!el.checked:!el.value.trim();
+      if(el.type==='email'&&el.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value))bad=true;
+      if(bad){err.textContent=el.type==='checkbox'?'Please tick the box so we can contact you.':'Please complete: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/\(optional\)/,'').trim():'this field')+'.';el.focus();return}}
+    f.hidden=true;d.classList.add('show');
+  });
+};
+})();
+
+wireForm('ct-form','ct-done','ct-err',['ct-first','ct-last','ct-email','ct-co','ct-type','ct-consent']);
+
+</script>
