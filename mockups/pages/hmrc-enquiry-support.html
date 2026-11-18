@@ -240,6 +240,37 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 .hpic{border-radius:24px;box-shadow:0 50px 80px -34px rgba(0,0,0,.8)}.hpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,33,54,.4))}
 @media (max-width:860px){.hgrid{grid-template-columns:minmax(0,1fr)}.hero{background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}}
 
+/*HERO2*/
+.hero.hero2{padding-block:clamp(52px,6vw,84px);background:linear-gradient(120deg,var(--navy-950) 0%,var(--navy-900) 58%,var(--navy-800) 100%)}
+.hero.hero2::after{display:none}
+.hero2 .hero2-in{position:relative;z-index:2}
+.hero2 .hero2-text{max-width:min(600px,50%)}
+.hero2 h1{font-size:clamp(30px,3.7vw,48px)}
+.hero2 .hero2-img{position:absolute;z-index:1;right:0;top:50%;width:min(50vw,840px);aspect-ratio:1672/941;transform:translateY(-50%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.hero2 .hero2-img img{width:100%;height:100%;object-fit:cover;display:block}
+.hero2 .hero2-img.rv.pending:not(.in){transform:translateY(-50%)}
+.crumbs{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:13px;color:var(--on-dark-muted);margin-bottom:22px;font-weight:600}
+.crumbs a{color:var(--on-dark);text-decoration:none}.crumbs a:hover{color:var(--green)}
+.crumbs span+span::before{content:"\203A";margin-right:8px;opacity:.6}
+.crumbs [aria-current]{color:var(--green)}
+@media (max-width:900px){
+  .hero2 .hero2-text{max-width:none}
+  .hero2 .hero2-img{position:relative;right:auto;top:auto;transform:none;width:calc(100% - 36px);max-width:620px;margin:30px auto 0;border-radius:18px;overflow:hidden;-webkit-mask-image:none;mask-image:none;box-shadow:0 30px 60px -28px rgba(0,0,0,.8)}
+  .hero2 .hero2-img.rv.pending:not(.in){transform:none}
+}
+/*POLISH*/
+.sec h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--green);margin-top:18px}
+.dark .sec h2::after,.sec.dark h2::after{background:var(--green)}
+[style*="background:var(--paper)"]{background-image:radial-gradient(rgba(27,69,109,.07) 1.2px,transparent 1.2px)!important;background-size:24px 24px!important}
+.lc,.rq,.sc,.csc,.rc,.hc{position:relative;overflow:hidden}
+.lc::before,.rq::before,.sc::before,.csc::before,.rc::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--green),#b7d77a);transform:scaleX(0);transform-origin:left;transition:transform .45s}
+.lc:hover::before,.rq:hover::before,.sc:hover::before,.csc:hover::before,.rc:hover::before{transform:scaleX(1)}
+.ready-in{margin-top:22px;border-top:1px dashed var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
+.ready-in b{display:block;color:var(--navy-700);margin-bottom:8px;font-size:14.5px}
+.ready-in ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.ready-in li{display:flex;gap:8px}.ready-in svg{width:15px;height:15px;color:var(--green-deep);flex:none;margin-top:4px}
+@media (max-width:600px){.ready-in ul{grid-template-columns:minmax(0,1fr)}}
+
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
@@ -259,10 +290,10 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 </svg>
 
 <main>
-<section class="hero" id="hero">
+<section class="hero hero2" id="hero">
   <div class="glow" id="glow"></div>
-  <div class="wrap hgrid">
-    <div>
+  <div class="wrap hero2-in"><div class="hero2-text">
+    <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/">Services</a></span><span aria-current="page">HMRC Enquiry Support</span></nav>
     <span class="eyebrow"><i></i> HMRC R&amp;D tax enquiry</span>
     <h1><span class="w" style="--n:0"><i>HMRC</i></span> <span class="w" style="--n:1"><i>R&amp;D</i></span> <span class="w" style="--n:2"><i>Enquiry</i></span> <span class="w" style="--n:3"><i>Support:</i></span> <span class="hl"><span class="w" style="--n:4"><i>Respond</i></span> <span class="w" style="--n:5"><i>with</i></span> <span class="w" style="--n:6"><i>Confidence</i></span></span></h1>
     <p class="answer"><b>If HMRC has opened an enquiry into your R&amp;D tax claim, early and well-structured support can make a significant difference.</b> We help companies respond clearly, protect claim credibility and manage the enquiry process with confidence.</p>
@@ -275,9 +306,8 @@ td:first-child{font-weight:700;color:var(--navy-700)}
       <span class="chip"><svg><use href="#i-search"/></svg> We review claims prepared by another adviser</span>
       <span class="chip"><svg><use href="#i-flag"/></svg> Support through to conclusion of the enquiry</span>
     </div>
-    </div>
-    <div class="img hpic wipe rv" style="aspect-ratio:1672/941"><img src="assets/n_banner.jpg" alt="HMRC R&amp;D enquiry support: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
-  </div>
+  </div></div>
+  <div class="hero2-img rv"><img src="assets/n_banner.jpg" alt="HMRC R&amp;D enquiry support: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
 </section>
 
 <div class="strip"><div class="wrap strip-in">
@@ -428,7 +458,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
     <div class="formcard rv d1">
       <form id="lm-form" novalidate>
         <h3>Send me the checklist</h3>
-        <p class="sub">Free PDF. You can download it straight after you submit.</p>
+        <p class="sub">Enter your details and we&rsquo;ll email your selected checklist.</p>
         <div class="field"><label for="lm-name">Your name</label><input id="lm-name" name="name" autocomplete="name" required></div>
         <div class="field"><label for="lm-email">Work email</label><input id="lm-email" name="email" type="email" autocomplete="email" required></div>
         <div class="field"><label for="lm-co">Company</label><input id="lm-co" name="company" autocomplete="organization" required></div>
@@ -437,7 +467,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
         <button class="btn btn-green mag" type="submit">Get the checklist <svg><use href="#i-arrow"/></svg></button>
         <p class="fine" id="lm-err" role="alert"></p>
       </form>
-      <div class="done" id="lm-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Your checklist is ready</h3><p>Download it now. If you have received a letter and want a specialist to look at it, use the enquiry form below.</p><div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px"><a class="btn btn-green" style="width:auto;margin-top:0" href="assets/itax-hmrc-enquiry-response-checklist.pdf" download="itax-hmrc-enquiry-response-checklist.pdf">Download the PDF</a><a class="btn btn-line" style="width:auto;margin-top:0" href="#contact">Speak to a specialist</a></div></div>
+      <div class="done" id="lm-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Thank you!</h3><p>Your selected checklist will be sent to your email address shortly. If you have received a letter and want a specialist to look at it, use the enquiry form below.</p><div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px"><a class="btn btn-green" style="width:auto;margin-top:0" href="assets/itax-hmrc-enquiry-response-checklist.pdf" download="itax-hmrc-enquiry-response-checklist.pdf">Download the PDF</a><a class="btn btn-line" style="width:auto;margin-top:0" href="#contact">Speak to a specialist</a></div></div>
     </div>
   </div>
 </section>
@@ -459,7 +489,8 @@ td:first-child{font-weight:700;color:var(--navy-700)}
     <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>HMRC R&amp;D enquiry questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
       <div class="faq-side"><div class="img"><img src="assets/n_meeting.jpg" alt="Specialist adviser meeting to review an HMRC R&amp;D enquiry letter" width="540" height="409" loading="lazy"></div><div class="t"><b>Not sure which letter you have?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
     <div class="rv d1">
-      <details open><summary>What does HMRC usually ask about in an R&amp;D enquiry?</summary><p>HMRC commonly questions whether the work meets the definition of R&amp;D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported. Enquiry letters can be detailed and request substantial technical and financial information relating to the submitted claim.</p></details>
+      <details open><summary>What is the HMRC R&amp;D enquiry process?</summary><p>An enquiry usually begins with a letter, so first identify which type you have: a formal enquiry (compliance check) into the return, a payable credit held while HMRC checks the claim, an informal request for information or documents, a formal information notice (Schedule 36, Finance Act 2008) or a &ldquo;nudge&rdquo; letter, which is not an enquiry. A formal enquiry ends with a closure notice. In the first days, create a control sheet, preserve the evidence and nominate one coordinator. We then review the submitted claim, supporting reports and HMRC correspondence, assess the technical basis and expenditure treatment, identify evidential gaps, prepare clear responses for HMRC and support communication through to conclusion of the enquiry.</p></details>
+      <details><summary>What does HMRC usually ask about in an R&amp;D enquiry?</summary><p>HMRC commonly questions whether the work meets the definition of R&amp;D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported. Enquiry letters can be detailed and request substantial technical and financial information relating to the submitted claim.</p></details>
       <details><summary>Can you help if another adviser prepared the claim?</summary><p>Yes. We regularly assist companies where the original R&amp;D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response.</p></details>
       <details><summary>Can HMRC reject an entire claim?</summary><p>Yes. If HMRC believes the projects or expenditure do not meet the legislative requirements, part or all of a claim may be denied. A clear and technically supported response can materially improve the quality of the defence.</p></details>
       <details><summary>How far back can HMRC open an R&amp;D enquiry?</summary><p>HMRC can usually open an enquiry within 12 months of the date the corporation tax return was filed, as long as it was filed on time. Once that window has closed, HMRC needs to raise a discovery assessment, normally limited to 4 years from the end of the accounting period, extended to 6 years where an inaccuracy was careless and 20 years where it was deliberate.</p></details>
@@ -482,20 +513,20 @@ td:first-child{font-weight:700;color:var(--navy-700)}
       </div>
       <div class="rel"><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">R&amp;D tax claim second opinion <svg><use href="#i-arrow"/></svg></a><a href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/">R&amp;D claim preparation <svg><use href="#i-arrow"/></svg></a><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/">Contemporaneous reporting <svg><use href="#i-arrow"/></svg></a></div>
     </div>
-    <div class="formcard rv d1">
+    <div class="formcard big rv d1">
       <form id="ct-form" novalidate>
-        <h3>Tell us about your HMRC letter</h3>
-        <p class="sub">Four details are enough to start.</p>
+        <h3>Send us your enquiry</h3>
+        <p class="sub">Four details are enough to start. Add more if it helps.</p>
         <div class="row2"><div class="field"><label for="ct-first">First name</label><input id="ct-first" name="first" autocomplete="given-name" required></div><div class="field"><label for="ct-last">Last name</label><input id="ct-last" name="last" autocomplete="family-name" required></div></div>
         <div class="row2"><div class="field"><label for="ct-email">Work email</label><input id="ct-email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="ct-tel">Phone <em>(optional)</em></label><input id="ct-tel" name="phone" type="tel" autocomplete="tel"></div></div>
         <div class="field"><label for="ct-co">Company</label><input id="ct-co" name="company" autocomplete="organization" required></div>
-        <div class="field"><label for="ct-letter">Which letter have you received?</label><select id="ct-letter" name="letter_type" required><option value="">Choose one</option><option>Formal enquiry (compliance check) into the return</option><option>Payable credit held while HMRC checks the claim</option><option>Informal request for information or documents</option><option>Formal information notice (Schedule 36)</option><option>&ldquo;Nudge&rdquo; letter</option><option>Not sure</option></select></div>
-        <div class="field"><label for="ct-date">Response date on the letter <em>(optional)</em></label><input id="ct-date" name="response_date" type="date"></div>
-        <div class="field"><label for="ct-msg">Anything else we should know <em>(optional)</em></label><textarea id="ct-msg" name="message"></textarea></div>
-        <input type="hidden" name="enquiry_type" value="An HMRC enquiry or compliance check"><input type="hidden" name="lead_source" value="hmrc-enquiry-page-form">
-        <label class="consent"><input type="checkbox" id="ct-consent" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and confirm that I accept the terms set out within the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+        <div class="field"><label for="ct-type">What do you need help with?</label><select id="ct-type" name="enquiry_type" required><option value="">Choose one</option><option>Preparing a new R&amp;D claim</option><option>A second opinion on an existing claim</option><option selected>An HMRC enquiry or compliance check</option><option>Life sciences R&amp;D tax relief</option><option>Contracted-out R&amp;D</option><option>Something else</option></select></div>
+        <div class="field"><label for="ct-msg">Tell us briefly about your projects <em>(optional)</em></label><textarea id="ct-msg" name="message"></textarea></div>
+        <input type="hidden" id="ct-src" name="lead_source" value="hmrc-enquiry-page-form">
+        <label class="consent"><input type="checkbox" id="ct-consent" name="consent" value="yes" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and accept the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
         <button class="btn btn-green mag" type="submit">Send my enquiry <svg><use href="#i-arrow"/></svg></button>
         <p class="fine" id="ct-err" role="alert"></p>
+        <div class="ready-in"><b>Helpful to have ready</b><ul><li><svg><use href="#i-check"/></svg> A list of the projects you want to claim for</li><li><svg><use href="#i-check"/></svg> Your last claim and its accounting period</li><li><svg><use href="#i-check"/></svg> Any HMRC letter and the response date it gives</li><li><svg><use href="#i-check"/></svg> A summary of staff, subcontractor and software costs</li></ul></div>
       </form>
       <div class="done" id="ct-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Thank you, we have your enquiry</h3><p>A member of our team will be in touch to arrange a call.</p></div>
     </div>
@@ -503,7 +534,7 @@ td:first-child{font-weight:700;color:var(--navy-700)}
 </section>
 </main>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Service", "name": "HMRC R&D Enquiry Support", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB", "description": "Structured, evidence-led support for businesses facing HMRC questions on R&D tax relief claims."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does HMRC usually ask about in an R&D enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "HMRC commonly questions whether the work meets the definition of R&D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported."}}, {"@type": "Question", "name": "Can you help if another adviser prepared the claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly assist companies where the original R&D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response."}}, {"@type": "Question", "name": "Can HMRC reject an entire claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If HMRC believes the projects or expenditure do not meet the legislative requirements, part or all of a claim may be denied. A clear and technically supported response can materially improve the quality of the defence."}}, {"@type": "Question", "name": "How far back can HMRC open an R&D enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "HMRC can usually open an enquiry within 12 months of the date the corporation tax return was filed, as long as it was filed on time. Once that window has closed, HMRC needs to raise a discovery assessment, normally limited to 4 years from the end of the accounting period, extended to 6 years where an inaccuracy was careless and 20 years where it was deliberate."}}, {"@type": "Question", "name": "Is an HMRC R&D enquiry a final decision that my claim is wrong?", "acceptedAnswer": {"@type": "Answer", "text": "No. An enquiry is not a final decision that the claim is wrong. HMRC will consider the explanation and evidence before reaching an outcome."}}, {"@type": "Question", "name": "Do I have to reply to a nudge letter?", "acceptedAnswer": {"@type": "Answer", "text": "A nudge or one-to-many letter asks you to check your claim yourself. It is not an enquiry, so a reply is usually not required, but HMRC may open an enquiry later if it still has concerns. Review the claim honestly and correct any errors you find."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Service", "name": "HMRC R&D Enquiry Support", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB", "description": "Structured, evidence-led support for businesses facing HMRC questions on R&D tax relief claims."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the HMRC R&D enquiry process?", "acceptedAnswer": {"@type": "Answer", "text": "An enquiry usually begins with a letter, so first identify which type you have: a formal enquiry (compliance check) into the return, a payable credit held while HMRC checks the claim, an informal request for information or documents, a formal information notice (Schedule 36, Finance Act 2008) or a nudge letter, which is not an enquiry. A formal enquiry ends with a closure notice. In the first days, create a control sheet, preserve the evidence and nominate one coordinator. We then review the submitted claim, supporting reports and HMRC correspondence, assess the technical basis and expenditure treatment, identify evidential gaps, prepare clear responses for HMRC and support communication through to conclusion of the enquiry."}}, {"@type": "Question", "name": "What does HMRC usually ask about in an R&D enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "HMRC commonly questions whether the work meets the definition of R&D for tax purposes, whether genuine technological uncertainties existed, whether the projects sought an advance in science or technology, and whether the qualifying expenditure can be properly supported."}}, {"@type": "Question", "name": "Can you help if another adviser prepared the claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly assist companies where the original R&D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support in preparing and managing the enquiry response."}}, {"@type": "Question", "name": "Can HMRC reject an entire claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If HMRC believes the projects or expenditure do not meet the legislative requirements, part or all of a claim may be denied. A clear and technically supported response can materially improve the quality of the defence."}}, {"@type": "Question", "name": "How far back can HMRC open an R&D enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "HMRC can usually open an enquiry within 12 months of the date the corporation tax return was filed, as long as it was filed on time. Once that window has closed, HMRC needs to raise a discovery assessment, normally limited to 4 years from the end of the accounting period, extended to 6 years where an inaccuracy was careless and 20 years where it was deliberate."}}, {"@type": "Question", "name": "Is an HMRC R&D enquiry a final decision that my claim is wrong?", "acceptedAnswer": {"@type": "Answer", "text": "No. An enquiry is not a final decision that the claim is wrong. HMRC will consider the explanation and evidence before reaching an outcome."}}, {"@type": "Question", "name": "Do I have to reply to a nudge letter?", "acceptedAnswer": {"@type": "Answer", "text": "A nudge or one-to-many letter asks you to check your claim yourself. It is not an enquiry, so a reply is usually not required, but HMRC may open an enquiry later if it still has concerns. Review the claim honestly and correct any errors you find."}}]}]}</script>
 <script>
 (function(){
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -524,13 +555,24 @@ if(!reduce&&fine){
   var hero=$('#hero'),glow=$('#glow');
   if(hero&&glow){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.opacity=1;glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});hero.addEventListener('pointerleave',function(){glow.style.opacity=0})}
 }
-window.wireForm=function(formId,doneId,errId,fields){
-  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);
+window.MAKE_WEBHOOKS={pdf:'https://hook.eu2.make.com/1wn2tf9j4qmrcp4532uak6vpeu4rmgk6',contact:'https://hook.eu2.make.com/1ufcyla1no7bwoprohh6hi4zqame1tg8'};
+window.wireForm=function(formId,doneId,errId,fields,type,extraData){
+  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);if(!f)return;
+  var live=/(^|\.)itaxadvisors\.co\.uk$/.test(location.hostname);
   f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';
     for(var i=0;i<fields.length;i++){var el=$('#'+fields[i]);var bad=el.type==='checkbox'?!el.checked:!el.value.trim();
       if(el.type==='email'&&el.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value))bad=true;
       if(bad){err.textContent=el.type==='checkbox'?'Please tick the box so we can contact you.':'Please complete: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/\(optional\)/,'').trim():'this field')+'.';el.focus();return}}
-    f.hidden=true;d.classList.add('show');
+    var btn=f.querySelector('button[type="submit"]'),orig=btn.innerHTML;
+    function ok(){f.hidden=true;d.classList.add('show')}
+    /* Same Make.com webhooks as the live home page. In previews (any other host) no real lead is sent. */
+    if(!live){ok();return}
+    var data={};new FormData(f).forEach(function(v,k){data[k]=typeof v==='string'?v.trim():v});
+    var cb=f.querySelector('input[type="checkbox"]');data.consent=cb&&cb.checked?'yes':'no';
+    data.submitted_at=new Date().toISOString();data.page_url=location.href;
+    var x=typeof extraData==='function'?extraData():{};Object.keys(x).forEach(function(k){data[k]=x[k]});
+    btn.disabled=true;btn.textContent='Sending...';
+    fetch(window.MAKE_WEBHOOKS[type||'contact'],{method:'POST',mode:'no-cors',body:new URLSearchParams(data)}).then(ok).catch(function(){err.textContent='We could not send your details. Please try again or contact us by email.';btn.disabled=false;btn.innerHTML=orig});
   });
 };
 })();
@@ -551,8 +593,8 @@ function pick(i){var l=L[i];$$('.lbtn',list).forEach(function(b,k){b.setAttribut
  panel.innerHTML='<div class="reply m" style="margin-bottom:12px;display:inline-block;background:rgba(138,177,65,.2);color:#cfe79a">'+esc(l.tag)+'</div><h3>'+esc(l.t)+'</h3>'+
  '<div class="lrow"><small>What it usually means</small><p>'+esc(l.means)+'</p></div><div class="lrow"><small>Is a reply required?</small><p>'+esc(l.reply)+'</p></div><div class="lrow"><small>What to do first</small><p>'+esc(l.first)+'</p></div>'}
 pick(0);
-wireForm('lm-form','lm-done','lm-err',['lm-name','lm-email','lm-co','lm-consent']);
-wireForm('ct-form','ct-done','ct-err',['ct-first','ct-last','ct-email','ct-co','ct-letter','ct-consent']);
+wireForm('lm-form','lm-done','lm-err',['lm-name','lm-email','lm-co','lm-consent'],'pdf',function(){return {checklist_name:'The HMRC R&D enquiry response checklist',checklist_file:'https://www.itaxadvisors.co.uk/wp-content/uploads/itax-hmrc-enquiry-checklist.pdf',checklist_filename:'itax-hmrc-enquiry-checklist.pdf',lead_source:'hmrc-enquiry-page-checklist'}});
+wireForm('ct-form','ct-done','ct-err',['ct-first','ct-last','ct-email','ct-co','ct-type','ct-consent'],'contact');
 })();
 
 </script>

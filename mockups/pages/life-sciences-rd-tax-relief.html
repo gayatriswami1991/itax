@@ -172,6 +172,37 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 @media (max-width:600px){.lgrid,.cs{grid-template-columns:minmax(0,1fr)}.formcard{padding:22px 18px}.stat b{font-size:25px}}
 .lm .btn{flex:none;white-space:nowrap}.llist{position:sticky;top:24px}@media (max-width:860px){.llist{position:static}}
 
+/*HERO2*/
+.hero.hero2{padding-block:clamp(52px,6vw,84px);background:linear-gradient(120deg,var(--navy-950) 0%,var(--navy-900) 58%,var(--navy-800) 100%)}
+.hero.hero2::after{display:none}
+.hero2 .hero2-in{position:relative;z-index:2}
+.hero2 .hero2-text{max-width:min(600px,50%)}
+.hero2 h1{font-size:clamp(30px,3.7vw,48px)}
+.hero2 .hero2-img{position:absolute;z-index:1;right:0;top:50%;width:min(50vw,840px);aspect-ratio:1672/941;transform:translateY(-50%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.hero2 .hero2-img img{width:100%;height:100%;object-fit:cover;display:block}
+.hero2 .hero2-img.rv.pending:not(.in){transform:translateY(-50%)}
+.crumbs{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:13px;color:var(--on-dark-muted);margin-bottom:22px;font-weight:600}
+.crumbs a{color:var(--on-dark);text-decoration:none}.crumbs a:hover{color:var(--green)}
+.crumbs span+span::before{content:"\203A";margin-right:8px;opacity:.6}
+.crumbs [aria-current]{color:var(--green)}
+@media (max-width:900px){
+  .hero2 .hero2-text{max-width:none}
+  .hero2 .hero2-img{position:relative;right:auto;top:auto;transform:none;width:calc(100% - 36px);max-width:620px;margin:30px auto 0;border-radius:18px;overflow:hidden;-webkit-mask-image:none;mask-image:none;box-shadow:0 30px 60px -28px rgba(0,0,0,.8)}
+  .hero2 .hero2-img.rv.pending:not(.in){transform:none}
+}
+/*POLISH*/
+.sec h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--green);margin-top:18px}
+.dark .sec h2::after,.sec.dark h2::after{background:var(--green)}
+[style*="background:var(--paper)"]{background-image:radial-gradient(rgba(27,69,109,.07) 1.2px,transparent 1.2px)!important;background-size:24px 24px!important}
+.lc,.rq,.sc,.csc,.rc,.hc{position:relative;overflow:hidden}
+.lc::before,.rq::before,.sc::before,.csc::before,.rc::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--green),#b7d77a);transform:scaleX(0);transform-origin:left;transition:transform .45s}
+.lc:hover::before,.rq:hover::before,.sc:hover::before,.csc:hover::before,.rc:hover::before{transform:scaleX(1)}
+.ready-in{margin-top:22px;border-top:1px dashed var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
+.ready-in b{display:block;color:var(--navy-700);margin-bottom:8px;font-size:14.5px}
+.ready-in ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.ready-in li{display:flex;gap:8px}.ready-in svg{width:15px;height:15px;color:var(--green-deep);flex:none;margin-top:4px}
+@media (max-width:600px){.ready-in ul{grid-template-columns:minmax(0,1fr)}}
+
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
@@ -191,10 +222,10 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 </svg>
 
 <main>
-<section class="hero" id="hero">
+<section class="hero hero2" id="hero">
   <div class="glow" id="glow"></div>
-  <div class="wrap hgrid">
-    <div>
+  <div class="wrap hero2-in"><div class="hero2-text">
+    <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/#sectors">Sectors</a></span><span aria-current="page">Life Sciences</span></nav>
       <span class="eyebrow"><i></i> Life sciences, biotechnology &amp; MedTech</span>
       <h1><span class="w" style="--n:0"><i>R&amp;D</i></span> <span class="w" style="--n:1"><i>Tax</i></span> <span class="w" style="--n:2"><i>Relief</i></span> <span class="w" style="--n:3"><i>for</i></span> <span class="hl"><span class="w" style="--n:4"><i>Life</i></span> <span class="w" style="--n:5"><i>Sciences,</i></span></span> <span class="w" style="--n:6"><i>Biotechnology</i></span> <span class="w" style="--n:7"><i>&amp;</i></span> <span class="w" style="--n:8"><i>MedTech</i></span> <span class="w" style="--n:9"><i>Companies</i></span></h1>
       <p class="answer"><b>Specialist R&amp;D tax advice for complex scientific research, clinical development and innovative healthcare technologies.</b> We prepare evidence-led claims that reflect both the underlying science and the applicable tax rules.</p>
@@ -207,9 +238,8 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
         <span class="chip"><svg><use href="#i-scale"/></svg> Overseas and grant-funded work</span>
         <span class="chip"><svg><use href="#i-shield"/></svg> Support through an HMRC enquiry</span>
       </div>
-    </div>
-    <div class="img hpic wipe rv" style="aspect-ratio:1672/941"><img src="assets/n_banner.jpg" alt="R&amp;D tax relief for life sciences, biotechnology and MedTech companies: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
-  </div>
+  </div></div>
+  <div class="hero2-img rv"><img src="assets/n_banner.jpg" alt="R&amp;D tax relief for life sciences, biotechnology and MedTech companies: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
 </section>
 
 <div class="strip"><div class="wrap strip-in">
@@ -347,19 +377,20 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
       </div>
       <div class="rel"><a href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/">R&amp;D claim preparation <svg><use href="#i-arrow"/></svg></a><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">R&amp;D tax claim second opinion <svg><use href="#i-arrow"/></svg></a><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/">Contemporaneous reporting <svg><use href="#i-arrow"/></svg></a></div>
     </div>
-    <div class="formcard rv d1">
+    <div class="formcard big rv d1">
       <form id="ct-form" novalidate>
-        <h3>Discuss your life sciences claim</h3>
-        <p class="sub">Four details are enough to start.</p>
+        <h3>Send us your enquiry</h3>
+        <p class="sub">Four details are enough to start. Add more if it helps.</p>
         <div class="row2"><div class="field"><label for="ct-first">First name</label><input id="ct-first" name="first" autocomplete="given-name" required></div><div class="field"><label for="ct-last">Last name</label><input id="ct-last" name="last" autocomplete="family-name" required></div></div>
         <div class="row2"><div class="field"><label for="ct-email">Work email</label><input id="ct-email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="ct-tel">Phone <em>(optional)</em></label><input id="ct-tel" name="phone" type="tel" autocomplete="tel"></div></div>
         <div class="field"><label for="ct-co">Company</label><input id="ct-co" name="company" autocomplete="organization" required></div>
-        <div class="field"><label for="ct-type">What would you like to discuss?</label><select id="ct-type" name="enquiry_type" required><option value="">Choose one</option><option>A new life sciences R&amp;D tax claim</option><option>Clinical trial, CRO or overseas costs</option><option>Who can claim under a CRO or CDMO contract</option><option>An HMRC enquiry into an existing claim</option><option>A second opinion on a claim already prepared</option><option>Not sure</option></select></div>
-        <div class="field"><label for="ct-msg">Anything else we should know <em>(optional)</em></label><textarea id="ct-msg" name="message"></textarea></div>
-        <input type="hidden" name="lead_source" value="life-sciences-page-form">
-        <label class="consent"><input type="checkbox" id="ct-consent" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and confirm that I accept the terms set out within the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+        <div class="field"><label for="ct-type">What do you need help with?</label><select id="ct-type" name="enquiry_type" required><option value="">Choose one</option><option>Preparing a new R&amp;D claim</option><option>A second opinion on an existing claim</option><option>An HMRC enquiry or compliance check</option><option selected>Life sciences R&amp;D tax relief</option><option>Contracted-out R&amp;D</option><option>Something else</option></select></div>
+        <div class="field"><label for="ct-msg">Tell us briefly about your projects <em>(optional)</em></label><textarea id="ct-msg" name="message"></textarea></div>
+        <input type="hidden" id="ct-src" name="lead_source" value="life-sciences-page-form">
+        <label class="consent"><input type="checkbox" id="ct-consent" name="consent" value="yes" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and accept the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
         <button class="btn btn-green mag" type="submit">Send my enquiry <svg><use href="#i-arrow"/></svg></button>
         <p class="fine" id="ct-err" role="alert"></p>
+        <div class="ready-in"><b>Helpful to have ready</b><ul><li><svg><use href="#i-check"/></svg> A list of the projects you want to claim for</li><li><svg><use href="#i-check"/></svg> Your last claim and its accounting period</li><li><svg><use href="#i-check"/></svg> Any HMRC letter and the response date it gives</li><li><svg><use href="#i-check"/></svg> A summary of staff, subcontractor and software costs</li></ul></div>
       </form>
       <div class="done" id="ct-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Thank you, we have your enquiry</h3><p>A member of our team will be in touch to arrange a call.</p></div>
     </div>
@@ -388,13 +419,24 @@ if(!reduce&&fine){
   var hero=$('#hero'),glow=$('#glow');
   if(hero&&glow){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.opacity=1;glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});hero.addEventListener('pointerleave',function(){glow.style.opacity=0})}
 }
-window.wireForm=function(formId,doneId,errId,fields){
-  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);
+window.MAKE_WEBHOOKS={pdf:'https://hook.eu2.make.com/1wn2tf9j4qmrcp4532uak6vpeu4rmgk6',contact:'https://hook.eu2.make.com/1ufcyla1no7bwoprohh6hi4zqame1tg8'};
+window.wireForm=function(formId,doneId,errId,fields,type,extraData){
+  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);if(!f)return;
+  var live=/(^|\.)itaxadvisors\.co\.uk$/.test(location.hostname);
   f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';
     for(var i=0;i<fields.length;i++){var el=$('#'+fields[i]);var bad=el.type==='checkbox'?!el.checked:!el.value.trim();
       if(el.type==='email'&&el.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value))bad=true;
       if(bad){err.textContent=el.type==='checkbox'?'Please tick the box so we can contact you.':'Please complete: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/\(optional\)/,'').trim():'this field')+'.';el.focus();return}}
-    f.hidden=true;d.classList.add('show');
+    var btn=f.querySelector('button[type="submit"]'),orig=btn.innerHTML;
+    function ok(){f.hidden=true;d.classList.add('show')}
+    /* Same Make.com webhooks as the live home page. In previews (any other host) no real lead is sent. */
+    if(!live){ok();return}
+    var data={};new FormData(f).forEach(function(v,k){data[k]=typeof v==='string'?v.trim():v});
+    var cb=f.querySelector('input[type="checkbox"]');data.consent=cb&&cb.checked?'yes':'no';
+    data.submitted_at=new Date().toISOString();data.page_url=location.href;
+    var x=typeof extraData==='function'?extraData():{};Object.keys(x).forEach(function(k){data[k]=x[k]});
+    btn.disabled=true;btn.textContent='Sending...';
+    fetch(window.MAKE_WEBHOOKS[type||'contact'],{method:'POST',mode:'no-cors',body:new URLSearchParams(data)}).then(ok).catch(function(){err.textContent='We could not send your details. Please try again or contact us by email.';btn.disabled=false;btn.innerHTML=orig});
   });
 };
 })();
