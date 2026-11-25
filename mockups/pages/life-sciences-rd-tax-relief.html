@@ -363,6 +363,105 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .bul2 li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
 @media (max-width:600px){.ctacard .btn{justify-self:stretch;justify-content:center}}
 
+/*CONTEMPORANEOUS*/
+.evid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:0;margin-top:28px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.evid>div{padding:24px 26px}.evid>div:first-child{background:#fff}
+.evid small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--green-deep);margin-bottom:8px}
+.evid p{font-size:16px;color:var(--muted)}
+.evq{background:var(--navy-700);display:flex;flex-direction:column;justify-content:center;gap:10px}
+.evq p{font-size:clamp(18px,1.8vw,22px);font-weight:700;color:#fff;line-height:1.4}.evq cite{font-style:normal;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);font-weight:800}
+.rvs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:34px}
+.rc2{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px}
+.rc2 h3{font-size:22px;color:var(--navy-700);font-weight:800;margin-bottom:6px}
+.rc2 small{display:inline-block;margin-top:14px;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;padding:4px 10px;border-radius:6px}
+.rc2 small.pro{background:#dff0b8;color:#3d6409}.rc2 small.con{background:#fbe9c0;color:#7a5200}
+.rc2 ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:9px}
+.rc2 li{position:relative;padding-left:26px;font-size:15.5px;color:var(--ink);line-height:1.45}
+.rc2 .pl li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
+.rc2 .cl li::before{content:"";position:absolute;left:3px;top:.5em;width:11px;height:2.5px;background:#a16207;border-radius:2px}
+.hyb{margin-top:16px;background:var(--navy-700);border-radius:var(--radius);padding:20px 24px;display:flex;gap:14px 24px;flex-wrap:wrap;align-items:center}
+.hyb b{color:var(--green);font-size:17px}.hyb span{color:#fff;font-size:16px;flex:1 1 380px}
+.ens2{margin-top:20px}.ens2 li{font-size:14.5px}
+.whyg.bp{grid-template-columns:repeat(4,minmax(0,1fr))}
+.whyg.bp .wg{grid-template-columns:1fr;gap:10px;align-items:start;padding:22px 20px}.whyg.bp .wg svg{grid-row:auto}
+@media (max-width:1020px){.whyg.bp{grid-template-columns:repeat(2,minmax(0,1fr))}.evid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:700px){.rvs{grid-template-columns:minmax(0,1fr)}.whyg.bp{grid-template-columns:minmax(0,1fr)}}
+/*EFFECTS*/
+.ticker{background:var(--green);overflow:hidden;white-space:nowrap;border-block:1px solid rgba(12,33,54,.15)}
+.tk-track{display:inline-flex;gap:0;animation:tk 38s linear infinite;will-change:transform}
+.tk-track span{display:inline-flex;align-items:center;padding:13px 26px;font-weight:800;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-950)}
+.tk-track span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--navy-950);margin-left:52px;opacity:.5}
+@keyframes tk{to{transform:translateX(-50%)}}
+.fl{position:relative}
+.chipf{position:absolute;z-index:3;background:#fff;color:var(--navy-700);font-weight:800;font-size:13.5px;padding:9px 16px;border-radius:999px;box-shadow:0 14px 30px -12px rgba(12,33,54,.55);animation:flo 6s ease-in-out infinite}
+.chipf::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:8px}
+.chipf.c1{left:-14px;top:14%}.chipf.c2{right:-10px;top:42%;animation-delay:-2s}.chipf.c3{left:8%;bottom:-14px;animation-delay:-4s}
+@keyframes flo{50%{transform:translateY(-9px)}}
+.cyc{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;position:relative;counter-reset:c}
+.cyc::before{content:"";position:absolute;left:8%;right:8%;top:26px;height:3px;background:linear-gradient(90deg,var(--green) 50%,rgba(255,255,255,.18) 50%);background-size:200% 100%;animation:cycl 5s ease-in-out infinite alternate;border-radius:3px}
+@keyframes cycl{from{background-position:100% 0}to{background-position:0 0}}
+.cyc li{position:relative;padding-top:64px;text-align:left}
+.cn{position:absolute;left:0;top:0;width:54px;height:54px;border-radius:50%;background:var(--navy-900);border:3px solid var(--green);color:var(--green);display:grid;place-items:center;font-weight:800;font-size:20px;z-index:2;transition:background .3s,color .3s,transform .3s}
+.cyc li:hover .cn{background:var(--green);color:var(--navy-950);transform:scale(1.1)}
+.cyc h3{font-size:19px;color:#fff;font-weight:800}.cyc p{font-size:15px;color:var(--on-dark-muted);margin-top:6px}
+.rvs{position:relative}
+.vsb{position:absolute;z-index:3;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:var(--green);color:var(--navy-950);font-weight:900;display:grid;place-items:center;box-shadow:0 0 0 8px var(--paper),0 14px 30px -10px rgba(12,33,54,.5);animation:pulse2 2.6s ease-in-out infinite}
+@keyframes pulse2{50%{transform:scale(1.1)}}
+.stk{position:relative;padding-bottom:70px}
+.stk .s1{width:78%}
+.stk .s2{position:absolute;right:0;bottom:0;width:52%;border:6px solid var(--navy-900);border-radius:20px}
+.split.top .tilt{transition:transform .35s,box-shadow .35s}
+@media (max-width:1020px){.cyc{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:34px}.cyc::before{display:none}}
+@media (max-width:700px){.cyc{grid-template-columns:minmax(0,1fr)}.vsb{display:none}.chipf.c1{left:-4px}.chipf.c2{right:-4px}.stk{padding-bottom:50px}}
+
+/*LIFE v4: AEO, pointers, effects*/
+.aeo{background:#fff;border-bottom:1px solid var(--line)}
+.aeo-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,56px);align-items:center;padding-block:clamp(26px,3.4vw,40px)}
+.aeo-q small{display:inline-block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;background:var(--green);color:var(--navy-950);border-radius:6px;padding:4px 10px;margin-bottom:10px}
+.aeo-q h2{font-size:clamp(21px,2.3vw,28px);color:var(--navy-700);font-weight:800;max-width:none;margin:0}.aeo-q h2::after{display:none}
+.aeo-a{font-size:clamp(16.5px,1.5vw,18.5px);color:var(--ink);line-height:1.55;border-left:4px solid var(--green);padding-left:20px}.aeo-a b{color:var(--navy-700)}
+.jump{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.jump-in{display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:none}.jump-in::-webkit-scrollbar{display:none}
+.jump a{flex:none;font-weight:700;font-size:13.5px;color:var(--navy-700);text-decoration:none;padding:8px 14px;border-radius:999px;border:1.5px solid transparent;transition:background .2s,border-color .2s}
+.jump a:hover,.jump a.on{background:#eaf4d4;border-color:var(--green)}
+.ptr{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:11px}
+.ptr li{position:relative;padding-left:28px;font-size:16px;line-height:1.5;color:var(--ink)}
+.ptr li::before{content:"";position:absolute;left:2px;top:.42em;width:13px;height:7px;border-left:3px solid var(--green-deep);border-bottom:3px solid var(--green-deep);transform:rotate(-45deg)}
+.ptr b{color:var(--navy-700)}
+.ptr .tx{font-weight:700}
+.ptr.dk li{font-size:15.5px}
+.chs.sm2{margin-top:16px}
+.ans2{margin-top:16px;font-size:17px;color:var(--muted);max-width:78ch;border-left:4px solid var(--green);padding-left:16px}.ans2 b{color:var(--navy-700)}
+.ans2.on-dark{color:var(--on-dark-muted)}.ans2.on-dark b{color:var(--green)}
+.notefinal{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:#eaf4d4;border-radius:14px;padding:16px 20px;color:var(--navy-700);font-weight:600}
+.notefinal svg{width:26px;height:26px;color:var(--green-deep)}
+.notefinal .tx{font-weight:800}
+.bc .more{margin-top:6px;display:inline-flex;font-size:14px}
+.recs{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 22px}
+.recs span{font-weight:700;font-size:14.5px;color:var(--navy-700);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:10px 16px;transition:transform .25s,border-color .25s,background .25s}
+.recs span:hover{transform:translateY(-4px);border-color:var(--green);background:#f3f8e8}
+.lpanel .lrow .ptr{margin-top:6px}
+.lpanel .lrow{margin-top:18px}
+.sc .ptr{margin-top:18px}
+.tm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
+.tmc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px}
+.tmc h3{font-size:19px;color:var(--navy-700);font-weight:800}
+.warnp{margin-top:16px;background:#fff7e0;border:1px solid #f0d58a;border-radius:10px;padding:10px 14px;font-weight:700;color:#5b4100;font-size:15px}
+.okp{margin-top:16px;background:#eaf4d4;border-radius:10px;padding:10px 14px;font-weight:700;color:var(--navy-700);font-size:15px}
+.csd .tl2 li{background:rgba(255,255,255,.07);border-color:var(--line-dark)}
+.csd .tl2 small{color:var(--green)}
+.csd .ptr li{color:var(--on-dark)}.csd .ptr li::before{border-color:var(--green)}.csd .ptr b{color:#fff}.csd .ptr .tx{color:var(--green)}
+.csd .tl2 .tn{background:var(--green);color:var(--navy-950)}
+.rel2{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:30px}
+.r2{display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;text-decoration:none;color:var(--ink);transition:transform .3s,box-shadow .3s,border-color .3s;position:relative;overflow:hidden}
+.r2::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.r2:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}.r2:hover::after{transform:scaleX(1)}
+.r2 .ico{width:46px;height:46px;border-radius:12px;background:var(--navy-700);color:var(--green);display:grid;place-items:center}.r2 .ico svg{width:24px;height:24px}
+.r2 h3{font-size:19px;color:var(--navy-700);font-weight:800}.r2 p{font-size:15px;color:var(--muted)}.r2 .more{margin-top:auto;padding-top:6px}
+@media (max-width:1020px){.rel2{grid-template-columns:repeat(2,minmax(0,1fr))}.aeo-in{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:700px){.rel2,.tm{grid-template-columns:minmax(0,1fr)}.jump a{font-size:13px;padding:7px 12px}}
+.chs.sm2{display:flex;flex-wrap:wrap;gap:8px}.chs.sm2 span{font-weight:700;font-size:14px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:7px 14px;transition:transform .25s,background .25s}.chs.sm2 span:hover{background:var(--green);transform:translateY(-3px)}
+
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
@@ -403,115 +502,176 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="wrap"><ul class="lh-areas"><li>Biotechnology</li><li>Pharmaceutical</li><li>Therapeutics</li><li>Diagnostics</li><li>Medical technology</li></ul></div>
 </section>
 
+<div class="aeo"><div class="wrap aeo-in rv">
+  <div class="aeo-q"><small>In short</small><h2>What is R&amp;D tax relief for life sciences companies?</h2></div>
+  <p class="aeo-a">It is <b>non-dilutive funding</b> for qualifying R&amp;D, at a point when cash directly affects a company&rsquo;s ability to progress research, retain scientific capability and extend its development runway. Qualifying work arises across discovery, clinical development, diagnostics, medical technology and bioprocess scale-up, but <b>not every activity qualifies</b>.</p>
+</div></div>
+
+<nav class="jump" aria-label="On this page"><div class="wrap jump-in"><a href="#funding">Why it matters</a><a href="#sector">Where R&amp;D arises</a><a href="#challenges">Challenges</a><a href="#records">Records</a><a href="#how-much">How much and when</a><a href="#case-study">Case study</a><a href="#faq">FAQs</a></div></nav>
+
+<div class="ticker" aria-hidden="true"><div class="tk-track">
+  <span>Clinical trials</span><span>CRO and CDMO contracts</span><span>Overseas research</span><span>Grant funding</span><span>Evidence and records</span><span>Claim notification and AIF</span>
+  <span>Clinical trials</span><span>CRO and CDMO contracts</span><span>Overseas research</span><span>Grant funding</span><span>Evidence and records</span><span>Claim notification and AIF</span>
+</div></div>
+
 <section class="sec" id="funding" style="background:var(--paper)">
-  <div class="wrap split">
+  <div class="wrap split top">
     <div class="rv">
-      <div class="label">Non-dilutive funding</div>
-      <h2>R&amp;D tax relief for life sciences: funding the science</h2>
-      <p class="lede">Life sciences innovation demands significant investment in specialist teams, laboratory research, pre-clinical studies and clinical development, often years before a product generates sustainable revenue. For early-stage biotechnology, pharmaceutical and MedTech companies, maintaining the funding required to continue that work can be as critical as the science itself.</p>
-      <p class="body">R&amp;D tax relief can provide valuable non-dilutive funding at a point when access to cash directly affects a company&rsquo;s ability to progress research, retain scientific capability and extend its development runway.</p>
-      <p class="body">When continued research depends on available funding, an R&amp;D tax claim cannot merely be treated as a routine compliance exercise. It must be technically credible, financially accurate and supported by clear evidence.</p>
+      <div class="label">Why it matters</div>
+      <h2>Life sciences R&amp;D tax credits UK: funding the science</h2>
+      <ul class="ptr">
+        <li>Significant spend on <b>specialist teams, lab research, pre-clinical studies and clinical development</b>, often years before revenue</li>
+        <li>Keeping that funding going can be <b>as critical as the science itself</b></li>
+        <li>A claim is <b>not a routine compliance exercise</b>: it must be technically credible, financially accurate and supported by clear evidence</li>
+        <li>Each of these needs careful assessment, so eligible relief is not overlooked and the position <b>can withstand HMRC scrutiny</b>:</li>
+      </ul>
+      <div class="chs sm2"><span>Clinical trial expenditure</span><span>CRO payments</span><span>Overseas research</span><span>Grant funding</span><span>Complex contracts</span></div>
     </div>
-    <div class="rv d1">
-      <div class="img pic" style="aspect-ratio:550/469"><img src="assets/ls_funding.jpg" alt="Seedling growing from stacked coins: non-dilutive R&amp;D funding for life sciences companies" width="550" height="469" loading="lazy"></div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="assess rv"><b>Each of these needs careful assessment, so that eligible relief is not overlooked and the position adopted can withstand HMRC scrutiny:</b>
-      <ul><li>Clinical trial expenditure</li><li>Payments to contract research organisations (CROs)</li><li>Overseas research</li><li>Grant funding</li><li>Complex contractual arrangements</li></ul>
-      <p>At iTax Advisors, we help biotechnology, pharmaceutical, therapeutics, diagnostics and medical technology companies navigate these complexities and prepare evidence-led R&amp;D tax claims that correctly reflect both the underlying science and the applicable tax rules.</p></div>
+    <div class="rv d1 fl"><div class="img pic wipe tilt" style="aspect-ratio:550/469"><img src="assets/ls_funding.jpg" alt="Seedling growing from stacked coins: non-dilutive R&amp;D funding for life sciences companies" width="550" height="469" loading="lazy"></div>
+      <span class="chipf c1">Non-dilutive</span><span class="chipf c2">Development runway</span><span class="chipf c3">Scientific capability</span></div>
   </div>
 </section>
 
 <section class="sec" id="sector" style="background:#fff">
   <div class="wrap">
-    <div class="rv"><div class="label">Across the sector</div>
-    <h2>Life sciences R&amp;D tax credits UK: across the development pathway</h2>
-    <p class="lede">Qualifying R&amp;D may arise across the life sciences development pathway, from early discovery and laboratory research through clinical development, diagnostics, medical technology and bioprocess scale-up.</p></div>
+    <div class="rv"><div class="label">Where R&amp;D arises</div>
+    <h2>Biotech R&amp;D tax relief: where qualifying R&amp;D arises</h2>
+    <p class="ans2"><b>Short answer:</b> across the whole development pathway, from early discovery and laboratory research through clinical development, diagnostics, medical technology and bioprocess scale-up.</p></div>
     <div class="bento">
-      <article class="bc bimg b-clin rv"><div class="img" style="aspect-ratio:551/465"><img src="assets/ls_clinical.jpg" alt="Clinical trial research checklist: patient recruitment, trial management, CRO coordination and regulatory compliance" width="551" height="465" loading="lazy"></div><div class="bt"><span class="bn">03</span><h3>Clinical research</h3><p>Scientific investigations and qualifying development activities undertaken during clinical programmes.</p></div></article>
-      <article class="bc b-drug rv d1"><span class="bn">01</span><svg><use href="#i-search"/></svg><h3>Drug discovery and therapeutics</h3><p>Investigation of new therapeutic compounds, biological mechanisms, formulations and treatment approaches.</p></article>
-      <article class="bc b-bio rv d2"><span class="bn">02</span><svg><use href="#i-shield"/></svg><h3>Biotechnology and vaccine development</h3><p>Research into biological systems, vaccine technologies, immunological responses and manufacturing processes.</p></article>
-      <article class="bc b-proc rv d1"><span class="bn">05</span><svg><use href="#i-scale"/></svg><h3>Bioprocess development</h3><p>Overcoming scientific or technological uncertainties involving biological production, purification, scale-up and reproducibility.</p></article>
-      <article class="bc b-dig rv d2"><span class="bn">06</span><svg><use href="#i-link"/></svg><h3>Digital health technologies</h3><p>Development involving genuine technological advances in medical software, data analysis or integrated diagnostic systems.</p></article>
-      <article class="bc bimg b-dev rv d3"><div class="img" style="aspect-ratio:548/465"><img src="assets/ls_device.jpg" alt="Patient monitoring device in a hospital: medical devices and diagnostics R&amp;D" width="548" height="465" loading="lazy"></div><div class="bt"><span class="bn">04</span><h3>Medical devices and diagnostics</h3><p>Development of new or significantly enhanced technologies, diagnostic methods, monitoring systems and medical devices.</p></div></article>
+      <article class="bc bimg b-clin rv"><div class="img" style="aspect-ratio:551/465"><img src="assets/ls_clinical.jpg" alt="Clinical trial research checklist: patient recruitment, trial management, CRO coordination and regulatory compliance" width="551" height="465" loading="lazy"></div><div class="bt"><span class="bn">03</span><h3>Clinical research</h3><p>Investigations and qualifying development activities during clinical programmes.</p><a class="more" href="https://www.itaxadvisors.co.uk/rd-tax-relief-and-clinical-trials-what-therapeutic-companies-can-and-cant-claim-in-the-uk/">Clinical trial costs guide <svg><use href="#i-arrow"/></svg></a></div></article>
+      <article class="bc b-drug rv d1"><span class="bn">01</span><svg><use href="#i-search"/></svg><h3>Drug discovery and therapeutics</h3><p>New compounds, biological mechanisms, formulations and treatment approaches.</p></article>
+      <article class="bc b-bio rv d2"><span class="bn">02</span><svg><use href="#i-shield"/></svg><h3>Biotechnology and vaccines</h3><p>Biological systems, vaccine technologies, immunological responses and manufacturing processes.</p></article>
+      <article class="bc b-proc rv d1"><span class="bn">05</span><svg><use href="#i-scale"/></svg><h3>Bioprocess development</h3><p>Biological production, purification, scale-up and reproducibility.</p></article>
+      <article class="bc b-dig rv d2"><span class="bn">06</span><svg><use href="#i-link"/></svg><h3>Digital health technologies</h3><p>Medical software, data analysis or integrated diagnostic systems.</p></article>
+      <article class="bc bimg b-dev rv d3"><div class="img" style="aspect-ratio:548/465"><img src="assets/ls_device.jpg" alt="Patient monitoring device in a hospital: medical devices and diagnostics R&amp;D" width="548" height="465" loading="lazy"></div><div class="bt"><span class="bn">04</span><h3>Medical devices and diagnostics</h3><p>New or significantly enhanced technologies, diagnostic methods, monitoring systems and devices.</p></div></article>
     </div>
-    <div class="notefinal rv"><svg><use href="#i-flag"/></svg><p>Not all activities within these programmes will necessarily qualify. The assessment must identify the advances sought in the wider field of science or technology and the work undertaken to resolve associated uncertainties.</p></div>
+    <p class="notefinal rv"><svg><use href="#i-flag"/></svg><span>Not all activities within these programmes will necessarily qualify. The assessment must identify the advance sought in the wider field of science or technology and the work undertaken to resolve the uncertainties. <a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/understanding-rd-eligibility/">Eligibility guide</a></span></p>
   </div>
 </section>
 
 <section class="sec dark" id="challenges">
   <div class="wrap">
     <div class="rv"><div class="label">Common challenges</div>
-    <h2>CRO R&amp;D tax relief and more: common challenges for life sciences companies</h2>
-    <p class="lede">Life sciences businesses are operating in a selective funding environment, with longer development timelines, pressure on cash runway and greater investor scrutiny of technical and financial discipline. Changes to the R&amp;D tax regime have made the timing, value and defensibility of claims more important, and more complex.</p></div>
+    <h2>CRO R&amp;D tax relief and more: three challenges for life sciences companies</h2>
+    <p class="ans2 on-dark"><b>Short answer:</b> overseas costs, who is entitled to claim under CRO and CDMO contracts, and evidencing the claim without burdening scientists. Selective funding, longer timelines and investor scrutiny make timing, value and defensibility more important, and more complex.</p></div>
     <div class="lsel rv">
       <div class="lside">
         <div class="llist" role="tablist" aria-label="Common R&amp;D tax challenges" id="clist">
-          <button class="lbtn" role="tab" id="ct1" aria-controls="cp1" aria-selected="true" type="button"><span>1</span>Overseas clinical trials, CRO and specialist laboratory costs</button>
-          <button class="lbtn" role="tab" id="ct2" aria-controls="cp2" aria-selected="false" type="button"><span>2</span>Who can claim when R&amp;D is delivered through CROs, CDMOs or research partners</button>
-          <button class="lbtn" role="tab" id="ct3" aria-controls="cp3" aria-selected="false" type="button"><span>3</span>Evidencing the claim without an extra burden for scientists</button>
+          <button class="lbtn" role="tab" id="ct1" aria-controls="cp1" aria-selected="true" type="button"><span>1</span>Overseas trials, CRO and lab costs</button>
+          <button class="lbtn" role="tab" id="ct2" aria-controls="cp2" aria-selected="false" type="button"><span>2</span>Who can claim under CRO and CDMO contracts</button>
+          <button class="lbtn" role="tab" id="ct3" aria-controls="cp3" aria-selected="false" type="button"><span>3</span>Evidence without burdening scientists</button>
         </div>
-        <div class="img pic lpic" style="aspect-ratio:551/469"><img src="assets/ls_advisers.jpg" alt="Advisers reviewing a claim: eligibility review, evidence preparation, technical assessment and HMRC-ready claim" width="551" height="469" loading="lazy"></div>
+        <div class="img pic lpic tilt" style="aspect-ratio:551/469"><img src="assets/ls_advisers.jpg" alt="Advisers reviewing a claim: eligibility review, evidence preparation, technical assessment and HMRC-ready claim" width="551" height="469" loading="lazy"></div>
       </div>
       <div>
         <div class="lpanel" id="cp1" role="tabpanel" aria-labelledby="ct1">
           <h3>Will our overseas clinical trials, CRO and specialist laboratory costs still qualify?</h3>
-          <div class="lrow"><small>The challenge</small><p>Life sciences companies frequently conduct research internationally because of clinical trial recruitment requirements, specialist facilities, manufacturing capabilities and regulatory considerations.</p><p class="pp">For accounting periods beginning on or after 1 April 2024, restrictions on overseas contractor and externally provided worker costs can substantially reduce claims. The position is particularly difficult where patient populations, specialist facilities, regulatory requirements or scientific conditions mean work must take place outside the UK.</p></div>
-          <div class="lrow"><small>How iTax Advisors can help</small><p>We map where each activity was undertaken, who performed it and how the relevant costs were incurred. We then assess the statutory overseas exception, including whether the necessary conditions existed abroad and whether replicating them in the UK would have been wholly unreasonable.</p><p class="pp">We also identify the contemporaneous evidence needed to support the treatment, such as protocol requirements, access to relevant patient cohorts, regulatory constraints and the availability of specialist infrastructure. This helps companies distinguish genuinely restricted expenditure from costs that may still qualify.</p></div>
+          <div class="lrow"><small>The challenge</small><ul class="ptr dk">
+            <li>Research is often international: trial recruitment, specialist facilities, manufacturing capabilities, regulatory considerations</li>
+            <li>For accounting periods beginning on or after 1 April 2024, <b>restrictions on overseas contractor and externally provided worker costs</b> can substantially reduce claims</li>
+            <li>Hardest where patient populations, facilities, regulation or scientific conditions mean work must happen outside the UK</li></ul></div>
+          <div class="lrow"><small>How iTax Advisors helps</small><ul class="ptr dk">
+            <li>Map where each activity took place, who performed it and how costs were incurred</li>
+            <li>Assess the statutory overseas exception, including whether replicating the conditions in the UK would have been wholly unreasonable</li>
+            <li>Identify contemporaneous evidence: protocol requirements, patient cohorts, regulatory constraints, specialist infrastructure</li>
+            <li>Separate genuinely restricted spend from costs that may still qualify. <a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/">Qualifying costs guide</a></li></ul></div>
         </div>
         <div class="lpanel" id="cp2" role="tabpanel" aria-labelledby="ct2" hidden>
           <h3>Who is entitled to claim when R&amp;D is delivered through CROs, CDMOs or research partners?</h3>
-          <div class="lrow"><small>The challenge</small><p>Under the merged scheme, claim entitlement can depend on whether the customer intended or contemplated R&amp;D of that sort when the contract was entered into. CRO and CDMO agreements may not clearly record who initiated the R&amp;D, controlled the scientific programme, bore the risk or expected to claim the relief.</p><p class="pp">This can create uncertainty for both sponsors and service providers, particularly where scopes evolve, work packages overlap or a contractor undertakes its own qualifying R&amp;D beyond the customer&rsquo;s contemplated programme.</p></div>
-          <div class="lrow"><small>How iTax Advisors can help</small><p>We review statements of work, change controls, technical decision-making, financial risk, IP provisions and the parties&rsquo; contemporaneous understanding of the project.</p><p class="pp">We help establish a supportable claimant position and highlight where future contracts and project records should describe the intended R&amp;D more clearly, without relying on broad or retrospective wording. Our methodology connects the relevant scientific activities with the financial records, creating a clearer and more supportable claim.</p></div>
+          <div class="lrow"><small>The challenge</small><ul class="ptr dk">
+            <li>Under the merged scheme, entitlement can depend on <b>whether the customer intended or contemplated that R&amp;D</b> when the contract was entered into</li>
+            <li>CRO and CDMO agreements may not record who initiated the R&amp;D, controlled the programme, bore the risk or expected to claim</li>
+            <li>Uncertain for sponsors and providers where scopes evolve, work packages overlap or a contractor does its own R&amp;D</li></ul></div>
+          <div class="lrow"><small>How iTax Advisors helps</small><ul class="ptr dk">
+            <li>Review statements of work, change controls, technical decisions, financial risk, IP provisions and the parties&rsquo; understanding</li>
+            <li>Establish a supportable claimant position</li>
+            <li>Show where future contracts and records should describe the intended R&amp;D more clearly, without broad or retrospective wording</li>
+            <li>Connect the scientific activities to the financial records. <a class="tx" href="https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/">Contracted-out R&amp;D rules</a></li></ul></div>
         </div>
         <div class="lpanel" id="cp3" role="tabpanel" aria-labelledby="ct3" hidden>
           <h3>Can we evidence the claim without creating an additional burden for scientists?</h3>
-          <div class="lrow"><small>The challenge</small><p>Life sciences businesses typically maintain laboratory records, research protocols, experimental results and scientific reports. However, those records are usually prepared for scientific, regulatory or operational purposes. They may not clearly set out the baseline in the relevant field, the advance sought, why the uncertainties were not readily deducible, or when qualifying R&amp;D began and ended.</p><p class="pp">The Additional Information Form and increased HMRC scrutiny also require better coordination between scientific and finance teams, often when internal resources are already stretched.</p></div>
-          <div class="lrow"><small>How iTax Advisors can help</small><p>We work directly with relevant scientific personnel to identify the qualifying advances and uncertainties, and with the scientists and technical leads to prepare an evidence-led technical description aligned with HMRC&rsquo;s requirements.</p><p class="pp">We also provide specialist support where HMRC has opened an enquiry into an existing claim.</p></div>
+          <div class="lrow"><small>The challenge</small><ul class="ptr dk">
+            <li>Lab records, protocols, results and reports are made for scientific, regulatory or operational purposes</li>
+            <li>They may not show the baseline, the advance sought, why uncertainties were not readily deducible, or when qualifying R&amp;D began and ended</li>
+            <li>The Additional Information Form and HMRC scrutiny need scientific and finance teams to work together</li></ul></div>
+          <div class="lrow"><small>How iTax Advisors helps</small><ul class="ptr dk">
+            <li>Work directly with scientific personnel and technical leads to identify qualifying advances and uncertainties</li>
+            <li>Prepare an evidence-led technical description aligned with HMRC&rsquo;s requirements</li>
+            <li>Specialist support where HMRC has opened an enquiry. <a class="tx" href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">HMRC enquiry support</a></li></ul></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec" id="case-study" style="background:var(--paper)">
-  <div class="wrap">
-    <div class="rv"><div class="label">Case study</div>
-    <h2>Supporting a biotechnology company through an HMRC enquiry</h2>
-    <p class="lede">Sector: biotechnology and vaccine development.</p></div>
-    <div class="cs2">
-      <div class="cs2-l rv">
-        <div class="img pic" style="aspect-ratio:548/469"><img src="assets/ls_hmrc.jpg" alt="Gavel beside an HMRC Compliance handbook: supporting a biotechnology company through an HMRC enquiry" width="548" height="469" loading="lazy"></div>
-        <div class="stats2">
-          <div class="stat"><b data-count="600000" data-prefix="&pound;" data-suffix="+">&pound;600,000+</b><span>of R&amp;D-related funding under review</span></div>
-          <div class="stat g"><b data-count="200000" data-prefix="~&pound;">~&pound;200,000</b><span>additional tax benefit identified</span></div>
-        </div>
+<section class="sec" id="records" style="background:var(--paper)">
+  <div class="wrap split top">
+    <div class="rv">
+      <div class="label">Records to keep</div>
+      <h2>Drug discovery R&amp;D tax credits: what documentation should you keep?</h2>
+      <p class="ans2"><b>Short answer:</b> records that together show the advance sought, the uncertainties met, the work done and how it connects to the expenditure claimed.</p>
+      <div class="recs">
+        <span>Research plans</span><span>Laboratory reports</span><span>Protocols</span><span>Experimental results</span><span>Trial records</span><span>Scientific correspondence</span><span>Contractual agreements</span><span>Cost analyses</span>
       </div>
-      <ol class="tl2 rv d1">
-        <li><span class="tn">1</span><div><small>The situation</small><p>A biotechnology company undertaking a specialist vaccine development programme faced an HMRC enquiry into its R&amp;D tax claim. This placed not only the current claim at risk, but potentially historic claims as well.</p><p>The enquiry raised complex questions about the treatment of expenditure, including payments to third-party research providers and the interaction with grant-funded activities. The enquiry placed more than &pound;600,000 of R&amp;D-related funding under review.</p></div></li>
-        <li><span class="tn">2</span><div><small>Our approach</small><p>iTax Advisors undertook a detailed reconstruction of the claim, reviewing the technical project information, expenditure calculations, supporting invoices and relevant contractual arrangements.</p><p>We reassessed expenditure classifications and developed supporting analyses and correspondence addressing the issues raised by HMRC.</p></div></li>
-        <li><span class="tn">3</span><div><small>The value delivered</small><p>The company received a substantially strengthened technical and financial analysis of the claim, with a clearer evidential basis for the expenditure treatment adopted and the responses provided to HMRC.</p><p>The in-depth review also identified approximately &pound;200,000 of additional tax benefit, which was incorporated into the revised claim submitted to HMRC.</p></div></li>
-      </ol>
+      <a class="more" href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/">Capture records as work happens: contemporaneous reporting <svg><use href="#i-arrow"/></svg></a>
     </div>
+    <div class="rv d1 fl"><div class="img pic wipe tilt" style="aspect-ratio:351/264;max-width:440px;margin-left:auto"><img src="assets/a_notebook.jpg" alt="Notebook and pen: laboratory and project records kept as the work happens" width="351" height="264" loading="lazy"><span class="cap">Dated, traceable records</span></div></div>
   </div>
 </section>
 
 <section class="sec" id="how-much" style="background:#fff">
   <div class="wrap">
     <div class="rv"><div class="label">Value and timing</div>
-    <h2>How much R&amp;D tax relief could a life sciences company receive, and when?</h2>
-    <p class="lede">The amount and timing depend on the company&rsquo;s accounting period, tax position, qualifying expenditure and the scheme under which it claims.</p></div>
+    <h2>Pharma R&amp;D tax credits UK: how much could you receive, and when?</h2>
+    <p class="ans2"><b>Short answer:</b> it depends on the accounting period, tax position, qualifying expenditure and the scheme you claim under. Most companies claim under the merged RDEC scheme; loss-making R&amp;D-intensive SMEs may claim ERIS.</p></div>
     <div class="sgrid">
       <div class="sc rv"><span class="tag">Merged R&amp;D expenditure credit scheme</span><h3>Most companies, from 1 April 2024</h3>
         <div class="figs"><div class="fig"><b data-count="20" data-suffix="%">20%</b><span>taxable credit on qualifying R&amp;D expenditure</span></div><div class="fig"><b data-count="15" data-suffix="%">15%</b><span>net benefit at the 25% main rate</span></div><div class="fig"><b data-count="16.2" data-suffix="%" data-dec="1">16.2%</b><span>net benefit at the 19% small profits rate</span></div></div>
-        <p>For accounting periods beginning on or after 1 April 2024, most companies claim under the merged R&amp;D expenditure credit scheme. This provides a taxable credit equal to 20% of qualifying R&amp;D expenditure, giving a net benefit of 15% where the 25% main rate of corporation tax applies and 16.2% where the 19% small profits rate applies.</p><p>The credit is first applied against the company&rsquo;s corporation tax liability and then passes through a series of statutory payment steps. Any remaining amount may be payable in cash, subject to restrictions including the PAYE and NIC cap.</p></div>
+        <ul class="ptr"><li>For accounting periods beginning on or after 1 April 2024</li><li>Credit is applied against corporation tax first, then passes through statutory payment steps</li><li>Any remaining amount may be payable in cash, subject to restrictions including the PAYE and NIC cap</li></ul></div>
       <div class="sc rv d1"><span class="tag">Enhanced R&amp;D Intensive Support (ERIS)</span><h3>Loss-making R&amp;D-intensive SMEs</h3>
         <div class="figs"><div class="fig"><b data-count="86" data-suffix="%">86%</b><span>additional deduction on qualifying R&amp;D expenditure</span></div><div class="fig"><b data-count="14.5" data-suffix="%" data-dec="1">14.5%</b><span>payable credit rate on the surrendered loss</span></div><div class="fig"><b data-count="26.97" data-suffix="%" data-dec="2">26.97%</b><span>maximum cash benefit, with sufficient losses</span></div></div>
-        <p>Loss-making SMEs that meet the R&amp;D intensity threshold and the other qualifying conditions may instead claim ERIS. The company&rsquo;s qualifying R&amp;D expenditure must generally equal at least 30% of its total relevant expenditure, although a one-year grace period may apply where the company qualified in the preceding period.</p><p>ERIS provides an additional deduction equal to 86% of qualifying R&amp;D expenditure. The enhanced loss may be surrendered for a payable tax credit at a rate of 14.5%, producing a maximum cash benefit of 26.97% of qualifying expenditure where the company has sufficient surrenderable losses. The actual benefit may be lower where available losses restrict the amount that can be surrendered.</p></div>
+        <ul class="ptr"><li>Meets the R&amp;D intensity threshold and other conditions</li><li>Qualifying R&amp;D generally at least 30% of total relevant expenditure (a one-year grace period may apply)</li><li>The actual benefit may be lower where available losses restrict the amount surrendered</li></ul></div>
     </div>
-    <div class="notefinal rv"><svg><use href="#i-clock"/></svg><p>Payment timing is not fixed. It depends on when the accounts and corporation tax return are finalised and submitted, whether a claim notification and Additional Information Form have been completed correctly, HMRC&rsquo;s processing time and whether the claim is selected for review. Avoid treating the estimated benefit as guaranteed cash on a particular date.</p></div>
-    <p class="body rv" style="margin-top:20px;max-width:78ch">Early modelling should establish a realistic range rather than a single headline figure, taking account of qualifying expenditure, the applicable scheme, grants, overseas costs, connected companies, the PAYE and NIC cap and available losses. This can support more reliable cash-flow forecasts, fundraising plans and board reporting.</p>
+    <div class="tm">
+      <div class="tmc rv"><h3>Payment timing is not fixed. It depends on:</h3><ul class="ptr"><li>When the accounts and corporation tax return are finalised and submitted</li><li>Whether the claim notification and Additional Information Form are completed correctly. <a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">How to make a claim</a></li><li>HMRC&rsquo;s processing time</li><li>Whether the claim is selected for review</li></ul><p class="warnp">Avoid treating the estimated benefit as guaranteed cash on a particular date.</p></div>
+      <div class="tmc rv d1"><h3>Early modelling gives a realistic range. It accounts for:</h3><ul class="ptr"><li>Qualifying expenditure and the applicable scheme</li><li>Grants and overseas costs</li><li>Connected companies</li><li>The PAYE and NIC cap and available losses</li></ul><p class="okp">Supports cash-flow forecasts, fundraising plans and board reporting.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="case-study">
+  <div class="wrap">
+    <div class="rv"><div class="label">Case study</div>
+    <h2>Supporting a biotechnology company through an HMRC enquiry</h2>
+    <p class="lede">Sector: biotechnology and vaccine development.</p></div>
+    <div class="cs2 csd">
+      <div class="cs2-l rv">
+        <div class="img pic tilt" style="aspect-ratio:548/469"><img src="assets/ls_hmrc.jpg" alt="Gavel beside an HMRC Compliance handbook: supporting a biotechnology company through an HMRC enquiry" width="548" height="469" loading="lazy"></div>
+        <div class="stats2">
+          <div class="stat"><b>&pound;600,000+</b><span>of R&amp;D-related funding under review</span></div>
+          <div class="stat g"><b>~&pound;200,000</b><span>additional tax benefit identified</span></div>
+        </div>
+      </div>
+      <ol class="tl2 rv d1">
+        <li><span class="tn">1</span><div><small>The situation</small><ul class="ptr dk"><li>A vaccine development programme faced an HMRC enquiry into its R&amp;D claim</li><li>The current claim, and potentially historic claims, were at risk</li><li>Questions covered payments to third-party research providers and the interaction with grant-funded activities</li></ul></div></li>
+        <li><span class="tn">2</span><div><small>Our approach</small><ul class="ptr dk"><li>Detailed reconstruction of the claim: technical project information, expenditure calculations, supporting invoices and contracts</li><li>Expenditure classifications reassessed</li><li>Supporting analyses and correspondence developed to address HMRC&rsquo;s issues. <a class="tx" href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">HMRC enquiry support</a></li></ul></div></li>
+        <li><span class="tn">3</span><div><small>The value delivered</small><ul class="ptr dk"><li>A substantially strengthened technical and financial analysis</li><li>A clearer evidential basis for the expenditure treatment and the responses given</li><li>About &pound;200,000 of additional tax benefit identified and included in the revised claim</li></ul></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="support" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="rv"><div class="label">How we help</div>
+    <h2>R&amp;D tax advisers life sciences companies can work with</h2>
+    <p class="ans2"><b>Short answer:</b> we help biotechnology, pharmaceutical, therapeutics, diagnostics and medical technology companies prepare evidence-led claims that reflect both the underlying science and the applicable tax rules.</p></div>
+    <div class="rel2">
+      <a class="r2 rv" href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/"><span class="ico"><svg><use href="#i-doc"/></svg></span><h3>Prepare a claim</h3><p>Eligibility, qualifying costs, technical narratives and a submission pack.</p><span class="more">R&amp;D Claim Preparation <svg><use href="#i-arrow"/></svg></span></a>
+      <a class="r2 rv d1" href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/"><span class="ico"><svg><use href="#i-search"/></svg></span><h3>Check a claim</h3><p>An independent second opinion on a draft or filed claim.</p><span class="more">Claim Review <svg><use href="#i-arrow"/></svg></span></a>
+      <a class="r2 rv d2" href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/"><span class="ico"><svg><use href="#i-shield"/></svg></span><h3>Respond to HMRC</h3><p>Evidence review, response preparation and technical defence.</p><span class="more">HMRC Enquiry Support <svg><use href="#i-arrow"/></svg></span></a>
+      <a class="r2 rv d3" href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/"><span class="ico"><svg><use href="#i-clock"/></svg></span><h3>Keep records as you go</h3><p>Capture activity, uncertainties and evidence throughout the year.</p><span class="more">Contemporaneous Reporting <svg><use href="#i-arrow"/></svg></span></a>
+    </div>
   </div>
 </section>
 
@@ -557,15 +717,15 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
     <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>Life sciences R&amp;D tax relief questions</h2><p class="lede">Short answers first. Speak to us about your own position.</p>
       <div class="faq-side"><div class="img"><img src="assets/ls_lab_icons.jpg" alt="Researcher at a microscope with DNA and pharmaceutical icons: life sciences R&amp;D tax relief questions" width="550" height="465" loading="lazy"></div><div class="t"><b>Unsure how your programme is treated?</b><a class="btn btn-green btn-sm" href="https://www.itaxadvisors.co.uk/contact-us/">Ask a specialist</a></div></div></div></div>
     <div class="rv d1">
-      <details open><summary>Can clinical trial expenditure qualify for R&amp;D tax relief?</summary><p>Yes. Activities undertaken during clinical development may qualify where they directly contribute to resolving scientific or technological uncertainty. However, not every clinical trial activity or associated cost is automatically eligible. The scientific purpose, nature of the expenditure and applicable statutory rules must be assessed. For payments to clinical trial subjects to qualify, they must be made to the subjects themselves in return for participating in the trial, rather than being paid through a regulatory body or other intermediary.</p></details>
+      <details open><summary>Can clinical trial expenditure qualify for R&amp;D tax relief?</summary><p>Yes. Activities undertaken during clinical development may qualify where they directly contribute to resolving scientific or technological uncertainty. However, not every clinical trial activity or associated cost is automatically eligible. The scientific purpose, nature of the expenditure and applicable statutory rules must be assessed. For payments to clinical trial subjects to qualify, they must be made to the subjects themselves in return for participating in the trial, rather than being paid through a regulatory body or other intermediary. <a href="https://www.itaxadvisors.co.uk/rd-tax-relief-and-clinical-trials-what-therapeutic-companies-can-and-cant-claim-in-the-uk/">Read the clinical trial costs guide</a>.</p></details>
       <details><summary>Can we claim expenditure incurred through overseas CROs?</summary><p>Potentially. Overseas contractor expenditure is subject to restrictions for accounting periods beginning on or after 1 April 2024, although statutory exceptions may apply. The location and nature of the activities, the necessity for overseas research and whether the relevant conditions could reasonably be replicated in the UK are important considerations.</p></details>
       <details><summary>Does grant funding prevent us from claiming R&amp;D tax relief?</summary><p>Under the new merged scheme (applies to accounting periods beginning on or after 1 April 2024), receiving a grant does not in itself disqualify expenditure from relief. However, contractual arrangements, who undertakes or initiates the R&amp;D and other eligibility conditions must still be considered.</p></details>
       <details><summary>Can drug discovery R&amp;D tax credits cover unsuccessful projects?</summary><p>Yes. Qualifying R&amp;D does not have to result in a successful scientific or commercial outcome. Where activities seek to resolve genuine scientific or technological uncertainty, expenditure may qualify even if the research does not achieve the intended outcome.</p></details>
       <details><summary>Does medtech R&amp;D tax relief cover device and diagnostics development?</summary><p>Potentially. Development of new or significantly enhanced technologies, diagnostic methods, monitoring systems and medical devices may qualify. Not all activities within these programmes will necessarily qualify: the assessment must identify the advance sought in the wider field of science or technology and the work undertaken to resolve associated uncertainties.</p></details>
       <details><summary>Can loss-making biotech companies receive R&amp;D tax relief?</summary><p>Yes. Loss-making R&amp;D-intensive SMEs may qualify for Enhanced R&amp;D Intensive Support (ERIS), subject to the applicable intensity threshold and other conditions. Other eligible companies may claim under the merged R&amp;D expenditure credit scheme. The appropriate scheme and benefit should be assessed using the company&rsquo;s financial circumstances.</p></details>
       <details><summary>What documentation should we maintain?</summary><p>Relevant records may include research plans, laboratory reports, protocols, experimental results, trial records, scientific correspondence, contractual agreements and cost analyses. Together, these records should show the scientific or technological advance sought, the uncertainties encountered, the work undertaken and the connection between that work and the expenditure claimed.</p></details>
-      <details><summary>Do we need to notify HMRC before making a claim?</summary><p>Some companies must submit a claim notification within six months of the end of the relevant accounting period. Whether notification is required depends on the company&rsquo;s recent claim history and the timing of earlier claims, so this should be checked well before the corporation tax return is filed.</p></details>
-      <details><summary>Who can claim when a sponsor commissions work from a CRO or CDMO?</summary><p>For accounting periods beginning on or after 1 April 2024, entitlement generally depends on which party intended or contemplated the relevant R&amp;D when the contract was entered into. The contract is important, but HMRC may also consider the wider facts, including technical control, financial risk, IP arrangements and the parties&rsquo; understanding of the work.</p></details>
+      <details><summary>Do we need to notify HMRC before making a claim?</summary><p>Some companies must submit a claim notification within six months of the end of the relevant accounting period. Whether notification is required depends on the company&rsquo;s recent claim history and the timing of earlier claims, so this should be checked well before the corporation tax return is filed. <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">See how to make a claim</a>.</p></details>
+      <details><summary>Who can claim when a sponsor commissions work from a CRO or CDMO?</summary><p>For accounting periods beginning on or after 1 April 2024, entitlement generally depends on which party intended or contemplated the relevant R&amp;D when the contract was entered into. The contract is important, but HMRC may also consider the wider facts, including technical control, financial risk, IP arrangements and the parties&rsquo; understanding of the work. <a href="https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/">Read about the contracted-out R&amp;D rules</a>.</p></details>
       <details><summary>How much R&amp;D tax relief could we receive, and when?</summary><p>The amount and timing depend on the company&rsquo;s accounting period, tax position, qualifying expenditure and the scheme under which it claims. For accounting periods beginning on or after 1 April 2024, most companies claim under the merged R&amp;D expenditure credit scheme, a taxable credit equal to 20% of qualifying R&amp;D expenditure. Loss-making SMEs that meet the R&amp;D intensity threshold may instead claim ERIS. Payment timing is not fixed, so avoid treating the estimated benefit as guaranteed cash on a particular date. The section above sets out both schemes in full.</p></details>
     </div>
   </div>
@@ -595,7 +755,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 </section>
 </main>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Service", "name": "R&D Tax Relief for Life Sciences, Biotechnology and MedTech Companies", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}, "@id": "https://www.itaxadvisors.co.uk/#organization"}, "areaServed": "GB", "description": "Specialist R&D tax advice for complex scientific research, clinical development and innovative healthcare technologies."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can clinical trial expenditure qualify for R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Activities undertaken during clinical development may qualify where they directly contribute to resolving scientific or technological uncertainty. However, not every clinical trial activity or associated cost is automatically eligible. The scientific purpose, nature of the expenditure and applicable statutory rules must be assessed. For payments to clinical trial subjects to qualify, they must be made to the subjects themselves in return for participating in the trial, rather than being paid through a regulatory body or other intermediary."}}, {"@type": "Question", "name": "Can we claim expenditure incurred through overseas CROs?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. Overseas contractor expenditure is subject to restrictions for accounting periods beginning on or after 1 April 2024, although statutory exceptions may apply. The location and nature of the activities, the necessity for overseas research and whether the relevant conditions could reasonably be replicated in the UK are important considerations."}}, {"@type": "Question", "name": "Does grant funding prevent us from claiming R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Under the new merged scheme (applies to accounting periods beginning on or after 1 April 2024), receiving a grant does not in itself disqualify expenditure from relief. However, contractual arrangements, who undertakes or initiates the R&D and other eligibility conditions must still be considered."}}, {"@type": "Question", "name": "Can drug discovery R&D tax credits cover unsuccessful projects?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Qualifying R&D does not have to result in a successful scientific or commercial outcome. Where activities seek to resolve genuine scientific or technological uncertainty, expenditure may qualify even if the research does not achieve the intended outcome."}}, {"@type": "Question", "name": "Does medtech R&D tax relief cover device and diagnostics development?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. Development of new or significantly enhanced technologies, diagnostic methods, monitoring systems and medical devices may qualify. Not all activities within these programmes will necessarily qualify: the assessment must identify the advance sought in the wider field of science or technology and the work undertaken to resolve associated uncertainties."}}, {"@type": "Question", "name": "Can loss-making biotech companies receive R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Loss-making R&D-intensive SMEs may qualify for Enhanced R&D Intensive Support (ERIS), subject to the applicable intensity threshold and other conditions. Other eligible companies may claim under the merged R&D expenditure credit scheme. The appropriate scheme and benefit should be assessed using the company’s financial circumstances."}}, {"@type": "Question", "name": "What documentation should we maintain?", "acceptedAnswer": {"@type": "Answer", "text": "Relevant records may include research plans, laboratory reports, protocols, experimental results, trial records, scientific correspondence, contractual agreements and cost analyses. Together, these records should show the scientific or technological advance sought, the uncertainties encountered, the work undertaken and the connection between that work and the expenditure claimed."}}, {"@type": "Question", "name": "Do we need to notify HMRC before making a claim?", "acceptedAnswer": {"@type": "Answer", "text": "Some companies must submit a claim notification within six months of the end of the relevant accounting period. Whether notification is required depends on the company’s recent claim history and the timing of earlier claims, so this should be checked well before the corporation tax return is filed."}}, {"@type": "Question", "name": "Who can claim when a sponsor commissions work from a CRO or CDMO?", "acceptedAnswer": {"@type": "Answer", "text": "For accounting periods beginning on or after 1 April 2024, entitlement generally depends on which party intended or contemplated the relevant R&D when the contract was entered into. The contract is important, but HMRC may also consider the wider facts, including technical control, financial risk, IP arrangements and the parties’ understanding of the work."}}, {"@type": "Question", "name": "How much R&D tax relief could we receive, and when?", "acceptedAnswer": {"@type": "Answer", "text": "The amount and timing depend on the company’s accounting period, tax position, qualifying expenditure and the scheme under which it claims. For accounting periods beginning on or after 1 April 2024, most companies claim under the merged R&D expenditure credit scheme, a taxable credit equal to 20% of qualifying R&D expenditure. Loss-making SMEs that meet the R&D intensity threshold may instead claim ERIS. Payment timing is not fixed, so avoid treating the estimated benefit as guaranteed cash on a particular date. The section above sets out both schemes in full."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Sectors", "item": "https://www.itaxadvisors.co.uk/#sectors"}, {"@type": "ListItem", "position": 3, "name": "Life Sciences", "item": "https://www.itaxadvisors.co.uk/sectors/life-sciences-rd-tax-relief/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Service", "name": "R&D Tax Relief for Life Sciences, Biotechnology and MedTech Companies", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}, "@id": "https://www.itaxadvisors.co.uk/#organization"}, "areaServed": "GB", "description": "Specialist R&D tax advice for complex scientific research, clinical development and innovative healthcare technologies."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can clinical trial expenditure qualify for R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Activities undertaken during clinical development may qualify where they directly contribute to resolving scientific or technological uncertainty. However, not every clinical trial activity or associated cost is automatically eligible. The scientific purpose, nature of the expenditure and applicable statutory rules must be assessed. For payments to clinical trial subjects to qualify, they must be made to the subjects themselves in return for participating in the trial, rather than being paid through a regulatory body or other intermediary. Read the clinical trial costs guide."}}, {"@type": "Question", "name": "Can we claim expenditure incurred through overseas CROs?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. Overseas contractor expenditure is subject to restrictions for accounting periods beginning on or after 1 April 2024, although statutory exceptions may apply. The location and nature of the activities, the necessity for overseas research and whether the relevant conditions could reasonably be replicated in the UK are important considerations."}}, {"@type": "Question", "name": "Does grant funding prevent us from claiming R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Under the new merged scheme (applies to accounting periods beginning on or after 1 April 2024), receiving a grant does not in itself disqualify expenditure from relief. However, contractual arrangements, who undertakes or initiates the R&D and other eligibility conditions must still be considered."}}, {"@type": "Question", "name": "Can drug discovery R&D tax credits cover unsuccessful projects?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Qualifying R&D does not have to result in a successful scientific or commercial outcome. Where activities seek to resolve genuine scientific or technological uncertainty, expenditure may qualify even if the research does not achieve the intended outcome."}}, {"@type": "Question", "name": "Does medtech R&D tax relief cover device and diagnostics development?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. Development of new or significantly enhanced technologies, diagnostic methods, monitoring systems and medical devices may qualify. Not all activities within these programmes will necessarily qualify: the assessment must identify the advance sought in the wider field of science or technology and the work undertaken to resolve associated uncertainties."}}, {"@type": "Question", "name": "Can loss-making biotech companies receive R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Loss-making R&D-intensive SMEs may qualify for Enhanced R&D Intensive Support (ERIS), subject to the applicable intensity threshold and other conditions. Other eligible companies may claim under the merged R&D expenditure credit scheme. The appropriate scheme and benefit should be assessed using the company’s financial circumstances."}}, {"@type": "Question", "name": "What documentation should we maintain?", "acceptedAnswer": {"@type": "Answer", "text": "Relevant records may include research plans, laboratory reports, protocols, experimental results, trial records, scientific correspondence, contractual agreements and cost analyses. Together, these records should show the scientific or technological advance sought, the uncertainties encountered, the work undertaken and the connection between that work and the expenditure claimed."}}, {"@type": "Question", "name": "Do we need to notify HMRC before making a claim?", "acceptedAnswer": {"@type": "Answer", "text": "Some companies must submit a claim notification within six months of the end of the relevant accounting period. Whether notification is required depends on the company’s recent claim history and the timing of earlier claims, so this should be checked well before the corporation tax return is filed. See how to make a claim."}}, {"@type": "Question", "name": "Who can claim when a sponsor commissions work from a CRO or CDMO?", "acceptedAnswer": {"@type": "Answer", "text": "For accounting periods beginning on or after 1 April 2024, entitlement generally depends on which party intended or contemplated the relevant R&D when the contract was entered into. The contract is important, but HMRC may also consider the wider facts, including technical control, financial risk, IP arrangements and the parties’ understanding of the work. Read about the contracted-out R&D rules."}}, {"@type": "Question", "name": "How much R&D tax relief could we receive, and when?", "acceptedAnswer": {"@type": "Answer", "text": "The amount and timing depend on the company’s accounting period, tax position, qualifying expenditure and the scheme under which it claims. For accounting periods beginning on or after 1 April 2024, most companies claim under the merged R&D expenditure credit scheme, a taxable credit equal to 20% of qualifying R&D expenditure. Loss-making SMEs that meet the R&D intensity threshold may instead claim ERIS. Payment timing is not fixed, so avoid treating the estimated benefit as guaranteed cash on a particular date. The section above sets out both schemes in full."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Sectors", "item": "https://www.itaxadvisors.co.uk/#sectors"}, {"@type": "ListItem", "position": 3, "name": "Life Sciences", "item": "https://www.itaxadvisors.co.uk/sectors/life-sciences-rd-tax-relief/"}]}]}</script>
 <script>
 (function(){
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -652,5 +812,10 @@ if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(fu
 wireForm('ct-form','ct-done','ct-err',['ct-first','ct-last','ct-email','ct-co','ct-type','ct-consent'],'contact');
 wireForm('lm-form','lm-done','lm-err',['lm-name','lm-email','lm-co','lm-consent'],'pdf',function(){return {checklist_name:'Clinical Trials & R&D Tax Relief: pre-trial checklist',checklist_file:'https://www.itaxadvisors.co.uk/wp-content/uploads/itax-clinical-trials-checklist.pdf',checklist_filename:'itax-clinical-trials-checklist.pdf',lead_source:'life-sciences-page-lead-magnet-clinical-trials'}});
 })();
+
+/* jump nav highlight */
+(function(){var links=$$('.jump a');if(!links.length||!('IntersectionObserver' in window))return;var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});var a=map[e.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-30% 0px -60% 0px'});
+Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)})})();
 
 </script>
