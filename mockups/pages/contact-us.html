@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Contact Page</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<!-- SEO (set in Yoast): title: Contact an R&D Tax Specialist | iTax Advisors | description: Speak to a specialist R&D tax adviser about your claim or HMRC letter. Send your enquiry and a member of our team will be in touch to arrange a call. -->
+<!-- SEO (set in Yoast): title: Contact iTax Advisors | Speak to an R&D Tax Specialist | description: Contact iTax Advisors to speak to an R&D tax specialist about your claim or HMRC letter. Send your enquiry and we will arrange a call. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
 <style>
@@ -177,6 +177,18 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .ready-in li{display:flex;gap:8px}.ready-in svg{width:15px;height:15px;color:var(--green-deep);flex:none;margin-top:4px}
 @media (max-width:600px){.ready-in ul{grid-template-columns:minmax(0,1fr)}}
 
+/*CONTACT v2*/
+.hpts{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:9px}
+.hpts li{position:relative;padding-left:28px;font-size:16.5px;color:var(--on-dark);font-weight:600}
+.hpts li::before{content:"";position:absolute;left:2px;top:.4em;width:13px;height:7px;border-left:3px solid var(--green);border-bottom:3px solid var(--green);transform:rotate(-45deg)}
+.fhead{margin-bottom:28px}
+.sbox.next ol{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:14px;counter-reset:s}
+.sbox.next li{counter-increment:s;position:relative;padding-left:44px;min-height:34px}
+.sbox.next li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--navy-700);color:var(--green);display:grid;place-items:center;font-weight:800;font-size:14px}
+.sbox.next b{display:block;color:var(--navy-700);font-size:15.5px}.sbox.next span{display:block;color:var(--muted);font-size:14px}
+.sbox .tx{display:inline-block;margin-top:6px;font-size:14px;font-weight:700;color:var(--navy-700);text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:3px}
+.sbox .img.pic img{width:100%;height:100%;object-fit:cover}
+
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
@@ -200,31 +212,36 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="glow" id="glow"></div>
   <div class="wrap hero2-in"><div class="hero2-text">
     <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span aria-current="page">Contact</span></nav>
-      <span class="eyebrow"><i></i> Contact iTax Advisors</span>
-      <h1><span class="w" style="--n:0"><i>Speak</i></span> <span class="w" style="--n:1"><i>to</i></span> <span class="w" style="--n:2"><i>a</i></span> <span class="w" style="--n:3"><i>Specialist</i></span> <span class="hl"><span class="w" style="--n:4"><i>R&amp;D</i></span> <span class="w" style="--n:5"><i>Tax</i></span> <span class="w" style="--n:6"><i>Adviser</i></span></span> <span class="w" style="--n:7"><i>Today</i></span></h1>
-      <p class="answer"><b>Discuss your projects, explore potential eligibility and strengthen the quality and defensibility of your R&amp;D tax claim.</b> Whether you are preparing your first R&amp;D tax claim, reviewing an existing claim position or responding to HMRC questions, we are happy to discuss your circumstances and how we may be able to assist.</p>
-      <div class="cta-row"><a class="btn btn-green mag" href="#enquiry">Send an enquiry <svg><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="#routes">What do you need help with?</a></div>
-      <div class="chips"><span class="chip"><svg><use href="#i-mail"/></svg> info@itaxadvisors.co.uk</span><span class="chip"><svg><use href="#i-clock"/></svg> A member of our team will be in touch to arrange a call</span></div>
+    <span class="eyebrow"><i></i> Contact iTax Advisors</span>
+    <h1><span class="w" style="--n:0"><i>Contact</i></span> <span class="w" style="--n:1"><i>iTax</i></span> <span class="w" style="--n:2"><i>Advisors:</i></span> <span class="w" style="--n:3"><i>Speak</i></span> <span class="w" style="--n:4"><i>to</i></span> <span class="w" style="--n:5"><i>a</i></span> <span class="w" style="--n:6"><i>Specialist</i></span> <span class="hl"><span class="w" style="--n:7"><i>R&amp;D</i></span> <span class="w" style="--n:8"><i>Tax</i></span> <span class="w" style="--n:9"><i>Adviser</i></span></span> <span class="w" style="--n:10"><i>Today</i></span></h1>
+    <p class="answer"><b>Discuss your projects, explore potential eligibility and strengthen the quality and defensibility of your R&amp;D tax claim.</b></p>
+    <ul class="hpts"><li>Preparing your first R&amp;D tax claim</li><li>Reviewing an existing claim position</li><li>Responding to HMRC questions</li></ul>
+    <div class="cta-row"><a class="btn btn-green mag" href="#enquiry">Send an enquiry <svg><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="#routes">What do you need help with?</a></div>
+    <div class="chips"><span class="chip"><svg><use href="#i-mail"/></svg> info@itaxadvisors.co.uk</span><span class="chip"><svg><use href="#i-clock"/></svg> We will be in touch to arrange a call</span></div>
   </div></div>
-  <div class="hero2-img rv"><img src="assets/n_banner.jpg" alt="R&amp;D tax claim support: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
+  <div class="hero2-img rv"><img src="assets/n_banner.jpg" alt="Contact iTax Advisors: eligibility review, evidence preparation, technical assessment and a compliant, HMRC-ready claim" width="1100" height="619"></div>
 </section>
 
 <section class="sec routes" id="routes">
   <div class="wrap">
     <div class="rv"><div class="label">How can we help?</div>
-    <h2>What do you need from our R&amp;D tax advisers?</h2>
-    <p class="lede">Choose the one closest to your situation and we will set it up in the form below.</p></div>
+    <h2>Speak to an R&amp;D tax specialist: what do you need?</h2>
+    <p class="lede">Pick the closest match. We will set it up in the form below.</p></div>
     <div class="rgrid">
-      <button type="button" class="route tilt rv" data-type="Preparing a new R&D claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_team.jpg" alt="R&amp;D tax adviser preparing an R&amp;D tax claim at a desk" width="532" height="295" loading="lazy"></div><div class="cb"><h3>Preparing your first R&amp;D tax claim</h3><p>Technically robust, evidence-led R&amp;D tax claims.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
-      <button type="button" class="route tilt rv d1" data-type="A second opinion on an existing claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_risk.jpg" alt="Magnifying glass over claim files for an R&amp;D tax claim second opinion" width="549" height="306" loading="lazy"></div><div class="cb"><h3>Reviewing an existing claim position</h3><p>Independent review of existing or proposed claims to assess eligibility, evidential strength and compliance risk.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
-      <button type="button" class="route tilt rv d2" data-type="An HMRC enquiry or compliance check" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_hmrc_enquiry.jpg" alt="HMRC R&amp;D enquiry support: document review and compliance icons" width="557" height="306" loading="lazy"></div><div class="cb"><h3>Responding to HMRC questions</h3><p>Structured support for HMRC R&amp;D tax enquiries and reviews.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
-      <button type="button" class="route tilt rv d3" data-type="Life sciences R&D tax relief" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/a_lab.jpg" alt="Laboratory research: R&amp;D tax relief for life sciences, biotechnology and MedTech" width="446" height="263" loading="lazy"></div><div class="cb"><h3>Life sciences R&amp;D tax relief</h3><p>Specialist R&amp;D tax advice for complex scientific research, clinical development and innovative healthcare technologies.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv" data-type="Preparing a new R&D claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_team.jpg" alt="R&amp;D tax adviser preparing an R&amp;D tax claim at a desk" width="532" height="295" loading="lazy"></div><div class="cb"><h3>Preparing your first R&amp;D tax claim</h3><p>Technically robust, evidence-led claims.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv d1" data-type="A second opinion on an existing claim" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_risk.jpg" alt="Magnifying glass over claim files for an R&amp;D tax claim second opinion" width="549" height="306" loading="lazy"></div><div class="cb"><h3>Reviewing an existing claim position</h3><p>Independent review of eligibility, evidence and compliance risk.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv d2" data-type="An HMRC enquiry or compliance check" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/n_hmrc_enquiry.jpg" alt="HMRC R&amp;D enquiry support: document review and compliance icons" width="557" height="306" loading="lazy"></div><div class="cb"><h3>Responding to HMRC questions</h3><p>Structured support for HMRC R&amp;D enquiries and reviews.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
+      <button type="button" class="route tilt rv d3" data-type="Life sciences R&D tax relief" aria-pressed="false"><span class="tick"><svg><use href="#i-check"/></svg></span><div class="img"><img src="assets/a_lab.jpg" alt="Laboratory research: R&amp;D tax relief for life sciences, biotechnology and MedTech" width="446" height="263" loading="lazy"></div><div class="cb"><h3>Life sciences R&amp;D tax relief</h3><p>Complex scientific research, clinical development and healthcare technologies.</p><span class="go">Choose this <svg><use href="#i-arrow"/></svg></span></div></button>
     </div>
   </div>
 </section>
 
 <section class="sec formsec" id="enquiry">
-  <div class="wrap fgrid">
+  <div class="wrap">
+    <div class="rv fhead"><div class="label">Get in touch</div>
+    <h2>R&amp;D tax advisers contact UK: send your enquiry</h2>
+    <p class="lede">Four details are enough to start. A member of our team will be in touch to arrange a call.</p></div>
+    <div class="fgrid">
     <div class="formcard big rv d1">
       <form id="ct-form" novalidate>
         <h3>Send us your enquiry</h3>
@@ -243,28 +260,31 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
       <div class="done" id="ct-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Thank you, we have your enquiry</h3><p>A member of our team will be in touch to arrange a call.</p></div>
     </div>
     <aside class="side">
-      <div class="sbox rv d1"><h3>iTax Advisors Limited</h3>
+      <div class="sbox rv d1"><div class="img pic" style="aspect-ratio:1000/511;border-radius:12px"><img src="assets/devonshire-house.jpg" alt="Devonshire House, 582 Honeypot Lane: the offices of iTax Advisors Limited" width="1000" height="511" loading="lazy"></div>
+        <h3 style="margin-top:16px">iTax Advisors Limited</h3>
         <div class="det">
           <div><svg><use href="#i-mail"/></svg><span><a href="mailto:info@itaxadvisors.co.uk" id="mail">info@itaxadvisors.co.uk</a><button class="copy" id="copy" type="button">Copy</button></span></div>
           <div><svg><use href="#i-pin"/></svg><span>Devonshire House, 582 Honeypot Lane, HA7 1JS, United Kingdom</span></div>
           <div><svg><use href="#i-in"/></svg><a href="https://www.linkedin.com/company/itax-advisors-limited" target="_blank" rel="noopener">LinkedIn: iTax Advisors Limited</a></div>
         </div></div>
-      <div class="sbox who rv d2"><div class="img"><img src="assets/aarti-varia.jpg" alt="Aarti Varia FCCA, founder of iTax Advisors" width="900" height="828" loading="lazy"></div><div><b>Aarti Varia FCCA</b><span>Founder, R&amp;D tax specialist</span><p>Over 18 years' experience, including 13 years at Deloitte.</p></div></div>
-      
+      <div class="sbox next rv d2"><h3>What happens next</h3>
+        <ol><li><b>You send your enquiry</b><span>Tell us about your projects or your HMRC letter.</span></li><li><b>We arrange a call</b><span>A member of our team will be in touch.</span></li><li><b>We discuss your circumstances</b><span>We explore potential eligibility and how we may be able to assist.</span></li></ol></div>
+      <div class="sbox who rv d3"><div class="img"><img src="assets/aarti-varia.jpg" alt="Aarti Varia FCCA, founder of iTax Advisors" width="900" height="828" loading="lazy"></div><div><b>Aarti Varia FCCA</b><span>Founder, R&amp;D tax specialist</span><p>18+ years in R&amp;D tax, including 13 years at Deloitte.</p><a class="tx" href="https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/">Full profile</a></div></div>
     </aside>
+    </div>
   </div>
 </section>
 
 <section class="sec faq" id="faq">
   <div class="wrap faq-grid">
-    <div class="rv"><div class="label">FAQs</div><h2>Before you get in touch</h2><p class="lede">A few questions we are often asked.</p></div>
+    <div class="rv"><div class="label">FAQs</div><h2>Before you contact iTax Advisors</h2><p class="lede">Quick answers to common questions.</p></div>
     <div class="rv d1">
-      <details open><summary>What happens after I submit the form?</summary><p>A member of our team will be in touch to arrange a call, where we discuss your projects and your circumstances and how we may be able to assist.</p></details>
-      <details><summary>Can you help if another adviser prepared the claim?</summary><p>Yes. We regularly assist companies where the original R&amp;D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support.</p></details>
-      <details><summary>Can I claim for failed projects?</summary><p>Absolutely. A failed project can often be a strong indicator of qualifying R&amp;D activity. HMRC recognises that genuine R&amp;D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid R&amp;D claim.</p></details>
-      <details><summary>Can directors' salaries be included in an R&amp;D claim?</summary><p>Yes. Directors actively involved in qualifying R&amp;D activities may include the relevant proportion of staffing costs relating to R&amp;D. Dividends however are non-qualifying costs.</p></details>
-      <details><summary>Can grant-funded expenditure be claimed?</summary><p>Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&amp;D tax relief on subsidised or grant-funded expenditure under the merged R&amp;D scheme.</p></details>
-<details><summary>Looking for R&amp;D tax credit advisors? Is there a difference between advisers, advisors and consultants?</summary><p>No. &ldquo;Advisers&rdquo; and &ldquo;advisors&rdquo; are two spellings of the same word, and &ldquo;R&amp;D tax consultants&rdquo; is another name for the same kind of firm. When you compare them, ask about qualifications, whether they follow PCRT standards, and about professional indemnity insurance and anti-money laundering supervision.</p></details>
+      <details open><summary>How do I contact iTax Advisors?</summary><p>Complete the enquiry form above or email <a href="mailto:info@itaxadvisors.co.uk">info@itaxadvisors.co.uk</a>. A member of our team will be in touch to arrange a call.</p></details>
+      <details><summary>What happens after I submit the form?</summary><p>We arrange a call to discuss your projects and circumstances and how we may be able to assist.</p></details>
+      <details><summary>Can you help if another adviser prepared the claim?</summary><p>Yes. We regularly assist companies where the original R&amp;D claim was prepared by another adviser. We can independently review the submission and identify potential risk areas. <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">See claim review</a>.</p></details>
+      <details><summary>Where is iTax Advisors based?</summary><p>iTax Advisors Limited is at Devonshire House, 582 Honeypot Lane, Stanmore, HA7 1JS, United Kingdom, and works with innovative UK businesses. Looking for an R&amp;D tax adviser in Stanmore? Send us your enquiry above.</p></details>
+      <details><summary>Can I claim for failed projects?</summary><p>Absolutely. A failed project can often be a strong indicator of qualifying R&amp;D activity. Success is not required for a valid R&amp;D claim.</p></details>
+      <details><summary>Looking for R&amp;D tax credit advisors? Is there a difference between advisers, advisors and consultants?</summary><p>No. &ldquo;Advisers&rdquo; and &ldquo;advisors&rdquo; are two spellings of the same word, and &ldquo;R&amp;D tax consultants&rdquo; is another name for the same kind of firm. Ask about qualifications, PCRT standards, professional indemnity insurance and anti-money laundering supervision.</p></details>
     </div>
   </div>
 </section>
@@ -274,7 +294,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 </section>
 </main>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ContactPage", "name": "Contact iTax Advisors", "url": "https://www.itaxadvisors.co.uk/contact-us/"}, {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}, "sameAs": ["https://www.linkedin.com/company/itax-advisors-limited"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Looking for R&D tax credit advisors? Is there a difference between advisers, advisors and consultants?", "acceptedAnswer": {"@type": "Answer", "text": "No. Advisers and advisors are two spellings of the same word, and R&D tax consultants is another name for the same kind of firm. When you compare them, ask about qualifications, whether they follow PCRT standards, and about professional indemnity insurance and anti-money laundering supervision."}}, {"@type": "Question", "name": "What happens after I submit the form?", "acceptedAnswer": {"@type": "Answer", "text": "A member of our team will be in touch to arrange a call, where we discuss your projects and your circumstances and how we may be able to assist."}}, {"@type": "Question", "name": "Can you help if another adviser prepared the claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly assist companies where the original R&D claim was prepared by another adviser. We can independently review the submission, identify potential risk areas and provide structured support."}}, {"@type": "Question", "name": "Can I claim for failed projects?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. A failed project can often be a strong indicator of qualifying R&D activity. HMRC recognises that genuine R&D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid R&D claim."}}, {"@type": "Question", "name": "Can directors' salaries be included in an R&D claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Directors actively involved in qualifying R&D activities may include the relevant proportion of staffing costs relating to R&D. Dividends however are non-qualifying costs."}}, {"@type": "Question", "name": "Can grant-funded expenditure be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&D tax relief on subsidised or grant-funded expenditure under the merged R&D scheme."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.itaxadvisors.co.uk/contact-us/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ContactPage", "name": "Contact iTax Advisors", "url": "https://www.itaxadvisors.co.uk/contact-us/"}, {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "areaServed": "GB", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "addressLocality": "Stanmore", "postalCode": "HA7 1JS", "addressCountry": "GB"}, "sameAs": ["https://www.linkedin.com/company/itax-advisors-limited"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I contact iTax Advisors?", "acceptedAnswer": {"@type": "Answer", "text": "Complete the enquiry form above or email info@itaxadvisors.co.uk. A member of our team will be in touch to arrange a call."}}, {"@type": "Question", "name": "What happens after I submit the form?", "acceptedAnswer": {"@type": "Answer", "text": "We arrange a call to discuss your projects and circumstances and how we may be able to assist."}}, {"@type": "Question", "name": "Can you help if another adviser prepared the claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly assist companies where the original R&D claim was prepared by another adviser. We can independently review the submission and identify potential risk areas. See claim review."}}, {"@type": "Question", "name": "Where is iTax Advisors based?", "acceptedAnswer": {"@type": "Answer", "text": "iTax Advisors Limited is at Devonshire House, 582 Honeypot Lane, Stanmore, HA7 1JS, United Kingdom, and works with innovative UK businesses. Looking for an R&D tax adviser in Stanmore? Send us your enquiry above."}}, {"@type": "Question", "name": "Can I claim for failed projects?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. A failed project can often be a strong indicator of qualifying R&D activity. Success is not required for a valid R&D claim."}}, {"@type": "Question", "name": "Looking for R&D tax credit advisors? Is there a difference between advisers, advisors and consultants?", "acceptedAnswer": {"@type": "Answer", "text": "No. “Advisers” and “advisors” are two spellings of the same word, and “R&D tax consultants” is another name for the same kind of firm. Ask about qualifications, PCRT standards, professional indemnity insurance and anti-money laundering supervision."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.itaxadvisors.co.uk/contact-us/"}]}]}</script>
 <script>
 (function(){
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
