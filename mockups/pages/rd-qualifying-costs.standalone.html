@@ -1,0 +1,381 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Qualifying Costs Page</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!-- SEO (set in Yoast): title: R&D Qualifying Costs: What Can You Claim? | iTax Advisors | description: R&D qualifying costs explained: staff, externally provided workers, contracted-out R&D, consumables, software, cloud and data, clinical trial payments and overseas rules. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--navy-950:#0c2136;--navy-900:#143451;--navy-800:#183c5e;--navy-700:#1b456d;--green:#8ab141;--green-deep:#4f7a0f;--ink:#21507b;--muted:#4a6580;--paper:#eef2f1;--white:#fff;--line:#d3dde7;--line-dark:rgba(255,255,255,.14);--on-dark:#e8f0f7;--on-dark-muted:#aebfd0;--star:#e0a53a;--font:"Raleway",Arial,Helvetica,sans-serif;--radius:16px;--shadow:0 22px 44px -20px rgba(12,33,54,.4);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;letter-spacing:.2px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}p{margin:0}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:700;display:flex;align-items:center;gap:10px}
+.label::before{content:"";width:26px;height:2px;background:currentColor;opacity:.7}
+.dark .label,.hero .label{color:var(--green)}
+.sec{padding-block:clamp(48px,6vw,84px)}
+.sec h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;color:var(--navy-700);margin-top:14px;max-width:24ch}
+.dark h2{color:#fff}
+.lede{font-size:18px;color:var(--muted);max-width:62ch;margin-top:16px}.dark .lede{color:var(--on-dark-muted)}
+.dark{background:var(--navy-900);color:var(--on-dark);position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 55px,rgba(255,255,255,.035) 55px 56px);pointer-events:none}
+.dark>*{position:relative}
+.img{position:relative;overflow:hidden;background:var(--navy-800)}
+.img img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.img:hover img{transform:scale(1.06)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font);font-weight:700;font-size:15px;letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:15px 26px;transition:transform .2s,box-shadow .25s,background .25s;position:relative;overflow:hidden}
+.btn svg{width:20px;height:20px}
+.btn-green{background:var(--green);color:var(--navy-950);box-shadow:0 10px 26px -10px rgba(138,177,65,.85)}
+.btn-green:hover{background:#9cc552}
+.btn-green::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%)}
+.btn-green:hover::after{transform:translateX(120%);transition:transform .8s}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--green);color:var(--green)}
+.btn-line{background:#fff;color:var(--navy-700);box-shadow:inset 0 0 0 2px var(--line)}.btn-line:hover{box-shadow:inset 0 0 0 2px var(--green)}
+.more{font-weight:700;font-size:14px;color:var(--navy-700);display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.more svg{width:18px;height:18px;transition:transform .25s}a:hover>.more svg,.more:hover svg{transform:translateX(5px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);border:1px solid rgba(138,177,65,.45);padding:7px 14px;border-radius:999px;background:rgba(138,177,65,.08)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(138,177,65,.7)}100%{box-shadow:0 0 0 12px rgba(138,177,65,0)}}
+.hero{position:relative;background:var(--navy-950);color:var(--on-dark);padding-block:clamp(72px,9vw,120px) clamp(56px,7vw,92px);overflow:hidden;isolation:isolate}
+.hero h1{font-size:clamp(34px,5vw,60px);font-weight:800;color:#fff;letter-spacing:-.02em;margin-top:22px}
+.w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.w i{display:inline-block;font-style:normal;animation:up .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--n)*80ms + .1s)}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.hl{color:var(--green);position:relative;white-space:nowrap}
+.hl::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:.1em;background:var(--green);border-radius:4px;transform-origin:left;animation:sweep 1.1s .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sweep{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .answer{font-size:clamp(17px,1.5vw,20px);color:var(--on-dark);max-width:58ch;margin-top:24px}
+.hero .answer b{color:#fff}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--on-dark);border:1px solid var(--line-dark);background:rgba(255,255,255,.06);padding:8px 14px;border-radius:999px}
+.chip svg{width:16px;height:16px;color:var(--green)}
+.formcard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3.2vw,42px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);position:relative;min-width:0}
+.formcard h3{font-size:25px;color:var(--navy-700);font-weight:800}
+.formcard .sub{font-size:15px;color:var(--muted);margin-top:6px}
+.field{display:grid;gap:6px;margin-top:16px}
+.field label{font-size:13.5px;font-weight:700;color:var(--navy-700)}
+.field label em{font-style:normal;color:var(--muted);font-weight:500}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:14px 15px;width:100%;transition:border-color .2s,box-shadow .2s,background .2s}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy-700);box-shadow:0 0 0 4px rgba(27,69,109,.15);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:var(--muted)}
+.consent input{width:20px;height:20px;margin-top:2px;accent-color:var(--navy-700);flex:none}
+.formcard .btn{width:100%;justify-content:center;margin-top:20px;min-height:52px}
+.fine{font-size:12.5px;color:#a33a2b;margin-top:12px;min-height:1em}
+.done{display:none}.done.show{display:block}
+.done .tick{width:56px;height:56px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;margin-bottom:16px}
+.done .tick svg{width:30px;height:30px}.done h3{font-size:24px;color:var(--navy-700)}.done p{margin-top:8px;color:var(--muted)}
+details{border-bottom:1px solid var(--line)}details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;font-weight:700;font-size:19px;color:var(--navy-700);line-height:1.3}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b456d' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .3s,background-color .3s}
+details[open] summary::after{transform:rotate(45deg);background-color:var(--green)}
+details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open] p{animation:fadeUp .4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px)}
+.anim .rv.pending:not(.in){opacity:0;transform:translateY(24px)}
+.anim .wipe.pending:not(.in){clip-path:inset(0 0 100% 0)}
+.rv{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.wipe{transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+.tilt{transform-style:preserve-3d;transition:transform .35s,box-shadow .35s}
+@media (max-width:860px){body{font-size:16px}.sec{padding-block:44px}.sec h2{max-width:none;font-size:clamp(26px,7.4vw,32px)}.lede{font-size:16.5px}.faq-grid{grid-template-columns:minmax(0,1fr)}.cta-row .btn{width:100%;justify-content:center}.hl{white-space:normal}.hero{padding-block:56px 44px}}
+@media (max-width:600px){.row2{grid-template-columns:minmax(0,1fr)}.field input,.field select,.field textarea{min-height:48px}summary{font-size:17px;padding:18px 2px;min-height:56px}}
+@media (hover:none){.mag,.tilt{transform:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.faq-grid{align-items:stretch}.faq-left{position:sticky;top:24px}@media (max-width:860px){.faq-left{position:static}}
+.anim .rv.pending:not(.in){transform:translateY(14px)}.rv{transition-duration:.55s}
+
+/* Plain blog article layout */
+main.blog{background:#fff;padding:clamp(28px,4vw,56px) 0 clamp(48px,6vw,88px)}
+.post{max-width:760px;margin:0 auto;padding:0 20px;color:var(--ink);font-size:18px;line-height:1.7}
+.post .crumbs{display:flex;flex-wrap:wrap;gap:6px 0;font-size:14px;margin-bottom:18px}
+.post-head h1{font-family:Raleway,sans-serif;font-size:clamp(29px,4vw,42px);line-height:1.18;color:var(--navy-700);font-weight:800;margin:0 0 14px;letter-spacing:-.01em}
+.post .meta{font-size:14.5px;color:var(--muted);margin:0 0 26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.post .meta a{color:var(--navy-700);font-weight:600}
+.post p{margin:0 0 16px}
+.post h2{font-family:Raleway,sans-serif;font-size:clamp(23px,2.6vw,29px);line-height:1.25;color:var(--navy-700);font-weight:800;margin:44px 0 14px;scroll-margin-top:20px}
+.post h2::after{display:none}
+.post h3{font-family:Raleway,sans-serif;font-size:19px;color:var(--navy-700);font-weight:700;margin:26px 0 6px}
+.post ul,.post ol{margin:0 0 18px;padding-left:24px}
+.post li{margin:0 0 8px;padding-left:4px}
+.post li::before{display:none}
+.post a{color:var(--navy-700);text-decoration:underline;text-underline-offset:3px}
+.post strong{color:var(--navy-800)}
+.quick{background:#f4f6f8;border-left:4px solid var(--navy-700);border-radius:4px;padding:18px 22px;margin:0 0 26px}
+.quick b{display:block;font-family:Raleway,sans-serif;font-size:17px;color:var(--navy-700);margin-bottom:6px}
+.quick p{margin:0;font-size:17.5px}
+.lead-img{margin:0 0 28px}
+.lead-img img{display:block;width:100%;max-width:560px;height:auto;border-radius:6px}
+.toc{border:1px solid var(--line);border-radius:6px;padding:16px 22px;margin:0 0 8px;font-size:16px}
+.toc b{display:block;font-family:Raleway,sans-serif;color:var(--navy-700);margin-bottom:6px}
+.toc ol{margin:0;padding-left:22px}.toc li{margin:0 0 4px}
+.faq{margin-top:44px;border-top:1px solid var(--line);padding-top:6px}
+.faq h2{margin-top:30px}
+.cta-box{background:var(--navy-700);color:#fff;border-radius:8px;padding:26px 28px;margin:44px 0 28px}
+.cta-box b{display:block;font-family:Raleway,sans-serif;font-size:21px;margin-bottom:8px}
+.cta-box p{color:var(--on-dark);margin:0 0 16px;font-size:16.5px}
+.cta-box .btn{text-decoration:none;color:var(--navy-950)}
+.related{border-top:1px solid var(--line);padding-top:18px;font-size:16.5px}
+.related b{font-family:Raleway,sans-serif;color:var(--navy-700)}
+.related ul{margin:8px 0 0}
+@media (max-width:600px){.post{font-size:17px}}
+.post .crumbs span+span::before{content:"\203A";margin:0 8px;color:var(--muted)}.post .crumbs a{text-decoration:none}.post .crumbs{font-size:14px}
+.tbl-wrap{overflow-x:auto;margin:0 0 20px;border:1px solid var(--line);border-radius:6px}.tbl{width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5;min-width:560px}.tbl th{background:#f4f6f8;text-align:left;color:var(--navy-700);font-family:Raleway,sans-serif;padding:10px 14px;border-bottom:1px solid var(--line)}.tbl td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}.tbl tr:last-child td{border-bottom:0}.tbl td:first-child{font-weight:700}.tbl td:first-child a{text-decoration:none}
+
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6l7-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 006 0L5 7zM19 7l-3 7a3.5 3.5 0 006 0l-3-7z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 15.5h6"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0010 18.7l1-1"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75z"/></symbol>
+</svg>
+
+<main class="blog">
+<article class="post">
+  <header class="post-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/">Knowledge Hub</a></span><span aria-current="page">Qualifying costs</span></nav>
+    <h1>R&amp;D Qualifying Costs: What You Can Claim (Including Contracted-Out R&amp;D)</h1>
+    <p class="meta">By <a href="https://www.itaxadvisors.co.uk/about-itax-advisors/">Aarti Varia</a> &middot; Updated 5 November 2026 &middot; Knowledge Hub</p>
+  </header>
+
+  <div class="quick">
+    <b>Quick answer: what costs qualify for R&amp;D tax relief?</b>
+    <p>Only specific categories of expenditure directly linked to qualifying R&amp;D: <strong>staff costs, externally provided workers, contracted-out R&amp;D, consumables, software, data licences and cloud computing</strong>, and payments to clinical trial participants. Mixed-use costs need a reasonable apportionment.</p>
+  </div>
+
+  <figure class="lead-img"><img src="data:image/jpeg;base64,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" alt="Hands reviewing financial charts: R&amp;D qualifying costs and expenditure" width="498" height="227"></figure>
+
+  <nav class="toc" aria-label="Contents"><b>In this guide</b>
+    <ol>
+      <li><a href="#summary">Qualifying cost categories at a glance</a></li>
+      <li><a href="#staff">Staff costs</a></li>
+      <li><a href="#epw">Externally provided workers</a></li>
+      <li><a href="#contracted">Contracted-out R&amp;D</a></li>
+      <li><a href="#consumables">Consumables</a></li>
+      <li><a href="#software">Software</a></li>
+      <li><a href="#cloud">Data licences and cloud computing</a></li>
+      <li><a href="#clinical">Payments to clinical trial participants</a></li>
+      <li><a href="#overseas">Overseas restrictions and exemptions</a></li>
+      <li><a href="#faq">FAQs</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="summary">Qualifying cost categories at a glance</h2>
+  <p>Understanding which costs qualify is one of the most important parts of preparing a compliant claim. Only specific categories of expenditure directly linked to qualifying R&amp;D may be claimed.</p>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Category</th><th>What is included</th><th>Key rule</th></tr></thead>
+    <tbody>
+      <tr><td><a href="#staff">Staff costs</a></td><td>Gross salaries and wages, employer&rsquo;s NIC, employer pension contributions</td><td>Only the R&amp;D proportion of time qualifies</td></tr>
+      <tr><td><a href="#epw">Externally provided workers</a></td><td>Agency workers, contractors and freelancers supplied by a staff provider</td><td>Unconnected providers: typically 65%; connected: up to 100%</td></tr>
+      <tr><td><a href="#contracted">Contracted-out R&amp;D</a></td><td>R&amp;D contracted out to a third party</td><td>The customer who contemplated the R&amp;D usually claims; unconnected: 65%</td></tr>
+      <tr><td><a href="#consumables">Consumables</a></td><td>Raw materials, test materials, water, fuel and power</td><td>Items used up or transformed in R&amp;D</td></tr>
+      <tr><td><a href="#software">Software</a></td><td>Development environments, simulation, CAD, testing and analytics tools</td><td>Apportion where only partly used for R&amp;D</td></tr>
+      <tr><td><a href="#cloud">Data licences and cloud</a></td><td>Cloud hosting, compute, virtual machines, storage, datasets, data licence fees</td><td>Separate from production hosting and general IT</td></tr>
+      <tr><td><a href="#clinical">Clinical trial participants</a></td><td>Payments to trial volunteers</td><td>Must be paid directly to participants</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="staff">Staff costs</h2>
+  <p><strong>Short answer:</strong> for most businesses, staff costs are the largest part of an R&amp;D claim, but only the proportion spent on R&amp;D qualifies.</p>
+  <p>You can generally claim:</p>
+  <ul>
+    <li>gross salaries and wages;</li>
+    <li>employer&rsquo;s National Insurance contributions;</li>
+    <li>employer pension contributions;</li>
+    <li>certain bonuses linked to R&amp;D work; and</li>
+    <li>reimbursed employee expenditure, to the extent it is incurred for R&amp;D and relates to R&amp;D cost categories.</li>
+  </ul>
+  <p>Where employees split their time between qualifying and non-qualifying work, only the R&amp;D proportion can be claimed. If a developer spends 70% of their time on eligible R&amp;D projects, only 70% of their employment costs would normally qualify. HMRC expects time apportionments to be justified with evidence such as:</p>
+  <ul>
+    <li>timesheets;</li>
+    <li>sprint records;</li>
+    <li>Jira or DevOps logs;</li>
+    <li>project plans;</li>
+    <li>technical meeting notes; and</li>
+    <li>managerial assessments.</li>
+  </ul>
+  <p><strong>Excluded:</strong> non-cash staff benefits, for example vouchers, car benefit (rather than a cash benefit for a car), redundancy payments and un-exercised share options.</p>
+  <p><strong>Key points:</strong></p>
+  <ul>
+    <li>Individuals whose costs are claimed should have their employment contracts with the claimant company.</li>
+    <li>Only tax-deductible expenditure may be claimed, so consider the timing of pension and bonus payments for the claim period.</li>
+    <li>There is <strong>no restriction</strong> on claiming for non-UK R&amp;D undertaken by your own staff.</li>
+  </ul>
+
+  <h2 id="epw">Externally provided workers (EPWs)</h2>
+  <p><strong>Short answer:</strong> individuals supplied by a staff provider, working under your direction, qualify at 65% of the payment for unconnected providers and up to 100% for connected ones.</p>
+  <p>EPWs are individuals supplied by a staff provider, such as agency workers, contractors and freelancers engaged through a provider. To qualify:</p>
+  <ul>
+    <li>the workers must operate under the claimant company&rsquo;s supervision, direction or control (other conditions also apply);</li>
+    <li>the work must relate directly to eligible R&amp;D; and</li>
+    <li>there must be a payment for &ldquo;qualifying earnings&rdquo; to a staff provider or staff controller. In most cases the EPW&rsquo;s earnings must be subject to UK PAYE and National Insurance, although exceptions apply.</li>
+  </ul>
+  <p>For <strong>unconnected</strong> EPWs, claims are typically restricted to <strong>65%</strong> of the relevant payment. You can claim up to <strong>100%</strong> of relevant payments for eligible R&amp;D to a connected staff provider or controller, for example a group company or any other company where an election is made to be treated as connected.</p>
+
+  <h2 id="contracted">Contracted-out R&amp;D</h2>
+  <p><strong>Short answer:</strong> the customer who intended or contemplated the R&amp;D usually claims, not the contractor doing the work.</p>
+  <ul>
+    <li>The rules changed for accounting periods beginning on or after 1 April 2024.</li>
+    <li>R&amp;D is contracted out where it is reasonable to assume the customer intended or contemplated that R&amp;D would be undertaken. The arrangement may cover a whole commercial project, a specific R&amp;D project or part of a wider one.</li>
+    <li>Commissioning a technically complex project is not enough. The customer must have understood and contemplated the particular R&amp;D required.</li>
+    <li>Payments to unconnected contractors or subcontractors are restricted to 65%; where the parties are connected, the full qualifying amount is claimable.</li>
+    <li>Routine commercial services or standard goods do not become qualifying simply because they support an R&amp;D project.</li>
+  </ul>
+  <p>Read our full guide: <a href="https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/">Contracted out R&amp;D rules: why &ldquo;who did the work?&rdquo; is no longer the test</a>.</p>
+
+  <h2 id="consumables">Consumables</h2>
+  <p><strong>Short answer:</strong> items used directly in R&amp;D that are used up or transformed in the process.</p>
+  <ul>
+    <li>Consumables such as raw materials, test materials or chemicals used in testing may be claimed. Qualifying expenditure also includes the cost of <strong>water, fuel and power</strong>.</li>
+    <li>The items must be used in the R&amp;D and no longer be usable in their original form.</li>
+    <li>Where consumables, prototypes or first-in-class items are <strong>sold</strong> or ownership is transferred at arm&rsquo;s length, the costs cannot be claimed. A prototype destroyed during testing may qualify; one sold at arm&rsquo;s length will not.</li>
+    <li>Keep clear records linking consumable costs to specific R&amp;D activities or experimental phases.</li>
+  </ul>
+
+  <h2 id="software">Software</h2>
+  <p><strong>Short answer:</strong> software used directly in qualifying R&amp;D can often be included, apportioned where it is only partly used for R&amp;D.</p>
+  <ul>
+    <li>Eligible software may include development environments, simulation software, CAD tools, technical modelling platforms, testing tools and specialist analytics software.</li>
+    <li>A cloud development platform used 80% for experimental software development may be claimed at 80%.</li>
+    <li>General business software used mainly for administration would usually not qualify.</li>
+  </ul>
+
+  <h2 id="cloud">Data licences and cloud computing</h2>
+  <p><strong>Short answer:</strong> cloud, compute and data costs qualify when used directly for R&amp;D, not for general commercial operations.</p>
+  <ul>
+    <li>Qualifying expenditure can include cloud hosting used directly for R&amp;D, data processing environments, compute infrastructure, virtual machines, data storage for R&amp;D activities, AI and machine learning datasets and data licence fees.</li>
+    <li>This is especially important for SaaS businesses, AI and machine learning companies, software developers and data-heavy engineering businesses.</li>
+    <li>Cloud and data costs relating to general commercial operations or qualifying indirect activities must be excluded.</li>
+    <li>Separate experimental environments, testing infrastructure and R&amp;D datasets from production hosting, customer-facing systems and general IT overhead.</li>
+  </ul>
+  <p>For more on how this applies to development teams, see <a href="https://www.itaxadvisors.co.uk/sectors/software-saas-ai-rd-tax-relief/">R&amp;D tax relief for software, SaaS and AI</a>.</p>
+
+  <h2 id="clinical">Payments to clinical trial participants</h2>
+  <p><strong>Short answer:</strong> payments to trial volunteers can qualify, but only when paid directly to the participants.</p>
+  <ul>
+    <li>Life sciences and pharmaceutical businesses may claim payments to clinical trial volunteers where the expenditure relates directly to qualifying R&amp;D.</li>
+    <li>Where payments are routed through third parties such as the NHS or universities, they are non-qualifying.</li>
+    <li>This category is specialist and generally needs detailed supporting documentation.</li>
+  </ul>
+  <p>See also <a href="https://www.itaxadvisors.co.uk/rd-tax-relief-and-clinical-trials-what-therapeutic-companies-can-and-cant-claim-in-the-uk/">R&amp;D tax relief and clinical trials</a> and our <a href="https://www.itaxadvisors.co.uk/sectors/life-sciences-rd-tax-relief/">life sciences R&amp;D tax relief page</a>.</p>
+
+  <h2 id="overseas">Overseas restrictions and exemptions</h2>
+  <p><strong>Short answer:</strong> overseas EPW and subcontractor costs generally do not qualify, unless the activity must necessarily be undertaken outside the UK.</p>
+  <ul>
+    <li>The exemptions cover <strong>environmental conditions</strong>, <strong>social or population-specific requirements</strong> and <strong>legal or regulatory requirements</strong>.</li>
+    <li>HMRC expects robust contemporaneous evidence of why the activity could not reasonably be carried out in the UK.</li>
+    <li>Keep technical specifications and project scopes, evidence of oversight and decision-making, correspondence showing responsibility for the R&amp;D, financial records supporting cost allocations and evidence supporting any exemption.</li>
+  </ul>
+
+  <h2>What HMRC may ask to see</h2>
+  <p>HMRC scrutiny of R&amp;D claims has increased significantly in recent years. It may ask for supporting detail such as:</p>
+  <ul>
+    <li>invoices;</li>
+    <li>financial reconciliations;</li>
+    <li>payroll evidence;</li>
+    <li>contractor agreements;</li>
+    <li>R&amp;D cost allocation methodologies; and</li>
+    <li>clear cost schedules.</li>
+  </ul>
+
+  <section class="faq" id="faq">
+    <h2>Qualifying costs: frequently asked questions</h2>
+    <h3>What costs qualify for R&amp;D tax relief?</h3>
+    <p>Staff costs, externally provided workers, contracted-out R&amp;D, consumables (including water, fuel and power), software, data licences and cloud computing, and payments to clinical trial participants, where they are directly linked to qualifying R&amp;D.</p>
+    <h3>Can directors&rsquo; salaries be included in an R&amp;D claim?</h3>
+    <p>Yes. Directors actively involved in qualifying R&amp;D activities may include the relevant proportion of staffing costs relating to R&amp;D. Dividends are non-qualifying costs.</p>
+    <h3>What if employees split their time between R&amp;D and other work?</h3>
+    <p>Only the R&amp;D proportion can be claimed. For example, if a developer spends 70% of their time on eligible R&amp;D projects, only 70% of their employment costs would normally qualify, supported by evidence such as timesheets, sprint records or Jira logs.</p>
+    <h3>Which staff benefits are excluded?</h3>
+    <p>Non-cash staff benefits must be excluded, for example vouchers, car benefit (rather than a cash benefit for a car), redundancy payments and un-exercised share options.</p>
+    <h3>How much of external worker or contractor costs can be claimed?</h3>
+    <p>For unconnected externally provided workers and unconnected contractors or subcontractors, claims are typically restricted to 65% of the relevant payment. For connected parties, up to 100% may be claimed.</p>
+    <h3>Can I claim cloud computing and software costs?</h3>
+    <p>Yes, where they are used directly in qualifying R&amp;D. Cloud hosting, compute, virtual machines, storage, datasets and data licence fees can qualify, but costs relating to general commercial operations, production hosting and general IT overhead must be excluded, and partly used software should be apportioned.</p>
+    <h3>Can I claim for R&amp;D done overseas?</h3>
+    <p>There is no restriction on claiming for non-UK R&amp;D undertaken by your own staff. Overseas externally provided worker and subcontractor costs are restricted for accounting periods beginning on or after 1 April 2024, unless the conditions for the R&amp;D are not present in the UK or legal, regulatory, environmental or population-specific factors make overseas activity unavoidable.</p>
+    <h3>Can grant-funded expenditure be claimed?</h3>
+    <p>Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&amp;D tax relief on subsidised or grant-funded expenditure under the merged R&amp;D scheme.</p>
+  </section>
+
+  <aside class="cta-box">
+    <b>Get your costs reviewed</b>
+    <p>The rules for calculating qualifying costs are nuanced for certain categories. Whether you are preparing your first claim or reviewing an existing process, our team can help identify qualifying expenditure accurately and maximise relief while maintaining compliance.</p>
+    <a class="btn btn-green" href="https://www.itaxadvisors.co.uk/contact-us/">Contact us <svg><use href="#i-arrow"/></svg></a>
+  </aside>
+
+  <aside class="related"><b>Related reading</b>
+    <ul>
+      <li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/">R&amp;D tax relief guide: eligibility, costs and how to claim</a></li>
+      <li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">How can I make a claim?</a></li>
+      <li><a href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/">R&amp;D claim preparation</a></li>
+      <li><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/">Claim review and risk assessment</a></li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "R&D Qualifying Costs: What You Can Claim (Including Contracted-Out R&D)", "mainEntityOfPage": "https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Aarti Varia", "@id": "https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti"}, "publisher": {"@id": "https://www.itaxadvisors.co.uk/#organization"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What costs qualify for R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Staff costs, externally provided workers, contracted-out R&D, consumables (including water, fuel and power), software, data licences and cloud computing, and payments to clinical trial participants, where they are directly linked to qualifying R&D."}}, {"@type": "Question", "name": "Can directors’ salaries be included in an R&D claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Directors actively involved in qualifying R&D activities may include the relevant proportion of staffing costs relating to R&D. Dividends are non-qualifying costs."}}, {"@type": "Question", "name": "What if employees split their time between R&D and other work?", "acceptedAnswer": {"@type": "Answer", "text": "Only the R&D proportion can be claimed. For example, if a developer spends 70% of their time on eligible R&D projects, only 70% of their employment costs would normally qualify, supported by evidence such as timesheets, sprint records or Jira logs."}}, {"@type": "Question", "name": "Which staff benefits are excluded?", "acceptedAnswer": {"@type": "Answer", "text": "Non-cash staff benefits must be excluded, for example vouchers, car benefit (rather than a cash benefit for a car), redundancy payments and un-exercised share options."}}, {"@type": "Question", "name": "How much of external worker or contractor costs can be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "For unconnected externally provided workers and unconnected contractors or subcontractors, claims are typically restricted to 65% of the relevant payment. For connected parties, up to 100% may be claimed."}}, {"@type": "Question", "name": "Can I claim cloud computing and software costs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, where they are used directly in qualifying R&D. Cloud hosting, compute, virtual machines, storage, datasets and data licence fees can qualify, but costs relating to general commercial operations, production hosting and general IT overhead must be excluded, and partly used software should be apportioned."}}, {"@type": "Question", "name": "Can I claim for R&D done overseas?", "acceptedAnswer": {"@type": "Answer", "text": "There is no restriction on claiming for non-UK R&D undertaken by your own staff. Overseas externally provided worker and subcontractor costs are restricted for accounting periods beginning on or after 1 April 2024, unless the conditions for the R&D are not present in the UK or legal, regulatory, environmental or population-specific factors make overseas activity unavoidable."}}, {"@type": "Question", "name": "Can grant-funded expenditure be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&D tax relief on subsidised or grant-funded expenditure under the merged R&D scheme."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/"}, {"@type": "ListItem", "position": 3, "name": "Qualifying costs", "item": "https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/"}]}]}</script>
+<script>
+(function(){
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+window.$=$;window.$$=$$;
+if('IntersectionObserver' in window&&!reduce){
+  var vh0=window.innerHeight,items=$$('.rv,.wipe');
+  items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
+  document.documentElement.classList.add('anim');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.01,rootMargin:'0px 0px 18% 0px'});
+  items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
+  setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
+}
+if(!reduce&&fine){
+  $$('.mag').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})});
+  $$('.tilt').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg) translateY(-5px)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+  var hero=$('#hero'),glow=$('#glow');
+  if(hero&&glow){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.opacity=1;glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});hero.addEventListener('pointerleave',function(){glow.style.opacity=0})}
+}
+window.MAKE_WEBHOOKS={pdf:'https://hook.eu2.make.com/1wn2tf9j4qmrcp4532uak6vpeu4rmgk6',contact:'https://hook.eu2.make.com/1ufcyla1no7bwoprohh6hi4zqame1tg8'};
+window.wireForm=function(formId,doneId,errId,fields,type,extraData){
+  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);if(!f)return;
+  var live=/(^|\.)itaxadvisors\.co\.uk$/.test(location.hostname);
+  f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';
+    for(var i=0;i<fields.length;i++){var el=$('#'+fields[i]);var bad=el.type==='checkbox'?!el.checked:!el.value.trim();
+      if(el.type==='email'&&el.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value))bad=true;
+      if(bad){err.textContent=el.type==='checkbox'?'Please tick the box so we can contact you.':'Please complete: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/\(optional\)/,'').trim():'this field')+'.';el.focus();return}}
+    var btn=f.querySelector('button[type="submit"]'),orig=btn.innerHTML;
+    function ok(){f.hidden=true;d.classList.add('show')}
+    /* Same Make.com webhooks as the live home page. In previews (any other host) no real lead is sent. */
+    if(!live){ok();return}
+    var data={};new FormData(f).forEach(function(v,k){data[k]=typeof v==='string'?v.trim():v});
+    var cb=f.querySelector('input[type="checkbox"]');data.consent=cb&&cb.checked?'yes':'no';
+    data.submitted_at=new Date().toISOString();data.page_url=location.href;
+    var x=typeof extraData==='function'?extraData():{};Object.keys(x).forEach(function(k){data[k]=x[k]});
+    btn.disabled=true;btn.textContent='Sending...';
+    fetch(window.MAKE_WEBHOOKS[type||'contact'],{method:'POST',mode:'no-cors',body:new URLSearchParams(data)}).then(ok).catch(function(){err.textContent='We could not send your details. Please try again or contact us by email.';btn.disabled=false;btn.innerHTML=orig});
+  });
+};
+})();
+
+
+</script>
