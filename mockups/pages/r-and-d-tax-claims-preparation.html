@@ -414,6 +414,21 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .shero .hl{white-space:normal}.shero-text{min-width:0}
 .sec:not(.dark) .more-fb .tx{color:var(--navy-700)}
 .shero .hl::after{display:none}.shero .answer{margin-top:22px}
+.rdy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.rd{background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:var(--radius);padding:22px 20px;transition:transform .3s,border-color .3s,background .3s}
+.rd:hover{transform:translateY(-6px);border-color:var(--green);background:rgba(138,177,65,.1)}
+.rd .n{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:2px solid var(--green);color:var(--green);font-weight:800;margin-bottom:12px}
+.rd h3{font-size:18px;color:#fff;font-weight:800;line-height:1.25}.rd p{font-size:15px;color:var(--on-dark-muted);margin-top:8px}
+.rd.cta{background:var(--green);border-color:var(--green);display:flex;flex-direction:column;gap:10px}
+.rd.cta b{font-size:20px;color:var(--navy-950)}.rd.cta p{color:var(--navy-900);margin:0;font-weight:600}
+.rd.cta .btn{background:var(--navy-900);color:#fff;box-shadow:none;align-self:flex-start;margin-top:auto}
+.rd.cta:hover{background:#9cc552}
+@media (max-width:1020px){.rdy{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.rdy{grid-template-columns:minmax(0,1fr)}}
+.ens{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.ens li{font-weight:700;font-size:14px;color:#fff;background:rgba(255,255,255,.08);border:1px solid var(--line-dark);border-radius:999px;padding:8px 16px 8px 36px;position:relative}
+.ens li::before{content:"";position:absolute;left:14px;top:50%;width:11px;height:6px;margin-top:-5px;border-left:2.5px solid var(--green);border-bottom:2.5px solid var(--green);transform:rotate(-45deg)}
+.lede.pre{margin-top:18px;color:var(--on-dark)}
 
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -439,7 +454,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
     <div class="shero-text">
       <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/">Services</a></span><span aria-current="page">R&amp;D Claim Preparation</span></nav>
       <span class="eyebrow"><i></i> R&amp;D tax claim preparation</span>
-      <h1><span class="w" style="--n:0"><i>R&amp;D</i></span> <span class="w" style="--n:1"><i>Tax</i></span> <span class="w" style="--n:2"><i>Claim</i></span> <span class="w" style="--n:3"><i>Preparation</i></span> <span class="hl"><span class="w" style="--n:4"><i>Built</i></span> <span class="w" style="--n:5"><i>to</i></span> <span class="w" style="--n:6"><i>Withstand</i></span> <span class="w" style="--n:7"><i>HMRC</i></span> <span class="w" style="--n:8"><i>Scrutiny</i></span></span></h1>
+      <h1><span class="w" style="--n:0"><i>R&amp;D</i></span> <span class="w" style="--n:1"><i>Tax</i></span> <span class="w" style="--n:2"><i>Claim</i></span> <span class="w" style="--n:3"><i>Preparation</i></span> <span class="w" style="--n:3"><i>UK:</i></span> <span class="hl"><span class="w" style="--n:4"><i>Built</i></span> <span class="w" style="--n:5"><i>to</i></span> <span class="w" style="--n:6"><i>Withstand</i></span> <span class="w" style="--n:7"><i>HMRC</i></span> <span class="w" style="--n:8"><i>Scrutiny</i></span></span></h1>
       <p class="answer"><b>Our R&amp;D tax claim preparation service helps UK companies submit technically credible, well supported and compliant claims.</b> We combine detailed project and cost analysis with strong documentation.</p>
       <div class="cta-row">
         <a class="btn btn-green mag" href="https://www.itaxadvisors.co.uk/contact-us/">Speak to a specialist <svg><use href="#i-arrow"/></svg></a>
@@ -458,7 +473,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="wrap">
     <div class="rv"><div class="label">Why it matters</div>
     <h2>A robust R&amp;D tax claim reduces tax risk</h2>
-    <p class="lede">Clear project scoping, disciplined cost treatment and high-quality evidence can materially improve claim quality and reduce the risk of challenge.</p></div>
+    <p class="lede">A robust R&amp;D tax claim supports compliance, reducing overall tax risk with HMRC and provides greater assurance to internal and external stakeholders. Clear project scoping, disciplined cost treatment and high-quality evidence can materially improve claim quality and reduce the risk of challenge.</p></div>
     <div class="vs rv">
       <div class="vs-a"><small>Weak narratives, limited cost traceability, thin evidence</small>
         <ul><li>Prolonged, resource-intensive HMRC enquiries</li><li>Delays in receiving R&amp;D tax credits or repayments</li><li>Potential reductions in the value of the claim</li><li>Heightened compliance risk and potential penalties</li></ul></div>
@@ -473,7 +488,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="wrap">
     <div class="rv"><div class="label">Who it is for</div>
     <h2>R&amp;D tax claim advisors for innovative UK companies</h2>
-    <p class="lede">Whether you are preparing a first claim or refining an existing process.</p></div>
+    <p class="lede">Whether preparing a first claim or refining an existing process, this service helps innovative UK companies strengthen claim quality, improve compliance and secure greater confidence in their R&amp;D tax position.</p></div>
     <div class="icp">
       <article class="ic rv"><span class="ico"><svg><use href="#i-flag"/></svg></span><h3>First-time claimants</h3>
         <ul><li>Eligible activities identified early</li><li>Claim notification and AIF requirements checked</li><li>Costs included correctly from the start</li></ul></article>
@@ -489,7 +504,9 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="wrap">
     <div class="rv"><div class="label">Our approach</div>
     <h2>R&amp;D tax relief claim UK: four steps with KRID</h2>
-    <p class="lede">KRID (Knowledge-Led R&amp;D Identification &amp; Documentation) is our structured, expert-led methodology. Experience-led. Evidence-driven. Enquiry-ready.</p></div>
+    <p class="lede">KRID (Knowledge-Led R&amp;D Identification &amp; Documentation) is our structured, expert-led methodology. Experience-led. Evidence-driven. Enquiry-ready.</p>
+    <p class="lede pre">Our structured methodology has been developed and refined over many years by our experienced R&amp;D Tax specialists to ensure:</p>
+    <ul class="ens"><li>Clear demonstration of compliance with R&amp;D Tax legislation and guidelines</li><li>Clear traceability between R&amp;D activities and costs claimed</li><li>Robust documentation to support the claim</li></ul></div>
     <div class="stepc">
       <div class="sc4 rv"><span class="n">1</span><h3>Technical scoping and risk assessment</h3><ul><li>Identify eligible R&amp;D activities</li><li>Clarify the advance and uncertainties</li><li>Assess compliance risk areas</li><li>Define a defensible claim strategy</li></ul></div>
       <div class="sc4 rv d1"><span class="n">2</span><h3>Structured project documentation</h3><ul><li>Guided questions and expert oversight</li><li>Qualifying activities captured clearly</li><li>Narratives matched to the R&amp;D guidelines</li><li>Technically robust project reports</li></ul></div>
@@ -512,7 +529,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
         <li><b>Automated</b> Additional Information Form and R&amp;D Claim Approach Report</li>
         <li><b>Mock R&amp;D tax extract forms</b> for your company tax return</li>
       </ul>
-      <div class="cta-row"><a class="btn btn-line" href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/rd-tax-relief-claims-hmrc-ready-support-for-uk-companies-claim-approach/">Our claim approach in full <svg><use href="#i-arrow"/></svg></a></div>
+      <div class="cta-row"><a class="btn btn-line" href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/rd-tax-relief-claims-hmrc-ready-support-for-uk-companies-claim-approach/">Our Claim Approach <svg><use href="#i-arrow"/></svg></a></div>
     </div>
     <div class="rv d1"><div class="img pic wipe" style="aspect-ratio:557/465"><img src="assets/n_calc.jpg" alt="Adviser reviewing cost calculations and claim figures with a calculator" width="557" height="465" loading="lazy"><span class="cap">Audit-ready, every time</span></div></div>
   </div>
@@ -527,6 +544,22 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
       <div class="s3 rv"><span class="n">1</span><h3>Check whether you need to notify HMRC</h3><p>Applies to accounting periods beginning on or after 1 April 2023. You must notify if:</p><ul><li>You are claiming for the first time</li><li>Your last claim was made more than three years before the end of the current notification period</li><li>You claimed for the previous period in an amended return received on or after 1 April 2023, or HMRC removed the claim</li></ul><small>The notification period starts on day one of the accounting period and ends six months after it finishes.</small></div>
       <div class="s3 rv d1"><span class="n">2</span><h3>Submit the Additional Information Form</h3><p>Mandatory for all R&amp;D claims, and submitted before the CT600. HMRC will reject claims where it has not been.</p><ul><li>Company information</li><li>Breakdown of qualifying expenditure</li><li>Details of the projects claimed</li><li>The scientific or technological advances sought</li><li>Contact details for the claim</li></ul></div>
       <div class="s3 rv d2"><span class="n">3</span><h3>Submit the claim in the CT600</h3><p>Once notification and the AIF are done, submit the claim in the Corporation Tax Return.</p><ul><li>Accurate</li><li>Robust</li><li>Supported by sufficient technical and financial evidence</li></ul><a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">Read the full guide</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="readiness">
+  <div class="wrap">
+    <div class="rv"><div class="label">Is your claim ready?</div>
+    <h2>The 15-point claim readiness check</h2>
+    <p class="lede">Fifteen checks across five areas to review the technical, financial and procedural readiness of your R&amp;D claim before you submit. It is a readiness check, not an eligibility score.</p></div>
+    <div class="rdy">
+      <div class="rd rv"><span class="n">1</span><h3>Eligibility and applicable scheme</h3><p>Assess the company, accounting period and applicable relief before preparing the claim.</p></div>
+      <div class="rd rv d1"><span class="n">2</span><h3>Project scope and technical review</h3><p>Explain the work in enough detail to support the claim.</p></div>
+      <div class="rd rv d2"><span class="n">3</span><h3>Qualifying costs and activities</h3><p>Link expenditure to qualifying activities and apply the rules for the period and scheme.</p></div>
+      <div class="rd rv"><span class="n">4</span><h3>Contracts, contracted-out expenditure and overseas costs</h3><p>Review contractual entitlement separately from the costs claimed.</p></div>
+      <div class="rd rv d1"><span class="n">5</span><h3>Evidence, deadlines and submission</h3><p>Keep a retrievable evidence trail and check procedural requirements as well as eligibility.</p></div>
+      <div class="rd rv d2 cta"><b>Get the checklist</b><p>The 15-point claim readiness checklist, as a PDF.</p><a class="btn btn-green" href="https://www.itaxadvisors.co.uk/#checklist">Get the checklist <svg><use href="#i-arrow"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -602,8 +635,8 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="wrap cgrid">
     <div class="rv">
       <div class="label">Speak to us</div>
-      <h2>Get greater confidence in your R&amp;D tax relief position</h2>
-      <p class="lede">Speak with our specialists about a structured, compliance-led approach to your claim.</p>
+      <h2>Need more clarity?</h2>
+      <p class="lede">To get greater confidence in your R&amp;D Tax Relief position speak with our specialists.</p>
       <div class="det">
         <div><svg><use href="#i-mail"/></svg><span>info@itaxadvisors.co.uk</span></div>
         <div><svg><use href="#i-pin"/></svg><span>iTax Advisors Limited, Devonshire House, 582 Honeypot Lane, HA7 1JS, United Kingdom</span></div>
