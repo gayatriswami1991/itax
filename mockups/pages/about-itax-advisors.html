@@ -308,6 +308,22 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 @media (max-width:1020px){.tgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.tgrid.t3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:860px){.f-grid2,.h48-top,.split.rev{grid-template-columns:minmax(0,1fr)}.fcard{position:static;max-width:440px}.tgrid,.tgrid.t3{grid-template-columns:minmax(0,1fr)}.ribbon-in{justify-content:flex-start}}
 
+.tx{color:inherit;text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:3px;text-decoration-thickness:2px;font-weight:inherit}
+.tx:hover{color:var(--green-deep)}.dark .tx:hover,.ts .tx:hover{color:var(--green)}
+.secchips a{font-weight:700;font-size:14.5px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:9px 18px;text-decoration:none;transition:background .2s,transform .2s}
+.secchips a:hover{background:var(--green);transform:translateY(-2px)}
+.xgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.xcol{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;display:grid;gap:4px;align-content:start}
+.xcol h3{font-size:18px;color:var(--navy-700);font-weight:800;margin-bottom:8px}
+.xcol a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:var(--navy-700);font-weight:700;font-size:15px;padding:12px 4px;border-top:1px solid var(--line);transition:padding .25s,color .25s,background .25s}
+.xcol a:hover{padding-left:12px;background:var(--paper);color:var(--green-deep)}
+.xcol svg{width:18px;height:18px;color:var(--green-deep);flex:none}
+.arts{margin:0 0 22px;border-top:1px solid var(--line)}
+.arts a{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--navy-700);font-weight:700;font-size:16.5px;line-height:1.3;transition:padding .25s,background .25s}
+.arts a small{display:block;font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.arts a:hover{padding-left:14px;background:var(--paper)}.arts svg{width:22px;height:22px;color:var(--green-deep)}
+@media (max-width:1020px){.xgrid{grid-template-columns:minmax(0,1fr)}}
+
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
@@ -358,9 +374,9 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="wrap split">
     <div class="rv">
       <div class="label">Who we are</div>
-      <h2>A more technically rigorous approach to R&amp;D tax relief</h2>
-      <p class="lede">We work with innovative UK businesses across sectors including technology, life sciences, engineering, manufacturing, construction and utilities, helping companies prepare well-structured claims supported by clear project evidence and disciplined methodologies.</p>
-      <p class="body">We are passionate about helping companies in establishing contemporary reporting of their R&amp;D activities and costs.</p>
+      <h2>iTax Advisors Limited: a more technically rigorous approach to R&amp;D tax relief</h2>
+      <p class="lede">iTax Advisors is an R&amp;D tax specialist firm UK businesses can approach for senior-led R&amp;D tax advisers and a compliance-focused way of preparing claims. We work with innovative UK businesses across sectors including technology, life sciences, engineering, manufacturing, construction and utilities, helping companies prepare well-structured claims supported by clear project evidence and disciplined methodologies.</p>
+      <p class="body">We are passionate about helping companies in establishing <a class="tx" href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/">contemporary reporting</a> of their R&amp;D activities and costs.</p>
       <p class="body">Many businesses that have moved from larger advisory firms cite the direct access to specialist expertise, greater senior involvement and more rigorous approach to claim preparation as key benefits of working with iTax Advisors.</p>
     </div>
     <div class="rv d1"><div class="img pic wipe" style="aspect-ratio:532/295"><img src="assets/n_team.jpg" alt="Senior R&amp;D tax advisers discussing a claim with a client" width="532" height="295" loading="lazy"><span class="cap">Senior involvement</span></div></div>
@@ -370,10 +386,10 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 <section class="sec" id="sectors" style="background:#fff">
   <div class="wrap">
     <div class="rv"><div class="label">Sectors we work with</div>
-    <h2>R&amp;D tax advice across six sectors</h2>
+    <h2>R&amp;D tax specialist firm UK: advice across six sectors</h2>
     <p class="lede">We work with innovative UK businesses to identify eligible R&amp;D activity and prepare claims that stand up to scrutiny.</p></div>
     <div class="img pic wipe rv" style="aspect-ratio:747/296;margin-top:30px"><img src="assets/n_sectors.jpg" alt="Software, life sciences, engineering, manufacturing, construction and AI: sectors iTax Advisors works with" width="747" height="296" loading="lazy"></div>
-    <div class="secchips rv"><span>Technology</span><span>Life sciences</span><span>Engineering</span><span>Manufacturing</span><span>Construction</span><span>Utilities</span></div>
+    <div class="secchips rv"><a href="https://www.itaxadvisors.co.uk/#sectors">Technology</a><a href="https://www.itaxadvisors.co.uk/#life-sciences">Life sciences</a><a href="https://www.itaxadvisors.co.uk/#sectors">Engineering</a><a href="https://www.itaxadvisors.co.uk/#sectors">Manufacturing</a><a href="https://www.itaxadvisors.co.uk/#sectors">Construction</a><span>Utilities</span></div>
   </div>
 </section>
 
@@ -381,13 +397,13 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
   <div class="wrap h48-top">
     <div class="rv">
       <div class="label">Our approach</div>
-      <h2>Technically credible, commercially grounded</h2>
+      <h2>Ex-Deloitte R&amp;D tax specialists: technically credible, commercially grounded</h2>
       <p class="lede">We work closely with finance and technical teams to understand the scientific, technological and commercial context behind each project. This collaborative approach helps ensure claims are technically credible, commercially grounded and supported by detailed technical and financial analysis.</p>
       <div class="tl">
-        <div class="ts"><span class="n">1</span><p><b>Technical scoping and risk assessment.</b> In-depth discussions to identify eligible R&amp;D activities, clarify the advance and uncertainties, and define a defensible claim strategy.</p></div>
+        <div class="ts"><span class="n">1</span><p><b><a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/understanding-rd-eligibility/">Technical scoping and risk assessment.</a></b> In-depth discussions to identify eligible R&amp;D activities, clarify the advance and uncertainties, and define a defensible claim strategy.</p></div>
         <div class="ts"><span class="n">2</span><p><b>Structured project documentation.</b> We work with you to capture qualifying activities and align narratives with the R&amp;D guidelines and legislation.</p></div>
-        <div class="ts"><span class="n">3</span><p><b>Cost calculations.</b> Project-by-project cost allocation, with transparent calculations and clear linkage between activities and expenditure.</p></div>
-        <div class="ts"><span class="n">4</span><p><b>Submission pack.</b> The additional information form, claim approach report, structured cost breakdowns and downloadable evidence packs.</p></div>
+        <div class="ts"><span class="n">3</span><p><b><a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/">Cost calculations.</a></b> Project-by-project cost allocation, with transparent calculations and clear linkage between activities and expenditure.</p></div>
+        <div class="ts"><span class="n">4</span><p><b><a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">Submission pack.</a></b> The additional information form, claim approach report, structured cost breakdowns and downloadable evidence packs.</p></div>
       </div>
       <div class="cta-row"><a class="btn btn-green" href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/rd-tax-relief-claims-hmrc-ready-support-for-uk-companies-claim-approach/">Our claim preparation approach <svg><use href="#i-arrow"/></svg></a></div>
     </div>
@@ -400,7 +416,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
     <div class="rv"><div class="img pic wipe" style="aspect-ratio:752/335"><img src="assets/n_claim_prep.jpg" alt="R&amp;D tax claim checklist: eligibility review, technical narrative, cost analysis, evidence and documentation, HMRC compliance" width="752" height="335" loading="lazy"><span class="cap">Expert advice with automation</span></div></div>
     <div class="rv d1">
       <div class="label">Our story</div>
-      <h2>Why we built a better way to prepare claims</h2>
+      <h2>Why iTax Advisors built a better way to prepare claims</h2>
       <p class="lede">With increasing reporting requirements, heightened HMRC scrutiny and extensive evidence requests even for the smallest claim details, preparing R&amp;D claims has become increasingly time-consuming and costly for businesses.</p>
       <p class="body">We therefore set out to streamline the claims preparation process but recognised that automation alone is not sufficient. Businesses need expert advice to navigate the complexities around R&amp;D eligibility and costs. Additionally, they must be able to demonstrate to HMRC and other stakeholders how they have been compliant.</p>
       <p class="body">Our claim approach combines expert support with a powerful platform, enabling businesses to leverage automation while maintaining access to professional guidance. As businesses grow more sophisticated, many seek to integrate R&amp;D tax claims into their regular financial reporting. We support this transition, helping companies forecast and plan with confidence.</p>
@@ -421,12 +437,13 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
     </aside>
     <div>
       <div class="rv"><div class="label">Senior management and experience</div>
-      <h2>Meet our founder, Aarti Varia</h2>
+      <h2>Senior-led R&amp;D tax advisers: meet our founder, Aarti Varia</h2>
       <p class="lede">Aarti is the founder of iTax Advisors and a specialist UK R&amp;D tax adviser with over 18 years&rsquo; experience helping businesses navigate the R&amp;D tax relief regime.</p></div>
       <p class="body rv">Her career includes 13 years at Deloitte, where she advised FTSE 100, FTSE 250 and privately owned businesses across sectors including technology, engineering, manufacturing, life sciences and construction. She subsequently held senior specialist R&amp;D tax roles before establishing iTax Advisors.</p>
       <p class="body rv">Drawing on her technical tax expertise and external audit background, Aarti specialises in developing robust claim methodologies, interpreting complex financial and operational data, and preparing high-quality R&amp;D tax claims supported by clear and defensible evidence.</p>
       <p class="body rv">Aarti works closely with senior management, finance and technical teams to identify qualifying activities, strengthen supporting documentation and implement practical processes that improve the capture of R&amp;D information for both current and future claims.</p>
       <blockquote class="quote2 rv"><p>The strongest R&amp;D tax claims are no longer simply those that identify qualifying activities. They are often those that can clearly demonstrate how conclusions were reached and supported.</p><cite>Aarti Varia &middot; LinkedIn</cite></blockquote>
+      <div class="arts rv"><a href="https://www.linkedin.com/pulse/contracted-out-rd-why-longer-simple-who-did-work-aarti-varia-ujwwe/" target="_blank" rel="noopener"><span><small>LinkedIn article</small>Contracted-out R&amp;D: why it is no longer as simple as &ldquo;Who did the work?&rdquo;</span><svg><use href="#i-arrow"/></svg></a><a href="https://www.linkedin.com/pulse/rd-claim-notification-stopping-non-compliant-claims-genuine-varia-pqwxf/" target="_blank" rel="noopener"><span><small>LinkedIn article</small>R&amp;D Claim Notification: is it stopping non-compliant claims or genuine ones too?</span><svg><use href="#i-arrow"/></svg></a><a href="https://www.linkedin.com/pulse/from-claim-preparation-enquiry-readiness-rd-tax-world-aarti-varia-knqte/" target="_blank" rel="noopener"><span><small>LinkedIn article</small>From claim preparation to enquiry readiness: R&amp;D tax in an audit-level world</span><svg><use href="#i-arrow"/></svg></a></div>
       <a class="btn btn-line rv" href="https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/">Senior management and experience <svg><use href="#i-arrow"/></svg></a>
     </div>
   </div>
@@ -435,7 +452,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 <section class="sec dark" id="clients">
   <div class="wrap">
     <div class="rv"><div class="label">Client feedback</div>
-    <h2>What clients say about working with us</h2>
+    <h2>What clients say about working with iTax Advisors</h2>
     <p class="lede">Known for attention to detail, professionalism and a pragmatic approach, Aarti helps businesses prepare technically credible and HMRC-ready submissions while reducing compliance risk.</p></div>
     <div class="tgrid">
       <figure class="tc rv"><blockquote>&ldquo;I have worked with Aarti for many years on the OneSubsea UK R&amp;D claims. Aarti worked closely with me and our finance teams to break down complex data sets to derive high quality data for the claims. Aarti has strong knowledge of the R&amp;D Tax regime as well as strong project management skills which is really important to deliver high quality, robust claims, efficiently for an organisation of this size. I would highly recommend Aarti for high quality, professional advice and service for anyone wanting to make R&amp;D claims and it has always been a pleasure working with her and her team.&rdquo;</blockquote><figcaption><b>Jeremy Bentley</b>UK Tax Manager, Cameron Group</figcaption></figure>
@@ -446,6 +463,48 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
       <figure class="tc s rv"><blockquote>&ldquo;We have changed from a Big 4 adviser because you invest your time into our business to fully explore and capture R&amp;D eligibility. You are also very approachable as well as knowledgeable.&rdquo;</blockquote><figcaption><b>Head of Tax</b>Large construction company</figcaption></figure>
       <figure class="tc s rv d1"><blockquote>&ldquo;Very competent and managed our claims process very efficiently.&rdquo;</blockquote><figcaption><b>Founder</b>SME Cloud solutions company</figcaption></figure>
       <figure class="tc s rv d2"><blockquote>&ldquo;We followed a template used by our previous advisers for many years, significantly underclaiming. May long this relationship last!&rdquo;</blockquote><figcaption><b>Founder</b>Manufacturing entity whose claim excluded an entire group entity and production arm of the business</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="background:#fff">
+  <div class="wrap faq-grid">
+    <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>Questions about iTax Advisors</h2><p class="lede">Short answers about who we are and how we work.</p>
+      <div class="faq-side"><div class="img"><img src="assets/n_calc.jpg" alt="Adviser reviewing cost calculations and claim figures with a calculator" width="557" height="465" loading="lazy"></div><div class="t"><b>Want to speak to the team?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
+    <div class="rv d1">
+      <details open><summary>Who is iTax Advisors Limited?</summary><p>iTax Advisors is a specialist UK R&amp;D tax advisory firm established to provide a more technically rigorous and compliance-focused approach to R&amp;D tax relief claims. Our focus is on helping clients navigate an increasingly scrutinised R&amp;D tax environment with greater confidence, clarity and technical credibility.</p></details>
+      <details><summary>Is iTax Advisors an R&amp;D tax specialist firm in the UK?</summary><p>Yes. We work with innovative UK businesses across sectors including technology, life sciences, engineering, manufacturing, construction and utilities, helping companies prepare well-structured claims supported by clear project evidence and disciplined methodologies.</p></details>
+      <details><summary>Who are the ex-Deloitte R&amp;D tax specialists at iTax Advisors?</summary><p>iTax Advisors was founded by Aarti Varia FCCA, a specialist UK R&amp;D tax adviser with over 18 years&rsquo; experience. Her career includes 13 years at Deloitte, where she advised FTSE 100, FTSE 250 and privately owned businesses, and she subsequently held senior specialist R&amp;D tax roles before establishing iTax Advisors. <a href="https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/">Read about our senior management and experience</a>.</p></details>
+      <details><summary>What do senior-led R&amp;D tax advisers do differently?</summary><p>Many businesses that have moved from larger advisory firms cite the direct access to specialist expertise, greater senior involvement and more rigorous approach to claim preparation as key benefits of working with iTax Advisors. We work closely with finance and technical teams to understand the scientific, technological and commercial context behind each project.</p></details>
+      <details><summary>How does iTax Advisors prepare an R&amp;D tax claim?</summary><p>We begin with technical scoping and risk assessment, then capture structured project documentation, complete project-by-project cost calculations and produce a submission pack, including the additional information form, claim approach report, structured cost breakdowns and downloadable evidence packs. <a href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/rd-tax-relief-claims-hmrc-ready-support-for-uk-companies-claim-approach/">See our claim preparation approach</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="explore" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="rv"><div class="label">Explore more</div>
+    <h2>Where to go next</h2>
+    <p class="lede">See how we work in practice, read our guidance or speak to the team.</p></div>
+    <div class="xgrid">
+      <div class="xcol rv"><h3>Our services</h3>
+        <a href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/"><span>R&amp;D claim preparation</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/"><span>HMRC enquiry support</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/"><span>Claim review and risk assessment</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/"><span>Contemporaneous reporting</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/"><span>All services</span><svg><use href="#i-arrow"/></svg></a></div>
+      <div class="xcol rv d1"><h3>R&amp;D tax guidance</h3>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/understanding-rd-eligibility/"><span>Does your project qualify?</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/"><span>R&amp;D qualifying costs</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/"><span>How to make a claim</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/the-competent-professional/"><span>Who is a competent professional?</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/faqs/"><span>R&amp;D tax relief FAQs</span><svg><use href="#i-arrow"/></svg></a></div>
+      <div class="xcol rv d2"><h3>Insights and more</h3>
+        <a href="https://www.itaxadvisors.co.uk/hmrc-rd-enquiry-letter-steps/"><span>Received an HMRC R&amp;D enquiry letter? 7 steps</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/"><span>Contracted-out R&amp;D rules</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/category/rd-tax-guidance/"><span>All R&amp;D tax insights</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/"><span>Senior management and experience</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/contact-us/"><span>Contact us</span><svg><use href="#i-arrow"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -484,7 +543,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 </section>
 </main>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "AboutPage", "name": "About iTax Advisors: Senior-Led UK R&D Tax Specialists", "url": "https://www.itaxadvisors.co.uk/about-itax-advisors/"}, {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "description": "A specialist UK R&D tax advisory firm established to provide a more technically rigorous and compliance-focused approach to R&D tax relief claims.", "areaServed": "GB", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}, "founder": {"@type": "Person", "name": "Aarti Varia", "honorificSuffix": "FCCA", "jobTitle": "Founder and R&D tax specialist", "sameAs": ["https://www.linkedin.com/in/aarti-variardtaxspecialist/"]}, "sameAs": ["https://www.linkedin.com/company/itax-advisors-limited"]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "AboutPage", "name": "About iTax Advisors: Senior-Led UK R&D Tax Specialists", "url": "https://www.itaxadvisors.co.uk/about-itax-advisors/"}, {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "description": "A specialist UK R&D tax advisory firm established to provide a more technically rigorous and compliance-focused approach to R&D tax relief claims.", "areaServed": "GB", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}, "founder": {"@type": "Person", "name": "Aarti Varia", "honorificSuffix": "FCCA", "jobTitle": "Founder and R&D tax specialist", "sameAs": ["https://www.linkedin.com/in/aarti-variardtaxspecialist/"]}, "sameAs": ["https://www.linkedin.com/company/itax-advisors-limited"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who is iTax Advisors Limited?", "acceptedAnswer": {"@type": "Answer", "text": "iTax Advisors is a specialist UK R&D tax advisory firm established to provide a more technically rigorous and compliance-focused approach to R&D tax relief claims. Our focus is on helping clients navigate an increasingly scrutinised R&D tax environment with greater confidence, clarity and technical credibility."}}, {"@type": "Question", "name": "Is iTax Advisors an R&D tax specialist firm in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We work with innovative UK businesses across sectors including technology, life sciences, engineering, manufacturing, construction and utilities, helping companies prepare well-structured claims supported by clear project evidence and disciplined methodologies."}}, {"@type": "Question", "name": "Who are the ex-Deloitte R&D tax specialists at iTax Advisors?", "acceptedAnswer": {"@type": "Answer", "text": "iTax Advisors was founded by Aarti Varia FCCA, a specialist UK R&D tax adviser with over 18 years’ experience. Her career includes 13 years at Deloitte, where she advised FTSE 100, FTSE 250 and privately owned businesses, and she subsequently held senior specialist R&D tax roles before establishing iTax Advisors. Read about our senior management and experience."}}, {"@type": "Question", "name": "What do senior-led R&D tax advisers do differently?", "acceptedAnswer": {"@type": "Answer", "text": "Many businesses that have moved from larger advisory firms cite the direct access to specialist expertise, greater senior involvement and more rigorous approach to claim preparation as key benefits of working with iTax Advisors. We work closely with finance and technical teams to understand the scientific, technological and commercial context behind each project."}}, {"@type": "Question", "name": "How does iTax Advisors prepare an R&D tax claim?", "acceptedAnswer": {"@type": "Answer", "text": "We begin with technical scoping and risk assessment, then capture structured project documentation, complete project-by-project cost calculations and produce a submission pack, including the additional information form, claim approach report, structured cost breakdowns and downloadable evidence packs. See our claim preparation approach."}}]}]}</script>
 <script>
 (function(){
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
