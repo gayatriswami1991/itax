@@ -1,0 +1,263 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FAQs Page</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!-- SEO (set in Yoast): title: R&D Tax Relief FAQs: Your Questions Answered | iTax | description: Answers to common R&D tax relief questions: eligibility, SMEs, R&D intensity, directors' salaries, overseas costs, grants, payable credit caps, claims and HMRC enquiries. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--navy-950:#0c2136;--navy-900:#143451;--navy-800:#183c5e;--navy-700:#1b456d;--green:#8ab141;--green-deep:#4f7a0f;--ink:#21507b;--muted:#4a6580;--paper:#eef2f1;--white:#fff;--line:#d3dde7;--line-dark:rgba(255,255,255,.14);--on-dark:#e8f0f7;--on-dark-muted:#aebfd0;--star:#e0a53a;--font:"Raleway",Arial,Helvetica,sans-serif;--radius:16px;--shadow:0 22px 44px -20px rgba(12,33,54,.4);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;letter-spacing:.2px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}p{margin:0}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:700;display:flex;align-items:center;gap:10px}
+.label::before{content:"";width:26px;height:2px;background:currentColor;opacity:.7}
+.dark .label,.hero .label{color:var(--green)}
+.sec{padding-block:clamp(48px,6vw,84px)}
+.sec h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;color:var(--navy-700);margin-top:14px;max-width:24ch}
+.dark h2{color:#fff}
+.lede{font-size:18px;color:var(--muted);max-width:62ch;margin-top:16px}.dark .lede{color:var(--on-dark-muted)}
+.dark{background:var(--navy-900);color:var(--on-dark);position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 55px,rgba(255,255,255,.035) 55px 56px);pointer-events:none}
+.dark>*{position:relative}
+.img{position:relative;overflow:hidden;background:var(--navy-800)}
+.img img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.img:hover img{transform:scale(1.06)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font);font-weight:700;font-size:15px;letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:15px 26px;transition:transform .2s,box-shadow .25s,background .25s;position:relative;overflow:hidden}
+.btn svg{width:20px;height:20px}
+.btn-green{background:var(--green);color:var(--navy-950);box-shadow:0 10px 26px -10px rgba(138,177,65,.85)}
+.btn-green:hover{background:#9cc552}
+.btn-green::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%)}
+.btn-green:hover::after{transform:translateX(120%);transition:transform .8s}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--green);color:var(--green)}
+.btn-line{background:#fff;color:var(--navy-700);box-shadow:inset 0 0 0 2px var(--line)}.btn-line:hover{box-shadow:inset 0 0 0 2px var(--green)}
+.more{font-weight:700;font-size:14px;color:var(--navy-700);display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.more svg{width:18px;height:18px;transition:transform .25s}a:hover>.more svg,.more:hover svg{transform:translateX(5px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);border:1px solid rgba(138,177,65,.45);padding:7px 14px;border-radius:999px;background:rgba(138,177,65,.08)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(138,177,65,.7)}100%{box-shadow:0 0 0 12px rgba(138,177,65,0)}}
+.hero{position:relative;background:var(--navy-950);color:var(--on-dark);padding-block:clamp(72px,9vw,120px) clamp(56px,7vw,92px);overflow:hidden;isolation:isolate}
+.hero h1{font-size:clamp(34px,5vw,60px);font-weight:800;color:#fff;letter-spacing:-.02em;margin-top:22px}
+.w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.w i{display:inline-block;font-style:normal;animation:up .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--n)*80ms + .1s)}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.hl{color:var(--green);position:relative;white-space:nowrap}
+.hl::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:.1em;background:var(--green);border-radius:4px;transform-origin:left;animation:sweep 1.1s .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sweep{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .answer{font-size:clamp(17px,1.5vw,20px);color:var(--on-dark);max-width:58ch;margin-top:24px}
+.hero .answer b{color:#fff}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--on-dark);border:1px solid var(--line-dark);background:rgba(255,255,255,.06);padding:8px 14px;border-radius:999px}
+.chip svg{width:16px;height:16px;color:var(--green)}
+.formcard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3.2vw,42px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);position:relative;min-width:0}
+.formcard h3{font-size:25px;color:var(--navy-700);font-weight:800}
+.formcard .sub{font-size:15px;color:var(--muted);margin-top:6px}
+.field{display:grid;gap:6px;margin-top:16px}
+.field label{font-size:13.5px;font-weight:700;color:var(--navy-700)}
+.field label em{font-style:normal;color:var(--muted);font-weight:500}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:14px 15px;width:100%;transition:border-color .2s,box-shadow .2s,background .2s}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy-700);box-shadow:0 0 0 4px rgba(27,69,109,.15);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:var(--muted)}
+.consent input{width:20px;height:20px;margin-top:2px;accent-color:var(--navy-700);flex:none}
+.formcard .btn{width:100%;justify-content:center;margin-top:20px;min-height:52px}
+.fine{font-size:12.5px;color:#a33a2b;margin-top:12px;min-height:1em}
+.done{display:none}.done.show{display:block}
+.done .tick{width:56px;height:56px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;margin-bottom:16px}
+.done .tick svg{width:30px;height:30px}.done h3{font-size:24px;color:var(--navy-700)}.done p{margin-top:8px;color:var(--muted)}
+details{border-bottom:1px solid var(--line)}details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;font-weight:700;font-size:19px;color:var(--navy-700);line-height:1.3}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b456d' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .3s,background-color .3s}
+details[open] summary::after{transform:rotate(45deg);background-color:var(--green)}
+details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open] p{animation:fadeUp .4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px)}
+.anim .rv.pending:not(.in){opacity:0;transform:translateY(24px)}
+.anim .wipe.pending:not(.in){clip-path:inset(0 0 100% 0)}
+.rv{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.wipe{transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+.tilt{transform-style:preserve-3d;transition:transform .35s,box-shadow .35s}
+@media (max-width:860px){body{font-size:16px}.sec{padding-block:44px}.sec h2{max-width:none;font-size:clamp(26px,7.4vw,32px)}.lede{font-size:16.5px}.faq-grid{grid-template-columns:minmax(0,1fr)}.cta-row .btn{width:100%;justify-content:center}.hl{white-space:normal}.hero{padding-block:56px 44px}}
+@media (max-width:600px){.row2{grid-template-columns:minmax(0,1fr)}.field input,.field select,.field textarea{min-height:48px}summary{font-size:17px;padding:18px 2px;min-height:56px}}
+@media (hover:none){.mag,.tilt{transform:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.faq-grid{align-items:stretch}.faq-left{position:sticky;top:24px}@media (max-width:860px){.faq-left{position:static}}
+.anim .rv.pending:not(.in){transform:translateY(14px)}.rv{transition-duration:.55s}
+
+/* Plain blog article layout */
+main.blog{background:#fff;padding:clamp(28px,4vw,56px) 0 clamp(48px,6vw,88px)}
+.post{max-width:760px;margin:0 auto;padding:0 20px;color:var(--ink);font-size:18px;line-height:1.7}
+.post .crumbs{display:flex;flex-wrap:wrap;gap:6px 0;font-size:14px;margin-bottom:18px}
+.post-head h1{font-family:Raleway,sans-serif;font-size:clamp(29px,4vw,42px);line-height:1.18;color:var(--navy-700);font-weight:800;margin:0 0 14px;letter-spacing:-.01em}
+.post .meta{font-size:14.5px;color:var(--muted);margin:0 0 26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.post .meta a{color:var(--navy-700);font-weight:600}
+.post p{margin:0 0 16px}
+.post h2{font-family:Raleway,sans-serif;font-size:clamp(23px,2.6vw,29px);line-height:1.25;color:var(--navy-700);font-weight:800;margin:44px 0 14px;scroll-margin-top:20px}
+.post h2::after{display:none}
+.post h3{font-family:Raleway,sans-serif;font-size:19px;color:var(--navy-700);font-weight:700;margin:26px 0 6px}
+.post ul,.post ol{margin:0 0 18px;padding-left:24px}
+.post li{margin:0 0 8px;padding-left:4px}
+.post li::before{display:none}
+.post a{color:var(--navy-700);text-decoration:underline;text-underline-offset:3px}
+.post strong{color:var(--navy-800)}
+.quick{background:#f4f6f8;border-left:4px solid var(--navy-700);border-radius:4px;padding:18px 22px;margin:0 0 26px}
+.quick b{display:block;font-family:Raleway,sans-serif;font-size:17px;color:var(--navy-700);margin-bottom:6px}
+.quick p{margin:0;font-size:17.5px}
+.lead-img{margin:0 0 28px}
+.lead-img img{display:block;width:100%;max-width:560px;height:auto;border-radius:6px}
+.toc{border:1px solid var(--line);border-radius:6px;padding:16px 22px;margin:0 0 8px;font-size:16px}
+.toc b{display:block;font-family:Raleway,sans-serif;color:var(--navy-700);margin-bottom:6px}
+.toc ol{margin:0;padding-left:22px}.toc li{margin:0 0 4px}
+.faq{margin-top:44px;border-top:1px solid var(--line);padding-top:6px}
+.faq h2{margin-top:30px}
+.cta-box{background:var(--navy-700);color:#fff;border-radius:8px;padding:26px 28px;margin:44px 0 28px}
+.cta-box b{display:block;font-family:Raleway,sans-serif;font-size:21px;margin-bottom:8px}
+.cta-box p{color:var(--on-dark);margin:0 0 16px;font-size:16.5px}
+.cta-box .btn{text-decoration:none;color:var(--navy-950)}
+.related{border-top:1px solid var(--line);padding-top:18px;font-size:16.5px}
+.related b{font-family:Raleway,sans-serif;color:var(--navy-700)}
+.related ul{margin:8px 0 0}
+@media (max-width:600px){.post{font-size:17px}}
+.post .crumbs span+span::before{content:"\203A";margin:0 8px;color:var(--muted)}.post .crumbs a{text-decoration:none}.post .crumbs{font-size:14px}
+.tbl-wrap{overflow-x:auto;margin:0 0 20px;border:1px solid var(--line);border-radius:6px}.tbl{width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.5;min-width:560px}.tbl th{background:#f4f6f8;text-align:left;color:var(--navy-700);font-family:Raleway,sans-serif;padding:10px 14px;border-bottom:1px solid var(--line)}.tbl td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}.tbl tr:last-child td{border-bottom:0}.tbl td:first-child{font-weight:700}.tbl td:first-child a{text-decoration:none}
+.faq h3.fg{font-family:Raleway,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:38px 0 2px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6l7-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 006 0L5 7zM19 7l-3 7a3.5 3.5 0 006 0l-3-7z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 15.5h6"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0010 18.7l1-1"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75z"/></symbol>
+</svg>
+
+<main class="blog">
+<article class="post">
+  <header class="post-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/">Knowledge Hub</a></span><span aria-current="page">FAQs</span></nav>
+    <h1>R&amp;D Tax Relief FAQs: Your Questions Answered</h1>
+    <p class="meta">By <a href="https://www.itaxadvisors.co.uk/about-itax-advisors/">Aarti Varia</a> &middot; Updated 5 November 2026 &middot; Knowledge Hub</p>
+  </header>
+  <div class="quick"><b>Quick answer: what is R&amp;D tax relief?</b><p>A UK government incentive that rewards companies investing in innovation. Eligible companies can <strong>reduce Corporation Tax</strong>, claim a <strong>cash repayment where losses arise</strong> and recover a proportion of qualifying R&amp;D expenditure.</p></div>
+  <figure class="lead-img"><img src="assets/a_scales.jpg" alt="Scales of justice: R&D tax relief rules and compliance" width="364" height="230"></figure>
+  <nav class="toc" aria-label="Contents"><b>In this guide</b><ol><li><a href="#faq">FAQs</a></li></ol></nav>
+  
+  <section class="faq" id="faq">
+<h2>R&amp;D tax relief frequently asked questions</h2>
+<h3 class="fg">The basics</h3>
+<h3>What is R&amp;D tax relief?</h3>
+<p>A UK government incentive designed to reward companies investing in innovation. Eligible businesses can reduce their Corporation Tax liability, claim a cash repayment where losses arise and recover a proportion of qualifying R&amp;D expenditure. It is intended to encourage businesses to invest in advancing science or technology within their industry.</p>
+<h3>Is R&amp;D tax relief only available for new product development?</h3>
+<p>No. It is not restricted to entirely new products or innovations. Appreciably improving existing products, processes or services can qualify. <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/understanding-rd-eligibility/">Read the eligibility guide</a>.</p>
+<h3>Does software development qualify for R&amp;D tax relief?</h3>
+<p>Yes, many software projects qualify. Software development may be eligible where the work involves overcoming scientific or technological uncertainties rather than routine coding or standard implementation. <a href="https://www.itaxadvisors.co.uk/sectors/software-saas-ai-rd-tax-relief/">R&amp;D tax relief for software, SaaS and AI</a>.</p>
+<h3>Can I claim for failed projects?</h3>
+<p>Yes. A failed project can often be a strong indicator of qualifying R&amp;D activity. HMRC recognises that genuine R&amp;D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid claim.</p>
+<h3>Can companies claim R&amp;D tax relief every year?</h3>
+<p>Yes, provided they continue to undertake qualifying R&amp;D activities. Many businesses claim repeatedly as innovation evolves across multiple projects and accounting periods.</p>
+<h3 class="fg">Who can claim</h3>
+<h3>Can small businesses claim R&amp;D tax relief?</h3>
+<p>Yes. Many SMEs are eligible. Start-ups and growing businesses are often among the biggest beneficiaries. Even companies that are pre-revenue, loss-making, early-stage, venture-backed or developing internal systems may still qualify.</p>
+<h3>What is an SME for R&amp;D tax purposes?</h3>
+<p>Generally a company with fewer than 500 employees and either annual turnover below &euro;100 million or gross assets below &euro;86 million. The thresholds are assessed at group level and may involve partner enterprises (25%&ndash;50% ownership) and linked enterprises (over 50% ownership or control).</p>
+<h3>What is an R&amp;D intensive company?</h3>
+<p>An SME whose qualifying R&amp;D expenditure is a significant proportion of its total relevant expenditure, generally at least 30% for accounting periods beginning on or after 1 April 2024. R&amp;D intensity is qualifying R&amp;D expenditure divided by total company expenditure, and connected companies may need to be aggregated.</p>
+<h3>How much benefit can an R&amp;D intensive company receive?</h3>
+<p>Eligible R&amp;D intensive SMEs may qualify for an enhanced payable tax credit rate of 14.5%, giving significantly improved cash-flow support for loss-making innovation-focused businesses. <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-tax-reliefs-brief-introduction/">R&amp;D tax relief schemes</a>.</p>
+<h3 class="fg">Costs and caps</h3>
+<h3>Can directors&rsquo; salaries be included in an R&amp;D claim?</h3>
+<p>Yes. Directors actively involved in qualifying R&amp;D activities may include the relevant proportion of staffing costs relating to R&amp;D. Dividends are non-qualifying costs. <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/">Qualifying costs guide</a>.</p>
+<h3>Can overseas R&amp;D activities be claimed?</h3>
+<p>In limited circumstances. For accounting periods beginning on or after 1 April 2024, overseas subcontracted R&amp;D and externally provided workers are generally excluded unless the conditions necessary for the R&amp;D are not present in the UK, legal or regulatory requirements require the work overseas, or geographic, environmental or population-specific factors make overseas activity unavoidable. HMRC applies these exemptions narrowly.</p>
+<h3>Can grant-funded expenditure be claimed?</h3>
+<p>Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&amp;D tax relief on subsidised or grant-funded expenditure under the merged R&amp;D scheme.</p>
+<h3>Is there a cap on payable R&amp;D credits?</h3>
+<p>Yes. The payable credit is generally capped at &pound;20,000 plus 300% of the company&rsquo;s PAYE and NIC liabilities for the period. A company may be exempt where employees are actively involved in creating or managing intellectual property and less than 15% of qualifying R&amp;D expenditure relates to connected-party subcontractors or externally provided workers.</p>
+<h3>Can I claim for capitalised R&amp;D expenditure?</h3>
+<p>Potentially. Certain costs capitalised in the accounts may still qualify if they represent underlying revenue expenditure for tax purposes. Capital expenditure on assets used for R&amp;D may also qualify under the Research &amp; Development Allowances scheme, which can provide 100% capital allowances. Whether expenditure is capital or revenue can be technically complex.</p>
+<h3 class="fg">Making a claim</h3>
+<h3>What does HMRC look for in submitted R&amp;D claims?</h3>
+<p>Clear, robust evidence that qualifying R&amp;D took place and that the claim was prepared correctly: involvement of competent professionals, understanding of the R&amp;D legislation, a clear technical narrative in the Additional Information Form and accurate financial calculations.</p>
+<h3>What information is required in the Additional Information Form?</h3>
+<p>Technical descriptions, details of the scientific or technological uncertainties, cost breakdowns for each project and contact details. With 1&ndash;3 projects you describe all of them; with 4&ndash;10, at least 3 and at least 50% of qualifying expenditure; with 11 or more, at least 50% of expenditure and the 10 highest where appropriate. <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">How to make a claim</a>.</p>
+<h3>Can I make retrospective R&amp;D claims?</h3>
+<p>Yes. Companies can generally amend a corporation tax return to include an R&amp;D claim within two years from the end of the relevant accounting period. For accounting periods beginning on or after 1 April 2023, many companies must also submit a claim notification form first.</p>
+<h3 class="fg">HMRC enquiries and risk</h3>
+<h3>What happens if HMRC opens an R&amp;D enquiry?</h3>
+<p>HMRC may open a compliance check where it requires further information on technical eligibility, cost calculations, competent professionals, supporting documentation or claim methodology. An enquiry does not necessarily mean the claim is incorrect, but responding effectively needs strong technical and tax support and well-maintained documentation. <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">HMRC enquiry support</a>.</p>
+<h3>Are R&amp;D tax claims risky?</h3>
+<p>A properly prepared claim based on genuine qualifying activities should not be viewed as high risk. HMRC scrutiny has increased significantly in recent years, so claims should be technically robust, evidence-based, properly documented and prepared by experienced professionals. Aggressive or poorly supported claims can lead to enquiries, penalties or repayment demands.</p>
+<h3>Why use a specialist R&amp;D adviser?</h3>
+<p>The legislation is highly technical and HMRC scrutiny has increased. A specialist can help identify qualifying activities correctly, prepare robust technical narratives, ensure accurate financial calculations, reduce enquiry risk, maximise legitimate relief and navigate changing legislation and guidance.</p>
+<h3>How can we assess whether we qualify?</h3>
+<p>An initial assessment typically reviews the company&rsquo;s projects and objectives, technical uncertainties encountered, development activities undertaken, financial expenditure incurred, and existing documentation and evidence.</p>
+</section>
+  <aside class="cta-box"><b>Still have questions?</b><p>If you have any further questions, get in touch with our specialist team.</p><a class="btn btn-green" href="https://www.itaxadvisors.co.uk/contact-us/">Contact us <svg><use href="#i-arrow"/></svg></a></aside>
+  <aside class="related"><b>Related reading</b><ul><li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/">R&amp;D tax relief guide: eligibility, costs and how to claim</a></li><li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/understanding-rd-eligibility/">R&amp;D eligibility</a></li><li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/">R&amp;D qualifying costs</a></li><li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">How can I make a claim?</a></li></ul></aside>
+</article>
+</main>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "R&D Tax Relief FAQs: Your Questions Answered", "mainEntityOfPage": "https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/faqs/", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Aarti Varia", "@id": "https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti"}, "publisher": {"@id": "https://www.itaxadvisors.co.uk/#organization"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "A UK government incentive designed to reward companies investing in innovation. Eligible businesses can reduce their Corporation Tax liability, claim a cash repayment where losses arise and recover a proportion of qualifying R&D expenditure. It is intended to encourage businesses to invest in advancing science or technology within their industry."}}, {"@type": "Question", "name": "Is R&D tax relief only available for new product development?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is not restricted to entirely new products or innovations. Appreciably improving existing products, processes or services can qualify. Read the eligibility guide."}}, {"@type": "Question", "name": "Does software development qualify for R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, many software projects qualify. Software development may be eligible where the work involves overcoming scientific or technological uncertainties rather than routine coding or standard implementation. R&D tax relief for software, SaaS and AI."}}, {"@type": "Question", "name": "Can I claim for failed projects?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A failed project can often be a strong indicator of qualifying R&D activity. HMRC recognises that genuine R&D frequently involves uncertainty, experimentation and technical risk, and success is not required for a valid claim."}}, {"@type": "Question", "name": "Can companies claim R&D tax relief every year?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, provided they continue to undertake qualifying R&D activities. Many businesses claim repeatedly as innovation evolves across multiple projects and accounting periods."}}, {"@type": "Question", "name": "Can small businesses claim R&D tax relief?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Many SMEs are eligible. Start-ups and growing businesses are often among the biggest beneficiaries. Even companies that are pre-revenue, loss-making, early-stage, venture-backed or developing internal systems may still qualify."}}, {"@type": "Question", "name": "What is an SME for R&D tax purposes?", "acceptedAnswer": {"@type": "Answer", "text": "Generally a company with fewer than 500 employees and either annual turnover below €100 million or gross assets below €86 million. The thresholds are assessed at group level and may involve partner enterprises (25%–50% ownership) and linked enterprises (over 50% ownership or control)."}}, {"@type": "Question", "name": "What is an R&D intensive company?", "acceptedAnswer": {"@type": "Answer", "text": "An SME whose qualifying R&D expenditure is a significant proportion of its total relevant expenditure, generally at least 30% for accounting periods beginning on or after 1 April 2024. R&D intensity is qualifying R&D expenditure divided by total company expenditure, and connected companies may need to be aggregated."}}, {"@type": "Question", "name": "How much benefit can an R&D intensive company receive?", "acceptedAnswer": {"@type": "Answer", "text": "Eligible R&D intensive SMEs may qualify for an enhanced payable tax credit rate of 14.5%, giving significantly improved cash-flow support for loss-making innovation-focused businesses. R&D tax relief schemes."}}, {"@type": "Question", "name": "Can directors’ salaries be included in an R&D claim?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Directors actively involved in qualifying R&D activities may include the relevant proportion of staffing costs relating to R&D. Dividends are non-qualifying costs. Qualifying costs guide."}}, {"@type": "Question", "name": "Can overseas R&D activities be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "In limited circumstances. For accounting periods beginning on or after 1 April 2024, overseas subcontracted R&D and externally provided workers are generally excluded unless the conditions necessary for the R&D are not present in the UK, legal or regulatory requirements require the work overseas, or geographic, environmental or population-specific factors make overseas activity unavoidable. HMRC applies these exemptions narrowly."}}, {"@type": "Question", "name": "Can grant-funded expenditure be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For accounting periods beginning on or after 1 April 2024, companies can generally claim R&D tax relief on subsidised or grant-funded expenditure under the merged R&D scheme."}}, {"@type": "Question", "name": "Is there a cap on payable R&D credits?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The payable credit is generally capped at £20,000 plus 300% of the company’s PAYE and NIC liabilities for the period. A company may be exempt where employees are actively involved in creating or managing intellectual property and less than 15% of qualifying R&D expenditure relates to connected-party subcontractors or externally provided workers."}}, {"@type": "Question", "name": "Can I claim for capitalised R&D expenditure?", "acceptedAnswer": {"@type": "Answer", "text": "Potentially. Certain costs capitalised in the accounts may still qualify if they represent underlying revenue expenditure for tax purposes. Capital expenditure on assets used for R&D may also qualify under the Research & Development Allowances scheme, which can provide 100% capital allowances. Whether expenditure is capital or revenue can be technically complex."}}, {"@type": "Question", "name": "What does HMRC look for in submitted R&D claims?", "acceptedAnswer": {"@type": "Answer", "text": "Clear, robust evidence that qualifying R&D took place and that the claim was prepared correctly: involvement of competent professionals, understanding of the R&D legislation, a clear technical narrative in the Additional Information Form and accurate financial calculations."}}, {"@type": "Question", "name": "What information is required in the Additional Information Form?", "acceptedAnswer": {"@type": "Answer", "text": "Technical descriptions, details of the scientific or technological uncertainties, cost breakdowns for each project and contact details. With 1–3 projects you describe all of them; with 4–10, at least 3 and at least 50% of qualifying expenditure; with 11 or more, at least 50% of expenditure and the 10 highest where appropriate. How to make a claim."}}, {"@type": "Question", "name": "Can I make retrospective R&D claims?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Companies can generally amend a corporation tax return to include an R&D claim within two years from the end of the relevant accounting period. For accounting periods beginning on or after 1 April 2023, many companies must also submit a claim notification form first."}}, {"@type": "Question", "name": "What happens if HMRC opens an R&D enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "HMRC may open a compliance check where it requires further information on technical eligibility, cost calculations, competent professionals, supporting documentation or claim methodology. An enquiry does not necessarily mean the claim is incorrect, but responding effectively needs strong technical and tax support and well-maintained documentation. HMRC enquiry support."}}, {"@type": "Question", "name": "Are R&D tax claims risky?", "acceptedAnswer": {"@type": "Answer", "text": "A properly prepared claim based on genuine qualifying activities should not be viewed as high risk. HMRC scrutiny has increased significantly in recent years, so claims should be technically robust, evidence-based, properly documented and prepared by experienced professionals. Aggressive or poorly supported claims can lead to enquiries, penalties or repayment demands."}}, {"@type": "Question", "name": "Why use a specialist R&D adviser?", "acceptedAnswer": {"@type": "Answer", "text": "The legislation is highly technical and HMRC scrutiny has increased. A specialist can help identify qualifying activities correctly, prepare robust technical narratives, ensure accurate financial calculations, reduce enquiry risk, maximise legitimate relief and navigate changing legislation and guidance."}}, {"@type": "Question", "name": "How can we assess whether we qualify?", "acceptedAnswer": {"@type": "Answer", "text": "An initial assessment typically reviews the company’s projects and objectives, technical uncertainties encountered, development activities undertaken, financial expenditure incurred, and existing documentation and evidence."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/"}, {"@type": "ListItem", "position": 3, "name": "FAQs", "item": "https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/faqs/"}]}]}</script>
+<script>
+(function(){
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+window.$=$;window.$$=$$;
+if('IntersectionObserver' in window&&!reduce){
+  var vh0=window.innerHeight,items=$$('.rv,.wipe');
+  items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
+  document.documentElement.classList.add('anim');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.01,rootMargin:'0px 0px 18% 0px'});
+  items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
+  setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
+}
+if(!reduce&&fine){
+  $$('.mag').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})});
+  $$('.tilt').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg) translateY(-5px)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+  var hero=$('#hero'),glow=$('#glow');
+  if(hero&&glow){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.opacity=1;glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});hero.addEventListener('pointerleave',function(){glow.style.opacity=0})}
+}
+window.MAKE_WEBHOOKS={pdf:'https://hook.eu2.make.com/1wn2tf9j4qmrcp4532uak6vpeu4rmgk6',contact:'https://hook.eu2.make.com/1ufcyla1no7bwoprohh6hi4zqame1tg8'};
+window.wireForm=function(formId,doneId,errId,fields,type,extraData){
+  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);if(!f)return;
+  var live=/(^|\.)itaxadvisors\.co\.uk$/.test(location.hostname);
+  f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';
+    for(var i=0;i<fields.length;i++){var el=$('#'+fields[i]);var bad=el.type==='checkbox'?!el.checked:!el.value.trim();
+      if(el.type==='email'&&el.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value))bad=true;
+      if(bad){err.textContent=el.type==='checkbox'?'Please tick the box so we can contact you.':'Please complete: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/\(optional\)/,'').trim():'this field')+'.';el.focus();return}}
+    var btn=f.querySelector('button[type="submit"]'),orig=btn.innerHTML;
+    function ok(){f.hidden=true;d.classList.add('show')}
+    /* Same Make.com webhooks as the live home page. In previews (any other host) no real lead is sent. */
+    if(!live){ok();return}
+    var data={};new FormData(f).forEach(function(v,k){data[k]=typeof v==='string'?v.trim():v});
+    var cb=f.querySelector('input[type="checkbox"]');data.consent=cb&&cb.checked?'yes':'no';
+    data.submitted_at=new Date().toISOString();data.page_url=location.href;
+    var x=typeof extraData==='function'?extraData():{};Object.keys(x).forEach(function(k){data[k]=x[k]});
+    btn.disabled=true;btn.textContent='Sending...';
+    fetch(window.MAKE_WEBHOOKS[type||'contact'],{method:'POST',mode:'no-cors',body:new URLSearchParams(data)}).then(ok).catch(function(){err.textContent='We could not send your details. Please try again or contact us by email.';btn.disabled=false;btn.innerHTML=orig});
+  });
+};
+})();
+
+
+</script>
