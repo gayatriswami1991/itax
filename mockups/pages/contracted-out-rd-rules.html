@@ -94,587 +94,42 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .faq-grid{align-items:stretch}.faq-left{position:sticky;top:24px}@media (max-width:860px){.faq-left{position:static}}
 .anim .rv.pending:not(.in){transform:translateY(14px)}.rv{transition-duration:.55s}
 
-.hero{padding-block:clamp(64px,8vw,104px) clamp(48px,6vw,80px);background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 55% at 85% 40%,rgba(138,177,65,.18),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
-.glow{position:absolute;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(138,177,65,.22),transparent 65%);left:0;top:0;transform:translate(-50%,-50%);transition:opacity .4s;opacity:0}
-.hero h1{font-size:clamp(30px,3.6vw,46px)}
-.hgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,72px);align-items:center}
-.hpic{border-radius:24px;box-shadow:0 50px 80px -34px rgba(0,0,0,.8)}
-.hpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,33,54,.55))}
-.hpic .cap{display:none}.hpic .cap_{position:absolute;left:16px;bottom:16px;z-index:2;background:var(--green);color:var(--navy-950);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:8px 13px;border-radius:8px}
-.strip{background:#fff;border-bottom:1px solid var(--line)}
-.strip-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 28px;padding-block:20px}
-.strip-in span{display:flex;gap:10px;align-items:center;font-weight:700;font-size:14.5px;color:var(--navy-700)}
-.strip-in svg{width:22px;height:22px;color:var(--green-deep);flex:none}
-.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,72px);align-items:center}
-.pic{border-radius:22px;box-shadow:0 40px 70px -30px rgba(12,33,54,.6)}
-.pic .cap{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--green);color:var(--navy-950);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:7px 12px;border-radius:7px;max-width:70%}
-.pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(12,33,54,.4));pointer-events:none}
-.body{color:var(--muted);font-size:17px;margin-top:14px;max-width:62ch}
-.why{margin-top:22px;display:grid;gap:14px}
-.why div{display:grid;grid-template-columns:44px 1fr;gap:14px}
-.why svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
-.why b{display:block;color:var(--navy-700);font-size:18px}.why span{color:var(--muted);font-size:16px}
-.routes{background:#fff}
-.lgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
-.lc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:grid;gap:10px;align-content:start;transition:transform .3s,box-shadow .3s,border-color .3s}
-.lc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
-.lc svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
-.lc h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}.lc p{font-size:15.5px;color:var(--muted)}
-.notefinal{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:#eaf4d4;border-radius:14px;padding:16px 20px;color:var(--navy-700);font-weight:600}
-.notefinal svg{width:26px;height:26px;color:var(--green-deep)}
-.lsel{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(18px,3vw,36px);margin-top:36px;align-items:start}
-.llist{display:grid;gap:10px;align-content:start}
-.lbtn{display:flex;gap:14px;align-items:center;text-align:left;font:inherit;font-weight:700;font-size:16px;color:var(--navy-700);background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;transition:transform .25s,border-color .25s,background .25s,box-shadow .25s;min-height:60px}
-.lbtn span{flex:none;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:14px;transition:background .25s,color .25s}
-.lbtn:hover{border-color:var(--green);transform:translateX(4px)}
-.lbtn[aria-selected="true"]{background:var(--green);color:var(--navy-950);border-color:var(--green)}
-.lbtn[aria-selected="true"] span{background:var(--navy-950);color:var(--green)}
-.lpanel{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3vw,40px);box-shadow:0 40px 60px -34px rgba(0,0,0,.7);position:relative;overflow:hidden;animation:fadeUp .45s}
-.lpanel[hidden]{display:none}
-.lpanel h3{font-size:clamp(21px,2.3vw,27px);font-weight:800;color:var(--navy-700)}
-.lrow{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
-.lrow small{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:6px}
-.lrow p{color:var(--ink);font-size:16.5px}.lrow .pp,.csc .pp{margin-top:10px}
-.cs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
-.csc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column}
-.csc small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:10px}
-.csc p{font-size:16px;color:var(--muted)}
-.stat{margin-top:auto;padding:14px 16px;border-radius:12px;background:var(--navy-700);color:#fff;display:grid;gap:2px}
-.csc .stat{margin-top:18px}
-.stat b{font-size:28px;color:var(--green);line-height:1.1}.stat span{font-size:13.5px;color:var(--on-dark)}
-.stat.g{background:var(--green)}.stat.g b{color:var(--navy-950)}.stat.g span{color:var(--navy-900);font-weight:600}
-.sgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:36px}
-.sc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:grid;gap:12px;align-content:start}
-.sc .tag{justify-self:start;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:7px;background:#dff0b8;color:#3d6409}
-.sc h3{font-size:22px;color:var(--navy-700)}.sc p{font-size:16px;color:var(--muted)}
-.lm{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;background:var(--navy-900);color:#fff;border-radius:var(--radius);padding:22px 26px}
-.lm b{font-size:19px}.lm p{color:var(--on-dark-muted);font-size:15px;margin-top:4px}
-.contact{background:var(--navy-950);color:var(--on-dark)}
-.contact::before{background:radial-gradient(50% 60% at 15% 20%,rgba(27,69,109,.7),transparent 70%)}
-.cgrid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:start}
-.contact .lede+.lede{margin-top:12px}
-.det{margin-top:26px;display:grid;gap:16px;padding-top:22px;border-top:1px solid var(--line-dark)}
-.det div{display:grid;grid-template-columns:28px 1fr;gap:12px;color:#fff;font-size:16px}
-.det svg{width:24px;height:24px;color:var(--green)}.det a{color:#fff}
-.rel{margin-top:26px;display:grid;gap:10px}
-.rel a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:#fff;font-weight:700;border:1px solid var(--line-dark);border-radius:12px;padding:14px 16px;transition:border-color .25s,background .25s,transform .25s}
-.rel a:hover{border-color:var(--green);background:rgba(138,177,65,.1);transform:translateX(4px)}
-.rel svg{width:20px;height:20px;color:var(--green)}
-.faq-side{margin-top:26px;position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1.25/1}.faq-side .img{position:absolute;inset:0}.faq-side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.05),rgba(12,33,54,.88))}.faq-side .t{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}.faq-side .t b{display:block;font-size:19px;line-height:1.2;margin-bottom:12px}.btn-sm{padding:10px 20px;font-size:13.5px}
-@media (max-width:1020px){.lgrid,.cs{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:860px){
-  .strip-in{grid-template-columns:minmax(0,1fr)}
-  .hgrid,.split,.lsel,.cgrid,.sgrid{grid-template-columns:minmax(0,1fr)}
-  .lm{flex-direction:column;align-items:stretch}.lm .btn{justify-content:center}
-  .faq-side{display:none}.lbtn{min-height:56px}
-}
-@media (max-width:600px){.lgrid,.cs{grid-template-columns:minmax(0,1fr)}.formcard{padding:22px 18px}.stat b{font-size:25px}}
-.lm .btn{flex:none;white-space:nowrap}.lside{position:sticky;top:24px;display:grid;gap:16px}@media (max-width:860px){.lside{position:static}}
+/* Plain blog article layout */
+main.blog{background:#fff;padding:clamp(28px,4vw,56px) 0 clamp(48px,6vw,88px)}
+.post{max-width:760px;margin:0 auto;padding:0 20px;color:var(--ink);font-size:18px;line-height:1.7}
+.post .crumbs{display:flex;flex-wrap:wrap;gap:6px 0;font-size:14px;margin-bottom:18px}
+.post-head h1{font-family:Raleway,sans-serif;font-size:clamp(29px,4vw,42px);line-height:1.18;color:var(--navy-700);font-weight:800;margin:0 0 14px;letter-spacing:-.01em}
+.post .meta{font-size:14.5px;color:var(--muted);margin:0 0 26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.post .meta a{color:var(--navy-700);font-weight:600}
+.post p{margin:0 0 16px}
+.post h2{font-family:Raleway,sans-serif;font-size:clamp(23px,2.6vw,29px);line-height:1.25;color:var(--navy-700);font-weight:800;margin:44px 0 14px;scroll-margin-top:20px}
+.post h2::after{display:none}
+.post h3{font-family:Raleway,sans-serif;font-size:19px;color:var(--navy-700);font-weight:700;margin:26px 0 6px}
+.post ul,.post ol{margin:0 0 18px;padding-left:24px}
+.post li{margin:0 0 8px;padding-left:4px}
+.post li::before{display:none}
+.post a{color:var(--navy-700);text-decoration:underline;text-underline-offset:3px}
+.post strong{color:var(--navy-800)}
+.quick{background:#f4f6f8;border-left:4px solid var(--navy-700);border-radius:4px;padding:18px 22px;margin:0 0 26px}
+.quick b{display:block;font-family:Raleway,sans-serif;font-size:17px;color:var(--navy-700);margin-bottom:6px}
+.quick p{margin:0;font-size:17.5px}
+.lead-img{margin:0 0 28px}
+.lead-img img{display:block;width:100%;max-width:560px;height:auto;border-radius:6px}
+.toc{border:1px solid var(--line);border-radius:6px;padding:16px 22px;margin:0 0 8px;font-size:16px}
+.toc b{display:block;font-family:Raleway,sans-serif;color:var(--navy-700);margin-bottom:6px}
+.toc ol{margin:0;padding-left:22px}.toc li{margin:0 0 4px}
+.faq{margin-top:44px;border-top:1px solid var(--line);padding-top:6px}
+.faq h2{margin-top:30px}
+.cta-box{background:var(--navy-700);color:#fff;border-radius:8px;padding:26px 28px;margin:44px 0 28px}
+.cta-box b{display:block;font-family:Raleway,sans-serif;font-size:21px;margin-bottom:8px}
+.cta-box p{color:var(--on-dark);margin:0 0 16px;font-size:16.5px}
+.cta-box .btn{text-decoration:none;color:var(--navy-950)}
+.related{border-top:1px solid var(--line);padding-top:18px;font-size:16.5px}
+.related b{font-family:Raleway,sans-serif;color:var(--navy-700)}
+.related ul{margin:8px 0 0}
+@media (max-width:600px){.post{font-size:17px}}
+.post .crumbs span+span::before{content:"\203A";margin:0 8px;color:var(--muted)}.post .crumbs a{text-decoration:none}.post .crumbs{font-size:14px}
 
-/*HERO2*/
-.hero.hero2{padding-block:clamp(52px,6vw,84px);background:linear-gradient(120deg,var(--navy-950) 0%,var(--navy-900) 58%,var(--navy-800) 100%)}
-.hero.hero2::after{display:none}
-.hero2 .hero2-in{position:relative;z-index:2}
-.hero2 .hero2-text{max-width:min(600px,50%)}
-.hero2 h1{font-size:clamp(30px,3.7vw,48px)}
-.hero2 .hero2-img{position:absolute;z-index:1;right:0;top:50%;width:min(50vw,840px);aspect-ratio:1672/941;transform:translateY(-50%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
-.hero2 .hero2-img img{width:100%;height:100%;object-fit:cover;display:block}
-.hero2 .hero2-img.rv.pending:not(.in){transform:translateY(-50%)}
-.crumbs{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:13px;color:var(--on-dark-muted);margin-bottom:22px;font-weight:600}
-.crumbs a{color:var(--on-dark);text-decoration:none}.crumbs a:hover{color:var(--green)}
-.crumbs span+span::before{content:"\203A";margin-right:8px;opacity:.6}
-.crumbs [aria-current]{color:var(--green)}
-@media (max-width:900px){
-  .hero2 .hero2-text{max-width:none}
-  .hero2 .hero2-img{position:relative;right:auto;top:auto;transform:none;width:calc(100% - 36px);max-width:620px;margin:30px auto 0;border-radius:18px;overflow:hidden;-webkit-mask-image:none;mask-image:none;box-shadow:0 30px 60px -28px rgba(0,0,0,.8)}
-  .hero2 .hero2-img.rv.pending:not(.in){transform:none}
-}
-/*POLISH*/
-.sec h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--green);margin-top:18px}
-.dark .sec h2::after,.sec.dark h2::after{background:var(--green)}
-[style*="background:var(--paper)"]{background-image:radial-gradient(rgba(27,69,109,.07) 1.2px,transparent 1.2px)!important;background-size:24px 24px!important}
-.lc,.rq,.sc,.csc,.rc,.hc{position:relative;overflow:hidden}
-.lc::before,.rq::before,.sc::before,.csc::before,.rc::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--green),#b7d77a);transform:scaleX(0);transform-origin:left;transition:transform .45s}
-.lc:hover::before,.rq:hover::before,.sc:hover::before,.csc:hover::before,.rc:hover::before{transform:scaleX(1)}
-.ready-in{margin-top:22px;border-top:1px dashed var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
-.ready-in b{display:block;color:var(--navy-700);margin-bottom:8px;font-size:14.5px}
-.ready-in ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
-.ready-in li{display:flex;gap:8px}.ready-in svg{width:15px;height:15px;color:var(--green-deep);flex:none;margin-top:4px}
-@media (max-width:600px){.ready-in ul{grid-template-columns:minmax(0,1fr)}}
-.magnet{background:linear-gradient(135deg,var(--navy-800),var(--navy-950));color:#fff;position:relative;overflow:hidden}
-.magnet::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(138,177,65,.3),transparent 70%);animation:drift 14s ease-in-out infinite alternate}
-.formcard.spin{isolation:isolate}
-.formcard.spin::after{content:"";position:absolute;inset:0;border-radius:20px;background:#fff;z-index:-1}
-.formcard.spin::before{content:"";position:absolute;inset:-3px;border-radius:23px;z-index:-1;background:conic-gradient(from var(--a,0deg),var(--green),transparent 30%,transparent 70%,var(--green));animation:rot 6s linear infinite}
-@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
-@keyframes rot{to{--a:360deg}}
-.formcard.big{padding:clamp(26px,3.4vw,44px)}
-.formcard.big .field input,.formcard.big .field select,.formcard.big .field textarea{padding:15px 16px}
-.mp-note{margin-top:10px;font-size:13px;color:var(--muted);font-style:italic}
-.doc{position:relative;margin:30px auto 0;max-width:430px;aspect-ratio:.78/1;animation:fadeUp .5s}
-.doc .sheet{position:absolute;inset:0;background:#fff;border-radius:10px;box-shadow:0 30px 55px -24px rgba(0,0,0,.75)}
-.doc .s3{transform:rotate(5deg) translate(14px,6px);opacity:.55}
-@media (max-width:520px){.doc{margin-inline:10px}.doc .s3{transform:rotate(4deg) translate(5px,5px)}.doc .s2{transform:rotate(-3deg) translate(-4px,4px)}}
-.doc .s2{transform:rotate(-3.5deg) translate(-12px,4px);opacity:.8}
-.doc .s1{overflow:hidden;display:flex;flex-direction:column;transition:transform .5s}
-.doc:hover .s1{transform:translateY(-6px) rotate(.6deg)}
-.dhead{background:var(--navy-700);padding:16px 20px}.dhead img{height:30px;width:auto}
-.doc small{display:block;padding:20px 24px 0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green-deep)}
-.doc h3{padding:8px 24px 0;font-size:clamp(20px,2.2vw,25px);color:var(--navy-700);font-weight:800;line-height:1.15}
-.doc ol{list-style:none;margin:16px 24px 0;padding:0;counter-reset:d;border-top:2px solid var(--green)}
-.doc li{counter-increment:d;display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.35;color:var(--ink);font-weight:600}
-.doc li::before{content:counter(d);flex:none;width:22px;height:22px;border-radius:5px;background:var(--navy-700);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center;margin-top:1px}
-.dfoot{margin-top:auto;padding:12px 24px;display:flex;justify-content:space-between;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted);background:var(--paper)}
-.m-head{max-width:760px}
-.m-row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:center;margin-top:34px}
-.m-row .doc{margin:0 auto;width:100%;max-width:400px}
-.m-row .formcard.big{padding:clamp(28px,3.6vw,46px)}
-.m-row .formcard.big .field input{padding:16px 16px}
-@media (max-width:520px){.m-row .doc{width:calc(100% - 28px);margin-inline:auto}}
-@media (max-width:860px){.m-row{grid-template-columns:minmax(0,1fr)}.doc{max-width:360px}}
-.magnet{padding-block:clamp(48px,6vw,84px)}
-
-/*LS v2*/
-.ribbon{background:#fff;border-bottom:1px solid var(--line)}
-.ribbon-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-block:20px}
-.ribbon-in span{display:flex;gap:10px;align-items:center;font-weight:700;font-size:14.5px;color:var(--navy-700)}
-.ribbon-in svg{width:22px;height:22px;color:var(--green-deep);flex:none}
-.assess{margin-top:34px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--green);border-radius:var(--radius);padding:24px 28px;box-shadow:var(--shadow)}
-.assess>b{display:block;color:var(--navy-700);font-size:18px;line-height:1.4}
-.assess ul{list-style:none;margin:16px 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.assess li{font-weight:700;font-size:14px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:7px 14px}
-.assess p{color:var(--muted);font-size:16.5px;max-width:78ch}
-.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:auto auto;gap:16px;margin-top:36px}
-.bc{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:grid;gap:10px;align-content:start;transition:transform .3s,box-shadow .3s,border-color .3s;overflow:hidden}
-.bc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
-.bc svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
-.bc h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}.bc p{font-size:15.5px;color:var(--muted)}
-.bn{position:absolute;right:16px;top:12px;font-weight:800;font-size:34px;line-height:1;color:rgba(27,69,109,.1);letter-spacing:-.02em}
-.bimg{padding:0;background:#fff;align-content:start}
-.bimg .img{border-radius:0;width:100%}.bimg .bt{padding:20px 22px 24px;display:grid;gap:8px;position:relative}
-.bimg .bn{top:8px}
-.b-clin{grid-column:1/3;grid-row:1}.b-drug{grid-column:3;grid-row:1}.b-bio{grid-column:4;grid-row:1}
-.b-proc{grid-column:1;grid-row:2}.b-dig{grid-column:2;grid-row:2}.b-dev{grid-column:3/5;grid-row:2}
-.bimg{display:grid;grid-template-columns:minmax(0,.5fr) minmax(0,.5fr);align-items:center}
-.bimg .img{align-self:center}.bimg .bt{align-self:center;padding:22px 22px}
-.b-dev .img{order:2}.b-dev .bt{order:1}
-.lpic{border-radius:18px;box-shadow:0 30px 50px -26px rgba(0,0,0,.7)}
-.cs2{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:36px;align-items:start}
-.cs2-l{position:sticky;top:24px;display:grid;gap:14px}
-.stats2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stats2 .stat{margin:0}
-.tl2{list-style:none;margin:0;padding:0;display:grid;gap:16px;position:relative}
-.tl2 li{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px 20px 70px;position:relative}
-.tl2 .tn{position:absolute;left:18px;top:18px;width:40px;height:40px;border-radius:50%;background:var(--navy-700);color:var(--green);display:grid;place-items:center;font-weight:800}
-.tl2 small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:8px}
-.tl2 p{font-size:16px;color:var(--muted)}.tl2 p+p{margin-top:10px}
-.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.fig{background:var(--navy-700);border-radius:12px;padding:14px 12px;display:grid;gap:4px;align-content:start}
-.fig b{font-size:clamp(24px,2.6vw,32px);line-height:1;color:var(--green);font-weight:800}
-.fig span{font-size:12.5px;line-height:1.35;color:var(--on-dark)}
-@media (max-width:1020px){.bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}.b-clin,.b-dev,.b-drug,.b-bio,.b-proc,.b-dig{grid-column:auto;grid-row:auto}.b-clin,.b-dev{grid-column:1/-1}.b-dev .img{order:0}.b-dev .bt{order:0}}
-@media (max-width:860px){.cs2{grid-template-columns:minmax(0,1fr)}.cs2-l{position:static}.ribbon-in{justify-content:flex-start}}
-@media (max-width:600px){.bimg{grid-template-columns:minmax(0,1fr)}.bento{grid-template-columns:minmax(0,1fr)}.figs{grid-template-columns:minmax(0,1fr)}.fig{grid-template-columns:auto 1fr;align-items:center;gap:12px}.stats2{grid-template-columns:minmax(0,1fr)}.assess{padding:20px 18px}.ribbon-in{gap:10px 18px}.ribbon-in span{font-size:13.5px}}
-/*REVIEW FIXES*/
-.yr{margin:12px 0 4px;font-size:15px;color:var(--ink);background:var(--paper);border-left:4px solid var(--green);border-radius:0 10px 10px 0;padding:10px 14px;line-height:1.45}
-.yr b{color:var(--navy-700)}
-.upd{margin-top:12px;font-size:13.5px;background:#fff7e0;border:1px solid #f0d58a;border-radius:10px;padding:10px 12px;color:#6b4e00;line-height:1.45}
-.upd b{display:inline-block;margin-right:6px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:#f0c24b;color:#3a2a00;border-radius:5px;padding:2px 7px}
-.hm{display:flex;flex-direction:column;gap:6px;margin-top:10px}
-.hm a{font-weight:700;font-size:13.5px;color:var(--navy-700);text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:3px}
-.rdy15{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
-.rq15{list-style:none;margin:14px 0 0;padding:14px 0 0;border-top:1px solid var(--line-dark);display:grid;gap:10px}
-.rq15 li{display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:14px;line-height:1.45;color:var(--on-dark)}
-.rq15 li span{width:24px;height:24px;border-radius:6px;background:rgba(138,177,65,.2);color:var(--green);font-weight:800;font-size:12px;display:grid;place-items:center}
-.warn{background:#fff7e0;border-block:1px solid #f0d58a}
-.warn-in{display:flex;gap:14px;align-items:flex-start;padding-block:18px}
-.warn-in svg{flex:none;width:30px;height:30px;color:#b45309;margin-top:2px}
-.warn-in p{color:#5b4100;font-size:16px;line-height:1.5}.warn-in b{color:#3a2a00}
-.s36{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.s36 li{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:12px;padding:14px 18px;font-size:15.5px;color:var(--muted);line-height:1.5}
-.s36 b{color:var(--navy-700)}
-.lookb.src{background:transparent;border-style:dashed}.lookb.src b{color:var(--on-dark-muted)}.lookb.src span{font-size:14px;color:var(--on-dark-muted)}
-@media (max-width:1020px){.rdy15{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:640px){.rdy15{grid-template-columns:minmax(0,1fr)}}
-/*SECTOR HERO PATTERN: light, solid green offset block behind the image, areas as chips*/
-.lhero{background:linear-gradient(180deg,#fff 0%,var(--paper) 100%);padding-top:clamp(40px,5vw,70px);position:relative;overflow:hidden}
-.lhero::before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(138,177,65,.22),transparent 70%)}
-.lhero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,72px);align-items:center;position:relative}
-.lhero h1{font-size:clamp(30px,3.8vw,48px);font-weight:800;color:var(--navy-700);letter-spacing:-.02em;margin-top:18px}
-.lhero .hl{color:var(--green-deep)}.lhero .hl::after{background:var(--green)}
-.lhero .answer{font-size:clamp(17px,1.5vw,19px);color:var(--ink);max-width:56ch;margin-top:20px}.lhero .answer b{color:var(--navy-700)}
-.lhero .crumbs{color:var(--muted)}.lhero .crumbs a{color:var(--navy-700)}.lhero .crumbs [aria-current]{color:var(--green-deep)}
-.lhero .eyebrow{color:var(--green-deep);border-color:rgba(79,122,15,.4);background:rgba(138,177,65,.12)}.lhero .eyebrow i{background:var(--green-deep)}
-.lh-vis{position:relative;margin:0 22px 22px 0}
-.lh-block{position:absolute;inset:22px -22px -22px 22px;background:var(--green);border-radius:28px}
-.lh-img{position:relative;border-radius:28px;overflow:hidden;box-shadow:0 40px 70px -30px rgba(12,33,54,.55);aspect-ratio:1672/941;background:var(--navy-800)}
-.lh-img img{width:100%;height:auto;display:block}
-.lh-badge{position:absolute;z-index:2;left:-14px;bottom:30px;background:var(--navy-700);color:#fff;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:11px 16px;border-radius:12px;display:inline-flex;gap:9px;align-items:center;box-shadow:0 16px 30px -12px rgba(12,33,54,.6);animation:flo 6s ease-in-out infinite}
-.lh-badge svg{width:17px;height:17px;color:var(--green)}
-.lh-areas{list-style:none;margin:clamp(34px,4vw,52px) 0 0;padding:0 0 clamp(36px,4vw,56px);display:flex;flex-wrap:wrap;gap:10px}
-.lh-areas li{font-weight:800;font-size:14px;color:var(--navy-700);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:9px 18px;transition:background .25s,border-color .25s}
-.lh-areas li:hover{background:#eaf4d4;border-color:var(--green)}
-@media (max-width:900px){.lhero-in{grid-template-columns:minmax(0,1fr)}.lh-vis{max-width:560px;margin-right:18px}.lh-block{inset:16px -16px -16px 16px}.lh-badge{left:-6px}}
-.lhero .hl{white-space:normal}
-
-/*ABOUT*/
-.secchips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.secchips span{font-weight:700;font-size:14.5px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:9px 18px}
-.f-grid2{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(28px,5vw,64px);align-items:start}
-.fcard{background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;position:sticky;top:24px}
-.fphoto{line-height:0;background:#d9d5ce}.fphoto img{width:100%;height:auto}
-.fbody{padding:22px 24px 26px}.fbody h3{font-size:26px;color:var(--navy-700);font-weight:800}
-.fbody .role{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);margin-top:6px;font-weight:700}
-.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.creds span{font-size:13px;font-weight:700;color:var(--navy-700);background:#fff;border:1px solid var(--line);padding:6px 12px;border-radius:999px}
-.flinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.ln{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14px;color:#fff;background:var(--navy-700);padding:10px 16px;border-radius:999px;transition:background .2s,transform .2s}
-.ln:hover{background:var(--navy-900);transform:translateY(-2px)}.ln svg{width:18px;height:18px}
-.quote2{margin:26px 0;padding:24px 26px;border-radius:var(--radius);background:var(--navy-900);color:#fff}
-.quote2 p{font-size:clamp(18px,1.9vw,22px);font-weight:600;line-height:1.45}
-.quote2 cite{display:block;margin-top:12px;font-style:normal;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dark-muted);font-weight:700}
-.tgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}.tgrid.t3{margin-top:16px}
-.tc{margin:0;background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;gap:16px;transition:border-color .3s,transform .3s}
-.tc:hover{border-color:var(--green);transform:translateY(-5px)}
-.tc blockquote{margin:0;font-size:15.5px;line-height:1.6;color:var(--on-dark)}
-.tc.s blockquote{font-size:16.5px;font-weight:600;color:#fff}
-.tc figcaption{margin-top:auto;font-size:13.5px;color:var(--on-dark-muted);padding-top:14px;border-top:1px solid var(--line-dark)}
-.tc figcaption b{display:block;color:var(--green);font-size:14.5px;margin-bottom:2px}
-.h48-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:center}
-.tl{margin-top:26px;display:grid;position:relative}.tl::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:rgba(255,255,255,.18)}
-.ts{display:grid;grid-template-columns:40px 1fr;gap:18px;padding-bottom:20px;position:relative}.ts:last-child{padding-bottom:0}
-.ts .n{width:40px;height:40px;border-radius:50%;background:var(--navy-900);border:2px solid var(--green);color:var(--green);display:grid;place-items:center;font-weight:800;z-index:2}
-.ts p{color:var(--on-dark);font-size:16.5px;padding-top:7px}.ts b{color:#fff}
-.split.rev{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
-@media (max-width:1020px){.tgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.tgrid.t3{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:860px){.f-grid2,.h48-top,.split.rev{grid-template-columns:minmax(0,1fr)}.fcard{position:static;max-width:440px}.tgrid,.tgrid.t3{grid-template-columns:minmax(0,1fr)}.ribbon-in{justify-content:flex-start}}
-
-.tx{color:inherit;text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:3px;text-decoration-thickness:2px;font-weight:inherit}
-.tx:hover{color:var(--green-deep)}.dark .tx:hover,.ts .tx:hover{color:var(--green)}
-.secchips a{font-weight:700;font-size:14.5px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:9px 18px;text-decoration:none;transition:background .2s,transform .2s}
-.secchips a:hover{background:var(--green);transform:translateY(-2px)}
-.xgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
-.xcol{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;display:grid;gap:4px;align-content:start}
-.xcol h3{font-size:18px;color:var(--navy-700);font-weight:800;margin-bottom:8px}
-.xcol a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:var(--navy-700);font-weight:700;font-size:15px;padding:12px 4px;border-top:1px solid var(--line);transition:padding .25s,color .25s,background .25s}
-.xcol a:hover{padding-left:12px;background:var(--paper);color:var(--green-deep)}
-.xcol svg{width:18px;height:18px;color:var(--green-deep);flex:none}
-.arts{margin:0 0 22px;border-top:1px solid var(--line)}
-.arts a{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--navy-700);font-weight:700;font-size:16.5px;line-height:1.3;transition:padding .25s,background .25s}
-.arts a small{display:block;font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.arts a:hover{padding-left:14px;background:var(--paper)}.arts svg{width:22px;height:22px;color:var(--green-deep)}
-@media (max-width:1020px){.xgrid{grid-template-columns:minmax(0,1fr)}}
-
-/*ABOUT v2*/
-.glance{background:var(--navy-900);color:#fff}
-.glance-in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 24px;padding-block:26px}
-.gs b{display:block;font-size:clamp(30px,3.6vw,44px);line-height:1;font-weight:800;color:var(--green);font-variant-numeric:tabular-nums}
-.gs span{display:block;margin-top:6px;font-size:14px;color:var(--on-dark)}
-.split.top{align-items:center}
-.icp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
-.ic{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;gap:12px;transition:transform .3s,box-shadow .3s,border-color .3s}
-.ic:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
-.ic .ico{width:46px;height:46px;border-radius:12px;background:var(--navy-700);color:var(--green);display:grid;place-items:center}
-.ic .ico svg{width:24px;height:24px}
-.ic h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}
-.ic ul,.bul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
-.ic li,.bul li{position:relative;padding-left:26px;font-size:15.5px;color:var(--muted);line-height:1.45}
-.ic li::before,.bul li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
-.ic .more{margin-top:auto;padding-top:6px}
-.stepc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:34px}
-.sc4{position:relative;background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:var(--radius);padding:24px 20px;transition:transform .3s,border-color .3s,background .3s}
-.sc4:hover{transform:translateY(-6px);border-color:var(--green);background:rgba(138,177,65,.1)}
-.sc4 .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:2px solid var(--green);color:var(--green);font-weight:800;margin-bottom:14px}
-.sc4 h3{font-size:20px;color:#fff;font-weight:800}.sc4 p{font-size:15px;color:var(--on-dark-muted);margin-top:8px}
-.sc4 .tx{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:var(--green)}
-.stepc+.cta-row{margin-top:28px}
-.pas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.pas>div{padding:22px 24px;background:var(--paper)}.pas>div+div{border-left:1px solid var(--line)}
-.pas>div:last-child{background:var(--navy-700)}.pas>div:last-child small{color:var(--green)}.pas>div:last-child p{color:#fff}
-.pas small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--green-deep);margin-bottom:8px}
-.pas p{font-size:16px;color:var(--ink);font-weight:600;line-height:1.45}
-.whyg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}
-.wg{display:grid;grid-template-columns:44px 1fr;gap:2px 14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;transition:border-color .3s,transform .3s}
-.wg:hover{border-color:var(--green);transform:translateY(-4px)}
-.wg svg{grid-row:span 2;width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
-.wg b{font-size:17px;color:var(--navy-700)}.wg span{font-size:14.5px;color:var(--muted);line-height:1.4}
-.bul{margin-top:20px}.bul li b{color:var(--navy-700)}
-.more-fb{margin-top:22px;font-weight:700}.more-fb .tx{color:var(--green)}
-.tgrid .tc blockquote{font-size:16px}
-@media (max-width:1020px){.icp{grid-template-columns:repeat(2,minmax(0,1fr))}.stepc{grid-template-columns:repeat(2,minmax(0,1fr))}.whyg{grid-template-columns:repeat(2,minmax(0,1fr))}.glance-in{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:700px){.icp,.stepc,.whyg{grid-template-columns:minmax(0,1fr)}.pas{grid-template-columns:minmax(0,1fr)}.pas>div+div{border-left:0;border-top:1px solid var(--line)}}
-.ctacard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(26px,3.4vw,44px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);display:grid;gap:16px;align-content:start}
-.ctacard h3{font-size:26px;color:var(--navy-700);font-weight:800}.ctacard p{color:var(--muted);font-size:16.5px}
-.ctacard .btn{justify-self:start}
-.bul2{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:9px;border-top:1px dashed var(--line);padding-top:16px}
-.bul2 li{position:relative;padding-left:26px;font-size:15.5px;color:var(--muted)}
-.bul2 li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
-@media (max-width:600px){.ctacard .btn{justify-self:stretch;justify-content:center}}
-.hero{padding-block:clamp(64px,8vw,104px) clamp(48px,6vw,80px);background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 55% at 85% 40%,rgba(138,177,65,.18),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
-.glow{position:absolute;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(138,177,65,.22),transparent 65%);left:0;top:0;transform:translate(-50%,-50%);transition:opacity .4s;opacity:0}
-.hero h1{font-size:clamp(34px,4.4vw,54px)}
-.hgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(30px,5vw,72px);align-items:center}
-.hpic{border-radius:24px;aspect-ratio:1.5/1;box-shadow:0 50px 80px -34px rgba(0,0,0,.8)}
-.hpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,33,54,.55))}
-.hpic .cap{position:absolute;left:16px;bottom:16px;z-index:2;background:var(--green);color:var(--navy-950);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:8px 13px;border-radius:8px}
-.routes{background:#fff}
-.rgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:36px}
-.route{position:relative;display:flex;flex-direction:column;text-align:left;font:inherit;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;padding:0;transition:transform .3s,box-shadow .3s,border-color .3s}
-.route:hover,.route[aria-pressed="true"]{border-color:var(--green);box-shadow:var(--shadow)}
-.route[aria-pressed="true"]{outline:3px solid rgba(138,177,65,.35)}
-.route .img{aspect-ratio:1.8/1}
-.route:hover .img img{transform:scale(1.1)}
-.route .cb{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
-.route h3{font-size:18px;color:var(--navy-700);font-weight:800;line-height:1.25}
-.route p{font-size:14.5px;color:var(--muted)}
-.route .go{margin-top:auto;padding-top:6px;font-weight:700;font-size:13.5px;color:var(--navy-700);display:inline-flex;gap:8px;align-items:center}
-.route .go svg{width:17px;height:17px;transition:transform .25s}.route:hover .go svg{transform:translateX(4px)}
-.route .tick{position:absolute;right:12px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;opacity:0;transform:scale(.6);transition:.25s;z-index:3}
-.route[aria-pressed="true"] .tick{opacity:1;transform:none}.route .tick svg{width:18px;height:18px}
-.route .learn{display:block;padding:0 18px 16px;font-size:13px;font-weight:700;color:var(--green-deep)}
-.formsec{background:var(--paper)}
-.fgrid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,52px);align-items:start}
-.side{display:grid;gap:18px;position:sticky;top:24px}
-.sbox{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
-.sbox h3{font-size:19px;color:var(--navy-700);font-weight:800}
-.det{margin-top:14px;display:grid;gap:14px}.det div{display:grid;grid-template-columns:26px 1fr;gap:12px;font-size:15.5px;color:var(--ink)}
-.det svg{width:22px;height:22px;color:var(--green-deep)}.det a{color:var(--navy-700);font-weight:700}
-.copy{margin-left:8px;font:inherit;font-size:12px;font-weight:700;background:transparent;color:var(--green-deep);border:1px solid rgba(79,122,15,.5);border-radius:999px;padding:4px 12px;cursor:pointer;min-height:32px}
-.copy:hover{background:rgba(138,177,65,.15)}
-.ready h3{margin-bottom:6px}.ready h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-deep);margin-top:14px;font-weight:800}
-.ready ul{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:7px;font-size:14.5px;color:var(--muted)}
-.ready li{display:flex;gap:9px}.ready li svg{width:16px;height:16px;color:var(--green-deep);flex:none;margin-top:4px}
-.who{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:center}
-.who .img{border-radius:14px;aspect-ratio:900/828}
-.who b{display:block;color:var(--navy-700);font-size:18px}.who span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);font-weight:700}
-.who p{font-size:14px;color:var(--muted);margin-top:4px}
-.sel-note{margin-top:10px;font-size:13.5px;color:var(--green-deep);font-weight:700;min-height:1.2em}
-.faq{background:#fff}
-.teaser{background:var(--navy-900);color:#fff;border-radius:24px;padding:clamp(24px,3.4vw,40px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;position:relative;overflow:hidden}
-.teaser::before{content:"";position:absolute;width:420px;height:420px;right:-120px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(138,177,65,.3),transparent 70%)}
-.teaser>*{position:relative}.teaser h2{color:#fff;font-size:clamp(22px,2.6vw,30px);margin:0;max-width:none}.teaser p{color:var(--on-dark-muted);margin-top:8px;max-width:60ch}
-@media (max-width:1020px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:860px){.hgrid,.fgrid{grid-template-columns:minmax(0,1fr)}.side{position:static}.teaser{grid-template-columns:minmax(0,1fr)}.teaser .btn{width:100%;justify-content:center}.hpic{aspect-ratio:1.8/1}}
-@media (max-width:600px){.rgrid{grid-template-columns:minmax(0,1fr)}.route .img{aspect-ratio:1.8/1}.formcard{padding:22px 18px}}
-
-.sel-note:empty{display:none}
-
-/*UNIFORM*/.hgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.hpic{aspect-ratio:auto}.hpic .cap{display:none}.hero h1{font-size:clamp(30px,3.6vw,46px)}@media (max-width:860px){.hgrid{grid-template-columns:minmax(0,1fr)}}
-
-/*HERO2*/
-.hero.hero2{padding-block:clamp(52px,6vw,84px);background:linear-gradient(120deg,var(--navy-950) 0%,var(--navy-900) 58%,var(--navy-800) 100%)}
-.hero.hero2::after{display:none}
-.hero2 .hero2-in{position:relative;z-index:2}
-.hero2 .hero2-text{max-width:min(600px,50%)}
-.hero2 h1{font-size:clamp(30px,3.7vw,48px)}
-.hero2 .hero2-img{position:absolute;z-index:1;right:0;top:50%;width:min(50vw,840px);aspect-ratio:1672/941;transform:translateY(-50%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
-.hero2 .hero2-img img{width:100%;height:100%;object-fit:cover;display:block}
-.hero2 .hero2-img.rv.pending:not(.in){transform:translateY(-50%)}
-.crumbs{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:13px;color:var(--on-dark-muted);margin-bottom:22px;font-weight:600}
-.crumbs a{color:var(--on-dark);text-decoration:none}.crumbs a:hover{color:var(--green)}
-.crumbs span+span::before{content:"\203A";margin-right:8px;opacity:.6}
-.crumbs [aria-current]{color:var(--green)}
-@media (max-width:900px){
-  .hero2 .hero2-text{max-width:none}
-  .hero2 .hero2-img{position:relative;right:auto;top:auto;transform:none;width:calc(100% - 36px);max-width:620px;margin:30px auto 0;border-radius:18px;overflow:hidden;-webkit-mask-image:none;mask-image:none;box-shadow:0 30px 60px -28px rgba(0,0,0,.8)}
-  .hero2 .hero2-img.rv.pending:not(.in){transform:none}
-}
-/*POLISH*/
-.sec h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--green);margin-top:18px}
-.dark .sec h2::after,.sec.dark h2::after{background:var(--green)}
-[style*="background:var(--paper)"]{background-image:radial-gradient(rgba(27,69,109,.07) 1.2px,transparent 1.2px)!important;background-size:24px 24px!important}
-.lc,.rq,.sc,.csc,.rc,.hc{position:relative;overflow:hidden}
-.lc::before,.rq::before,.sc::before,.csc::before,.rc::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--green),#b7d77a);transform:scaleX(0);transform-origin:left;transition:transform .45s}
-.lc:hover::before,.rq:hover::before,.sc:hover::before,.csc:hover::before,.rc:hover::before{transform:scaleX(1)}
-.ready-in{margin-top:22px;border-top:1px dashed var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
-.ready-in b{display:block;color:var(--navy-700);margin-bottom:8px;font-size:14.5px}
-.ready-in ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
-.ready-in li{display:flex;gap:8px}.ready-in svg{width:15px;height:15px;color:var(--green-deep);flex:none;margin-top:4px}
-@media (max-width:600px){.ready-in ul{grid-template-columns:minmax(0,1fr)}}
-
-/*CONTEMPORANEOUS*/
-.evid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:0;margin-top:28px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
-.evid>div{padding:24px 26px}.evid>div:first-child{background:#fff}
-.evid small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--green-deep);margin-bottom:8px}
-.evid p{font-size:16px;color:var(--muted)}
-.evq{background:var(--navy-700);display:flex;flex-direction:column;justify-content:center;gap:10px}
-.evq p{font-size:clamp(18px,1.8vw,22px);font-weight:700;color:#fff;line-height:1.4}.evq cite{font-style:normal;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);font-weight:800}
-.rvs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:34px}
-.rc2{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px}
-.rc2 h3{font-size:22px;color:var(--navy-700);font-weight:800;margin-bottom:6px}
-.rc2 small{display:inline-block;margin-top:14px;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;padding:4px 10px;border-radius:6px}
-.rc2 small.pro{background:#dff0b8;color:#3d6409}.rc2 small.con{background:#fbe9c0;color:#7a5200}
-.rc2 ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:9px}
-.rc2 li{position:relative;padding-left:26px;font-size:15.5px;color:var(--ink);line-height:1.45}
-.rc2 .pl li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
-.rc2 .cl li::before{content:"";position:absolute;left:3px;top:.5em;width:11px;height:2.5px;background:#a16207;border-radius:2px}
-.hyb{margin-top:16px;background:var(--navy-700);border-radius:var(--radius);padding:20px 24px;display:flex;gap:14px 24px;flex-wrap:wrap;align-items:center}
-.hyb b{color:var(--green);font-size:17px}.hyb span{color:#fff;font-size:16px;flex:1 1 380px}
-.ens2{margin-top:20px}.ens2 li{font-size:14.5px}
-.whyg.bp{grid-template-columns:repeat(4,minmax(0,1fr))}
-.whyg.bp .wg{grid-template-columns:1fr;gap:10px;align-items:start;padding:22px 20px}.whyg.bp .wg svg{grid-row:auto}
-@media (max-width:1020px){.whyg.bp{grid-template-columns:repeat(2,minmax(0,1fr))}.evid{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:700px){.rvs{grid-template-columns:minmax(0,1fr)}.whyg.bp{grid-template-columns:minmax(0,1fr)}}
-/*EFFECTS*/
-.ticker{background:var(--green);overflow:hidden;white-space:nowrap;border-block:1px solid rgba(12,33,54,.15)}
-.tk-track{display:inline-flex;gap:0;animation:tk 38s linear infinite;will-change:transform}
-.tk-track span{display:inline-flex;align-items:center;padding:13px 26px;font-weight:800;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-950)}
-.tk-track span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--navy-950);margin-left:52px;opacity:.5}
-@keyframes tk{to{transform:translateX(-50%)}}
-.fl{position:relative}
-.chipf{position:absolute;z-index:3;background:#fff;color:var(--navy-700);font-weight:800;font-size:13.5px;padding:9px 16px;border-radius:999px;box-shadow:0 14px 30px -12px rgba(12,33,54,.55);animation:flo 6s ease-in-out infinite}
-.chipf::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:8px}
-.chipf.c1{left:-14px;top:14%}.chipf.c2{right:-10px;top:42%;animation-delay:-2s}.chipf.c3{left:8%;bottom:-14px;animation-delay:-4s}
-@keyframes flo{50%{transform:translateY(-9px)}}
-.cyc{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;position:relative;counter-reset:c}
-.cyc::before{content:"";position:absolute;left:8%;right:8%;top:26px;height:3px;background:linear-gradient(90deg,var(--green) 50%,rgba(255,255,255,.18) 50%);background-size:200% 100%;animation:cycl 5s ease-in-out infinite alternate;border-radius:3px}
-@keyframes cycl{from{background-position:100% 0}to{background-position:0 0}}
-.cyc li{position:relative;padding-top:64px;text-align:left}
-.cn{position:absolute;left:0;top:0;width:54px;height:54px;border-radius:50%;background:var(--navy-900);border:3px solid var(--green);color:var(--green);display:grid;place-items:center;font-weight:800;font-size:20px;z-index:2;transition:background .3s,color .3s,transform .3s}
-.cyc li:hover .cn{background:var(--green);color:var(--navy-950);transform:scale(1.1)}
-.cyc h3{font-size:19px;color:#fff;font-weight:800}.cyc p{font-size:15px;color:var(--on-dark-muted);margin-top:6px}
-.rvs{position:relative}
-.vsb{position:absolute;z-index:3;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:var(--green);color:var(--navy-950);font-weight:900;display:grid;place-items:center;box-shadow:0 0 0 8px var(--paper),0 14px 30px -10px rgba(12,33,54,.5);animation:pulse2 2.6s ease-in-out infinite}
-@keyframes pulse2{50%{transform:scale(1.1)}}
-.stk{position:relative;padding-bottom:70px}
-.stk .s1{width:78%}
-.stk .s2{position:absolute;right:0;bottom:0;width:52%;border:6px solid var(--navy-900);border-radius:20px}
-.split.top .tilt{transition:transform .35s,box-shadow .35s}
-@media (max-width:1020px){.cyc{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:34px}.cyc::before{display:none}}
-@media (max-width:700px){.cyc{grid-template-columns:minmax(0,1fr)}.vsb{display:none}.chipf.c1{left:-4px}.chipf.c2{right:-4px}.stk{padding-bottom:50px}}
-
-/*LIFE v4: AEO, pointers, effects*/
-.aeo{background:#fff;border-bottom:1px solid var(--line)}
-.aeo-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,56px);align-items:center;padding-block:clamp(26px,3.4vw,40px)}
-.aeo-q small{display:inline-block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;background:var(--green);color:var(--navy-950);border-radius:6px;padding:4px 10px;margin-bottom:10px}
-.aeo-q h2{font-size:clamp(21px,2.3vw,28px);color:var(--navy-700);font-weight:800;max-width:none;margin:0}.aeo-q h2::after{display:none}
-.aeo-a{font-size:clamp(16.5px,1.5vw,18.5px);color:var(--ink);line-height:1.55;border-left:4px solid var(--green);padding-left:20px}.aeo-a b{color:var(--navy-700)}
-.jump{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.jump-in{display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:none}.jump-in::-webkit-scrollbar{display:none}
-.jump a{flex:none;font-weight:700;font-size:13.5px;color:var(--navy-700);text-decoration:none;padding:8px 14px;border-radius:999px;border:1.5px solid transparent;transition:background .2s,border-color .2s}
-.jump a:hover,.jump a.on{background:#eaf4d4;border-color:var(--green)}
-.ptr{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:11px}
-.ptr li{position:relative;padding-left:28px;font-size:16px;line-height:1.5;color:var(--ink)}
-.ptr li::before{content:"";position:absolute;left:2px;top:.42em;width:13px;height:7px;border-left:3px solid var(--green-deep);border-bottom:3px solid var(--green-deep);transform:rotate(-45deg)}
-.ptr b{color:var(--navy-700)}
-.ptr .tx{font-weight:700}
-.ptr.dk li{font-size:15.5px}
-.chs.sm2{margin-top:16px}
-.ans2{margin-top:16px;font-size:17px;color:var(--muted);max-width:78ch;border-left:4px solid var(--green);padding-left:16px}.ans2 b{color:var(--navy-700)}
-.ans2.on-dark{color:var(--on-dark-muted)}.ans2.on-dark b{color:var(--green)}
-.notefinal{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:#eaf4d4;border-radius:14px;padding:16px 20px;color:var(--navy-700);font-weight:600}
-.notefinal svg{width:26px;height:26px;color:var(--green-deep)}
-.notefinal .tx{font-weight:800}
-.bc .more{margin-top:6px;display:inline-flex;font-size:14px}
-.recs{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 22px}
-.recs span{font-weight:700;font-size:14.5px;color:var(--navy-700);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:10px 16px;transition:transform .25s,border-color .25s,background .25s}
-.recs span:hover{transform:translateY(-4px);border-color:var(--green);background:#f3f8e8}
-.lpanel .lrow .ptr{margin-top:6px}
-.lpanel .lrow{margin-top:18px}
-.sc .ptr{margin-top:18px}
-.tm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
-.tmc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px}
-.tmc h3{font-size:19px;color:var(--navy-700);font-weight:800}
-.warnp{margin-top:16px;background:#fff7e0;border:1px solid #f0d58a;border-radius:10px;padding:10px 14px;font-weight:700;color:#5b4100;font-size:15px}
-.okp{margin-top:16px;background:#eaf4d4;border-radius:10px;padding:10px 14px;font-weight:700;color:var(--navy-700);font-size:15px}
-.csd .tl2 li{background:rgba(255,255,255,.07);border-color:var(--line-dark)}
-.csd .tl2 small{color:var(--green)}
-.csd .ptr li{color:var(--on-dark)}.csd .ptr li::before{border-color:var(--green)}.csd .ptr b{color:#fff}.csd .ptr .tx{color:var(--green)}
-.csd .tl2 .tn{background:var(--green);color:var(--navy-950)}
-.rel2{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:30px}
-.r2{display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;text-decoration:none;color:var(--ink);transition:transform .3s,box-shadow .3s,border-color .3s;position:relative;overflow:hidden}
-.r2::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .4s}
-.r2:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}.r2:hover::after{transform:scaleX(1)}
-.r2 .ico{width:46px;height:46px;border-radius:12px;background:var(--navy-700);color:var(--green);display:grid;place-items:center}.r2 .ico svg{width:24px;height:24px}
-.r2 h3{font-size:19px;color:var(--navy-700);font-weight:800}.r2 p{font-size:15px;color:var(--muted)}.r2 .more{margin-top:auto;padding-top:6px}
-@media (max-width:1020px){.rel2{grid-template-columns:repeat(2,minmax(0,1fr))}.aeo-in{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:700px){.rel2,.tm{grid-template-columns:minmax(0,1fr)}.jump a{font-size:13px;padding:7px 12px}}
-.chs.sm2{display:flex;flex-wrap:wrap;gap:8px}.chs.sm2 span{font-weight:700;font-size:14px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:7px 14px;transition:transform .25s,background .25s}.chs.sm2 span:hover{background:var(--green);transform:translateY(-3px)}
-/* case study v5 + contact balance */
-.cs3-top{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,4vw,56px);margin-top:34px;align-items:center}
-.cs3-r{display:grid;gap:18px;align-content:center}
-.cs3-r h3{color:#fff;font-size:22px;font-weight:800}
-.stats3{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stats3 .stat{margin:0;padding:20px 22px}.stats3 .stat b{font-size:clamp(28px,3.2vw,40px)}.stats3 .stat span{font-size:15px}
-.cs3-note{border-left:4px solid var(--green);padding-left:16px;color:var(--on-dark);font-size:16.5px}
-.cs3-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
-.cs3s{background:rgba(255,255,255,.07);border:1px solid var(--line-dark);border-radius:var(--radius);padding:24px 22px;position:relative;display:grid;gap:10px;align-content:start;transition:transform .3s,border-color .3s}
-.cs3s:hover{transform:translateY(-5px);border-color:var(--green)}
-.cs3s .tn{width:38px;height:38px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;font-weight:800}
-.cs3s small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:800}
-.cs3s .ptr{margin-top:0}.cs3s .ptr li{color:var(--on-dark);font-size:15.5px}.cs3s .ptr li::before{border-color:var(--green)}.cs3s .ptr b{color:#fff}.cs3s a.tx{color:var(--green)}
-.cs3-r .ptr li{color:var(--on-dark)}.cs3-r .ptr li::before{border-color:var(--green)}.cs3-r .ptr b{color:#fff}
-.cg2{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:stretch}
-.cg2 .ctacard{align-content:center}
-.rel2c{display:grid;gap:8px;border-top:1px dashed var(--line);padding-top:16px}
-.rel2c small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--green-deep)}
-.rel2c a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:var(--navy-700);font-weight:700;font-size:15.5px;border:1.5px solid var(--line);border-radius:12px;padding:12px 16px;transition:border-color .25s,background .25s,transform .25s}
-.rel2c a:hover{border-color:var(--green);background:#f3f8e8;transform:translateX(4px)}
-.rel2c svg{width:18px;height:18px;color:var(--green-deep)}
-@media (max-width:1020px){.cs3-top,.cs3-steps,.cg2{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:600px){.stats3{grid-template-columns:minmax(0,1fr)}}
-div.tm1{display:block;margin-top:16px}
-.dark .tmc{background:rgba(255,255,255,.07);border-color:var(--line-dark)}.dark .tmc h3{color:#fff}.dark .tmc a.tx{color:var(--green)}
-#why .tm{margin-top:34px}
-.dark .tmc .ptr li{color:var(--on-dark)}.dark .tmc .ptr li::before{border-color:var(--green)}.dark .tmc .ptr b{color:#fff}
-.faq-side .img img{height:auto}
-#checklist .ptr li{color:var(--on-dark)}#checklist .ptr li::before{border-color:var(--green)}
-.bento3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}.bento3 .bc{position:relative;min-height:0}@media (max-width:1020px){.bento3{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:600px){.bento3{grid-template-columns:minmax(0,1fr)}}
-/* Knowledge hub */
-.khero-in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:center}
-.khero .hero2-text{max-width:none}
-.kcard{background:rgba(255,255,255,.07);border:1px solid var(--line-dark);border-radius:20px;padding:22px;display:grid;gap:8px;backdrop-filter:blur(8px)}
-.kc-h{font-family:Raleway,sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:4px}
-.kcard a{display:grid;grid-template-columns:30px 1fr 18px;gap:12px;align-items:center;text-decoration:none;color:#fff;font-weight:700;font-size:15.5px;padding:11px 14px;border:1px solid var(--line-dark);border-radius:12px;transition:background .25s,border-color .25s,transform .25s}
-.kcard a:hover{background:rgba(138,177,65,.14);border-color:var(--green);transform:translateX(4px)}
-.kcard a span{width:28px;height:28px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;font-size:13px;font-weight:800}
-.kcard svg{width:18px;height:18px;color:var(--green)}
-.rel3{grid-template-columns:repeat(3,minmax(0,1fr))}
-.mis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:16px}
-.mc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px}.mc b{color:var(--navy-700);font-size:15.5px;line-height:1.35;display:block;margin-bottom:6px}.mc p{font-size:14.5px;color:var(--muted);margin:0}
-.links3{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:24px}
-.ptr-h{color:#fff;font-size:17px;font-weight:800;margin:22px 0 -4px}
-.recs.rd span{background:rgba(255,255,255,.08);border-color:var(--line-dark);color:#fff}.recs.rd span:hover{background:rgba(138,177,65,.18)}
-.more-d{color:var(--green)}
-#competent .tmc h3{margin-bottom:6px}
-@media (max-width:1020px){.khero-in{grid-template-columns:minmax(0,1fr)}.rel3{grid-template-columns:repeat(2,minmax(0,1fr))}.mis{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:600px){.rel3,.mis{grid-template-columns:minmax(0,1fr)}}
-#competent .ptr li{color:var(--on-dark)}#competent .ptr li::before{border-color:var(--green)}#competent .ptr b{color:#fff}#competent .split{align-items:start}
-.bento3 .bc:last-child:nth-child(3n+1){grid-column:1/-1}@media (max-width:1020px) and (min-width:601px){.bento3 .bc:last-child:nth-child(odd){grid-column:1/-1}}
-/* Knowledge pages: calmer editorial look */
-main.kn .ticker{display:none}
-main.kn .ico,main.kn .bc>svg,main.kn .r2 .ico{display:none}
-main.kn .ptr li{padding-left:22px}
-main.kn .ptr li::before{width:6px;height:6px;border:0;border-radius:50%;background:var(--navy-700);transform:none;left:4px;top:.62em}
-main.kn .ptr.dk li::before,main.kn .cs3s .ptr li::before,main.kn #competent .ptr li::before,main.kn #claim .ptr li::before{background:var(--green);border:0}
-main.kn .ptr.dk li::before{background:var(--navy-700)}
-main.kn .dark .ptr li::before{background:var(--green)}
-main.kn .lpanel .ptr li::before{background:var(--navy-700)}
-main.kn .chs.sm2 span,main.kn .recs span,main.kn .recs.rd span{background:transparent;border:1px solid var(--line);color:var(--navy-700);box-shadow:none;border-radius:8px;font-weight:600}
-main.kn .dark .recs span,main.kn .recs.rd span{border-color:var(--line-dark);color:#fff}
-main.kn .chs.sm2 span:hover,main.kn .recs span:hover{background:transparent;transform:none}
-main.kn .okp,main.kn .warnp{background:var(--paper);border:1px solid var(--line);color:var(--navy-700);font-weight:600}
-main.kn .tmc,main.kn .bc,main.kn .r2,main.kn .mc,main.kn .sc{box-shadow:none}
-main.kn .r2:hover,main.kn .bc:hover,main.kn .cs3s:hover{transform:none;box-shadow:none;border-color:var(--navy-700)}
-main.kn .r2::after{display:none}
-main.kn .bc .bn{position:static;font-family:Raleway,sans-serif;font-size:13px;color:var(--muted);letter-spacing:.12em}
-main.kn .aeo-q small{background:transparent;color:var(--green-deep);padding:0;font-size:12px}
-main.kn .ans2{border-left-color:var(--navy-700)}
-main.kn .jump a.on,main.kn .jump a:hover{background:var(--paper);border-color:var(--line)}
-main.kn .notefinal{background:var(--paper)}
-main.kn .kphoto{border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(0,0,0,.55);position:relative}
-main.kn .kphoto img{display:block;width:100%;height:auto}
-main.kn .kphoto span{position:absolute;left:14px;bottom:14px;background:rgba(12,33,54,.82);color:#fff;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px}
-main.kn .ph-img{border-radius:var(--radius);overflow:hidden}
-main.kn .ph-img img{display:block;width:100%;height:auto}
-main.kn .r2.ph{padding:0}
-main.kn .r2.ph .ph-img{border-radius:0}
-main.kn .r2.ph .pt{padding:18px 20px 22px;display:grid;gap:8px}
-main.kn .lpanel>.ph-img{margin-bottom:16px}
-main.kn .figs .fig b{color:var(--green)}
-main.kn .wcl{margin-top:30px}main.kn .wcl h3{font-size:20px;color:var(--navy-700);font-weight:800;margin-bottom:6px}main.kn .wcl .ptr.trio{margin-top:10px}
-#overseas .ptr li{color:var(--on-dark)}#overseas .ptr b{color:#fff}
-.byline{margin-top:16px;color:var(--on-dark-muted);font-size:14px}
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
@@ -693,167 +148,142 @@ main.kn .wcl{margin-top:30px}main.kn .wcl h3{font-size:20px;color:var(--navy-700
 <symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75z"/></symbol>
 </svg>
 
-<main class="kn">
-<section class="hero hero2 khero" id="hero">
-  <div class="glow" id="glow"></div>
-  <div class="wrap khero-in">
-    <div class="hero2-text">
-      <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/category/rd-tax-guidance/">Insights</a></span><span aria-current="page">Contracted-out R&amp;D</span></nav>
-      <span class="eyebrow"><i></i> R&amp;D tax insight</span>
-      <h1><span class="hl"><span class="w" style="--n:0"><i>Contracted</i></span> <span class="w" style="--n:1"><i>Out</i></span> <span class="w" style="--n:2"><i>R&amp;D</i></span> <span class="w" style="--n:3"><i>Rules:</i></span></span> <span class="w" style="--n:4"><i>Why</i></span> <span class="w" style="--n:5"><i>&ldquo;Who</i></span> <span class="w" style="--n:6"><i>Did</i></span> <span class="w" style="--n:7"><i>the</i></span> <span class="w" style="--n:8"><i>Work?&rdquo;</i></span> <span class="w" style="--n:9"><i>Is</i></span> <span class="w" style="--n:10"><i>No</i></span> <span class="w" style="--n:11"><i>Longer</i></span> <span class="w" style="--n:12"><i>the</i></span> <span class="w" style="--n:13"><i>Test</i></span></h1>
-      <p class="answer"><b>Who can claim R&amp;D tax relief when work is contracted out: the rules for accounting periods beginning on or after 1 April 2024.</b></p>
-      <div class="cta-row">
-        <a class="btn btn-green mag" href="https://www.itaxadvisors.co.uk/contact-us/">Get your contracts reviewed <svg><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="#test">Read the rules</a>
-      </div>
-      <p class="byline">By Aarti Varia &middot; Published 12 August 2026 &middot; Updated 5 November 2026</p>
-    </div>
-    <div class="kphoto rv d1"><img src="assets/b_handshake.jpg" alt="Customer and contractor shaking hands over a laptop and contract documents" width="506" height="256"><span>Customer and contractor: whose R&amp;D is it?</span></div>
-  </div>
-</section>
+<main class="blog">
+<article class="post">
+  <header class="post-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/category/rd-tax-guidance/">R&amp;D Tax Insights</a></span><span aria-current="page">Contracted-out R&amp;D</span></nav>
+    <h1>Contracted Out R&amp;D Rules: Why &ldquo;Who Did the Work?&rdquo; Is No Longer the Test</h1>
+    <p class="meta">By <a href="https://www.itaxadvisors.co.uk/about-itax-advisors/">Aarti Varia</a> &middot; Published 12 August 2026 &middot; Updated 5 November 2026 &middot; R&amp;D Tax Insights</p>
+  </header>
 
-<div class="aeo"><div class="wrap aeo-in rv">
-  <div class="aeo-q"><small>In short</small><h2>Who can claim contracted-out R&amp;D?</h2></div>
-  <p class="aeo-a">Generally <b>the party that decided to initiate the R&amp;D</b>: the customer who <b>intended or contemplated</b> R&amp;D of that sort when entering the contract, not necessarily the party whose staff did the work.</p>
-</div></div>
-
-<nav class="jump" aria-label="On this page"><div class="wrap jump-in"><a href="#test">The new test</a><a href="#contemplate">Contemplated R&amp;D</a><a href="#shifts">When it shifts</a><a href="#circumstances">Surrounding facts</a><a href="#costs">Costs</a><a href="#overseas">Overseas</a><a href="#practice">In practice</a><a href="#faq">FAQs</a></div></nav>
-
-<section class="sec" id="test" style="background:var(--paper)">
-  <div class="wrap split top">
-    <div class="rv"><div class="label">The new test</div><h2>Who can claim contracted-out R&amp;D? The rules from 1 April 2024</h2>
-      <ul class="ptr"><li>A significant change for <b>accounting periods beginning on or after 1 April 2024</b></li><li>&ldquo;Who actually carried out the R&amp;D?&rdquo; is <b>no longer the right question</b></li><li>HMRC&rsquo;s general principle: identify the party that <b>decided to initiate the R&amp;D</b></li><li>The contractor&rsquo;s staff doing the work does not necessarily mean the contractor owns the claim</li></ul></div>
-    <div class="rv d1"><div class="tmc"><h3>The key question</h3><p class="bigq">When entering the contract, did the customer intend or contemplate R&amp;D of that sort?</p><p class="warnp">It goes beyond knowing that some technical development may be needed.</p></div></div>
+  <div class="quick">
+    <b>Quick answer: who can claim contracted-out R&amp;D?</b>
+    <p>Generally the party that <strong>decided to initiate the R&amp;D</strong>. For accounting periods beginning on or after 1 April 2024, that is usually the customer who <strong>intended or contemplated</strong> R&amp;D of that sort when entering the contract, not necessarily the party whose staff did the work.</p>
   </div>
-</section>
 
-<section class="sec" id="contemplate" style="background:#fff">
-  <div class="wrap">
-    <div class="rv"><div class="label">Intended or contemplated</div><h2>What does &ldquo;intended or contemplated&rdquo; R&amp;D mean?</h2>
-    <p class="ans2"><b>Short answer:</b> a specific appreciation of what R&amp;D will be done, and the ability to understand and specify it.</p></div>
-    <div class="tm">
-      <div class="tmc rv"><h3>Not enough on its own</h3><ul class="ptr"><li>Recognising that a project will involve technical challenges</li><li>Engaging specialists to resolve them</li></ul><p class="warnp">HMRC says &ldquo;intended or contemplated&rdquo; requires more than this.</p></div>
-      <div class="tmc rv d1"><h3>Contemplating R&amp;D can be read as</h3><ul class="ptr"><li>Identifying technological challenges and uncertainties, without necessarily knowing how they may be resolved</li><li>Assessing alternative technical approaches</li><li>Concluding that existing knowledge may be insufficient</li><li>Deciding to commission the work because R&amp;D is expected to be necessary</li></ul></div>
-    </div>
-  </div>
-</section>
+  <figure class="lead-img"><img src="assets/b_handshake.jpg" alt="Customer and contractor shaking hands over a laptop and contract documents" width="506" height="256"></figure>
 
-<section class="sec dark" id="shifts">
-  <div class="wrap">
-    <div class="rv"><div class="label">When entitlement moves</div><h2>When contracted-out R&amp;D shifts from customer to contractor</h2>
-    <p class="ans2 on-dark"><b>Short answer:</b> a project can start as the customer&rsquo;s R&amp;D and later become the contractor&rsquo;s, so the boundaries can move.</p></div>
-    <div class="cs3-steps">
-      <div class="cs3s rv"><span class="tn">1</span><small>The customer contemplates the R&amp;D</small><ul class="ptr dk"><li>A manufacturer develops a new product</li><li>It identifies a technological uncertainty and commissions a specialist engineering company to resolve it</li><li>The engineers do all the experimental work, but the <b>claim sits with the manufacturer</b></li></ul></div>
-      <div class="cs3s rv d1"><span class="tn">2</span><small>An unplanned problem appears</small><ul class="ptr dk"><li>The engineering company meets a technological problem</li><li>The manufacturer neither identified nor planned for it</li></ul></div>
-      <div class="cs3s rv d2"><span class="tn">3</span><small>The contractor decides to act</small><ul class="ptr dk"><li>The engineering company independently decides to undertake R&amp;D to resolve it</li><li>The <b>engineering company may be the party entitled to claim</b> for that work</li></ul></div>
-    </div>
-  </div>
-</section>
+  <nav class="toc" aria-label="Contents"><b>In this article</b>
+    <ol>
+      <li><a href="#who">Who can claim contracted-out R&amp;D?</a></li>
+      <li><a href="#contemplated">What does &ldquo;intended or contemplated&rdquo; mean?</a></li>
+      <li><a href="#shift">When R&amp;D shifts from customer to contractor</a></li>
+      <li><a href="#circumstances">Surrounding circumstances HMRC considers</a></li>
+      <li><a href="#costs">What can you claim for subcontractors?</a></li>
+      <li><a href="#overseas">Overseas subcontractors</a></li>
+      <li><a href="#practice">What this means in practice</a></li>
+      <li><a href="#faq">FAQs</a></li>
+    </ol>
+  </nav>
 
-<section class="sec" id="circumstances" style="background:var(--paper)">
-  <div class="wrap">
-    <div class="split top rv" style="align-items:center;margin-bottom:8px">
-      <div><div class="label">Beyond the contract</div><h2>Contracted-out R&amp;D: the surrounding circumstances HMRC considers</h2>
-      <p class="ans2"><b>Short answer:</b> HMRC&rsquo;s guidance says entitlement should not rest solely on the contractual documents.</p></div>
-      <div class="ph-img" style="max-width:420px;margin-left:auto"><img src="assets/a_meeting.jpg" alt="Colleagues reviewing documents together at a table: surrounding circumstances in a contracted-out R&amp;D arrangement" width="428" height="264" loading="lazy"></div>
-    </div>
-    <div class="bento3"><article class="bc rv d0"><span class="bn">01</span><h3>Financial risk</h3><p>Who bears the financial risk of the work</p></article><article class="bc rv d1"><span class="bn">02</span><h3>Autonomy</h3><p>How much freedom the contractor has in how the work is undertaken</p></article><article class="bc rv d2"><span class="bn">03</span><h3>IP ownership</h3><p>Who owns the intellectual property</p></article><article class="bc rv d0"><span class="bn">04</span><h3>Exploitation</h3><p>Who will exploit the results of the R&amp;D</p></article><article class="bc rv d1"><span class="bn">05</span><h3>Origin of the decision</h3><p>How the decision to undertake the R&amp;D arose</p></article><article class="bc rv d2"><span class="bn">06</span><h3>Seniority</h3><p>The experience and seniority of those making that decision</p></article><article class="bc rv d0"><span class="bn">07</span><h3>The parties</h3><p>Whether the contractor carries on a trade involving R&amp;D services, whether the contract fits those ordinary activities, and who contemplated the need for R&amp;D</p></article></div>
-    <p class="notefinal rv"><span>Specifying a challenging technical outcome is not necessarily the same as contemplating the R&amp;D required to achieve it.</span></p>
-  </div>
-</section>
+  <h2 id="who">Who can claim contracted-out R&amp;D?</h2>
+  <p>One of the more significant changes to the R&amp;D tax regime for accounting periods beginning on or after 1 April 2024 concerns contracted-out R&amp;D. The question &ldquo;Who actually carried out the R&amp;D?&rdquo; is no longer the right one.</p>
+  <ul>
+    <li>HMRC&rsquo;s guidance says the general principle is to identify the party that <strong>decided to initiate the R&amp;D</strong>.</li>
+    <li>If a customer engages a contractor, the contractor&rsquo;s engineers, developers or scientists doing the work does <strong>not</strong> necessarily mean the contractor owns the claim.</li>
+    <li>The key question is whether, when entering the contract, the customer <strong>intended or contemplated</strong> that R&amp;D of that sort would be undertaken.</li>
+  </ul>
 
-<section class="sec" id="costs" style="background:#fff">
-  <div class="wrap split top">
-    <div class="rv"><div class="label">Costs</div><h2>R&amp;D tax relief for subcontractors: what can you claim?</h2>
-      <p class="ans2"><b>Short answer:</b> 65% of payments to unconnected contractors, and the full amount where the parties are connected.</p>
-      <ul class="ptr"><li>Payments to <b>unconnected</b> contractors or subcontractors: claim restricted to <b>65%</b> of the qualifying payment</li><li>Where claimant and contractor are <b>connected</b>: the full qualifying amount is claimable</li><li>Routine commercial services or standard goods do not become qualifying R&amp;D just because they support an R&amp;D project</li></ul></div>
-    <div class="rv d1"><div class="tmc"><h3>An important exception</h3><ul class="ptr"><li>Where the customer is not eligible to claim UK R&amp;D relief, for example an overseas entity outside UK Corporation Tax</li><li>The UK contractor may be able to claim for its <b>own qualifying R&amp;D expenditure</b>, subject to the conditions</li></ul></div>
-      <a class="more" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/" style="margin-top:16px">Qualifying costs guide <svg><use href="#i-arrow"/></svg></a></div>
-  </div>
-</section>
+  <h2 id="contemplated">What does &ldquo;intended or contemplated&rdquo; R&amp;D mean?</h2>
+  <p><strong>Short answer:</strong> a specific appreciation of what R&amp;D will be done, and the ability to understand and specify it. It goes beyond knowing that some technical development may be required. Recognising that a project will involve technical challenges, and engaging specialists to resolve them, is not enough.</p>
+  <p>Contemplating R&amp;D can be read as:</p>
+  <ul>
+    <li>identifying technological challenges and uncertainties (not necessarily knowing how they may be resolved);</li>
+    <li>assessing alternative technical approaches;</li>
+    <li>concluding that existing knowledge may be insufficient; and</li>
+    <li>deciding to commission the work because R&amp;D is expected to be necessary.</li>
+  </ul>
+  <p>Specifying a challenging technical outcome is not necessarily the same as contemplating the R&amp;D required to achieve it.</p>
 
-<section class="sec dark" id="overseas">
-  <div class="wrap split top">
-    <div class="rv"><div class="label">Overseas</div><h2>Overseas subcontractor R&amp;D tax relief: the restrictions</h2>
-      <p class="ans2 on-dark"><b>Short answer:</b> generally not allowed, unless the activity must necessarily happen outside the UK.</p>
-      <ul class="ptr dk"><li>Overseas restrictions apply to externally provided workers and contracted-out R&amp;D</li><li>In most cases overseas costs <b>will not qualify</b> unless the activity must necessarily be undertaken outside the UK</li><li>HMRC expects <b>robust contemporaneous evidence</b> explaining why it could not reasonably be done in the UK</li></ul></div>
-    <div class="rv d1"><div class="tmc"><h3>Recognised reasons</h3>
-      <div class="recs rd"><span>Environmental conditions</span><span>Social or population-specific requirements</span><span>Legal or regulatory requirements</span></div></div></div>
-  </div>
-</section>
+  <h2 id="shift">When R&amp;D shifts from customer to contractor</h2>
+  <p><strong>Short answer:</strong> a project can start as the customer&rsquo;s R&amp;D and later become the contractor&rsquo;s, so the boundaries around who is contemplating the R&amp;D can move. For example:</p>
+  <ol>
+    <li>A manufacturer develops a new product and commissions a specialist engineering company to solve an identified technological uncertainty.</li>
+    <li>The engineers undertake all the experimental work, but the manufacturer identified and contemplated the R&amp;D, so the <strong>claim sits with the manufacturer</strong>.</li>
+    <li>If the engineering company later meets a technological problem the manufacturer neither identified nor planned for, and independently decides to undertake R&amp;D to resolve it, the <strong>engineering company may be the party entitled to claim</strong>.</li>
+  </ol>
 
-<section class="sec" id="practice" style="background:var(--paper)">
-  <div class="wrap">
-    <div class="split top rv" style="align-items:center;margin-bottom:8px">
-      <div><div class="label">In practice</div><h2>Contracted-out R&amp;D in practice: ask &ldquo;whose R&amp;D was it?&rdquo;</h2>
-      <p class="ans2"><b>Short answer:</b> entitlement depends on the technical project, the contractual context and, most of all, who contemplated and decided that R&amp;D needed to be undertaken.</p></div>
-      <div class="ph-img" style="max-width:460px;margin-left:auto"><img src="assets/a_consult.jpg" alt="Adviser reviewing a contract with a client: contracted-out R&amp;D evidence" width="497" height="263" loading="lazy"></div>
-    </div>
-    <div class="tm">
-      <div class="tmc rv"><h3>Not &ldquo;Who did the work?&rdquo;</h3><p class="bigq">&ldquo;Whose R&amp;D is this activity actually advancing?&rdquo;</p><ul class="ptr"><li>Applies to R&amp;D through customers, consultants, software developers, engineering firms and other contractors</li><li>The written contract still matters, alongside the technical facts and the decision-making that led to the R&amp;D</li></ul></div>
-      <div class="tmc rv d1"><h3>Evidence to retain</h3>
-        <div class="recs"><span>Technical specifications and project scopes</span><span>Project oversight and decision-making</span><span>Correspondence showing who was responsible for the R&amp;D</span><span>Financial records supporting cost allocations</span><span>Evidence for any overseas exemption</span></div>
-        <ul class="ptr"><li>Future contracts and records should describe the intended R&amp;D clearly, without broad or retrospective wording</li></ul></div>
-    </div>
-  </div>
-</section>
+  <h2 id="circumstances">Surrounding circumstances HMRC considers</h2>
+  <p><strong>Short answer:</strong> HMRC&rsquo;s guidance says entitlement should not rest solely on the contractual documents. Other surrounding circumstances must also be considered:</p>
+  <ul>
+    <li>who bears the financial risk;</li>
+    <li>the degree of autonomy in how the work is undertaken;</li>
+    <li>ownership of intellectual property;</li>
+    <li>who will exploit the results of the R&amp;D;</li>
+    <li>how the decision to undertake the R&amp;D arose;</li>
+    <li>the experience and seniority of those making that decision; and</li>
+    <li>the nature of the parties, including whether the contractor carries on a trade involving R&amp;D services, whether the contract is consistent with those ordinary R&amp;D activities, and who contemplated the need for R&amp;D.</li>
+  </ul>
 
-<section class="sec" id="related" style="background:#fff">
-  <div class="wrap">
-    <div class="rv"><div class="label">Related guides</div><h2>Contracted-out R&amp;D in your sector</h2></div>
-    <div class="rel2">
-      <a class="r2 rv" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/"><span class="more">01</span><h3>Qualifying costs</h3><p>Staff, workers, contractors, consumables, software, cloud and data.</p><span class="more">Qualifying costs guide <svg><use href="#i-arrow"/></svg></span></a>
-      <a class="r2 rv d1" href="https://www.itaxadvisors.co.uk/sectors/life-sciences-rd-tax-relief/"><span class="more">02</span><h3>CRO and CDMO contracts</h3><p>Who can claim when a sponsor commissions work from a CRO or CDMO.</p><span class="more">Life sciences R&amp;D tax relief <svg><use href="#i-arrow"/></svg></span></a>
-      <a class="r2 rv d2" href="https://www.itaxadvisors.co.uk/sectors/software-saas-ai-rd-tax-relief/"><span class="more">03</span><h3>Software contractors</h3><p>Outsourced development and overseas developers.</p><span class="more">Software R&amp;D tax relief <svg><use href="#i-arrow"/></svg></span></a>
-      <a class="r2 rv d3" href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/"><span class="more">04</span><h3>HMRC questions on contracts</h3><p>Evidence review, response preparation and technical defence.</p><span class="more">HMRC enquiry support <svg><use href="#i-arrow"/></svg></span></a>
-    </div>
-  </div>
-</section>
+  <h2 id="costs">What can you claim for subcontractors?</h2>
+  <p><strong>Short answer:</strong> 65% of payments to unconnected contractors, and the full amount where the parties are connected.</p>
+  <ul>
+    <li>For payments to <strong>unconnected</strong> contractors or subcontractors, the claim is restricted to <strong>65%</strong> of the qualifying payment.</li>
+    <li>Where the claimant and contractor are <strong>connected</strong>, the full amount of qualifying expenditure is claimable.</li>
+    <li>Routine commercial services or the purchase of standard goods do not become qualifying R&amp;D expenditure simply because they support an R&amp;D project.</li>
+    <li>Where the customer is not eligible to claim UK R&amp;D tax relief, for example an overseas entity outside the scope of UK Corporation Tax, the UK contractor may be able to claim for its own qualifying R&amp;D expenditure, subject to the relevant conditions.</li>
+  </ul>
+  <p>See our <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/">qualifying costs guide</a> for the other cost categories.</p>
 
-<section class="sec" id="faq" style="background:var(--paper)">
-  <div class="wrap faq-grid">
-    <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>Contracted-out R&amp;D questions answered</h2><p class="lede">Short answers first. Speak to us about your own contracts.</p>
-      <div class="faq-side"><div class="img"><img src="assets/b_hex_doc.jpg" alt="Checked document with compliance icons: reviewing contracts for contracted-out R&amp;D" width="656" height="287" loading="lazy" style="height:auto"></div><div class="t"><b>Unsure who can claim?</b><a class="btn btn-green btn-sm" href="https://www.itaxadvisors.co.uk/contact-us/">Ask a specialist</a></div></div></div></div>
-    <div class="rv d1">
-      <details open><summary>Who can claim contracted-out R&amp;D?</summary><p>Generally the party that decided to initiate the R&amp;D. For accounting periods beginning on or after 1 April 2024, that is usually the customer who intended or contemplated R&amp;D of that sort when entering the contract, not necessarily the party whose staff did the work.</p></details>
-      <details><summary>What does &ldquo;intended or contemplated&rdquo; R&amp;D mean?</summary><p>It means a specific appreciation of the R&amp;D to be done: identifying technological challenges and uncertainties, assessing alternative approaches, concluding that existing knowledge may be insufficient and deciding to commission the work because R&amp;D is expected to be necessary. Simply recognising technical challenges and hiring specialists is not enough.</p></details>
-      <details><summary>Can entitlement to claim change during a project?</summary><p>Yes. A project may start as the customer&rsquo;s R&amp;D and later become the contractor&rsquo;s, for example where the contractor meets a problem the customer neither identified nor planned for and independently decides to undertake R&amp;D to resolve it.</p></details>
-      <details><summary>Does the contractor own the claim because its engineers did the work?</summary><p>Not necessarily. The fact that the contractor&rsquo;s engineers, developers or scientists physically perform the work does not mean the contractor owns the R&amp;D claim.</p></details>
-      <details><summary>Is the written contract enough to decide who claims?</summary><p>No. The contract remains important, but HMRC&rsquo;s guidance says other surrounding circumstances must be considered, such as financial risk, autonomy, IP ownership and who contemplated the need for R&amp;D.</p></details>
-      <details><summary>Can a UK contractor claim if the customer is overseas?</summary><p>Possibly. Where the customer is not eligible to claim UK R&amp;D tax relief, for example an overseas entity outside the scope of UK Corporation Tax, the UK contractor may be able to claim relief for its own qualifying R&amp;D expenditure, subject to the relevant conditions.</p></details>
-      <details><summary>How much of a contractor payment can be claimed?</summary><p>For payments to unconnected contractors or subcontractors, the claim is restricted to 65% of the qualifying payment. Where the parties are connected, the full amount of qualifying expenditure is claimable.</p></details>
-      <details><summary>Do overseas subcontractor costs qualify?</summary><p>In most cases they do not, unless the activity must necessarily be carried out outside the UK because of environmental conditions, social or population-specific requirements, or legal or regulatory requirements. <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/">Read the qualifying costs guide</a>.</p></details>
-    </div>
-  </div>
-</section>
-<section class="sec contact dark" id="contact">
-  <div class="wrap cgrid cg2">
-    <div class="rv">
-      <div class="label">Speak to us</div>
-      <h2>Get your contracts reviewed</h2>
-      <p class="lede">Contracted-out R&amp;D remains one of the most technically complex areas of the regime, and any judgement on who can claim must be adequately supported. Speak to us about your contracts.</p>
-      <div class="det">
-        <div><svg><use href="#i-mail"/></svg><span>info@itaxadvisors.co.uk</span></div>
-        <div><svg><use href="#i-pin"/></svg><span>iTax Advisors Limited, Devonshire House, 582 Honeypot Lane, HA7 1JS, United Kingdom</span></div>
-        <div><svg><use href="#i-in"/></svg><a href="https://www.linkedin.com/company/itax-advisors-limited" target="_blank" rel="noopener">linkedin.com/company/itax-advisors-limited</a></div>
-      </div>
-    </div>
-    <div class="ctacard rv d1">
-      <h3>Ready to discuss your claim?</h3>
-      <p>Send your enquiry on our contact page. A member of our team will be in touch to arrange a call.</p>
-      <a class="btn btn-green mag" href="https://www.itaxadvisors.co.uk/contact-us/">Go to the contact page <svg><use href="#i-arrow"/></svg></a>
-      <ul class="bul2"><li>Your customer and contractor arrangements</li><li>Your current claim position</li><li>An HMRC enquiry, if you have one</li></ul>
-      <div class="rel2c"><small>Related services</small>
-        <a href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/"><span>R&amp;D claim preparation</span><svg><use href="#i-arrow"/></svg></a>
-        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/"><span>R&amp;D tax claim second opinion</span><svg><use href="#i-arrow"/></svg></a>
-        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/"><span>HMRC enquiry support</span><svg><use href="#i-arrow"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section>
+  <h2 id="overseas">Overseas subcontractors and R&amp;D tax relief</h2>
+  <p><strong>Short answer:</strong> generally not allowed, unless the activity must necessarily happen outside the UK.</p>
+  <ul>
+    <li>Overseas restrictions apply to externally provided workers and contracted-out R&amp;D.</li>
+    <li>In most cases overseas costs will not qualify unless the R&amp;D must necessarily be undertaken outside the UK because of <strong>environmental conditions</strong>, <strong>social or population-specific requirements</strong>, or <strong>legal or regulatory requirements</strong>.</li>
+    <li>HMRC expects robust contemporaneous evidence explaining why the activity could not reasonably be carried out in the UK.</li>
+  </ul>
+
+  <h2 id="practice">What this means in practice</h2>
+  <p>Businesses undertaking R&amp;D through customers, consultants, software developers, engineering firms or other contractors should not simply ask &ldquo;Who did the work?&rdquo; They should ask <strong>&ldquo;Whose R&amp;D was it?&rdquo;</strong> or &ldquo;Whose R&amp;D is this activity actually advancing?&rdquo;</p>
+  <p>Entitlement depends on a careful analysis of the technical project, the contractual context and, most importantly, who contemplated and decided that R&amp;D needed to be undertaken. The written contract remains important, but it must be read alongside the technical facts and the decision-making that led to the R&amp;D.</p>
+  <p>Evidence worth keeping:</p>
+  <ul>
+    <li>technical specifications and project scopes;</li>
+    <li>evidence of project oversight and decision-making;</li>
+    <li>correspondence showing who was responsible for the R&amp;D;</li>
+    <li>financial records supporting cost allocations; and</li>
+    <li>evidence supporting any overseas exemption relied on.</li>
+  </ul>
+  <p>Future contracts and records should describe the intended R&amp;D clearly, without broad or retrospective wording. For CRO and CDMO arrangements, see <a href="https://www.itaxadvisors.co.uk/sectors/life-sciences-rd-tax-relief/">R&amp;D tax relief for life sciences</a>; for outsourced development, see <a href="https://www.itaxadvisors.co.uk/sectors/software-saas-ai-rd-tax-relief/">R&amp;D tax relief for software and AI</a>.</p>
+
+  <section class="faq" id="faq">
+    <h2>Contracted-out R&amp;D: frequently asked questions</h2>
+    <h3>Who can claim contracted-out R&amp;D?</h3>
+    <p>Generally the party that decided to initiate the R&amp;D. For accounting periods beginning on or after 1 April 2024, that is usually the customer who intended or contemplated R&amp;D of that sort when entering the contract, not necessarily the party whose staff did the work.</p>
+    <h3>What does &ldquo;intended or contemplated&rdquo; R&amp;D mean?</h3>
+    <p>A specific appreciation of the R&amp;D to be done: identifying technological challenges and uncertainties, assessing alternative approaches, concluding that existing knowledge may be insufficient and deciding to commission the work because R&amp;D is expected to be necessary. Recognising technical challenges and hiring specialists is not enough.</p>
+    <h3>Does the contractor own the claim because its engineers did the work?</h3>
+    <p>Not necessarily. The fact that the contractor&rsquo;s engineers, developers or scientists physically perform the work does not mean the contractor owns the R&amp;D claim.</p>
+    <h3>Is the written contract enough to decide who claims?</h3>
+    <p>No. The contract remains important, but HMRC&rsquo;s guidance says other surrounding circumstances must be considered, such as financial risk, autonomy, IP ownership and who contemplated the need for R&amp;D.</p>
+    <h3>Can entitlement to claim change during a project?</h3>
+    <p>Yes. A project may start as the customer&rsquo;s R&amp;D and later become the contractor&rsquo;s, for example where the contractor meets a problem the customer neither identified nor planned for and independently decides to undertake R&amp;D to resolve it.</p>
+    <h3>How much of a contractor payment can be claimed?</h3>
+    <p>For payments to unconnected contractors or subcontractors, the claim is restricted to 65% of the qualifying payment. Where the parties are connected, the full amount of qualifying expenditure is claimable.</p>
+    <h3>Can a UK contractor claim if the customer is overseas?</h3>
+    <p>Possibly. Where the customer is not eligible to claim UK R&amp;D tax relief, for example an overseas entity outside the scope of UK Corporation Tax, the UK contractor may be able to claim relief for its own qualifying R&amp;D expenditure, subject to the relevant conditions.</p>
+    <h3>Do overseas subcontractor costs qualify?</h3>
+    <p>In most cases they do not, unless the activity must necessarily be carried out outside the UK because of environmental conditions, social or population-specific requirements, or legal or regulatory requirements.</p>
+  </section>
+
+  <aside class="cta-box">
+    <b>Get your contracts reviewed</b>
+    <p>Contracted-out R&amp;D remains one of the most technically complex areas of the regime, and any judgement on who can claim must be adequately supported. Speak to iTax Advisors about your customer and contractor arrangements.</p>
+    <a class="btn btn-green" href="https://www.itaxadvisors.co.uk/contact-us/">Contact us <svg><use href="#i-arrow"/></svg></a>
+  </aside>
+
+  <aside class="related"><b>Related reading</b>
+    <ul>
+      <li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/">R&amp;D qualifying costs: what you can claim</a></li>
+      <li><a href="https://www.itaxadvisors.co.uk/rd-tax-relief-and-clinical-trials-what-therapeutic-companies-can-and-cant-claim-in-the-uk/">R&amp;D tax relief and clinical trials: what therapeutic companies can and can&rsquo;t claim</a></li>
+      <li><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">HMRC enquiry support</a></li>
+      <li><a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/">R&amp;D tax relief guide: eligibility, costs and how to claim</a></li>
+    </ul>
+  </aside>
+</article>
 </main>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Contracted Out R&D Rules: Why “Who Did the Work?” Is No Longer the Test", "mainEntityOfPage": "https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/", "datePublished": "2026-08-12", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Aarti Varia", "@id": "https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti"}, "publisher": {"@id": "https://www.itaxadvisors.co.uk/#organization"}, "description": "Who can claim contracted-out R&D tax relief for accounting periods beginning on or after 1 April 2024."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who can claim contracted-out R&D?", "acceptedAnswer": {"@type": "Answer", "text": "Generally the party that decided to initiate the R&D. For accounting periods beginning on or after 1 April 2024, that is usually the customer who intended or contemplated R&D of that sort when entering the contract, not necessarily the party whose staff did the work."}}, {"@type": "Question", "name": "What does “intended or contemplated” R&D mean?", "acceptedAnswer": {"@type": "Answer", "text": "It means a specific appreciation of the R&D to be done: identifying technological challenges and uncertainties, assessing alternative approaches, concluding that existing knowledge may be insufficient and deciding to commission the work because R&D is expected to be necessary. Simply recognising technical challenges and hiring specialists is not enough."}}, {"@type": "Question", "name": "Can entitlement to claim change during a project?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A project may start as the customer’s R&D and later become the contractor’s, for example where the contractor meets a problem the customer neither identified nor planned for and independently decides to undertake R&D to resolve it."}}, {"@type": "Question", "name": "Does the contractor own the claim because its engineers did the work?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. The fact that the contractor’s engineers, developers or scientists physically perform the work does not mean the contractor owns the R&D claim."}}, {"@type": "Question", "name": "Is the written contract enough to decide who claims?", "acceptedAnswer": {"@type": "Answer", "text": "No. The contract remains important, but HMRC’s guidance says other surrounding circumstances must be considered, such as financial risk, autonomy, IP ownership and who contemplated the need for R&D."}}, {"@type": "Question", "name": "Can a UK contractor claim if the customer is overseas?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly. Where the customer is not eligible to claim UK R&D tax relief, for example an overseas entity outside the scope of UK Corporation Tax, the UK contractor may be able to claim relief for its own qualifying R&D expenditure, subject to the relevant conditions."}}, {"@type": "Question", "name": "How much of a contractor payment can be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "For payments to unconnected contractors or subcontractors, the claim is restricted to 65% of the qualifying payment. Where the parties are connected, the full amount of qualifying expenditure is claimable."}}, {"@type": "Question", "name": "Do overseas subcontractor costs qualify?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases they do not, unless the activity must necessarily be carried out outside the UK because of environmental conditions, social or population-specific requirements, or legal or regulatory requirements. Read the qualifying costs guide."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://www.itaxadvisors.co.uk/category/rd-tax-guidance/"}, {"@type": "ListItem", "position": 3, "name": "Contracted-out R&D", "item": "https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Contracted Out R&D Rules: Why “Who Did the Work?” Is No Longer the Test", "mainEntityOfPage": "https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/", "datePublished": "2026-08-12", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Aarti Varia", "@id": "https://www.itaxadvisors.co.uk/about-itax-advisors/senior-management/#aarti"}, "publisher": {"@id": "https://www.itaxadvisors.co.uk/#organization"}, "description": "Who can claim contracted-out R&D tax relief for accounting periods beginning on or after 1 April 2024."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who can claim contracted-out R&D?", "acceptedAnswer": {"@type": "Answer", "text": "Generally the party that decided to initiate the R&D. For accounting periods beginning on or after 1 April 2024, that is usually the customer who intended or contemplated R&D of that sort when entering the contract, not necessarily the party whose staff did the work."}}, {"@type": "Question", "name": "What does “intended or contemplated” R&D mean?", "acceptedAnswer": {"@type": "Answer", "text": "A specific appreciation of the R&D to be done: identifying technological challenges and uncertainties, assessing alternative approaches, concluding that existing knowledge may be insufficient and deciding to commission the work because R&D is expected to be necessary. Recognising technical challenges and hiring specialists is not enough."}}, {"@type": "Question", "name": "Does the contractor own the claim because its engineers did the work?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. The fact that the contractor’s engineers, developers or scientists physically perform the work does not mean the contractor owns the R&D claim."}}, {"@type": "Question", "name": "Is the written contract enough to decide who claims?", "acceptedAnswer": {"@type": "Answer", "text": "No. The contract remains important, but HMRC’s guidance says other surrounding circumstances must be considered, such as financial risk, autonomy, IP ownership and who contemplated the need for R&D."}}, {"@type": "Question", "name": "Can entitlement to claim change during a project?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A project may start as the customer’s R&D and later become the contractor’s, for example where the contractor meets a problem the customer neither identified nor planned for and independently decides to undertake R&D to resolve it."}}, {"@type": "Question", "name": "How much of a contractor payment can be claimed?", "acceptedAnswer": {"@type": "Answer", "text": "For payments to unconnected contractors or subcontractors, the claim is restricted to 65% of the qualifying payment. Where the parties are connected, the full amount of qualifying expenditure is claimable."}}, {"@type": "Question", "name": "Can a UK contractor claim if the customer is overseas?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly. Where the customer is not eligible to claim UK R&D tax relief, for example an overseas entity outside the scope of UK Corporation Tax, the UK contractor may be able to claim relief for its own qualifying R&D expenditure, subject to the relevant conditions."}}, {"@type": "Question", "name": "Do overseas subcontractor costs qualify?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases they do not, unless the activity must necessarily be carried out outside the UK because of environmental conditions, social or population-specific requirements, or legal or regulatory requirements."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://www.itaxadvisors.co.uk/category/rd-tax-guidance/"}, {"@type": "ListItem", "position": 3, "name": "Contracted-out R&D", "item": "https://www.itaxadvisors.co.uk/contracted-out-rd-why-it-is-no-longer-as-simple-as-who-did-the-work/"}]}]}</script>
 <script>
 (function(){
 var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -896,24 +326,5 @@ window.wireForm=function(formId,doneId,errId,fields,type,extraData){
 };
 })();
 
-(function(){
-var tabs=$$('#clist .lbtn');
-function pick(i){tabs.forEach(function(t,k){var on=k===i;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;var p=$('#'+t.getAttribute('aria-controls'));if(p)p.hidden=!on})}
-tabs.forEach(function(t,i){t.addEventListener('click',function(){pick(i)});t.addEventListener('keydown',function(e){var n=e.key==='ArrowDown'||e.key==='ArrowRight'?1:e.key==='ArrowUp'||e.key==='ArrowLeft'?-1:0;if(n){e.preventDefault();var j=(i+n+tabs.length)%tabs.length;pick(j);tabs[j].focus()}})});
-pick(0);
-/* count-up figures */
-var nums=$$('[data-count]');
-function fmt(v,el){var d=parseInt(el.getAttribute('data-dec')||'0',10);var s=d?v.toFixed(d):Math.round(v).toLocaleString('en-GB');return (el.getAttribute('data-prefix')||'')+s+(el.getAttribute('data-suffix')||'')}
-function run(el){var to=parseFloat(el.getAttribute('data-count'));var t0=null;function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/1100),e=1-Math.pow(1-p,3);el.textContent=fmt(to*e,el);if(p<1)requestAnimationFrame(f);else el.textContent=fmt(to,el)}requestAnimationFrame(f)}
-var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target)}})},{threshold:.6});nums.forEach(function(n){io.observe(n)})}
-wireForm('ct-form','ct-done','ct-err',['ct-first','ct-last','ct-email','ct-co','ct-type','ct-consent'],'contact');
-wireForm('lm-form','lm-done','lm-err',['lm-name','lm-email','lm-co','lm-consent'],'pdf',function(){return {checklist_name:'Clinical Trials & R&D Tax Relief: pre-trial checklist',checklist_file:'https://www.itaxadvisors.co.uk/wp-content/uploads/itax-clinical-trials-checklist.pdf',checklist_filename:'itax-clinical-trials-checklist.pdf',lead_source:'life-sciences-page-lead-magnet-clinical-trials'}});
-})();
-
-/* jump nav highlight */
-(function(){var links=$$('.jump a');if(!links.length||!('IntersectionObserver' in window))return;var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});var a=map[e.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-30% 0px -60% 0px'});
-Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)})})();
 
 </script>
