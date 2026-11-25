@@ -1,0 +1,673 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Claim Preparation Page</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!-- SEO (set in Yoast): title: R&D Tax Claim Preparation UK | HMRC-Ready | iTax | description: Get an R&D tax claim built to withstand HMRC scrutiny: technical narrative, costs and evidence in one file, led by a senior specialist. Speak to a specialist. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--navy-950:#0c2136;--navy-900:#143451;--navy-800:#183c5e;--navy-700:#1b456d;--green:#8ab141;--green-deep:#4f7a0f;--ink:#21507b;--muted:#4a6580;--paper:#eef2f1;--white:#fff;--line:#d3dde7;--line-dark:rgba(255,255,255,.14);--on-dark:#e8f0f7;--on-dark-muted:#aebfd0;--star:#e0a53a;--font:"Raleway",Arial,Helvetica,sans-serif;--radius:16px;--shadow:0 22px 44px -20px rgba(12,33,54,.4);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;letter-spacing:.2px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}p{margin:0}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:700;display:flex;align-items:center;gap:10px}
+.label::before{content:"";width:26px;height:2px;background:currentColor;opacity:.7}
+.dark .label,.hero .label{color:var(--green)}
+.sec{padding-block:clamp(48px,6vw,84px)}
+.sec h2{font-size:clamp(27px,3.4vw,42px);font-weight:700;color:var(--navy-700);margin-top:14px;max-width:24ch}
+.dark h2{color:#fff}
+.lede{font-size:18px;color:var(--muted);max-width:62ch;margin-top:16px}.dark .lede{color:var(--on-dark-muted)}
+.dark{background:var(--navy-900);color:var(--on-dark);position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 55px,rgba(255,255,255,.035) 55px 56px);pointer-events:none}
+.dark>*{position:relative}
+.img{position:relative;overflow:hidden;background:var(--navy-800)}
+.img img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.img:hover img{transform:scale(1.06)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font);font-weight:700;font-size:15px;letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;border-radius:999px;padding:15px 26px;transition:transform .2s,box-shadow .25s,background .25s;position:relative;overflow:hidden}
+.btn svg{width:20px;height:20px}
+.btn-green{background:var(--green);color:var(--navy-950);box-shadow:0 10px 26px -10px rgba(138,177,65,.85)}
+.btn-green:hover{background:#9cc552}
+.btn-green::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%)}
+.btn-green:hover::after{transform:translateX(120%);transition:transform .8s}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--green);color:var(--green)}
+.btn-line{background:#fff;color:var(--navy-700);box-shadow:inset 0 0 0 2px var(--line)}.btn-line:hover{box-shadow:inset 0 0 0 2px var(--green)}
+.more{font-weight:700;font-size:14px;color:var(--navy-700);display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.more svg{width:18px;height:18px;transition:transform .25s}a:hover>.more svg,.more:hover svg{transform:translateX(5px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);border:1px solid rgba(138,177,65,.45);padding:7px 14px;border-radius:999px;background:rgba(138,177,65,.08)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(138,177,65,.7)}100%{box-shadow:0 0 0 12px rgba(138,177,65,0)}}
+.hero{position:relative;background:var(--navy-950);color:var(--on-dark);padding-block:clamp(72px,9vw,120px) clamp(56px,7vw,92px);overflow:hidden;isolation:isolate}
+.hero h1{font-size:clamp(34px,5vw,60px);font-weight:800;color:#fff;letter-spacing:-.02em;margin-top:22px}
+.w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.w i{display:inline-block;font-style:normal;animation:up .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--n)*80ms + .1s)}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.hl{color:var(--green);position:relative;white-space:nowrap}
+.hl::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:.1em;background:var(--green);border-radius:4px;transform-origin:left;animation:sweep 1.1s .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sweep{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero .answer{font-size:clamp(17px,1.5vw,20px);color:var(--on-dark);max-width:58ch;margin-top:24px}
+.hero .answer b{color:#fff}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--on-dark);border:1px solid var(--line-dark);background:rgba(255,255,255,.06);padding:8px 14px;border-radius:999px}
+.chip svg{width:16px;height:16px;color:var(--green)}
+.formcard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3.2vw,42px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);position:relative;min-width:0}
+.formcard h3{font-size:25px;color:var(--navy-700);font-weight:800}
+.formcard .sub{font-size:15px;color:var(--muted);margin-top:6px}
+.field{display:grid;gap:6px;margin-top:16px}
+.field label{font-size:13.5px;font-weight:700;color:var(--navy-700)}
+.field label em{font-style:normal;color:var(--muted);font-weight:500}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:14px 15px;width:100%;transition:border-color .2s,box-shadow .2s,background .2s}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--navy-700);box-shadow:0 0 0 4px rgba(27,69,109,.15);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:var(--muted)}
+.consent input{width:20px;height:20px;margin-top:2px;accent-color:var(--navy-700);flex:none}
+.formcard .btn{width:100%;justify-content:center;margin-top:20px;min-height:52px}
+.fine{font-size:12.5px;color:#a33a2b;margin-top:12px;min-height:1em}
+.done{display:none}.done.show{display:block}
+.done .tick{width:56px;height:56px;border-radius:50%;background:var(--green);color:var(--navy-950);display:grid;place-items:center;margin-bottom:16px}
+.done .tick svg{width:30px;height:30px}.done h3{font-size:24px;color:var(--navy-700)}.done p{margin-top:8px;color:var(--muted)}
+details{border-bottom:1px solid var(--line)}details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;font-weight:700;font-size:19px;color:var(--navy-700);line-height:1.3}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b456d' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .3s,background-color .3s}
+details[open] summary::after{transform:rotate(45deg);background-color:var(--green)}
+details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open] p{animation:fadeUp .4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px)}
+.anim .rv.pending:not(.in){opacity:0;transform:translateY(24px)}
+.anim .wipe.pending:not(.in){clip-path:inset(0 0 100% 0)}
+.rv{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.wipe{transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+.tilt{transform-style:preserve-3d;transition:transform .35s,box-shadow .35s}
+@media (max-width:860px){body{font-size:16px}.sec{padding-block:44px}.sec h2{max-width:none;font-size:clamp(26px,7.4vw,32px)}.lede{font-size:16.5px}.faq-grid{grid-template-columns:minmax(0,1fr)}.cta-row .btn{width:100%;justify-content:center}.hl{white-space:normal}.hero{padding-block:56px 44px}}
+@media (max-width:600px){.row2{grid-template-columns:minmax(0,1fr)}.field input,.field select,.field textarea{min-height:48px}summary{font-size:17px;padding:18px 2px;min-height:56px}}
+@media (hover:none){.mag,.tilt{transform:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.faq-grid{align-items:stretch}.faq-left{position:sticky;top:24px}@media (max-width:860px){.faq-left{position:static}}
+.anim .rv.pending:not(.in){transform:translateY(14px)}.rv{transition-duration:.55s}
+
+.hero{padding-block:clamp(64px,8vw,104px) clamp(48px,6vw,80px);background:linear-gradient(135deg,var(--navy-950),var(--navy-800))}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 55% at 85% 40%,rgba(138,177,65,.18),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px),repeating-linear-gradient(90deg,transparent 0 95px,rgba(255,255,255,.02) 95px 96px)}
+.glow{position:absolute;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(138,177,65,.22),transparent 65%);left:0;top:0;transform:translate(-50%,-50%);transition:opacity .4s;opacity:0}
+.hero h1{font-size:clamp(30px,3.6vw,46px)}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,72px);align-items:center}
+.hpic{border-radius:24px;box-shadow:0 50px 80px -34px rgba(0,0,0,.8)}
+.hpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,33,54,.55))}
+.hpic .cap{display:none}.hpic .cap_{position:absolute;left:16px;bottom:16px;z-index:2;background:var(--green);color:var(--navy-950);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:8px 13px;border-radius:8px}
+.strip{background:#fff;border-bottom:1px solid var(--line)}
+.strip-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 28px;padding-block:20px}
+.strip-in span{display:flex;gap:10px;align-items:center;font-weight:700;font-size:14.5px;color:var(--navy-700)}
+.strip-in svg{width:22px;height:22px;color:var(--green-deep);flex:none}
+.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,72px);align-items:center}
+.pic{border-radius:22px;box-shadow:0 40px 70px -30px rgba(12,33,54,.6)}
+.pic .cap{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--green);color:var(--navy-950);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;padding:7px 12px;border-radius:7px;max-width:70%}
+.pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(12,33,54,.4));pointer-events:none}
+.body{color:var(--muted);font-size:17px;margin-top:14px;max-width:62ch}
+.why{margin-top:22px;display:grid;gap:14px}
+.why div{display:grid;grid-template-columns:44px 1fr;gap:14px}
+.why svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
+.why b{display:block;color:var(--navy-700);font-size:18px}.why span{color:var(--muted);font-size:16px}
+.routes{background:#fff}
+.lgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.lc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:grid;gap:10px;align-content:start;transition:transform .3s,box-shadow .3s,border-color .3s}
+.lc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
+.lc svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
+.lc h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}.lc p{font-size:15.5px;color:var(--muted)}
+.notefinal{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:#eaf4d4;border-radius:14px;padding:16px 20px;color:var(--navy-700);font-weight:600}
+.notefinal svg{width:26px;height:26px;color:var(--green-deep)}
+.lsel{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(18px,3vw,36px);margin-top:36px;align-items:start}
+.llist{display:grid;gap:10px;align-content:start}
+.lbtn{display:flex;gap:14px;align-items:center;text-align:left;font:inherit;font-weight:700;font-size:16px;color:var(--navy-700);background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;transition:transform .25s,border-color .25s,background .25s,box-shadow .25s;min-height:60px}
+.lbtn span{flex:none;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:14px;transition:background .25s,color .25s}
+.lbtn:hover{border-color:var(--green);transform:translateX(4px)}
+.lbtn[aria-selected="true"]{background:var(--green);color:var(--navy-950);border-color:var(--green)}
+.lbtn[aria-selected="true"] span{background:var(--navy-950);color:var(--green)}
+.lpanel{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(24px,3vw,40px);box-shadow:0 40px 60px -34px rgba(0,0,0,.7);position:relative;overflow:hidden;animation:fadeUp .45s}
+.lpanel[hidden]{display:none}
+.lpanel h3{font-size:clamp(21px,2.3vw,27px);font-weight:800;color:var(--navy-700)}
+.lrow{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.lrow small{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:6px}
+.lrow p{color:var(--ink);font-size:16.5px}.lrow .pp,.csc .pp{margin-top:10px}
+.cs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.csc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column}
+.csc small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:10px}
+.csc p{font-size:16px;color:var(--muted)}
+.stat{margin-top:auto;padding:14px 16px;border-radius:12px;background:var(--navy-700);color:#fff;display:grid;gap:2px}
+.csc .stat{margin-top:18px}
+.stat b{font-size:28px;color:var(--green);line-height:1.1}.stat span{font-size:13.5px;color:var(--on-dark)}
+.stat.g{background:var(--green)}.stat.g b{color:var(--navy-950)}.stat.g span{color:var(--navy-900);font-weight:600}
+.sgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:36px}
+.sc{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:grid;gap:12px;align-content:start}
+.sc .tag{justify-self:start;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:7px;background:#dff0b8;color:#3d6409}
+.sc h3{font-size:22px;color:var(--navy-700)}.sc p{font-size:16px;color:var(--muted)}
+.lm{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;background:var(--navy-900);color:#fff;border-radius:var(--radius);padding:22px 26px}
+.lm b{font-size:19px}.lm p{color:var(--on-dark-muted);font-size:15px;margin-top:4px}
+.contact{background:var(--navy-950);color:var(--on-dark)}
+.contact::before{background:radial-gradient(50% 60% at 15% 20%,rgba(27,69,109,.7),transparent 70%)}
+.cgrid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:start}
+.contact .lede+.lede{margin-top:12px}
+.det{margin-top:26px;display:grid;gap:16px;padding-top:22px;border-top:1px solid var(--line-dark)}
+.det div{display:grid;grid-template-columns:28px 1fr;gap:12px;color:#fff;font-size:16px}
+.det svg{width:24px;height:24px;color:var(--green)}.det a{color:#fff}
+.rel{margin-top:26px;display:grid;gap:10px}
+.rel a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:#fff;font-weight:700;border:1px solid var(--line-dark);border-radius:12px;padding:14px 16px;transition:border-color .25s,background .25s,transform .25s}
+.rel a:hover{border-color:var(--green);background:rgba(138,177,65,.1);transform:translateX(4px)}
+.rel svg{width:20px;height:20px;color:var(--green)}
+.faq-side{margin-top:26px;position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1.25/1}.faq-side .img{position:absolute;inset:0}.faq-side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,33,54,.05),rgba(12,33,54,.88))}.faq-side .t{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff}.faq-side .t b{display:block;font-size:19px;line-height:1.2;margin-bottom:12px}.btn-sm{padding:10px 20px;font-size:13.5px}
+@media (max-width:1020px){.lgrid,.cs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){
+  .strip-in{grid-template-columns:minmax(0,1fr)}
+  .hgrid,.split,.lsel,.cgrid,.sgrid{grid-template-columns:minmax(0,1fr)}
+  .lm{flex-direction:column;align-items:stretch}.lm .btn{justify-content:center}
+  .faq-side{display:none}.lbtn{min-height:56px}
+}
+@media (max-width:600px){.lgrid,.cs{grid-template-columns:minmax(0,1fr)}.formcard{padding:22px 18px}.stat b{font-size:25px}}
+.lm .btn{flex:none;white-space:nowrap}.lside{position:sticky;top:24px;display:grid;gap:16px}@media (max-width:860px){.lside{position:static}}
+
+/*HERO2*/
+.hero.hero2{padding-block:clamp(52px,6vw,84px);background:linear-gradient(120deg,var(--navy-950) 0%,var(--navy-900) 58%,var(--navy-800) 100%)}
+.hero.hero2::after{display:none}
+.hero2 .hero2-in{position:relative;z-index:2}
+.hero2 .hero2-text{max-width:min(600px,50%)}
+.hero2 h1{font-size:clamp(30px,3.7vw,48px)}
+.hero2 .hero2-img{position:absolute;z-index:1;right:0;top:50%;width:min(50vw,840px);aspect-ratio:1672/941;transform:translateY(-50%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 34%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.hero2 .hero2-img img{width:100%;height:100%;object-fit:cover;display:block}
+.hero2 .hero2-img.rv.pending:not(.in){transform:translateY(-50%)}
+.crumbs{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:13px;color:var(--on-dark-muted);margin-bottom:22px;font-weight:600}
+.crumbs a{color:var(--on-dark);text-decoration:none}.crumbs a:hover{color:var(--green)}
+.crumbs span+span::before{content:"\203A";margin-right:8px;opacity:.6}
+.crumbs [aria-current]{color:var(--green)}
+@media (max-width:900px){
+  .hero2 .hero2-text{max-width:none}
+  .hero2 .hero2-img{position:relative;right:auto;top:auto;transform:none;width:calc(100% - 36px);max-width:620px;margin:30px auto 0;border-radius:18px;overflow:hidden;-webkit-mask-image:none;mask-image:none;box-shadow:0 30px 60px -28px rgba(0,0,0,.8)}
+  .hero2 .hero2-img.rv.pending:not(.in){transform:none}
+}
+/*POLISH*/
+.sec h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--green);margin-top:18px}
+.dark .sec h2::after,.sec.dark h2::after{background:var(--green)}
+[style*="background:var(--paper)"]{background-image:radial-gradient(rgba(27,69,109,.07) 1.2px,transparent 1.2px)!important;background-size:24px 24px!important}
+.lc,.rq,.sc,.csc,.rc,.hc{position:relative;overflow:hidden}
+.lc::before,.rq::before,.sc::before,.csc::before,.rc::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--green),#b7d77a);transform:scaleX(0);transform-origin:left;transition:transform .45s}
+.lc:hover::before,.rq:hover::before,.sc:hover::before,.csc:hover::before,.rc:hover::before{transform:scaleX(1)}
+.ready-in{margin-top:22px;border-top:1px dashed var(--line);padding-top:16px;font-size:14px;color:var(--muted)}
+.ready-in b{display:block;color:var(--navy-700);margin-bottom:8px;font-size:14.5px}
+.ready-in ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.ready-in li{display:flex;gap:8px}.ready-in svg{width:15px;height:15px;color:var(--green-deep);flex:none;margin-top:4px}
+@media (max-width:600px){.ready-in ul{grid-template-columns:minmax(0,1fr)}}
+.magnet{background:linear-gradient(135deg,var(--navy-800),var(--navy-950));color:#fff;position:relative;overflow:hidden}
+.magnet::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(138,177,65,.3),transparent 70%);animation:drift 14s ease-in-out infinite alternate}
+.formcard.spin{isolation:isolate}
+.formcard.spin::after{content:"";position:absolute;inset:0;border-radius:20px;background:#fff;z-index:-1}
+.formcard.spin::before{content:"";position:absolute;inset:-3px;border-radius:23px;z-index:-1;background:conic-gradient(from var(--a,0deg),var(--green),transparent 30%,transparent 70%,var(--green));animation:rot 6s linear infinite}
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes rot{to{--a:360deg}}
+.formcard.big{padding:clamp(26px,3.4vw,44px)}
+.formcard.big .field input,.formcard.big .field select,.formcard.big .field textarea{padding:15px 16px}
+.mp-note{margin-top:10px;font-size:13px;color:var(--muted);font-style:italic}
+.doc{position:relative;margin:30px auto 0;max-width:430px;aspect-ratio:.78/1;animation:fadeUp .5s}
+.doc .sheet{position:absolute;inset:0;background:#fff;border-radius:10px;box-shadow:0 30px 55px -24px rgba(0,0,0,.75)}
+.doc .s3{transform:rotate(5deg) translate(14px,6px);opacity:.55}
+@media (max-width:520px){.doc{margin-inline:10px}.doc .s3{transform:rotate(4deg) translate(5px,5px)}.doc .s2{transform:rotate(-3deg) translate(-4px,4px)}}
+.doc .s2{transform:rotate(-3.5deg) translate(-12px,4px);opacity:.8}
+.doc .s1{overflow:hidden;display:flex;flex-direction:column;transition:transform .5s}
+.doc:hover .s1{transform:translateY(-6px) rotate(.6deg)}
+.dhead{background:var(--navy-700);padding:16px 20px}.dhead img{height:30px;width:auto}
+.doc small{display:block;padding:20px 24px 0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--green-deep)}
+.doc h3{padding:8px 24px 0;font-size:clamp(20px,2.2vw,25px);color:var(--navy-700);font-weight:800;line-height:1.15}
+.doc ol{list-style:none;margin:16px 24px 0;padding:0;counter-reset:d;border-top:2px solid var(--green)}
+.doc li{counter-increment:d;display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.35;color:var(--ink);font-weight:600}
+.doc li::before{content:counter(d);flex:none;width:22px;height:22px;border-radius:5px;background:var(--navy-700);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center;margin-top:1px}
+.dfoot{margin-top:auto;padding:12px 24px;display:flex;justify-content:space-between;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted);background:var(--paper)}
+.m-head{max-width:760px}
+.m-row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:center;margin-top:34px}
+.m-row .doc{margin:0 auto;width:100%;max-width:400px}
+.m-row .formcard.big{padding:clamp(28px,3.6vw,46px)}
+.m-row .formcard.big .field input{padding:16px 16px}
+@media (max-width:520px){.m-row .doc{width:calc(100% - 28px);margin-inline:auto}}
+@media (max-width:860px){.m-row{grid-template-columns:minmax(0,1fr)}.doc{max-width:360px}}
+.magnet{padding-block:clamp(48px,6vw,84px)}
+
+/*LS v2*/
+.ribbon{background:#fff;border-bottom:1px solid var(--line)}
+.ribbon-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-block:20px}
+.ribbon-in span{display:flex;gap:10px;align-items:center;font-weight:700;font-size:14.5px;color:var(--navy-700)}
+.ribbon-in svg{width:22px;height:22px;color:var(--green-deep);flex:none}
+.assess{margin-top:34px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--green);border-radius:var(--radius);padding:24px 28px;box-shadow:var(--shadow)}
+.assess>b{display:block;color:var(--navy-700);font-size:18px;line-height:1.4}
+.assess ul{list-style:none;margin:16px 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.assess li{font-weight:700;font-size:14px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:7px 14px}
+.assess p{color:var(--muted);font-size:16.5px;max-width:78ch}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:auto auto;gap:16px;margin-top:36px}
+.bc{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:grid;gap:10px;align-content:start;transition:transform .3s,box-shadow .3s,border-color .3s;overflow:hidden}
+.bc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
+.bc svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
+.bc h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}.bc p{font-size:15.5px;color:var(--muted)}
+.bn{position:absolute;right:16px;top:12px;font-weight:800;font-size:34px;line-height:1;color:rgba(27,69,109,.1);letter-spacing:-.02em}
+.bimg{padding:0;background:#fff;align-content:start}
+.bimg .img{border-radius:0;width:100%}.bimg .bt{padding:20px 22px 24px;display:grid;gap:8px;position:relative}
+.bimg .bn{top:8px}
+.b-clin{grid-column:1/3;grid-row:1}.b-drug{grid-column:3;grid-row:1}.b-bio{grid-column:4;grid-row:1}
+.b-proc{grid-column:1;grid-row:2}.b-dig{grid-column:2;grid-row:2}.b-dev{grid-column:3/5;grid-row:2}
+.bimg{display:grid;grid-template-columns:minmax(0,.5fr) minmax(0,.5fr);align-items:center}
+.bimg .img{align-self:center}.bimg .bt{align-self:center;padding:22px 22px}
+.b-dev .img{order:2}.b-dev .bt{order:1}
+.lpic{border-radius:18px;box-shadow:0 30px 50px -26px rgba(0,0,0,.7)}
+.cs2{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:36px;align-items:start}
+.cs2-l{position:sticky;top:24px;display:grid;gap:14px}
+.stats2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stats2 .stat{margin:0}
+.tl2{list-style:none;margin:0;padding:0;display:grid;gap:16px;position:relative}
+.tl2 li{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px 20px 70px;position:relative}
+.tl2 .tn{position:absolute;left:18px;top:18px;width:40px;height:40px;border-radius:50%;background:var(--navy-700);color:var(--green);display:grid;place-items:center;font-weight:800}
+.tl2 small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:8px}
+.tl2 p{font-size:16px;color:var(--muted)}.tl2 p+p{margin-top:10px}
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.fig{background:var(--navy-700);border-radius:12px;padding:14px 12px;display:grid;gap:4px;align-content:start}
+.fig b{font-size:clamp(24px,2.6vw,32px);line-height:1;color:var(--green);font-weight:800}
+.fig span{font-size:12.5px;line-height:1.35;color:var(--on-dark)}
+@media (max-width:1020px){.bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}.b-clin,.b-dev,.b-drug,.b-bio,.b-proc,.b-dig{grid-column:auto;grid-row:auto}.b-clin,.b-dev{grid-column:1/-1}.b-dev .img{order:0}.b-dev .bt{order:0}}
+@media (max-width:860px){.cs2{grid-template-columns:minmax(0,1fr)}.cs2-l{position:static}.ribbon-in{justify-content:flex-start}}
+@media (max-width:600px){.bimg{grid-template-columns:minmax(0,1fr)}.bento{grid-template-columns:minmax(0,1fr)}.figs{grid-template-columns:minmax(0,1fr)}.fig{grid-template-columns:auto 1fr;align-items:center;gap:12px}.stats2{grid-template-columns:minmax(0,1fr)}.assess{padding:20px 18px}.ribbon-in{gap:10px 18px}.ribbon-in span{font-size:13.5px}}
+
+/*ABOUT*/
+.secchips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.secchips span{font-weight:700;font-size:14.5px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:9px 18px}
+.f-grid2{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:clamp(28px,5vw,64px);align-items:start}
+.fcard{background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;position:sticky;top:24px}
+.fphoto{line-height:0;background:#d9d5ce}.fphoto img{width:100%;height:auto}
+.fbody{padding:22px 24px 26px}.fbody h3{font-size:26px;color:var(--navy-700);font-weight:800}
+.fbody .role{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);margin-top:6px;font-weight:700}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.creds span{font-size:13px;font-weight:700;color:var(--navy-700);background:#fff;border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+.flinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.ln{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14px;color:#fff;background:var(--navy-700);padding:10px 16px;border-radius:999px;transition:background .2s,transform .2s}
+.ln:hover{background:var(--navy-900);transform:translateY(-2px)}.ln svg{width:18px;height:18px}
+.quote2{margin:26px 0;padding:24px 26px;border-radius:var(--radius);background:var(--navy-900);color:#fff}
+.quote2 p{font-size:clamp(18px,1.9vw,22px);font-weight:600;line-height:1.45}
+.quote2 cite{display:block;margin-top:12px;font-style:normal;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dark-muted);font-weight:700}
+.tgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}.tgrid.t3{margin-top:16px}
+.tc{margin:0;background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;gap:16px;transition:border-color .3s,transform .3s}
+.tc:hover{border-color:var(--green);transform:translateY(-5px)}
+.tc blockquote{margin:0;font-size:15.5px;line-height:1.6;color:var(--on-dark)}
+.tc.s blockquote{font-size:16.5px;font-weight:600;color:#fff}
+.tc figcaption{margin-top:auto;font-size:13.5px;color:var(--on-dark-muted);padding-top:14px;border-top:1px solid var(--line-dark)}
+.tc figcaption b{display:block;color:var(--green);font-size:14.5px;margin-bottom:2px}
+.h48-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:center}
+.tl{margin-top:26px;display:grid;position:relative}.tl::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:rgba(255,255,255,.18)}
+.ts{display:grid;grid-template-columns:40px 1fr;gap:18px;padding-bottom:20px;position:relative}.ts:last-child{padding-bottom:0}
+.ts .n{width:40px;height:40px;border-radius:50%;background:var(--navy-900);border:2px solid var(--green);color:var(--green);display:grid;place-items:center;font-weight:800;z-index:2}
+.ts p{color:var(--on-dark);font-size:16.5px;padding-top:7px}.ts b{color:#fff}
+.split.rev{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}
+@media (max-width:1020px){.tgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.tgrid.t3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.f-grid2,.h48-top,.split.rev{grid-template-columns:minmax(0,1fr)}.fcard{position:static;max-width:440px}.tgrid,.tgrid.t3{grid-template-columns:minmax(0,1fr)}.ribbon-in{justify-content:flex-start}}
+
+.tx{color:inherit;text-decoration:underline;text-decoration-color:var(--green);text-underline-offset:3px;text-decoration-thickness:2px;font-weight:inherit}
+.tx:hover{color:var(--green-deep)}.dark .tx:hover,.ts .tx:hover{color:var(--green)}
+.secchips a{font-weight:700;font-size:14.5px;color:var(--navy-700);background:#eaf4d4;border-radius:999px;padding:9px 18px;text-decoration:none;transition:background .2s,transform .2s}
+.secchips a:hover{background:var(--green);transform:translateY(-2px)}
+.xgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.xcol{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;display:grid;gap:4px;align-content:start}
+.xcol h3{font-size:18px;color:var(--navy-700);font-weight:800;margin-bottom:8px}
+.xcol a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:var(--navy-700);font-weight:700;font-size:15px;padding:12px 4px;border-top:1px solid var(--line);transition:padding .25s,color .25s,background .25s}
+.xcol a:hover{padding-left:12px;background:var(--paper);color:var(--green-deep)}
+.xcol svg{width:18px;height:18px;color:var(--green-deep);flex:none}
+.arts{margin:0 0 22px;border-top:1px solid var(--line)}
+.arts a{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--navy-700);font-weight:700;font-size:16.5px;line-height:1.3;transition:padding .25s,background .25s}
+.arts a small{display:block;font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.arts a:hover{padding-left:14px;background:var(--paper)}.arts svg{width:22px;height:22px;color:var(--green-deep)}
+@media (max-width:1020px){.xgrid{grid-template-columns:minmax(0,1fr)}}
+
+/*ABOUT v2*/
+.glance{background:var(--navy-900);color:#fff}
+.glance-in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 24px;padding-block:26px}
+.gs b{display:block;font-size:clamp(30px,3.6vw,44px);line-height:1;font-weight:800;color:var(--green);font-variant-numeric:tabular-nums}
+.gs span{display:block;margin-top:6px;font-size:14px;color:var(--on-dark)}
+.split.top{align-items:center}
+.icp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.ic{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;gap:12px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.ic:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green)}
+.ic .ico{width:46px;height:46px;border-radius:12px;background:var(--navy-700);color:var(--green);display:grid;place-items:center}
+.ic .ico svg{width:24px;height:24px}
+.ic h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}
+.ic ul,.bul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.ic li,.bul li{position:relative;padding-left:26px;font-size:15.5px;color:var(--muted);line-height:1.45}
+.ic li::before,.bul li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
+.ic .more{margin-top:auto;padding-top:6px}
+.stepc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:34px}
+.sc4{position:relative;background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:var(--radius);padding:24px 20px;transition:transform .3s,border-color .3s,background .3s}
+.sc4:hover{transform:translateY(-6px);border-color:var(--green);background:rgba(138,177,65,.1)}
+.sc4 .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:2px solid var(--green);color:var(--green);font-weight:800;margin-bottom:14px}
+.sc4 h3{font-size:20px;color:#fff;font-weight:800}.sc4 p{font-size:15px;color:var(--on-dark-muted);margin-top:8px}
+.sc4 .tx{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:var(--green)}
+.stepc+.cta-row{margin-top:28px}
+.pas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.pas>div{padding:22px 24px;background:var(--paper)}.pas>div+div{border-left:1px solid var(--line)}
+.pas>div:last-child{background:var(--navy-700)}.pas>div:last-child small{color:var(--green)}.pas>div:last-child p{color:#fff}
+.pas small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--green-deep);margin-bottom:8px}
+.pas p{font-size:16px;color:var(--ink);font-weight:600;line-height:1.45}
+.whyg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}
+.wg{display:grid;grid-template-columns:44px 1fr;gap:2px 14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;transition:border-color .3s,transform .3s}
+.wg:hover{border-color:var(--green);transform:translateY(-4px)}
+.wg svg{grid-row:span 2;width:44px;height:44px;padding:10px;border-radius:12px;background:var(--navy-700);color:var(--green)}
+.wg b{font-size:17px;color:var(--navy-700)}.wg span{font-size:14.5px;color:var(--muted);line-height:1.4}
+.bul{margin-top:20px}.bul li b{color:var(--navy-700)}
+.more-fb{margin-top:22px;font-weight:700}.more-fb .tx{color:var(--green)}
+.tgrid .tc blockquote{font-size:16px}
+@media (max-width:1020px){.icp{grid-template-columns:repeat(2,minmax(0,1fr))}.stepc{grid-template-columns:repeat(2,minmax(0,1fr))}.whyg{grid-template-columns:repeat(2,minmax(0,1fr))}.glance-in{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:700px){.icp,.stepc,.whyg{grid-template-columns:minmax(0,1fr)}.pas{grid-template-columns:minmax(0,1fr)}.pas>div+div{border-left:0;border-top:1px solid var(--line)}}
+.ctacard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(26px,3.4vw,44px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);display:grid;gap:16px;align-content:start}
+.ctacard h3{font-size:26px;color:var(--navy-700);font-weight:800}.ctacard p{color:var(--muted);font-size:16.5px}
+.ctacard .btn{justify-self:start}
+.bul2{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:9px;border-top:1px dashed var(--line);padding-top:16px}
+.bul2 li{position:relative;padding-left:26px;font-size:15.5px;color:var(--muted)}
+.bul2 li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
+@media (max-width:600px){.ctacard .btn{justify-self:stretch;justify-content:center}}
+
+/*SERVICE HERO PATTERN: stage card with offset frame, deliverables bar overlapping the bottom edge*/
+.shero{position:relative;background:linear-gradient(160deg,var(--navy-950),var(--navy-800));color:var(--on-dark);padding-top:clamp(48px,6vw,80px);overflow:hidden;isolation:isolate}
+.shero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(45% 60% at 82% 38%,rgba(138,177,65,.2),transparent 70%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.03) 47px 48px)}
+.shero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,72px);align-items:center;padding-bottom:clamp(40px,5vw,64px)}
+.shero h1{font-size:clamp(30px,3.8vw,48px);font-weight:800;color:#fff;letter-spacing:-.02em;margin-top:20px}
+.stage{position:relative;margin-right:18px;margin-bottom:18px}
+.stage::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:3px solid var(--green);border-radius:22px;z-index:0}
+.stage-card{position:relative;z-index:1;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 40px 70px -30px rgba(0,0,0,.8)}
+.stage-card img{width:100%;height:auto;display:block}
+.stage-tag{position:absolute;z-index:2;left:-14px;top:22px;background:var(--green);color:var(--navy-950);font-weight:800;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border-radius:9px;display:inline-flex;gap:8px;align-items:center;box-shadow:0 14px 28px -12px rgba(0,0,0,.6)}
+.stage-tag svg{width:16px;height:16px}
+.deliver{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;border-radius:16px 16px 0 0;box-shadow:0 -20px 50px -30px rgba(0,0,0,.6);position:relative;z-index:2}
+.deliver li{display:flex;gap:10px;align-items:center;padding:18px 20px;font-weight:700;font-size:14.5px;color:var(--navy-700);border-right:1px solid var(--line)}
+.deliver li:last-child{border-right:0}
+.deliver svg{width:20px;height:20px;color:var(--green-deep);flex:none}
+.vs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:30px}
+.vs>div{border-radius:var(--radius);padding:24px 26px}
+.vs small{display:block;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;margin-bottom:12px}
+.vs ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.vs li{position:relative;padding-left:28px;font-size:16px;line-height:1.45}
+.vs-a{background:#fff;border:1px solid var(--line)}.vs-a small{color:#a33a2b}.vs-a li{color:var(--muted)}
+.vs-a li::before{content:"";position:absolute;left:3px;top:.5em;width:12px;height:12px;background:linear-gradient(45deg,transparent 43%,#a33a2b 43% 57%,transparent 57%),linear-gradient(-45deg,transparent 43%,#a33a2b 43% 57%,transparent 57%)}
+.vs-b{background:var(--navy-700)}.vs-b small{color:var(--green)}.vs-b li{color:#fff}
+.vs-b li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green);border-bottom:2.5px solid var(--green);transform:rotate(-45deg)}
+.note2{margin-top:18px;font-size:15.5px;color:var(--muted);max-width:80ch;font-weight:600}
+.sc4 ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.sc4 li{position:relative;padding-left:20px;font-size:14.5px;color:var(--on-dark-muted);line-height:1.4}
+.sc4 li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--green)}
+.after{margin-top:24px;font-weight:700;color:#fff;border-left:4px solid var(--green);padding-left:16px}
+.sgrid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.s3{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;gap:10px}
+.s3 .n{width:40px;height:40px;border-radius:50%;background:var(--navy-700);color:var(--green);display:grid;place-items:center;font-weight:800}
+.s3 h3{font-size:19px;color:var(--navy-700);font-weight:800;line-height:1.25}.s3 p{font-size:15px;color:var(--muted)}
+.s3 ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.s3 li{position:relative;padding-left:22px;font-size:14.5px;color:var(--ink);line-height:1.4}
+.s3 li::before{content:"";position:absolute;left:1px;top:.3em;width:11px;height:6px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
+.s3 small{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
+.s3 .tx{margin-top:auto;font-weight:700;color:var(--navy-700)}
+.whyg.tips .wg b{font-size:16.5px}
+@media (max-width:1020px){.shero-in{grid-template-columns:minmax(0,1fr)}.stage{max-width:620px}.deliver{grid-template-columns:repeat(2,minmax(0,1fr))}.deliver li:nth-child(2){border-right:0}.deliver li:nth-child(-n+2){border-bottom:1px solid var(--line)}.sgrid3{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:700px){.vs{grid-template-columns:minmax(0,1fr)}.deliver{grid-template-columns:minmax(0,1fr)}.deliver li{border-right:0;border-bottom:1px solid var(--line)}.stage{margin-right:14px}.stage::before{inset:14px -14px -14px 14px}.stage-tag{left:-6px}}
+.shero .hl{white-space:normal}.shero-text{min-width:0}
+.sec:not(.dark) .more-fb .tx{color:var(--navy-700)}
+.shero .hl::after{display:none}.shero .answer{margin-top:22px}
+
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.3-2.9 8-7 9.5-4.1-1.5-7-5.2-7-9.5V6l7-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 006 0L5 7zM19 7l-3 7a3.5 3.5 0 006 0l-3-7z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 15.5h6"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0010 18.7l1-1"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75z"/></symbol>
+</svg>
+
+<main>
+<section class="shero" id="hero">
+  <div class="wrap shero-in">
+    <div class="shero-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><span><a href="https://www.itaxadvisors.co.uk/">Home</a></span><span><a href="https://www.itaxadvisors.co.uk/itax-advisors-services/">Services</a></span><span aria-current="page">R&amp;D Claim Preparation</span></nav>
+      <span class="eyebrow"><i></i> R&amp;D tax claim preparation</span>
+      <h1><span class="w" style="--n:0"><i>R&amp;D</i></span> <span class="w" style="--n:1"><i>Tax</i></span> <span class="w" style="--n:2"><i>Claim</i></span> <span class="w" style="--n:3"><i>Preparation</i></span> <span class="hl"><span class="w" style="--n:4"><i>Built</i></span> <span class="w" style="--n:5"><i>to</i></span> <span class="w" style="--n:6"><i>Withstand</i></span> <span class="w" style="--n:7"><i>HMRC</i></span> <span class="w" style="--n:8"><i>Scrutiny</i></span></span></h1>
+      <p class="answer"><b>Our R&amp;D tax claim preparation service helps UK companies submit technically credible, well supported and compliant claims.</b> We combine detailed project and cost analysis with strong documentation.</p>
+      <div class="cta-row">
+        <a class="btn btn-green mag" href="https://www.itaxadvisors.co.uk/contact-us/">Speak to a specialist <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#how">How a claim is prepared</a>
+      </div>
+    </div>
+    <div class="stage rv">
+      <div class="stage-card"><img src="assets/n_claim_prep.jpg" alt="R&amp;D tax claim checklist: eligibility review, technical narrative, cost analysis, evidence and documentation, HMRC compliance" width="752" height="335"></div>
+      <span class="stage-tag"><svg><use href="#i-doc"/></svg> Service 1 of 4</span>
+    </div>
+  </div>
+  <div class="wrap"><ul class="deliver"><li><svg><use href="#i-check"/></svg> Additional Information Form</li><li><svg><use href="#i-check"/></svg> Claim Approach Report</li><li><svg><use href="#i-check"/></svg> Cost breakdowns by project</li><li><svg><use href="#i-check"/></svg> Downloadable evidence packs</li></ul></div>
+</section>
+
+<section class="sec" id="why" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="rv"><div class="label">Why it matters</div>
+    <h2>A robust R&amp;D tax claim reduces tax risk</h2>
+    <p class="lede">Clear project scoping, disciplined cost treatment and high-quality evidence can materially improve claim quality and reduce the risk of challenge.</p></div>
+    <div class="vs rv">
+      <div class="vs-a"><small>Weak narratives, limited cost traceability, thin evidence</small>
+        <ul><li>Prolonged, resource-intensive HMRC enquiries</li><li>Delays in receiving R&amp;D tax credits or repayments</li><li>Potential reductions in the value of the claim</li><li>Heightened compliance risk and potential penalties</li></ul></div>
+      <div class="vs-b"><small>A robust, structured claim gives confidence to</small>
+        <ul><li>Boards and investors, who rely on accurate tax positions</li><li>Finance teams, who need traceability and reliable documentation</li><li>Auditors, who need clear justification for material tax credits</li><li>Private equity stakeholders, who value reduced risk and transparency</li></ul></div>
+    </div>
+    <p class="note2 rv">An R&amp;D tax claim forms part of the company&rsquo;s Corporation Tax return. It is a formal tax position approved by the company&rsquo;s Directors.</p>
+  </div>
+</section>
+
+<section class="sec" id="who" style="background:#fff">
+  <div class="wrap">
+    <div class="rv"><div class="label">Who it is for</div>
+    <h2>R&amp;D tax claim advisors for innovative UK companies</h2>
+    <p class="lede">Whether you are preparing a first claim or refining an existing process.</p></div>
+    <div class="icp">
+      <article class="ic rv"><span class="ico"><svg><use href="#i-flag"/></svg></span><h3>First-time claimants</h3>
+        <ul><li>Eligible activities identified early</li><li>Claim notification and AIF requirements checked</li><li>Costs included correctly from the start</li></ul></article>
+      <article class="ic rv d1"><span class="ico"><svg><use href="#i-folder"/></svg></span><h3>Companies that have claimed before</h3>
+        <ul><li>Methodology and documentation strengthened</li><li>Earlier claims reviewed for an appropriate standard</li><li>Support if HMRC raises questions on a prepared claim</li></ul></article>
+      <article class="ic rv d2"><span class="ico"><svg><use href="#i-scale"/></svg></span><h3>Finance and tax teams</h3>
+        <ul><li>Costs traceable to qualifying activities</li><li>A documented audit trail of judgements</li><li>Submission-ready reports for your Directors</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="how">
+  <div class="wrap">
+    <div class="rv"><div class="label">Our approach</div>
+    <h2>R&amp;D tax relief claim UK: four steps with KRID</h2>
+    <p class="lede">KRID (Knowledge-Led R&amp;D Identification &amp; Documentation) is our structured, expert-led methodology. Experience-led. Evidence-driven. Enquiry-ready.</p></div>
+    <div class="stepc">
+      <div class="sc4 rv"><span class="n">1</span><h3>Technical scoping and risk assessment</h3><ul><li>Identify eligible R&amp;D activities</li><li>Clarify the advance and uncertainties</li><li>Assess compliance risk areas</li><li>Define a defensible claim strategy</li></ul></div>
+      <div class="sc4 rv d1"><span class="n">2</span><h3>Structured project documentation</h3><ul><li>Guided questions and expert oversight</li><li>Qualifying activities captured clearly</li><li>Narratives matched to the R&amp;D guidelines</li><li>Technically robust project reports</li></ul></div>
+      <div class="sc4 rv d2"><span class="n">3</span><h3>Cost calculations</h3><ul><li>Project-by-project cost allocation</li><li>Transparent, traceable calculations</li><li>Clear link between activity and expenditure</li><li>Every figure supported, every assumption documented</li></ul></div>
+      <div class="sc4 rv d3"><span class="n">4</span><h3>Submission pack</h3><ul><li>Additional Information Form</li><li>Claim Approach Report</li><li>Structured cost breakdowns by project</li><li>Downloadable evidence packs</li></ul></div>
+    </div>
+    <p class="after rv">Should HMRC raise queries, the documentation is already structured for response.</p>
+  </div>
+</section>
+
+<section class="sec" id="software" style="background:var(--paper)">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="label">Our delivery model</div>
+      <h2>KRID software: smart, simple and compliant</h2>
+      <p class="lede">Expert advice combined with a platform that captures eligibility decisions and streamlines the cost calculations.</p>
+      <ul class="bul">
+        <li><b>Automated, real-time</b> claim calculations</li>
+        <li><b>Guided process with AI</b> for detailed project descriptions that align with the R&amp;D tax definition</li>
+        <li><b>Automated</b> Additional Information Form and R&amp;D Claim Approach Report</li>
+        <li><b>Mock R&amp;D tax extract forms</b> for your company tax return</li>
+      </ul>
+      <div class="cta-row"><a class="btn btn-line" href="https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/rd-tax-relief-claims-hmrc-ready-support-for-uk-companies-claim-approach/">Our claim approach in full <svg><use href="#i-arrow"/></svg></a></div>
+    </div>
+    <div class="rv d1"><div class="img pic wipe" style="aspect-ratio:557/465"><img src="assets/n_calc.jpg" alt="Adviser reviewing cost calculations and claim figures with a calculator" width="557" height="465" loading="lazy"><span class="cap">Audit-ready, every time</span></div></div>
+  </div>
+</section>
+
+<section class="sec" id="before-you-claim" style="background:#fff">
+  <div class="wrap">
+    <div class="rv"><div class="label">Before you claim</div>
+    <h2>Three steps every R&amp;D claim must complete</h2>
+    <p class="lede">The claim is submitted in the company&rsquo;s Corporation Tax Return (CT600), but two steps come first.</p></div>
+    <div class="sgrid3">
+      <div class="s3 rv"><span class="n">1</span><h3>Check whether you need to notify HMRC</h3><p>Applies to accounting periods beginning on or after 1 April 2023. You must notify if:</p><ul><li>You are claiming for the first time</li><li>Your last claim was made more than three years before the end of the current notification period</li><li>You claimed for the previous period in an amended return received on or after 1 April 2023, or HMRC removed the claim</li></ul><small>The notification period starts on day one of the accounting period and ends six months after it finishes.</small></div>
+      <div class="s3 rv d1"><span class="n">2</span><h3>Submit the Additional Information Form</h3><p>Mandatory for all R&amp;D claims, and submitted before the CT600. HMRC will reject claims where it has not been.</p><ul><li>Company information</li><li>Breakdown of qualifying expenditure</li><li>Details of the projects claimed</li><li>The scientific or technological advances sought</li><li>Contact details for the claim</li></ul></div>
+      <div class="s3 rv d2"><span class="n">3</span><h3>Submit the claim in the CT600</h3><p>Once notification and the AIF are done, submit the claim in the Corporation Tax Return.</p><ul><li>Accurate</li><li>Robust</li><li>Supported by sufficient technical and financial evidence</li></ul><a class="tx" href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/">Read the full guide</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tips" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="rv"><div class="label">Insights from our founder</div>
+    <h2>Six points for preparing a strong R&amp;D tax claim</h2>
+    <p class="lede">From Aarti Varia&rsquo;s guidance on preparing a company&rsquo;s R&amp;D claims.</p></div>
+    <div class="whyg tips">
+      <div class="wg rv"><svg><use href="#i-search"/></svg><b>Check eligibility</b><span>Understand whether, and to what extent, your business undertakes eligible activities.</span></div>
+      <div class="wg rv d1"><svg><use href="#i-scale"/></svg><b>Pick the right scheme</b><span>Claiming under the wrong scheme can lead to incorrect claims.</span></div>
+      <div class="wg rv d2"><svg><use href="#i-flag"/></svg><b>Find hidden R&amp;D</b><span>Many organisations miss eligibility embedded in business-as-normal activities.</span></div>
+      <div class="wg rv"><svg><use href="#i-doc"/></svg><b>Include the right costs</b><span>Staffing costs qualify. Dividends do not. Grants and subcontracting need care.</span></div>
+      <div class="wg rv d1"><svg><use href="#i-user"/></svg><b>Involve competent professionals</b><span>Claims compiled without them have lacked clarity, and some were disallowed.</span></div>
+      <div class="wg rv d2"><svg><use href="#i-folder"/></svg><b>Add a supporting narrative</b><span>Project narratives and a cost breakdown help pre-empt HMRC questions.</span></div>
+    </div>
+    <p class="more-fb rv"><a class="tx" href="https://www.itaxadvisors.co.uk/how-to-prepare-strong-rd-tax-claims-tips/">Read the full article</a></p>
+  </div>
+</section>
+
+<section class="sec dark" id="clients">
+  <div class="wrap">
+    <div class="rv"><div class="label">Client feedback</div>
+    <h2>What clients say about our claim approach</h2></div>
+    <div class="tgrid">
+      <figure class="tc rv"><blockquote>&ldquo;KRID has transformed how we approach R&amp;D claims. The structured methodology gave us clarity and confidence that our claim would stand up to scrutiny.&rdquo;</blockquote><figcaption><b>Founder</b>Technology company</figcaption></figure>
+      <figure class="tc rv d1"><blockquote>&ldquo;Using KRID has significantly streamlined our R&amp;D claim process while also offering complete visibility of the claim throughout the process.&rdquo;</blockquote><figcaption><b>Nitin</b>Founder of technology company</figcaption></figure>
+      <figure class="tc rv d2"><blockquote>&ldquo;We have always found iTax easy to work with and very professional. With the additional KRID software, this has enhanced our experience even further.&rdquo;</blockquote><figcaption><b>N Lathia</b>Accountant</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="background:#fff">
+  <div class="wrap faq-grid">
+    <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>R&amp;D tax claim preparation questions</h2><p class="lede">Short answers first.</p>
+      <div class="faq-side"><div class="img"><img src="assets/n_meeting.jpg" alt="Specialist adviser meeting a client to discuss R&amp;D tax claim preparation" width="540" height="409" loading="lazy"></div><div class="t"><b>Need more clarity?</b><a class="btn btn-green btn-sm" href="https://www.itaxadvisors.co.uk/contact-us/">Speak to a specialist</a></div></div></div></div>
+    <div class="rv d1">
+      <details open><summary>Can you help if we have claimed before?</summary><p>Yes. We regularly support companies that want to improve methodology, strengthen documentation or review whether previous claims were prepared to an appropriate standard.</p></details>
+      <details><summary>How does this service help reduce HMRC risk?</summary><p>The claim preparation process is designed to align with current HMRC expectations through clear project scoping, disciplined cost treatment and robust supporting evidence, helping improve claim quality and reduce the risk of enquiry or challenge.</p></details>
+      <details><summary>Can you support us if HMRC opens an enquiry?</summary><p>Yes. Support can be provided in responding to HMRC questions or enquiries relating to prepared claims, including assistance with technical explanations and supporting documentation. <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/">Read about HMRC enquiry support</a>.</p></details>
+      <details><summary>What are the benefits of using specialist R&amp;D tax advisers?</summary><p>A specialist-led approach brings a deeper level of technical challenge, scrutiny and judgement. Claims are assessed in detail against current HMRC expectations, with a focus on technical credibility, evidencing and defensibility, which helps improve stakeholder confidence and reduce overall tax risk.</p></details>
+      <details><summary>What must we submit to make an R&amp;D tax relief claim?</summary><p>Every claim requires an Additional Information Form before, or on the same day as, the Company Tax Return is submitted. Some companies must also submit a claim notification form within the applicable time limit. Eligibility for the underlying R&amp;D does not remove these procedural requirements, so the filing position should be checked early.</p></details>
+      <details><summary>Are you R&amp;D tax credit advisors, advisers or consultants?</summary><p>All three names describe the same kind of firm. iTax Advisors is a specialist UK R&amp;D tax advisory firm preparing claims that are technically credible and compliant.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="explore" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="rv"><div class="label">Related</div><h2>Where to go next</h2></div>
+    <div class="xgrid">
+      <div class="xcol rv"><h3>Other services</h3>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/claim-review-and-risk-assessment/"><span>Claim review and risk assessment</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/hmrc-enquiry-defence-and-support/"><span>HMRC enquiry support</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/contemporaneous-reporting/"><span>Contemporaneous reporting</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/itax-advisors-services/"><span>All services</span><svg><use href="#i-arrow"/></svg></a></div>
+      <div class="xcol rv d1"><h3>R&amp;D tax guidance</h3>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/understanding-rd-eligibility/"><span>Does your project qualify?</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/rd-qualifying-costs/"><span>R&amp;D qualifying costs</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/how-can-i-make-a-claim/"><span>How to make a claim</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/rd-tax-knowledge-hub-hmrc-guidance-eligibility-documentation/the-competent-professional/"><span>Who is a competent professional?</span><svg><use href="#i-arrow"/></svg></a></div>
+      <div class="xcol rv d2"><h3>Insights and more</h3>
+        <a href="https://www.itaxadvisors.co.uk/preparing-rd-claims-retrospectively-vs-contemporaneously-pros-and-cons/"><span>Retrospective vs contemporaneous claims</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/changes-to-rd-tax-claims-submission-process/"><span>Changes to the claims submission process</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/#checklist"><span>Claim readiness checklist (PDF)</span><svg><use href="#i-arrow"/></svg></a>
+        <a href="https://www.itaxadvisors.co.uk/about-itax-advisors/"><span>About iTax Advisors</span><svg><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact dark" id="contact">
+  <div class="wrap cgrid">
+    <div class="rv">
+      <div class="label">Speak to us</div>
+      <h2>Get greater confidence in your R&amp;D tax relief position</h2>
+      <p class="lede">Speak with our specialists about a structured, compliance-led approach to your claim.</p>
+      <div class="det">
+        <div><svg><use href="#i-mail"/></svg><span>info@itaxadvisors.co.uk</span></div>
+        <div><svg><use href="#i-pin"/></svg><span>iTax Advisors Limited, Devonshire House, 582 Honeypot Lane, HA7 1JS, United Kingdom</span></div>
+        <div><svg><use href="#i-in"/></svg><a href="https://www.linkedin.com/company/itax-advisors-limited" target="_blank" rel="noopener">linkedin.com/company/itax-advisors-limited</a></div>
+      </div>
+    </div>
+    <div class="ctacard rv d1">
+      <h3>Ready to prepare your claim?</h3>
+      <p>Send your enquiry on our contact page. A member of our team will be in touch to arrange a call.</p>
+      <a class="btn btn-green mag" href="https://www.itaxadvisors.co.uk/contact-us/">Go to the contact page <svg><use href="#i-arrow"/></svg></a>
+      <ul class="bul2"><li>Discuss your projects</li><li>Explore potential eligibility</li><li>Strengthen the defensibility of your claim</li></ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Service", "name": "R&D Tax Claim Preparation", "url": "https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/", "provider": {"@type": "ProfessionalService", "name": "iTax Advisors Limited", "url": "https://www.itaxadvisors.co.uk/", "email": "info@itaxadvisors.co.uk", "address": {"@type": "PostalAddress", "streetAddress": "Devonshire House, 582 Honeypot Lane", "postalCode": "HA7 1JS", "addressCountry": "GB"}}, "areaServed": "GB", "description": "R&D tax claim preparation that helps UK companies submit technically credible, well supported and compliant claims."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you help if we have claimed before?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We regularly support companies that want to improve methodology, strengthen documentation or review whether previous claims were prepared to an appropriate standard."}}, {"@type": "Question", "name": "How does this service help reduce HMRC risk?", "acceptedAnswer": {"@type": "Answer", "text": "The claim preparation process is designed to align with current HMRC expectations through clear project scoping, disciplined cost treatment and robust supporting evidence, helping improve claim quality and reduce the risk of enquiry or challenge."}}, {"@type": "Question", "name": "Can you support us if HMRC opens an enquiry?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Support can be provided in responding to HMRC questions or enquiries relating to prepared claims, including assistance with technical explanations and supporting documentation. Read about HMRC enquiry support."}}, {"@type": "Question", "name": "What are the benefits of using specialist R&D tax advisers?", "acceptedAnswer": {"@type": "Answer", "text": "A specialist-led approach brings a deeper level of technical challenge, scrutiny and judgement. Claims are assessed in detail against current HMRC expectations, with a focus on technical credibility, evidencing and defensibility, which helps improve stakeholder confidence and reduce overall tax risk."}}, {"@type": "Question", "name": "What must we submit to make an R&D tax relief claim?", "acceptedAnswer": {"@type": "Answer", "text": "Every claim requires an Additional Information Form before, or on the same day as, the Company Tax Return is submitted. Some companies must also submit a claim notification form within the applicable time limit. Eligibility for the underlying R&D does not remove these procedural requirements, so the filing position should be checked early."}}, {"@type": "Question", "name": "Are you R&D tax credit advisors, advisers or consultants?", "acceptedAnswer": {"@type": "Answer", "text": "All three names describe the same kind of firm. iTax Advisors is a specialist UK R&D tax advisory firm preparing claims that are technically credible and compliant."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.itaxadvisors.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.itaxadvisors.co.uk/itax-advisors-services/"}, {"@type": "ListItem", "position": 3, "name": "R&D Claim Preparation", "item": "https://www.itaxadvisors.co.uk/r-and-d-tax-claims-preparation/"}]}]}</script>
+<script>
+(function(){
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches;
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+window.$=$;window.$$=$$;
+if('IntersectionObserver' in window&&!reduce){
+  var vh0=window.innerHeight,items=$$('.rv,.wipe');
+  items.forEach(function(el){if(el.getBoundingClientRect().top>vh0*0.95)el.classList.add('pending')});
+  document.documentElement.classList.add('anim');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.01,rootMargin:'0px 0px 18% 0px'});
+  items.forEach(function(el){if(el.classList.contains('pending'))io.observe(el);else el.classList.add('in')});
+  setTimeout(function(){items.forEach(function(el){el.classList.add('in')})},7000);
+}
+if(!reduce&&fine){
+  $$('.mag').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.28)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})});
+  $$('.tilt').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+(x*6)+'deg) rotateX('+(-y*6)+'deg) translateY(-5px)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+  var hero=$('#hero'),glow=$('#glow');
+  if(hero&&glow){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.opacity=1;glow.style.left=(e.clientX-r.left)+'px';glow.style.top=(e.clientY-r.top)+'px'});hero.addEventListener('pointerleave',function(){glow.style.opacity=0})}
+}
+window.MAKE_WEBHOOKS={pdf:'https://hook.eu2.make.com/1wn2tf9j4qmrcp4532uak6vpeu4rmgk6',contact:'https://hook.eu2.make.com/1ufcyla1no7bwoprohh6hi4zqame1tg8'};
+window.wireForm=function(formId,doneId,errId,fields,type,extraData){
+  var f=$('#'+formId),d=$('#'+doneId),err=$('#'+errId);if(!f)return;
+  var live=/(^|\.)itaxadvisors\.co\.uk$/.test(location.hostname);
+  f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';
+    for(var i=0;i<fields.length;i++){var el=$('#'+fields[i]);var bad=el.type==='checkbox'?!el.checked:!el.value.trim();
+      if(el.type==='email'&&el.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value))bad=true;
+      if(bad){err.textContent=el.type==='checkbox'?'Please tick the box so we can contact you.':'Please complete: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/\(optional\)/,'').trim():'this field')+'.';el.focus();return}}
+    var btn=f.querySelector('button[type="submit"]'),orig=btn.innerHTML;
+    function ok(){f.hidden=true;d.classList.add('show')}
+    /* Same Make.com webhooks as the live home page. In previews (any other host) no real lead is sent. */
+    if(!live){ok();return}
+    var data={};new FormData(f).forEach(function(v,k){data[k]=typeof v==='string'?v.trim():v});
+    var cb=f.querySelector('input[type="checkbox"]');data.consent=cb&&cb.checked?'yes':'no';
+    data.submitted_at=new Date().toISOString();data.page_url=location.href;
+    var x=typeof extraData==='function'?extraData():{};Object.keys(x).forEach(function(k){data[k]=x[k]});
+    btn.disabled=true;btn.textContent='Sending...';
+    fetch(window.MAKE_WEBHOOKS[type||'contact'],{method:'POST',mode:'no-cors',body:new URLSearchParams(data)}).then(ok).catch(function(){err.textContent='We could not send your details. Please try again or contact us by email.';btn.disabled=false;btn.innerHTML=orig});
+  });
+};
+})();
+
+(function(){
+var nums=$$('[data-count]');
+function fmt(v,el){return Math.round(v)+(el.getAttribute('data-suffix')||'')}
+function run(el){var to=parseFloat(el.getAttribute('data-count'));var t0=null;function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/1100),e=1-Math.pow(1-p,3);el.textContent=fmt(to*e,el);if(p<1)requestAnimationFrame(f);else el.textContent=fmt(to,el)}requestAnimationFrame(f)}
+if('IntersectionObserver' in window&&!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target)}})},{threshold:.6});nums.forEach(function(n){io.observe(n)})}
+})();
+
+</script>
