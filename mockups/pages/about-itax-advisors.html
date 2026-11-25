@@ -362,6 +362,13 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 .tgrid .tc blockquote{font-size:16px}
 @media (max-width:1020px){.icp{grid-template-columns:repeat(2,minmax(0,1fr))}.stepc{grid-template-columns:repeat(2,minmax(0,1fr))}.whyg{grid-template-columns:repeat(2,minmax(0,1fr))}.glance-in{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:700px){.icp,.stepc,.whyg{grid-template-columns:minmax(0,1fr)}.pas{grid-template-columns:minmax(0,1fr)}.pas>div+div{border-left:0;border-top:1px solid var(--line)}}
+.ctacard{background:#fff;color:var(--ink);border-radius:22px;padding:clamp(26px,3.4vw,44px);box-shadow:0 40px 70px -30px rgba(12,33,54,.55);display:grid;gap:16px;align-content:start}
+.ctacard h3{font-size:26px;color:var(--navy-700);font-weight:800}.ctacard p{color:var(--muted);font-size:16.5px}
+.ctacard .btn{justify-self:start}
+.bul2{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:9px;border-top:1px dashed var(--line);padding-top:16px}
+.bul2 li{position:relative;padding-left:26px;font-size:15.5px;color:var(--muted)}
+.bul2 li::before{content:"";position:absolute;left:2px;top:.35em;width:12px;height:7px;border-left:2.5px solid var(--green-deep);border-bottom:2.5px solid var(--green-deep);transform:rotate(-45deg)}
+@media (max-width:600px){.ctacard .btn{justify-self:stretch;justify-content:center}}
 
 </style>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -390,7 +397,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
     <h1><span class="w" style="--n:0"><i>About</i></span> <span class="w" style="--n:1"><i>iTax</i></span> <span class="w" style="--n:2"><i>Advisors:</i></span> <span class="hl"><span class="w" style="--n:3"><i>Senior-Led</i></span> <span class="w" style="--n:4"><i>UK</i></span></span> <span class="w" style="--n:5"><i>R&amp;D</i></span> <span class="w" style="--n:6"><i>Tax</i></span> <span class="w" style="--n:7"><i>Specialists</i></span></h1>
     <p class="answer"><b>iTax Advisors is a specialist UK R&amp;D tax advisory firm.</b> We bring a more technically rigorous, compliance-focused approach to R&amp;D tax relief claims.</p>
     <div class="cta-row">
-      <a class="btn btn-green mag" href="#contact">Speak to a specialist <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-green mag" href="https://www.itaxadvisors.co.uk/contact-us/">Speak to a specialist <svg><use href="#i-arrow"/></svg></a>
       <a class="btn btn-ghost" href="#founder">Meet our founder</a>
     </div>
     <div class="chips">
@@ -527,7 +534,7 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
 <section class="sec" id="faq" style="background:#fff">
   <div class="wrap faq-grid">
     <div class="rv"><div class="faq-left"><div class="label">FAQs</div><h2>Questions about iTax Advisors</h2><p class="lede">Short answers about who we are and how we work.</p>
-      <div class="faq-side"><div class="img"><img src="assets/n_calc.jpg" alt="Adviser reviewing cost calculations and claim figures with a calculator" width="557" height="465" loading="lazy"></div><div class="t"><b>Want to speak to the team?</b><a class="btn btn-green btn-sm" href="#contact">Ask a specialist</a></div></div></div></div>
+      <div class="faq-side"><div class="img"><img src="assets/n_calc.jpg" alt="Adviser reviewing cost calculations and claim figures with a calculator" width="557" height="465" loading="lazy"></div><div class="t"><b>Want to speak to the team?</b><a class="btn btn-green btn-sm" href="https://www.itaxadvisors.co.uk/contact-us/">Ask a specialist</a></div></div></div></div>
     <div class="rv d1">
       <details open><summary>Who is iTax Advisors Limited?</summary><p>A specialist UK R&amp;D tax advisory firm, established to provide a more technically rigorous and compliance-focused approach to R&amp;D tax relief claims.</p></details>
       <details><summary>Is iTax Advisors an R&amp;D tax specialist firm in the UK?</summary><p>Yes. We work with innovative UK businesses across technology, life sciences, engineering, manufacturing, construction and utilities.</p></details>
@@ -577,22 +584,11 @@ details p{padding:0 40px 24px 4px;color:var(--muted);max-width:70ch}details[open
         <div><svg><use href="#i-in"/></svg><a href="https://www.linkedin.com/company/itax-advisors-limited" target="_blank" rel="noopener">linkedin.com/company/itax-advisors-limited</a></div>
       </div>
     </div>
-    <div class="formcard big rv d1">
-      <form id="ct-form" novalidate>
-        <h3>Send us your enquiry</h3>
-        <p class="sub">Four details are enough to start. Add more if it helps.</p>
-        <div class="row2"><div class="field"><label for="ct-first">First name</label><input id="ct-first" name="first" autocomplete="given-name" required></div><div class="field"><label for="ct-last">Last name</label><input id="ct-last" name="last" autocomplete="family-name" required></div></div>
-        <div class="row2"><div class="field"><label for="ct-email">Work email</label><input id="ct-email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="ct-tel">Phone <em>(optional)</em></label><input id="ct-tel" name="phone" type="tel" autocomplete="tel"></div></div>
-        <div class="field"><label for="ct-co">Company</label><input id="ct-co" name="company" autocomplete="organization" required></div>
-        <div class="field"><label for="ct-type">What do you need help with?</label><select id="ct-type" name="enquiry_type" required><option value="">Choose one</option><option>Preparing a new R&amp;D claim</option><option>A second opinion on an existing claim</option><option>An HMRC enquiry or compliance check</option><option>Life sciences R&amp;D tax relief</option><option>Contracted-out R&amp;D</option><option>Something else</option></select></div>
-        <div class="field"><label for="ct-msg">Tell us briefly about your projects <em>(optional)</em></label><textarea id="ct-msg" name="message"></textarea></div>
-        <input type="hidden" id="ct-src" name="lead_source" value="about-page-form">
-        <label class="consent"><input type="checkbox" id="ct-consent" name="consent" value="yes" required><span>I agree to be contacted by iTax Advisors Limited using the details provided and accept the <a href="https://www.itaxadvisors.co.uk/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span></label>
-        <button class="btn btn-green mag" type="submit">Send my enquiry <svg><use href="#i-arrow"/></svg></button>
-        <p class="fine" id="ct-err" role="alert"></p>
-        <div class="ready-in"><b>Helpful to have ready</b><ul><li><svg><use href="#i-check"/></svg> A list of the projects you want to claim for</li><li><svg><use href="#i-check"/></svg> Your last claim and its accounting period</li><li><svg><use href="#i-check"/></svg> Any HMRC letter and the response date it gives</li><li><svg><use href="#i-check"/></svg> A summary of staff, subcontractor and software costs</li></ul></div>
-      </form>
-      <div class="done" id="ct-done" aria-live="polite"><div class="tick"><svg><use href="#i-check"/></svg></div><h3>Thank you, we have your enquiry</h3><p>A member of our team will be in touch to arrange a call.</p></div>
+    <div class="ctacard rv d1">
+      <h3>Ready to talk to a specialist?</h3>
+      <p>Send your enquiry on our contact page. Four details are enough to start, and a member of our team will be in touch to arrange a call.</p>
+      <a class="btn btn-green mag" href="https://www.itaxadvisors.co.uk/contact-us/">Go to the contact page <svg><use href="#i-arrow"/></svg></a>
+      <ul class="bul2"><li>Discuss your projects</li><li>Explore potential eligibility</li><li>Strengthen the defensibility of your claim</li></ul>
     </div>
   </div>
 </section>
